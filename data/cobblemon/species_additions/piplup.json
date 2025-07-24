@@ -1,0 +1,18 @@
+{
+  "target": "cobblemon:piplup",
+  "evolutions": [
+    {
+      "id": "piplup_prinplup_rlm",
+      "variant": "level_up",
+      "result": "prinplup rlm=true",
+      "consumeHeldItem": false,
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 16
+        }
+      ]
+    }
+  ]
+
+}
