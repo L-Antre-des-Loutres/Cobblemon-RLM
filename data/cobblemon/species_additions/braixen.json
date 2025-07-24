@@ -1,0 +1,66 @@
+{
+  "target": "cobblemon:braixen",
+  "features": ["rlm"],
+  "forms": [
+    {
+      "name": "rlm",
+      "primaryType": "fire",
+      "baseStats": {
+        "hp": 59,
+        "attack": 59,
+        "defence": 58,
+        "special_attack": 90,
+        "special_defence": 70,
+        "speed": 73
+      },
+      "evYield": {
+        "special_attack": 2
+      },
+      "maleRatio": 0.25,
+      "height": 1,
+      "weight": 14.5,
+      "pokedex": [
+        "cobblemon.species.braixen.desc"
+      ],
+      "labels": [
+        "custom"
+      ],
+      "aspects": [
+        "rlm"
+      ],
+      "abilities": [
+        "blaze",
+        "blaze",
+        "h:magician"
+      ],
+      "drops": {
+        "amount": "2",
+        "entries": [
+          {
+            "item": "minecraft:blaze_rod",
+            "quantityRange": "1-16",
+            "percentage": 66
+          }
+        ]
+      },
+      "preEvolution": "fennekin",
+      "evolutions": [
+        {
+          "id": "braixen_delphox_rlm",
+          "variant": "level_up",
+          "result": "delphox rlm=true",
+          "consumeHeldItem": false,
+          "learnableMoves": [
+            "dazzlinggleam"
+          ],
+          "requirements": [
+            {
+              "variant": "level",
+              "minLevel": 36
+            }
+          ]
+        }
+      ]
+    }
+    ]
+}

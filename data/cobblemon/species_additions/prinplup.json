@@ -1,21 +1,34 @@
 {
   "target": "cobblemon:prinplup",
-  "evolutions": [
+  "features": ["rlm"],
+  "forms": [
     {
-      "id": "prinplup_empoleon_rlm",
-      "variant": "level_up",
-      "result": "empoleon rlm=true",
-      "consumeHeldItem": false,
-      "learnableMoves": [
-        "wildcharge"
+      "name": "rlm",
+      "primaryType": "water",
+      "pokedex": [
+        "cobblemon.species.prinplup.desc"
       ],
-      "requirements": [
+      "labels": [
+        "custom"
+      ],
+      "aspects": [
+        "rlm"
+      ],
+      "preEvolution": "piplup",
+      "evolutions": [
         {
-          "variant": "level",
-          "minLevel": 36
+          "id": "prinplup_empoleon_rlm",
+          "variant": "level_up",
+          "result": "empoleon rlm=true",
+          "consumeHeldItem": false,
+          "requirements": [
+            {
+              "variant": "level",
+              "minLevel": 36
+            }
+          ]
         }
       ]
     }
   ]
-
 }

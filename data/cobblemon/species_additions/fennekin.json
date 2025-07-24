@@ -1,0 +1,18 @@
+{
+  "target": "cobblemon:fennekin",
+  "evolutions": [
+    {
+      "id": "fennekin_braixen_rlm",
+      "variant": "level_up",
+      "result": "braixen rlm=true",
+      "consumeHeldItem": false,
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 16
+        }
+      ]
+    }
+  ]
+
+}
