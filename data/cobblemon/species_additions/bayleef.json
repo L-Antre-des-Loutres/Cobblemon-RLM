@@ -1,0 +1,36 @@
+{
+  "target": "cobblemon:bayleef",
+  "evolutions": [
+    {
+      "id": "bayleef_meganium",
+      "variant": "level_up",
+      "result": "meganium",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "petaldance"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 32
+        }
+      ]
+    },
+    {
+      "id": "bayleef_meganium_rlm",
+      "variant": "level_up",
+      "result": "meganium rlm=true",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "spikyshield "
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 32
+        }
+      ]
+    }
+  ]
+
+}

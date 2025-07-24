@@ -1,0 +1,62 @@
+{
+  "target": "cobblemon:meganium",
+  "features": ["rlm"],
+  "forms": [
+    {
+      "name": "rlm",
+      "primaryType": "grass",
+      "secondaryType": "steel",
+      "maleRatio": 0.25,
+      "height": 18,
+      "weight": 3000,
+      "pokedex": [
+        "cobblemon.species.meganium.desc"
+      ],
+      "labels": [
+        "custom"
+      ],
+      "aspects": [
+        "rlm"
+      ],
+      "abilities": [
+        "ironbarbs",
+        "fullmetalbody",
+        "h:grassysurge"
+      ],
+      "drops": {
+      "amount": "2",
+        "entries": [
+          {
+            "item": "minecraft:iron_ingot",
+            "quantityRange": "1-2",
+            "percentage": 66
+          }
+        ]
+      },
+      "moves": [
+        "egg:disable",
+        "1:swordsdance",
+        "1:razorleaf",
+        "1:bodyslam",
+        "1:aromatherapy",
+        "1:tackle",
+        "38:heavyslam",
+        "42:lightscreen",
+        "42:reflect",
+        "48:ironhead",
+        "50:taunt",
+        "54:spikes",
+        "56:leafblade",
+        "60:earthquake",
+        "64:explosion",
+        "68:extremespeed",
+        "70:petalblizzard",
+        "tm:rest",
+        "tutor:honeclaws"
+      ],
+      "preEvolution": "bayleef",
+      "evolutions": [],
+      "battleOnly": false
+    }    
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "implemented": true,
+  "name": "flammiko",
+  "labels": [ "custom" ],
+  "pokedex": [
+    "cobblemon.species.flammiko.desc1",
+    "cobblemon.species.flammiko.desc2"
+  ],
+  "height": 2,
+  "weight": 100,
+  "features": [],
+  "forms": [
+    { "name": "normal" }
+  ],
+  "shoulderMountable": true,
+
+  "primaryType": "fire",
+  "secondaryType": "electric",
+  "baseStats": {
+    "hp": 55,
+    "attack": 85,
+    "defence": 40,
+    "special_attack": 120,
+    "special_defence": 40,
+    "speed": 145
+  },
+  "catchRate": 45,
+  "maleRatio": 0.5,
+  "baseExperienceYield": 236,
+  "experienceGroup": "fast",
+  "eggCycles": 25,
+  "eggGroups": [
+    "grass",
+    "monster"
+  ],
+  "baseFriendship": 70,
+  "evYield": {
+    "special_attack": 1,
+    "speed": 2
+  },
+
+  "moves": [
+    "egg:disable",
+    "1:ember",
+    "1:thundershock",
+    "1:pound",
+    "1:growl",
+    "4:swift",
+    "5:charge",
+    "5:thunderbolt",
+    "8:flamecharge",
+    "10:nuzzle",
+    "15:encore",
+    "18:copycat",
+    "20:spark",
+    "20:flameburst",
+    "25:thunderwave",
+    "25:will-o-wisp",
+    "30:thunderbolt",
+    "30:flamethrower",
+    "35:power-uppunch",
+    "40:thunderpunch",
+    "40:firepunch",
+    "45:icepunch",
+    "50:knockoff",
+    "55:overheat",
+    "55:thunder",
+    "tm:rest"
+  ],
+  "abilities": [
+    "voltabsorb",
+    "flashfire",
+    "h:simple"
+  ],
+  
+
+  "evolutions": [ ],
+  
+
+  "baseScale": 1.1,
+  "hitbox": {
+    "width": 1,
+    "height": 1.1,
+    "fixed": false
+  },
+  "drops": {
+  "amount": "2",
+    "entries": [
+      {
+        "item": "minecraft:gunpowder",
+        "quantityRange": "1-2",
+        "percentage": 66
+      }
+    ]
+  },
+  "behaviour": {
+    "moving": {
+      "canLook": false,
+      "fly": {
+        "canFly": false
+      },          
+      "swim": {
+        "swimSpeed": 0.1,
+        "canSwimInWater": true,
+        "canBreatheUnderwater": false
+      }
+    }
+  }
+
+
+}

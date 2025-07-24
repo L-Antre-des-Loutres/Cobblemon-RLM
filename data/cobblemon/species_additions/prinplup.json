@@ -1,0 +1,21 @@
+{
+  "target": "cobblemon:prinplup",
+  "evolutions": [
+    {
+      "id": "prinplup_empoleon_rlm",
+      "variant": "level_up",
+      "result": "empoleon rlm=true",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "wildcharge"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 36
+        }
+      ]
+    }
+  ]
+
+}

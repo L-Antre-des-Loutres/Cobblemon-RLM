@@ -1,0 +1,71 @@
+{
+  "target": "cobblemon:empoleon",
+  "features": ["rlm"],
+  "forms": [
+    {
+      "name": "rlm",
+      "primaryType": "water",
+      "secondaryType": "electric",
+      "baseStats": {
+        "hp": 90,
+        "attack": 110,
+        "defence": 85,
+        "special_attack": 70,
+        "special_defence": 85,
+        "speed": 95
+      },
+      "evYield": {
+        "attack": 3
+      },
+      "maleRatio": 0.25,
+      "height": 19,
+      "weight": 745,
+      "pokedex": [
+        "cobblemon.species.empoleon.desc"
+      ],
+      "labels": [
+        "custom"
+      ],
+      "aspects": [
+        "rlm"
+      ],
+      "abilities": [
+        "electricsurge",
+        "swiftswim",
+        "h:sheerforce"
+      ],
+      "drops": {
+      "amount": "2",
+        "entries": [
+          {
+            "item": "minecraft:blaze_rod",
+            "quantityRange": "1-64",
+            "percentage": 66
+          }
+        ]
+      },
+      "moves": [
+        "egg:disable",
+        "1:bubble",
+        "1:aquajet",
+        "1:metalclaw",
+        "1:peck",
+        "38:voltswitch",
+        "40:razorshell",
+        "44:swagger",
+        "48:thunderwave",
+        "52:wildcharge",
+        "55:liquidation",
+        "58:raindance",
+        "62:thrash",
+        "66:closecombat",
+        "70:swordsdance",
+        "tm:rest",
+        "tutor:honeclaws"
+      ],
+      "preEvolution": "prinplup",
+      "evolutions": [],
+      "battleOnly": false
+    }    
+  ]
+}

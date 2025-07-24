@@ -1,0 +1,17 @@
+{
+  "species": "cobblemon:empoleon",
+  "order": 10,
+  "variations": [
+    {
+      "aspects": ["rlm"],
+      "poser": "cobblemon:empoleon",
+      "model": "cobblemon:empoleonrlm.geo",
+      "texture": "cobblemon:textures/empoleonrlm/empoleonrlm.png",
+      "layers": []
+    },
+    {
+      "aspects": [ "shiny" ],
+      "texture": "cobblemon:textures/empoleonrlm/empoleonrlm_shiny.png"
+    }
+  ]
+}

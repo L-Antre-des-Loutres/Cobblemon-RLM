@@ -1,0 +1,21 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "flammiko-1",
+      "pokemon": "flammiko",
+      "presets": [ "natural" ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "18-60",
+      "weight": 15.0,
+      "condition": {
+        "canSeeSky": true,
+        "biomes": [ "#cobblemon:is_overworld" ]
+      }
+    }
+  ]
+}
