@@ -1,0 +1,30 @@
+{
+  "target": "cobblemon:wartortle",
+  "features": ["rlm"],
+  "forms": [
+    {
+      "name": "rlm",
+      "labels": [
+        "custom"
+      ],
+      "aspects": [
+        "rlm"
+      ],
+      "preEvolution": "squirtle",
+      "evolutions": [
+        {
+          "id": "wartortle_blastoise_rlm",
+          "variant": "level_up",
+          "result": "blastoise rlm=true",
+          "consumeHeldItem": false,
+          "requirements": [
+            {
+              "variant": "level",
+              "minLevel": 36
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
