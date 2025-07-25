@@ -7,7 +7,22 @@
       "poser": "cobblemon:spinda",
       "model": "cobblemon:flammiko.geo",
       "texture": "cobblemon:textures/flammiko/flammiko.png",
-      "layers": []
+      "layers": [
+        {
+          "name": "animation",
+          "texture": {
+            "frames": [
+              "cobblemon:textures/flammiko/animation/flammiko_flammes1.png",
+              "cobblemon:textures/flammiko/animation/flammiko_flammes2.png",
+              "cobblemon:textures/flammiko/animation/flammiko_flammes3.png",
+              "cobblemon:textures/flammiko/animation/flammiko_flammes4.png"
+            ],
+            "fps": 6,
+            "loop": true
+          },
+          "emissive": true
+        }
+      ]
     },
     {
       "aspects": [ "shiny" ],
