@@ -1,0 +1,74 @@
+{
+  "target": "cobblemon:blastoise",
+  "features": ["rlm"],
+  "forms": [
+    {
+      "name": "rlm",
+      "primaryType": "water",
+      "secondaryType": "flying",
+      "baseStats": {
+        "hp": 98,
+        "attack": 90,
+        "defence": 80,
+        "special_attack": 80,
+        "special_defence": 80,
+        "speed": 102
+      },
+      "evYield": {
+        "speed": 3
+      },
+      "height": 2,
+      "weight": 75.5,
+      "pokedex": [
+        "cobblemon.species.blastoise.desc"
+      ],
+      "labels": [
+        "custom"
+      ],
+      "aspects": [
+        "rlm"
+      ],
+      "abilities": [
+        "rockhead",
+        "swiftswim",
+        "h:rockhead"
+      ],
+      "moves": [
+        "egg:disable",
+        "1:flashcannon",
+        "1:tackle",
+        "4:tailwhip",
+        "7:watergun",
+        "10:aerialace",
+        "13:bubble",
+        "15:airslash",
+        "17:bite",
+        "19:tailwind ",
+        "21:rapidsping",
+        "25:protect",
+        "29:waterpulse",
+        "33:aquajet",
+        "34:aquatail",
+        "35:waterfall",
+        "36:bulkup",
+        "40:doubleedge",
+        "42:scald",
+        "44:earthpower",
+        "45:bravebird",
+        "47:irondefense",
+        "50:rapidspin",
+        "54:raindance",
+        "58:earthquake",
+        "60:hurricane",
+        "62:hydropump",
+        "64:headsmash",
+        "70:swordsdance",
+        "tm:rest",
+        "tutor:honeclaws"
+      ],
+      "preEvolution": "wartortle",
+      "evolutions": [],
+      "battleOnly": false
+    }
+  ]
+}
