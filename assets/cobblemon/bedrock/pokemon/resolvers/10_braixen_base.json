@@ -5,7 +5,6 @@
     {
       "aspects": ["rlm"],
       "poser": "cobblemon:braixen",
-      "model": "cobblemon:braixenrlm.geo",
       "texture": "cobblemon:textures/braixenrlm/braixenrlm.png",
       "layers": []
     },
