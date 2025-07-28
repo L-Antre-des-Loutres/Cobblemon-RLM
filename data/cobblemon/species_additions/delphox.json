@@ -39,7 +39,7 @@
         "entries": [
           {
             "item": "minecraft:blaze_rod",
-            "quantityRange": "1-64",
+            "quantityRange": "2-8",
             "percentage": 66
           }
         ]
