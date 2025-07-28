@@ -4,7 +4,6 @@
   "variations": [
     {
       "aspects": ["rlm"],
-      "poser": "cobblemon:empoleon",
       "model": "cobblemon:empoleonrlm.geo",
       "texture": "cobblemon:textures/empoleonrlm/empoleonrlm.png",
       "layers": []

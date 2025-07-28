@@ -4,7 +4,6 @@
   "variations": [
     {
       "aspects": ["rlm"],
-      "poser": "cobblemon:braixen",
       "texture": "cobblemon:textures/braixenrlm/braixenrlm.png",
       "layers": []
     },

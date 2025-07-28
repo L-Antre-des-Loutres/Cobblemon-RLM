@@ -4,7 +4,6 @@
   "variations": [
     {
       "aspects": ["rlm"],
-      "poser": "cobblemon:meganium",
       "model": "cobblemon:omeganium.geo",
       "texture": "cobblemon:textures/omeganium/omeganium.png",
       "layers": []
