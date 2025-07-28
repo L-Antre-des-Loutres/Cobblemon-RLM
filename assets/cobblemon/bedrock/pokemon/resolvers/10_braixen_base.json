@@ -1,0 +1,16 @@
+{
+  "species": "cobblemon:braixen",
+  "order": 10,
+  "variations": [
+    {
+      "aspects": ["rlm"],
+      "poser": "cobblemon:braixen",
+      "texture": "cobblemon:textures/braixenrlm/braixenrlm.png",
+      "layers": []
+    },
+    {
+      "aspects": [ "shiny" ],
+      "texture": "cobblemon:textures/braixenrlm/braixenrlm_shiny.png"
+    }
+  ]
+}
