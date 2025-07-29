@@ -1,0 +1,13 @@
+
+{
+  "species": "cobblemon:prinplup",
+  "order": 0,
+  "variations": [
+    {
+      "aspects": ["rlm"],
+      "model": "cobblemon:prinpluprlm.geo",
+      "texture": "cobblemon:textures/prinpluprlm/prinpluprlm.png",
+      "layers": []
+    }
+  ]
+}
