@@ -8,6 +8,10 @@
       "model": "cobblemon:prinpluprlm.geo",
       "texture": "cobblemon:textures/prinpluprlm/prinpluprlm.png",
       "layers": []
+    },
+    {
+      "aspects": [ "shiny" ],
+      "texture": "cobblemon:textures/prinpluprlm/prinpluprlm_shiny.png"
     }
   ]
 }
