@@ -4,14 +4,12 @@
   "variations": [
     {
       "aspects": ["rlm"],
-      "poser": "cobblemon:delphoxrlm",
-      "model": "cobblemon:delphoxrlm.geo",
       "texture": "cobblemon:textures/delphoxrlm/delphoxrlm.png",
       "layers": []
     },
     {
       "aspects": [ "shiny" ],
-      "texture": "cobblemon:textures/empoleonrlm/empoleonrlm_shiny.png"
+      "texture": "cobblemon:textures/delphoxrlm/delphoxrlm.png"
     }
   ]
 }
