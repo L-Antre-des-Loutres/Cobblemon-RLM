@@ -36,3 +36,5 @@ Cobblemon RLM is a datapack that adds Fakemon from another project of Antre des 
 ## 🦦 How to install it ?
 
 You just need this pack on your mods folder.
+
+[Modinth](https://modrinth.com/datapack/cobblemon-rlm)
