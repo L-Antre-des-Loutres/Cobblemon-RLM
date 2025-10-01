@@ -1,5 +1,5 @@
 {
-  "target": "cobblemon:nosepass",
+  "target": "cobblemon:probopass",
   "features": ["rlm"],
   "forms": [
     {
@@ -7,20 +7,20 @@
       "primaryType": "water",
       "secondaryType": "fairy",
       "baseStats": {
-        "hp": 30,
-        "attack": 40,
-        "defence": 100,
-        "special_attack": 80,
-        "special_defence": 95,
+        "hp": 60,
+        "attack": 45,
+        "defence": 150,
+        "special_attack": 90,
+        "special_defence": 150,
         "speed": 30
       },
       "evYield": {
-        "defence": 1
+        "defence": 3
       },
-      "height": 1.2,
-      "weight": 90,
+      "height": 1.4,
+      "weight": 340,
       "pokedex": [
-        "cobblemon.species.nosepass.desc"
+        "cobblemon.species.probopass.desc"
       ],
       "labels": [
         "custom"
@@ -52,18 +52,13 @@
         "40:stoneedge",
         "43:scald",
         "43:thunder",
+        "45:moonblast",
         "50:explosion",
-        "60:recover"
+        "60:recover",
+        "65:hydropump"
       ],
-      "evolutions": [
-        {
-          "id": "nosepass_probopass_rlm",
-          "variant": "item_interact",
-          "result": "probopass rlm=true",
-          "consumeHeldItem": false,
-          "requiredContext": "cobblemon:thunder_stone"
-        }
-      ],
+      "evolutions": [],
+      "preEvolution": "nosepass rlm=true",
       "battleOnly": false
     }
   ]
