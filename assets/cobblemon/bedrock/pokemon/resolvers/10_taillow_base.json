@@ -1,0 +1,16 @@
+{
+  "species": "cobblemon:taillow",
+  "order": 0,
+  "variations": [
+    {
+      "aspects": ["rlm"],
+      "model": "cobblemon:taillowrlm.geo",
+      "texture": "cobblemon:textures/taillowrlm/taillowrlm.png",
+      "layers": []
+    },
+    {
+      "aspects": [ "shiny" ],
+      "texture": "cobblemon:textures/taillowrlm/taillowrlm.png"
+    }
+  ]
+}
