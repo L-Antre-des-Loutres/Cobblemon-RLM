@@ -1,0 +1,64 @@
+{
+  "target": "cobblemon:swellow",
+  "features": ["rlm"],
+  "forms": [
+    {
+      "name": "rlm",
+      "primaryType": "flying",
+      "secondaryType": "electric",
+      "baseStats": {
+        "hp": 50,
+        "attack": 90,
+        "defence": 50,
+        "special_attack": 90,
+        "special_defence": 50,
+        "speed": 125
+      },
+      "evYield": {
+        "speed": 2
+      },
+      "height": 0.7,
+      "weight": 19.8,
+      "pokedex": [
+        "cobblemon.species.swellow.desc"
+      ],
+      "labels": [
+        "custom"
+      ],
+      "aspects": [
+        "rlm"
+      ],
+      "abilities": [
+        "lightningrod",
+        "technician",
+        "h:speedboost"
+      ],
+      "moves": [
+        "egg:disable",
+        "1:peck",
+        "1:growl",
+        "1:airslash",
+        "1:bravebird",
+        "5:focusenergy",
+        "9:quickattack",
+        "13:wingattack",
+        "17:reflect",
+        "21:aerialace",
+        "25:quickguard",
+        "28:electroweb",
+        "29:voltswitch",
+        "30:thunderbolt",
+        "31:wingattack",
+        "33:agility",
+        "39:airslash",
+        "40:wildcharge",
+        "45:endeavor",
+        "51:bravebird",
+        "57:counter",
+        "70:thunder"
+      ],
+      "preEvolution": "taillow",
+      "battleOnly": false
+    }
+  ]
+}

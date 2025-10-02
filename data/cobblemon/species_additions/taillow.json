@@ -1,0 +1,72 @@
+{
+  "target": "cobblemon:taillow",
+  "features": ["rlm"],
+  "forms": [
+    {
+      "name": "rlm",
+      "primaryType": "flying",
+      "secondaryType": "electric",
+      "baseStats": {
+        "hp": 40,
+        "attack": 55,
+        "defence": 30,
+        "special_attack": 30,
+        "special_defence": 30,
+        "speed": 85
+      },
+      "evYield": {
+        "speed": 1
+      },
+      "height": 0.3,
+      "weight": 2.3,
+      "pokedex": [
+        "cobblemon.species.taillow.desc"
+      ],
+      "labels": [
+        "custom"
+      ],
+      "aspects": [
+        "rlm"
+      ],
+      "abilities": [
+        "guts",
+        "guts",
+        "h:scrappy"
+      ],
+      "moves": [
+        "egg:disable",
+        "1:peck",
+        "1:growl",
+        "5:focusenergy",
+        "9:quickattack",
+        "13:wingattack",
+        "17:reflect",
+        "21:aerialace",
+        "25:quickguard",
+        "29:agility",
+        "33:airslash",
+        "37:endeavor",
+        "41:bravebird",
+        "45:counter"
+      ],
+      "evolutions": [
+        {
+          "id": "taillow_swellow_rlm",
+          "variant": "level_up",
+          "result": "swellow rlm=true",
+          "consumeHeldItem": false,
+          "learnableMoves": [
+            "wildcharge"
+          ],
+          "requirements": [
+            {
+              "variant": "level",
+              "minLevel": 22
+            }
+          ]
+        }
+      ],
+      "battleOnly": false
+    }
+  ]
+}
