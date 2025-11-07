@@ -23,15 +23,30 @@ Cobblemon RLM is a datapack that adds Fakemon from another project of Antre des 
 - Wartortle RLM-Form
 <br>  *- Cobblemon Model & Texture by : **Cobblemon***
 <br>  *- Design and modifications by : [RereBleue](https://github.com/matheo-1712)*
-- Delphox RLM-Form
-<br>  *- Cobblemon Model & Texture by : **Cobblemon***
-<br>  *- Design and modifications by : [TheAzertor](https://github.com/Corentin-cott)*
 - Braixen RLM-Form
 <br>  *- Cobblemon Model & Texture by : **Cobblemon***
 <br>  *- Design and modifications by : [RereBleue](https://github.com/matheo-1712)*
 - Flammiko
 <br>  *- Cobblemon animations (Spinda) by : **Cobblemon***
 <br>  *- Design and modifications by : [TheAzertor](https://github.com/Corentin-cott)*
+
+### Fakemon in WIP :
+- Delphox RLM-Form
+- Nosepass RLM-Form
+- Probopass RLM-form
+- Tailow RLM-Forme
+- Swellow RLM-Form
+
+### Fakemon planned :
+- Mareep RLM-Form
+- Flaaffy RLM-Form
+- Ampharos RLM-Form
+- Topspinox
+- Apheos
+- Aphelis
+- Rhinecaille
+
+- Full list of RLM Mons : https://github.com/L-Antre-des-Loutres/Pokemon-RLM/issues/19
 
 ## 🦦 How to install it ?
 
