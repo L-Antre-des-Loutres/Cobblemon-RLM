@@ -13,5 +13,10 @@
     "sounds": [
       "rp_music:records/timmy_battle"
     ]
+  },
+  "vole_battle": {
+    "sounds": [
+      "rp_music:records/vole_battle"
+    ]
   }
 }
