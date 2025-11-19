@@ -1,0 +1,22 @@
+{
+  "elsa_mina_battle": {
+    "sounds": [
+      "rp_music:records/elsa_mina_battle"
+    ]
+  },
+  "red_battle": {
+    "sounds": [
+      "rp_music:records/red_battle"
+    ]
+  },
+  "timmy_battle": {
+    "sounds": [
+      "rp_music:records/timmy_battle"
+    ]
+  },
+  "vole_battle": {
+    "sounds": [
+      "rp_music:records/vole_battle"
+    ]
+  }
+}

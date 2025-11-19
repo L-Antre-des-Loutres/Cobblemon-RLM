@@ -1,0 +1,8 @@
+{
+  "comparator_output": 12,
+  "description": "Red Battle Theme",
+  "length_in_seconds": 179,
+  "sound_event": {
+    "sound_id": "rp_music:red_battle"
+  }
+}
