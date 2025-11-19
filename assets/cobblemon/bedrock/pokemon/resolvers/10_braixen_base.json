@@ -4,12 +4,12 @@
   "variations": [
     {
       "aspects": ["rlm"],
-      "texture": "cobblemon:textures/braixenrlm/braixenrlm.png",
+      "texture": "cobblemon:textures/pokemon/braixenrlm/braixenrlm.png",
       "layers": []
     },
     {
       "aspects": [ "shiny" ],
-      "texture": "cobblemon:textures/braixenrlm/braixenrlm_shiny.png"
+      "texture": "cobblemon:textures/pokemon/braixenrlm/braixenrlm_shiny.png"
     }
   ]
 }

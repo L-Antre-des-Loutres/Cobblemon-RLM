@@ -6,12 +6,12 @@
     {
       "aspects": ["rlm"],
       "model": "cobblemon:wartortlerlm.geo",
-      "texture": "cobblemon:textures/wartortlerlm/wartortlerlm.png",
+      "texture": "cobblemon:textures/pokemon/wartortlerlm/wartortlerlm.png",
       "layers": []
     },
     {
       "aspects": [ "shiny" ],
-      "texture": "cobblemon:textures/wartortlerlm/wartortlerlm_shiny.png"
+      "texture": "cobblemon:textures/pokemon/wartortlerlm/wartortlerlm_shiny.png"
     }
   ]
 }
