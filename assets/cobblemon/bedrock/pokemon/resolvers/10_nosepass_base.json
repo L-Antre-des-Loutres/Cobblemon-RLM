@@ -1,4 +1,3 @@
-
 {
   "species": "cobblemon:nosepass",
   "order": 0,
@@ -6,12 +5,12 @@
     {
       "aspects": ["rlm"],
       "model": "cobblemon:nosepassrlm.geo",
-      "texture": "cobblemon:textures/nosepassrlm/nosepassrlm.png",
+      "texture": "cobblemon:textures/pokemon/nosepassrlm/nosepassrlm.png",
       "layers": []
     },
     {
       "aspects": [ "shiny" ],
-      "texture": "cobblemon:textures/nosepassrlm/nosepassrlm_shiny.png"
+      "texture": "cobblemon:textures/pokemon/nosepassrlm/nosepassrlm_shiny.png"
     }
   ]
 }
