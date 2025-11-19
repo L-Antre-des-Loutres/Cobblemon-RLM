@@ -5,12 +5,12 @@
     {
       "aspects": ["rlm"],
       "model": "cobblemon:taillowrlm.geo",
-      "texture": "cobblemon:textures/taillowrlm/taillowrlm.png",
+      "texture": "cobblemon:textures/pokemon/taillowrlm/taillowrlm.png",
       "layers": []
     },
     {
       "aspects": [ "shiny" ],
-      "texture": "cobblemon:textures/taillowrlm/taillowrlm.png"
+      "texture": "cobblemon:textures/pokemon/taillowrlm/taillowrlm.png"
     }
   ]
 }
