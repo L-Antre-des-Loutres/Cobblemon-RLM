@@ -6,16 +6,16 @@
       "aspects": [],
       "poser": "cobblemon:spinda",
       "model": "cobblemon:flammiko.geo",
-      "texture": "cobblemon:textures/flammiko/flammiko.png",
+      "texture": "cobblemon:textures/pokemon/flammiko/flammiko.png",
       "layers": [
         {
           "name": "animation",
           "texture": {
             "frames": [
-              "cobblemon:textures/flammiko/animation/flammiko_flammes1.png",
-              "cobblemon:textures/flammiko/animation/flammiko_flammes2.png",
-              "cobblemon:textures/flammiko/animation/flammiko_flammes3.png",
-              "cobblemon:textures/flammiko/animation/flammiko_flammes4.png"
+              "cobblemon:textures/pokemon/flammiko/animation/flammiko_flammes1.png",
+              "cobblemon:textures/pokemon/flammiko/animation/flammiko_flammes2.png",
+              "cobblemon:textures/pokemon/flammiko/animation/flammiko_flammes3.png",
+              "cobblemon:textures/pokemon/flammiko/animation/flammiko_flammes4.png"
             ],
             "fps": 6,
             "loop": true
@@ -26,7 +26,7 @@
     },
     {
       "aspects": [ "shiny" ],
-      "texture": "cobblemon:textures/flammiko/flammiko_shiny.png"
+      "texture": "cobblemon:textures/pokemon/flammiko/flammiko_shiny.png"
     }
   ]
 }
