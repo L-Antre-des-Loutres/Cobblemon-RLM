@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "mareep-rlm",
+      "pokemon": "mareep rlm",
+      "presets": [ "natural" ],
+      "timeRange": ["night"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "1-17",
+      "weight": 3.0,
+      "condition": {
+        "canSeeSky": true,
+        "biomes": [ "#cobblemon:is_plains" ]
+      }
+    }
+  ]
+}

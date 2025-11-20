@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "ampharos-rlm",
+      "pokemon": "ampharos rlm",
+      "presets": [ "natural" ],
+      "timeRange": ["night"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "30-60",
+      "weight": 3.0,
+      "condition": {
+        "canSeeSky": true,
+        "biomes": [ "#cobblemon:is_plains" ]
+      }
+    }
+  ]
+}

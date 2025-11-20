@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "flaaffy-rlm",
+      "pokemon": "flaaffy rlm",
+      "presets": [ "natural" ],
+      "timeRange": ["night"],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "common",
+      "level": "17-30",
+      "weight": 1.0,
+      "condition": {
+        "canSeeSky": true,
+        "biomes": [ "#cobblemon:is_plains" ]
+      }
+    }
+  ]
+}

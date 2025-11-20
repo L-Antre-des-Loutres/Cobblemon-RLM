@@ -1,0 +1,42 @@
+{
+  "target": "cobblemon:ampharos",
+  "features": ["rlm"],
+  "forms": [
+    {
+      "name": "rlm",
+      "primaryType": "electric",
+      "secondaryType": "ghost",
+      "baseStats": {
+        "hp": 80,
+        "attack": 60,
+        "defence": 80,
+        "special_attack": 115,
+        "special_defence": 85,
+        "speed": 90
+      },
+      "pokedex": [
+        "cobblemon.species.ampharos.desc"
+      ],
+      "labels": [
+        "custom"
+      ],
+      "aspects": [
+        "rlm"
+      ],
+      "abilities": [
+        "cursedbody",
+        "static",
+        "h:shadowtag"
+      ],
+      "moves": [
+        "30:shadowclaw",
+        "35:shadowball",
+        "42:knockoff",
+        "45:destinybond"
+      ],
+      "preEvolution": "flaaffy",
+      "evolutions": [],
+      "battleOnly": false
+    }    
+  ]
+}
