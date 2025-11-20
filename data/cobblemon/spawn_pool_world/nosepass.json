@@ -1,0 +1,21 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "nosepass-rlm",
+      "pokemon": "nosepass",
+      "presets": [ "natural" ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "4-20",
+      "weight": 9.2,
+      "condition": {
+        "canSeeSky": true,
+        "biomes": [ "#cobblemon:is_beach" ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "target": "cobblemon:nosepass",
+  "features": ["rlm"],
+  "forms": [
+    {
+      "name": "rlm",
+      "primaryType": "water",
+      "secondaryType": "fairy",
+      "baseStats": {
+        "hp": 30,
+        "attack": 40,
+        "defence": 100,
+        "special_attack": 80,
+        "special_defence": 95,
+        "speed": 30
+      },
+      "evYield": {
+        "defence": 1
+      },
+      "height": 1.2,
+      "weight": 90,
+      "pokedex": [
+        "cobblemon.species.nosepass.desc"
+      ],
+      "labels": [
+        "custom"
+      ],
+      "aspects": [
+        "rlm"
+      ],
+      "abilities": [
+        "sturdy",
+        "unaware",
+        "h:contrary"
+      ],
+      "moves": [
+        "egg:disable",
+        "1:present",
+        "4:harden",
+        "7:watergun",
+        "10:rockthrow",
+        "13:rest",
+        "16:fairywind",
+        "19:waterpulse",
+        "19:tailwind ",
+        "22:rockslide",
+        "25:aquaring",
+        "28:rockblast",
+        "31:doubleedge",
+        "34:calmmind",
+        "37:dazzlinggleam",
+        "40:stoneedge",
+        "43:scald",
+        "43:thunder",
+        "50:explosion",
+        "60:recover"
+      ],
+      "evolutions": [
+        {
+          "id": "nosepass_probopass_rlm",
+          "variant": "item_interact",
+          "result": "probopass rlm=true",
+          "consumeHeldItem": false,
+          "requiredContext": "cobblemon:thunder_stone"
+        }
+      ],
+      "battleOnly": false
+    }
+  ]
+}
