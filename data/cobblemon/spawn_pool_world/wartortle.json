@@ -4,18 +4,17 @@
   "neededUninstalledMods": [],
   "spawns": [
     {
-      "id": "flammiko-1",
-      "pokemon": "flammiko",
+      "id": "wartortle-rlm-1",
+      "pokemon": "wartortle rlm",
       "presets": [ "natural" ],
-      "timeRange": ["day"],
       "type": "pokemon",
       "context": "grounded",
-      "bucket": "rare",
-      "level": "18-60",
-      "weight": 8.0,
+      "bucket": "ultra-rare",
+      "level": "20-36",
+      "weight": 3.6,
       "condition": {
         "canSeeSky": true,
-        "biomes": [ "#cobblemon:is_overworld" ]
+        "biomes": [ "#cobblemon:is_beach", "#cobblemon:is_ocean" ]
       }
     }
   ]

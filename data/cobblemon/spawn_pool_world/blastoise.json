@@ -4,8 +4,8 @@
   "neededUninstalledMods": [],
   "spawns": [
     {
-      "id": "meganium-rlm-1",
-      "pokemon": "meganium rlm",
+      "id": "blastoise-rlm-1",
+      "pokemon": "blastoise rlm",
       "presets": [ "natural" ],
       "type": "pokemon",
       "context": "grounded",
@@ -14,11 +14,12 @@
       "weight": 0.4,
       "condition": {
         "canSeeSky": true,
-        "biomes": [ "#cobblemon:is_jungle" ]
+        "biomes": [ "#cobblemon:is_beach", "#cobblemon:is_ocean" ]
       }
-    }, {
-      "id": "meganium-rlm-end",
-      "pokemon": "meganium rlm",
+    },
+    {
+      "id": "blastoise-rlm-end",
+      "pokemon": "blastoise rlm",
       "presets": [ "natural" ],
       "type": "pokemon",
       "context": "grounded",
