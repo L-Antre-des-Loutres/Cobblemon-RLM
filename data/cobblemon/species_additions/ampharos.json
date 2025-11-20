@@ -1,0 +1,53 @@
+{
+  "target": "cobblemon:flaaffy",
+  "features": ["rlm"],
+  "forms": [
+    {
+      "name": "rlm",
+      "primaryType": "electric",
+      "secondaryType": "ghost",
+      "baseStats": {
+        "hp": 80,
+        "attack": 60,
+        "defence": 80,
+        "special_attack": 115,
+        "special_defence": 85,
+        "speed": 90
+      },
+      "pokedex": [
+        "cobblemon.species.flaaffy.desc"
+      ],
+      "labels": [
+        "custom"
+      ],
+      "aspects": [
+        "rlm"
+      ],
+      "abilities": [
+        "static",
+        "infiltrator",
+        "h:shadow_tag"
+      ],
+      "moves": [
+        "30:shadowclaw",
+        "35:shadowball",
+        "42:knockoff",
+        "45:destinybond"
+      ],
+      "evolutions": [
+        {
+          "id": "flaaffy-ampharos-rlm",
+          "variant": "level_up",
+          "result": "ampharos rlm=true",
+          "consumeHeldItem": false,
+          "requirements": [
+            {
+              "variant": "level",
+              "minLevel": 30
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

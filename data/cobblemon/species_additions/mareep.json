@@ -1,0 +1,51 @@
+{
+  "target": "cobblemon:mareep",
+  "features": ["rlm"],
+  "forms": [
+    {
+      "name": "rlm",
+      "primaryType": "electric",
+      "secondaryType": "ghost",
+      "baseStats": {
+        "hp": 60,
+        "attack": 40,
+        "defence": 40,
+        "special_attack": 60,
+        "special_defence": 40,
+        "speed": 40
+      },
+      "pokedex": [
+        "cobblemon.species.mareep.desc"
+      ],
+      "labels": [
+        "custom"
+      ],
+      "aspects": [
+        "rlm"
+      ],
+      "abilities": [
+        "static",
+        "infiltrator",
+        "h:shadow_tag"
+      ],
+      "moves": [
+        "14:shadowclaw",
+        "10:lick"
+      ],
+      "evolutions": [
+        {
+          "id": "mareep-flaaffy-rlm",
+          "variant": "level_up",
+          "result": "flaaffy rlm=true",
+          "consumeHeldItem": false,
+          "requirements": [
+            {
+              "variant": "level",
+              "minLevel": 15
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
