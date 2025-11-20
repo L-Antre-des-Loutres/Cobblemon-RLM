@@ -5,12 +5,12 @@
     {
       "aspects": ["rlm"],
       "model": "cobblemon:empoleonrlm.geo",
-      "texture": "cobblemon:textures/empoleonrlm/empoleonrlm.png",
+      "texture": "cobblemon:textures/pokemon/empoleonrlm/empoleonrlm.png",
       "layers": []
     },
     {
       "aspects": [ "shiny" ],
-      "texture": "cobblemon:textures/empoleonrlm/empoleonrlm_shiny.png"
+      "texture": "cobblemon:textures/pokemon/empoleonrlm/empoleonrlm_shiny.png"
     }
   ]
 }

@@ -6,12 +6,12 @@
     {
       "aspects": ["rlm"],
       "model": "cobblemon:bayleefrlm.geo",
-      "texture": "cobblemon:textures/bayleefrlm/bayleefrlm.png",
+      "texture": "cobblemon:textures/pokemon/bayleefrlm/bayleefrlm.png",
       "layers": []
     },
     {
       "aspects": [ "shiny" ],
-      "texture": "cobblemon:textures/bayleefrlm/bayleefrlm_shiny.png"
+      "texture": "cobblemon:textures/pokemon/bayleefrlm/bayleefrlm_shiny.png"
     }
   ]
 }

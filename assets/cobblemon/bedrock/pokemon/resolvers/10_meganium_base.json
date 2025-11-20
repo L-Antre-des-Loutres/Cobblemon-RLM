@@ -5,12 +5,12 @@
     {
       "aspects": ["rlm"],
       "model": "cobblemon:omeganium.geo",
-      "texture": "cobblemon:textures/omeganium/omeganium.png",
+      "texture": "cobblemon:textures/pokemon/omeganium/omeganium.png",
       "layers": []
     },
     {
       "aspects": [ "shiny" ],
-      "texture": "cobblemon:textures/omeganium/omeganium_shiny.png"
+      "texture": "cobblemon:textures/pokemon/omeganium/omeganium_shiny.png"
     }
   ]
 }
