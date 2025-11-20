@@ -30,7 +30,7 @@
       "abilities": [
         "static",
         "infiltrator",
-        "h:shadow_tag"
+        "h:shadowtag"
       ],
       "evolutions": [
         {

@@ -1,5 +1,5 @@
 {
-  "target": "cobblemon:flaaffy",
+  "target": "cobblemon:ampharos",
   "features": ["rlm"],
   "forms": [
     {
@@ -15,7 +15,7 @@
         "speed": 90
       },
       "pokedex": [
-        "cobblemon.species.flaaffy.desc"
+        "cobblemon.species.ampharos.desc"
       ],
       "labels": [
         "custom"
@@ -24,9 +24,9 @@
         "rlm"
       ],
       "abilities": [
+        "cursedbody",
         "static",
-        "infiltrator",
-        "h:shadow_tag"
+        "h:shadowtag"
       ],
       "moves": [
         "30:shadowclaw",
@@ -34,20 +34,9 @@
         "42:knockoff",
         "45:destinybond"
       ],
-      "evolutions": [
-        {
-          "id": "flaaffy-ampharos-rlm",
-          "variant": "level_up",
-          "result": "ampharos rlm=true",
-          "consumeHeldItem": false,
-          "requirements": [
-            {
-              "variant": "level",
-              "minLevel": 30
-            }
-          ]
-        }
-      ]
-    }
+      "preEvolution": "flaaffy",
+      "evolutions": [],
+      "battleOnly": false
+    }    
   ]
 }
