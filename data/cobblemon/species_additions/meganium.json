@@ -6,6 +6,14 @@
       "name": "rlm",
       "primaryType": "grass",
       "secondaryType": "steel",
+      "baseStats": {
+        "hp": 100,
+        "attack": 110,
+        "defence": 100,
+        "special_attack": 55,
+        "special_defence": 100,
+        "speed": 70
+      },
       "maleRatio": 0.25,
       "height": 18,
       "weight": 3000,
