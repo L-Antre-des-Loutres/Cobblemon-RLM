@@ -5,7 +5,7 @@
     {
       "aspects": ["rlm"],
       "model": "cobblemon:nosepassrlm.geo",
-      "texture": "cobblemon:textures/pokemon/nosepassrlm/nosepassrlm0.png",
+      "texture": "cobblemon:textures/pokemon/nosepassrlm/nosepassrlm.png",
       "layers": []
     },
     {
