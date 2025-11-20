@@ -4,8 +4,8 @@
   "neededUninstalledMods": [],
   "spawns": [
     {
-      "id": "meganium-rlm-1",
-      "pokemon": "meganium rlm",
+      "id": "delphox-rlm-1",
+      "pokemon": "delphox rlm",
       "presets": [ "natural" ],
       "type": "pokemon",
       "context": "grounded",
@@ -14,11 +14,11 @@
       "weight": 0.4,
       "condition": {
         "canSeeSky": true,
-        "biomes": [ "#cobblemon:is_jungle" ]
+        "biomes": [ "#cobblemon:is_plains" ]
       }
     }, {
-      "id": "meganium-rlm-end",
-      "pokemon": "meganium rlm",
+      "id": "delphox-rlm-end",
+      "pokemon": "delphox rlm",
       "presets": [ "natural" ],
       "type": "pokemon",
       "context": "grounded",
