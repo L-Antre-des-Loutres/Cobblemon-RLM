@@ -10,7 +10,7 @@
       "texture": "cobblemon:textures/pokemon/flaaffyrlm/flaaffyrlm.png"
     },
     {
-      "aspects": [ "shiny" ],
+      "aspects": [ "rlm", "shiny" ],
       "texture": "cobblemon:textures/pokemon/flaaffyrlm/flaaffyrlm_shiny.png"
     }
   ]
