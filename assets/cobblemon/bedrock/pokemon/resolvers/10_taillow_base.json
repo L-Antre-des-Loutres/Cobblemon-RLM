@@ -10,7 +10,7 @@
       "layers": []
     },
     {
-      "aspects": [ "shiny" ],
+      "aspects": [ "rlm", "shiny" ],
       "texture": "cobblemon:textures/nosepassrlm/nosepassrlm_shiny.png"
     }
   ]

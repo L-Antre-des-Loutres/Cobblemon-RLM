@@ -26,7 +26,23 @@
     },
     {
       "aspects": [ "shiny" ],
-      "texture": "cobblemon:textures/pokemon/flammiko/flammiko_shiny.png"
+      "texture": "cobblemon:textures/pokemon/flammiko/flammiko_shiny.png",
+      "layers": [
+        {
+          "name": "animation",
+          "texture": {
+            "frames": [
+              "cobblemon:textures/pokemon/flammiko/animation_shiny/flammiko_flammes1.png",
+              "cobblemon:textures/pokemon/flammiko/animation_shiny/flammiko_flammes2.png",
+              "cobblemon:textures/pokemon/flammiko/animation_shiny/flammiko_flammes3.png",
+              "cobblemon:textures/pokemon/flammiko/animation_shiny/flammiko_flammes4.png"
+            ],
+            "fps": 6,
+            "loop": true
+          },
+          "emissive": true
+        }
+      ]
     }
   ]
 }

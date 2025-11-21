@@ -10,7 +10,7 @@
       "layers": []
     },
     {
-      "aspects": [ "shiny" ],
+      "aspects": [ "rlm", "shiny" ],
       "texture": "cobblemon:textures/pokemon/prinpluprlm/prinpluprlm_shiny.png"
     }
   ]
