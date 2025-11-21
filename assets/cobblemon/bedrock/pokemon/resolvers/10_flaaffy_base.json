@@ -1,0 +1,17 @@
+
+{
+  "species": "cobblemon:flaaffy",
+  "order": 0,
+  "variations": [
+    {
+      "aspects": ["rlm"],
+      "model": "cobblemon:flaaffyrlm.geo",
+      "layers": [],
+      "texture": "cobblemon:textures/pokemon/flaaffyrlm/flaaffyrlm.png"
+    },
+    {
+      "aspects": [ "shiny" ],
+      "texture": "cobblemon:textures/pokemon/flaaffyrlm/flaaffyrlm_shiny.png"
+    }
+  ]
+}
