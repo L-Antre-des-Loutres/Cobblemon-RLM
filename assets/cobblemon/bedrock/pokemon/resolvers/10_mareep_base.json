@@ -1,0 +1,26 @@
+{
+  "species": "cobblemon:mareep",
+  "order": 10,
+  "variations": [
+    {
+      "aspects": ["rlm"],
+      "model": "cobblemon:mareeprlm.geo",
+      "texture": "cobblemon:textures/pokemon/mareeprlm/mareeprlm.png",
+      "layers": [
+        {
+          "name": "emissive",
+          "texture": {
+            "frames": [
+              "cobblemon:textures/pokemon/mareeprlm/mareep_emissive.png"
+            ]
+          },
+          "emissive": true
+        }
+      ]
+    },
+    {
+      "aspects": [ "shiny" ],
+      "texture": "cobblemon:textures/pokemon/mareeprlm/mareeprlm.png"
+    }
+  ]
+}
