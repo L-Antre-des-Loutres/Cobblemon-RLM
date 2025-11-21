@@ -1,0 +1,40 @@
+{
+  "species": "cobblemon:ampharos",
+  "order": 10,
+  "variations": [
+    {
+      "aspects": ["rlm"],
+      "model": "cobblemon:ampharosrlm.geo",
+      "texture": "cobblemon:textures/pokemon/ampharosrlm/ampharosrlm.png",
+      "layers": [
+        {
+          "name": "emissive",
+          "texture": {
+            "frames": [
+              "cobblemon:textures/pokemon/ampharosrlm/ampharosrlm_emissive.png"
+            ]
+          },
+          "emissive": true
+        },
+        {
+          "name": "animation",
+          "texture": {
+            "frames": [
+              "cobblemon:textures/pokemon/ampharosrlm/animation/ampharosrlm_flammes1.png",
+              "cobblemon:textures/pokemon/ampharosrlm/animation/ampharosrlm_flammes2.png",
+              "cobblemon:textures/pokemon/ampharosrlm/animation/ampharosrlm_flammes3.png",
+              "cobblemon:textures/pokemon/ampharosrlm/animation/ampharosrlm_flammes4.png"
+            ],
+            "fps": 6,
+            "loop": true
+          },
+          "emissive": true
+        }
+      ]
+    },
+    {
+      "aspects": [ "shiny" ],
+      "texture": "cobblemon:textures/pokemon/ampharosrlm/ampharosrlm.png"
+    }
+  ]
+}
