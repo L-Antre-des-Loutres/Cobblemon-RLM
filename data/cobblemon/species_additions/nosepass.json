@@ -61,7 +61,7 @@
           "variant": "item_interact",
           "result": "probopass rlm=true",
           "consumeHeldItem": false,
-          "requiredContext": "cobblemon:thunder_stone"
+          "requiredContext": "cobblemon:water_stone"
         }
       ],
       "battleOnly": false
