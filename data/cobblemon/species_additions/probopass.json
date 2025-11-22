@@ -4,7 +4,7 @@
   "forms": [
     {
       "name": "rlm",
-      "primaryType": "water",
+      "primaryType": "rock",
       "secondaryType": "fairy",
       "baseStats": {
         "hp": 60,
@@ -54,8 +54,7 @@
         "43:thunder",
         "45:moonblast",
         "50:explosion",
-        "60:recover",
-        "65:hydropump"
+        "60:slackoff"
       ],
       "evolutions": [],
       "preEvolution": "nosepass rlm=true",

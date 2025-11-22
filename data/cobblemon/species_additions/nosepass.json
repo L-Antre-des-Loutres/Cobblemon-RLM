@@ -4,7 +4,7 @@
   "forms": [
     {
       "name": "rlm",
-      "primaryType": "water",
+      "primaryType": "rock",
       "secondaryType": "fairy",
       "baseStats": {
         "hp": 30,
@@ -50,7 +50,7 @@
         "34:calmmind",
         "37:dazzlinggleam",
         "40:stoneedge",
-        "43:scald",
+        "43:charm",
         "43:thunder",
         "50:explosion",
         "60:recover"
