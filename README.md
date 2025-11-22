@@ -30,17 +30,21 @@ Cobblemon RLM is a datapack that adds Fakemon from another project of Antre des 
 <br>  *- Cobblemon animations (Spinda) by : **Cobblemon***
 <br>  *- Design and modifications by : [TheAzertor](https://github.com/Corentin-cott)*
 
-### Fakemon in WIP :
-- Delphox RLM-Form
+
+### Come in 1.1.0
 - Nosepass RLM-Form
 - Probopass RLM-form
+- Mareep RLM-Form
+- Flaaffy RLM-Form
+- Ampharos RLM-Form
+
+
+### Fakemon in WIP :
+- Delphox RLM-Form
 - Tailow RLM-Forme
 - Swellow RLM-Form
 
 ### Fakemon planned :
-- Mareep RLM-Form
-- Flaaffy RLM-Form
-- Ampharos RLM-Form
 - Topspinox
 - Apheos
 - Aphelis
