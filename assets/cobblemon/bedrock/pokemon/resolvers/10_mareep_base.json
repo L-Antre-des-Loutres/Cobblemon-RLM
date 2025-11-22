@@ -11,7 +11,7 @@
           "name": "emissive",
           "texture": {
             "frames": [
-              "cobblemon:textures/pokemon/mareeprlm/mareep_emissive.png"
+              "cobblemon:textures/pokemon/mareeprlm/mareeprlm_emissive.png"
             ]
           },
           "emissive": true
@@ -19,8 +19,19 @@
       ]
     },
     {
-      "aspects": [ "shiny" ],
-      "texture": "cobblemon:textures/pokemon/mareeprlm/mareeprlm.png"
+      "aspects": ["rlm", "shiny" ],
+      "texture": "cobblemon:textures/pokemon/mareeprlm/mareeprlm_shiny.png",
+      "layers": [
+        {
+          "name": "emissive",
+          "texture": {
+            "frames": [
+              "cobblemon:textures/pokemon/mareeprlm/mareeprlm_emissive_shiny.png"
+            ]
+          },
+          "emissive": true
+        }
+      ]
     }
   ]
 }

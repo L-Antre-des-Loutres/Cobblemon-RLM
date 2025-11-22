@@ -9,7 +9,7 @@
       "layers": []
     },
     {
-      "aspects": [ "shiny" ],
+      "aspects": [ "rlm", "shiny" ],
       "texture": "cobblemon:textures/pokemon/empoleonrlm/empoleonrlm_shiny.png"
     }
   ]
