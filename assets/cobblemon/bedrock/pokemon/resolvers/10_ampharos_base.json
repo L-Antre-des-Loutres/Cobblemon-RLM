@@ -33,8 +33,33 @@
       ]
     },
     {
-      "aspects": [ "shiny" ],
-      "texture": "cobblemon:textures/pokemon/ampharosrlm/ampharosrlm.png"
+      "aspects": [ "rlm", "shiny" ],
+      "texture": "cobblemon:textures/pokemon/ampharosrlm/ampharosrlm_shiny.png",
+      "layers": [
+        {
+          "name": "emissive",
+          "texture": {
+            "frames": [
+              "cobblemon:textures/pokemon/ampharosrlm/ampharosrlm_emissive_shiny.png"
+            ]
+          },
+          "emissive": true
+        },
+        {
+          "name": "animation",
+          "texture": {
+            "frames": [
+              "cobblemon:textures/pokemon/ampharosrlm/animation_shiny/ampharosrlm_flammes1.png",
+              "cobblemon:textures/pokemon/ampharosrlm/animation_shiny/ampharosrlm_flammes2.png",
+              "cobblemon:textures/pokemon/ampharosrlm/animation_shiny/ampharosrlm_flammes3.png",
+              "cobblemon:textures/pokemon/ampharosrlm/animation_shiny/ampharosrlm_flammes4.png"
+            ],
+            "fps": 6,
+            "loop": true
+          },
+          "emissive": true
+        }
+        ]
     }
   ]
 }
