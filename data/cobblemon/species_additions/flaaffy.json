@@ -24,8 +24,26 @@
         "rlm"
       ],
       "moves": [
+        "1:tackle",
+        "1:growl",
+        "1:thunderwave",
+        "1:astonish",
+        "1:shadowball",
+        "4:thunderwave",
+        "8:thundershock",
+        "11:willowisp",
+        "16:charge",
         "20:hex",
-        "27:shadowsneak"
+        "20:takedown",
+        "25:electroball",
+        "27:shadowsneak",
+        "29:confuseray",
+        "34:powergem",
+        "38:discharge",
+        "43:lightscreen",
+        "47:signalbeam",
+        "52:lightscreen",
+        "56:thunder"
       ],
       "abilities": [
         "static",

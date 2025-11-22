@@ -29,9 +29,23 @@
         "h:shadowtag"
       ],
       "moves": [
-        "14:shadowclaw",
-        "10:lick"
+        "1:astonishment",
+        "1:roar",
+        "4:quickattack",
+        "8:thundershock",
+        "10:shadowclaw",
+        "11:willowisp",
+        "15:charge",
+        "22:electroball",
+        "25:wildcharge",
+        "29:powergem",
+        "32:discharge",
+        "36:protect",
+        "43:lightscreen",
+        "46:thunder",
+        "47:shadowball"
       ],
+
       "evolutions": [
         {
           "id": "mareep-flaaffy-rlm",
