@@ -4,12 +4,10 @@
   "variations": [
     {
       "aspects": ["rlm"],
-      "texture": "cobblemon:textures/pokemon/delphoxrlm/delphoxrlm.png",
       "layers": []
     },
     {
-      "aspects": [ "rlm", "shiny" ],
-      "texture": "cobblemon:textures/pokemon/delphoxrlm/delphoxrlm.png"
+      "aspects": [ "rlm", "shiny" ]
     }
   ]
 }
