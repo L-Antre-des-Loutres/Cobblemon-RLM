@@ -114,6 +114,32 @@
 					]
 				},
 				{
+					"name": "wings_open",
+					"parent": "torso",
+					"pivot": [0, 39.25, 2.75],
+					"rotation": [-80, 0, 0]
+				},
+				{
+					"name": "wing_left",
+					"parent": "wings_open",
+					"pivot": [2.5, 39.25, 2.75],
+					"rotation": [0, 5, -25],
+					"cubes": [
+						{"origin": [2.5, 39.25, 3.25], "size": [5, 0, 8], "uv": [213, 104]},
+						{"origin": [6, 39.25, 0.25], "size": [18, 0, 16], "inflate": 0.005, "uv": [161, 112]}
+					]
+				},
+				{
+					"name": "wing_right",
+					"parent": "wings_open",
+					"pivot": [-1.5, 39.25, 2.75],
+					"rotation": [0, -5, 25],
+					"cubes": [
+						{"origin": [-6.5, 39.25, 3.25], "size": [5, 0, 8], "uv": [213, 104]},
+						{"origin": [-23, 39.25, 0.25], "size": [18, 0, 16], "inflate": 0.005, "uv": [161, 97]}
+					]
+				},
+				{
 					"name": "torso_cloak",
 					"parent": "torso",
 					"pivot": [0, 28, -5],
