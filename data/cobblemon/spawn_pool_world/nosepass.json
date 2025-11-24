@@ -5,7 +5,7 @@
   "spawns": [
     {
       "id": "nosepass-rlm",
-      "pokemon": "nosepass",
+      "pokemon": "nosepass rlm",
       "presets": [ "natural" ],
       "type": "pokemon",
       "context": "grounded",

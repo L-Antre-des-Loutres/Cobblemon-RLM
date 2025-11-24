@@ -5,7 +5,7 @@
   "spawns": [
     {
       "id": "probopass-rlm",
-      "pokemon": "probopass",
+      "pokemon": "probopass rlm",
       "presets": [ "natural" ],
       "type": "pokemon",
       "context": "grounded",
