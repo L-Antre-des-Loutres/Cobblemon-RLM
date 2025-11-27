@@ -1,0 +1,55 @@
+{
+  "target": "cobblemon:spiritomb",
+  "features": ["rlm"],
+  "forms": [
+    {
+      "name": "rlm",
+      "primaryType": "fire",
+      "secondaryType": "dark",
+      "baseStats": {
+        "hp": 85,
+        "attack": 40,
+        "defence": 92,
+        "special_attack": 108,
+        "special_defence": 92,
+        "speed": 78
+      },
+      "pokedex": [
+        "cobblemon.species.spiritomb.desc"
+      ],
+      "labels": [
+        "custom"
+      ],
+      "aspects": [
+        "rlm"
+      ],
+      "abilities": [
+        "compoundeyes",
+        "h:shadowtag"
+      ],
+      "moves": [
+        "1:nightshade",
+        "1:confuseray",
+        "1:ember",
+        "1:dreameater",
+        "1:curse",
+        "1:painsplit",
+        "1:willowisp",
+        "1:healblock",
+        "5:shadowsneak",
+        "10:spite",
+        "15:firespin",
+        "20:calmmind",
+        "25:darkpulse",
+        "30:flamethrower",
+        "35:hex",
+        "40:hypnosis",
+        "45:shadowball",
+        "50:suckerpunch",
+        "55:inferno",
+        "60:perishsong"
+      ],
+      "battleOnly": false
+    }
+  ]
+}
