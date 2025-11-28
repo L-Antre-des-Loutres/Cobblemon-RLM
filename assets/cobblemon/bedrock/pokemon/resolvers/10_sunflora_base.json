@@ -3,13 +3,13 @@
   "order": 10,
   "variations": [
     {
-      "aspects": ["rlm"],
+      "aspects": ["rlm", "ocean"],
       "poser": "cobblemon:sunflora_rlm_ocean",
       "model": "cobblemon:sunflora_rlm_ocean.geo",
       "texture": "cobblemon:textures/pokemon/sunflora_rlm_ocean/sunflora_rlm_ocean.png"
     },
     {
-      "aspects": [ "rlm", "shiny" ],
+      "aspects": [ "rlm", "ocean", "shiny" ],
       "texture": "cobblemon:textures/pokemon/sunflora_rlm_ocean/sunflora_rlm_ocean.png"
     }
   ]

@@ -1,0 +1,16 @@
+{
+  "species": "cobblemon:sunflora",
+  "order": 10,
+  "variations": [
+    {
+      "aspects": ["rlm", "ciel"],
+      "poser": "cobblemon:sunflora_rlm_ciel",
+      "model": "cobblemon:sunflora_rlm_ciel.geo",
+      "texture": "cobblemon:textures/pokemon/sunflora_rlm_ciel/sunflora_rlm_ciel.png"
+    },
+    {
+      "aspects": [ "rlm", "ocean", "shiny" ],
+      "texture": "cobblemon:textures/pokemon/sunflora_rlm_ciel/sunflora_rlm_ciel.png"
+    }
+  ]
+}
