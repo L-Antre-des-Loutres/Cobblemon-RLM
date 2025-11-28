@@ -6,9 +6,9 @@
 				"identifier": "geometry.spiritomb",
 				"texture_width": 128,
 				"texture_height": 64,
-				"visible_bounds_width": 4,
-				"visible_bounds_height": 3.5,
-				"visible_bounds_offset": [0, 1.25, 0]
+				"visible_bounds_width": 24,
+				"visible_bounds_height": 10.5,
+				"visible_bounds_offset": [0, 4.75, 0]
 			},
 			"bones": [
 				{
@@ -34,6 +34,11 @@
 				{
 					"name": "stem",
 					"parent": "tomb",
+					"pivot": [0, 10, -0.5]
+				},
+				{
+					"name": "stem2",
+					"parent": "stem",
 					"pivot": [0, 10, -0.5],
 					"cubes": [
 						{"origin": [0, 8.5, -9], "size": [0, 9, 10], "uv": [108, -10]}
