@@ -1,0 +1,36 @@
+{
+  "target": "cobblemon:sunflora",
+  "features": ["rlm", "ciel"],
+  "forms": [
+    {
+      "name": "ciel",
+      "primaryType": "grass",
+      "secondaryType": "flying",
+      "baseStats": {
+        "hp": 85,
+        "attack": 40,
+        "defence": 92,
+        "special_attack": 108,
+        "special_defence": 92,
+        "speed": 78
+      },
+      "pokedex": [
+        "cobblemon.species.spiritomb.desc"
+      ],
+      "labels": [
+        "custom"
+      ],
+      "aspects": [
+        "rlm", "ciel"
+      ],
+      "abilities": [
+        "compoundeyes",
+        "h:shadowtag"
+      ],
+      "moves": [
+        "1:dragonascent"
+      ],
+      "battleOnly": false
+    }
+  ]
+}

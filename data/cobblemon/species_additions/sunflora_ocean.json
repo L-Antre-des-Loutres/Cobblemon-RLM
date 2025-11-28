@@ -1,0 +1,36 @@
+{
+  "target": "cobblemon:sunflora",
+  "features": ["rlm", "ocean"],
+  "forms": [
+    {
+      "name": "ocean",
+      "primaryType": "grass",
+      "secondaryType": "water",
+      "baseStats": {
+        "hp": 85,
+        "attack": 40,
+        "defence": 92,
+        "special_attack": 108,
+        "special_defence": 92,
+        "speed": 78
+      },
+      "pokedex": [
+        "cobblemon.species.spiritomb.desc"
+      ],
+      "labels": [
+        "custom"
+      ],
+      "aspects": [
+        "rlm", "ocean"
+      ],
+      "abilities": [
+        "compoundeyes",
+        "h:shadowtag"
+      ],
+      "moves": [
+        "1:hydropump"
+      ],
+      "battleOnly": false
+    }
+  ]
+}
