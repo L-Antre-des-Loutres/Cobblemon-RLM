@@ -1,8 +1,8 @@
 {
   "comparator_output": 12,
-  "description": "Vole Battle Theme",
+  "description": "Volo Battle Theme",
   "length_in_seconds": 300,
   "sound_event": {
-    "sound_id": "rp_music:vole_battle"
+    "sound_id": "rp_music:volo_battle"
   }
 }
