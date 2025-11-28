@@ -1,12 +1,11 @@
 {
   "portraitScale": 1.25,
-  "portraitTranslation": [ 0, 0, 0 ],
+  "portraitTranslation": [ 0, 0.25, 0 ],
   "profileScale": 1,
   "profileTranslation": [ 0, -0.25, 0 ],
   "rootBone": "sunflora",
   "animations": {
-    "cry": "q.bedrock_stateful('sunflora_rlm_ocean', 'cry')",
-    "faint": "q.bedrock_primary('sunflora_rlm_ocean', 'faint', q.curve('one'))"
+    "cry": "q.bedrock_stateful('sunflora_rlm_ciel', 'cry')"
   },
   "poses": {
     "battle-standing": {
@@ -18,10 +17,10 @@
       "isBattle": true,
       "animations": [
         "q.look('head')",
-        "q.bedrock('sunflora_rlm_ocean', 'battle_idle')"
+        "q.bedrock('sunflora_rlm_ciel', 'battle_idle')"
       ],
       "quirks": [
-        "q.bedrock_quirk('sunflora_rlm_ocean', 'blink')"
+        "q.bedrock_quirk('sunflora_rlm_ciel', 'blink')"
       ]
     },
     "standing": {
@@ -35,10 +34,10 @@
       ],
       "animations": [
         "q.look('head')",
-        "q.bedrock('sunflora_rlm_ocean', 'ground_idle')"
+        "q.bedrock('sunflora_rlm_ciel', 'ground_idle')"
       ],
       "quirks": [
-        "q.bedrock_quirk('sunflora_rlm_ocean', 'blink')"
+        "q.bedrock_quirk('sunflora_rlm_ciel', 'blink')"
       ]
     },
     "walking": {
@@ -49,10 +48,10 @@
       ],
       "animations": [
         "q.look('head')",
-        "q.bedrock('sunflora_rlm_ocean', 'ground_walk')"
+        "q.bedrock('sunflora_rlm_ciel', 'ground_walk')"
       ],
       "quirks": [
-        "q.bedrock_quirk('sunflora_rlm_ocean', 'blink')"
+        "q.bedrock_quirk('sunflora_rlm_ciel', 'blink')"
       ]
     },
     "sleep": {
@@ -62,7 +61,7 @@
         "SLEEP"
       ],
       "animations": [
-        "q.bedrock('sunflora_rlm_ocean', 'sleep')"
+        "q.bedrock('sunflora_rlm_ciel', 'sleep')"
       ]
     }
   }
