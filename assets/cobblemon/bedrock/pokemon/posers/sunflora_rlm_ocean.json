@@ -1,0 +1,68 @@
+{
+  "portraitScale": 1.25,
+  "portraitTranslation": [ 0, 0, 0 ],
+  "profileScale": 1,
+  "profileTranslation": [ 0, -0.25, 0 ],
+  "rootBone": "sunflora",
+  "animations": {
+    "cry": "q.bedrock_stateful('sunflora_rlm_ocean', 'cry')"
+  },
+  "poses": {
+    "battle-standing": {
+      "poseName": "battle-standing",
+      "transformTicks": 10,
+      "poseTypes": [
+        "STAND"
+      ],
+      "isBattle": true,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('sunflora_rlm_ocean', 'battle_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('sunflora_rlm_ocean', 'blink')"
+      ]
+    },
+    "standing": {
+      "poseName": "standing",
+      "transformTicks": 10,
+      "poseTypes": [
+        "STAND",
+        "NONE",
+        "PORTRAIT",
+        "PROFILE"
+      ],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('sunflora_rlm_ocean', 'ground_idle')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('sunflora_rlm_ocean', 'blink')"
+      ]
+    },
+    "walking": {
+      "poseName": "walking",
+      "transformTicks": 10,
+      "poseTypes": [
+        "WALK"
+      ],
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('sunflora_rlm_ocean', 'ground_walk')"
+      ],
+      "quirks": [
+        "q.bedrock_quirk('sunflora_rlm_ocean', 'blink')"
+      ]
+    },
+    "sleep": {
+      "poseName": "sleep",
+      "transformTicks": 10,
+      "poseTypes": [
+        "SLEEP"
+      ],
+      "animations": [
+        "q.bedrock('sunflora_rlm_ocean', 'sleep')"
+      ]
+    }
+  }
+}
