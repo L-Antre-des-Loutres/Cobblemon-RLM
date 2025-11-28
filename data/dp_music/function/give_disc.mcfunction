@@ -15,3 +15,8 @@ give @p music_disc_mellohi[minecraft:jukebox_playable={song:"dp_music:iris_battl
 give @p music_disc_blocks[minecraft:jukebox_playable={song:"dp_music:jacinthe_battle"}]
 give @p music_disc_precipice[minecraft:jukebox_playable={song:"dp_music:penny_battle"}]
 give @p music_disc_pigstep[minecraft:jukebox_playable={song:"dp_music:red_blue_battle"}]
+give @p music_disc_otherside[minecraft:jukebox_playable={song:"dp_music:teamstar_battle"}]
+give @p music_disc_mellohi[minecraft:jukebox_playable={song:"dp_music:travis_battle"}]
+give @p music_disc_11[minecraft:jukebox_playable={song:"dp_music:ultranecrozma_battle"}]
+give @p music_disc_wait[minecraft:jukebox_playable={song:"dp_music:zacian_illusion"}]
+

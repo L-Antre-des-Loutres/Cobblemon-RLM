@@ -98,5 +98,15 @@
     "sounds": [
       "rp_music:records/rival_battle_n2b2"
     ]
+  },
+  "teamstar_battle": {
+    "sounds": [
+      "rp_music:records/teamstar_battle"
+    ]
+  },
+  "ultranecrozma_battle": {
+    "sounds": [
+      "rp_music:records/ultranecrozma_battle"
+    ]
   }
 }
