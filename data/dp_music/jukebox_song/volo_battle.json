@@ -1,0 +1,8 @@
+{
+  "comparator_output": 12,
+  "description": "LPA - Volo Battle Theme",
+  "length_in_seconds": 300,
+  "sound_event": {
+    "sound_id": "rp_music:volo_battle"
+  }
+}

@@ -14,9 +14,99 @@
       "rp_music:records/timmy_battle"
     ]
   },
-  "vole_battle": {
+  "volo_battle": {
     "sounds": [
-      "rp_music:records/vole_battle"
+      "rp_music:records/volo_battle"
+    ]
+  },
+  "cynthia_battle": {
+    "sounds": [
+      "rp_music:records/cynthia_battle"
+    ]
+  },
+  "guzma_battle": {
+    "sounds": [
+      "rp_music:records/guzma_battle"
+    ]
+  },
+  "red_blue_battle": {
+    "sounds": [
+      "rp_music:records/red_blue_battle"
+    ]
+  },
+  "travis_battle": {
+    "sounds": [
+      "rp_music:records/travis_battle"
+    ]
+  },
+  "zacian_illusion": {
+    "sounds": [
+      "rp_music:records/zacian_illusion"
+    ]
+  },
+  "corvault_battle": {
+    "sounds": [
+      "rp_music:records/corvault_battle"
+    ]
+  },
+  "dianthea_battle": {
+    "sounds": [
+      "rp_music:records/dianthea_battle"
+    ]
+  },
+  "djm_dialga_final_theme": {
+    "sounds": [
+      "rp_music:records/djm_dialga_final_theme"
+    ]
+  },
+  "final_boss_ev": {
+    "sounds": [
+      "rp_music:records/final_boss_ev"
+    ]
+  },
+  "gladio_battle": {
+    "sounds": [
+      "rp_music:records/gladio_battle"
+    ]
+  },
+  "gym_battle_eb": {
+    "sounds": [
+      "rp_music:records/gym_battle_eb"
+    ]
+  },
+  "gym_battle_sl": {
+    "sounds": [
+      "rp_music:records/gym_battle_sl"
+    ]
+  },
+  "iris_battle": {
+    "sounds": [
+      "rp_music:records/iris_battle"
+    ]
+  },
+  "jacinthe_battle": {
+    "sounds": [
+      "rp_music:records/jacinthe_battle"
+    ]
+  },
+  "penny_battle": {
+    "sounds": [
+      "rp_music:records/penny_battle"
+    ]
+  },
+  "rival_battle_n2b2": {
+    "sounds": [
+      "rp_music:records/rival_battle_n2b2"
+    ]
+  },
+  "teamstar_battle": {
+    "sounds": [
+      "rp_music:records/teamstar_battle"
+    ]
+  },
+  "ultranecrozma_battle": {
+    "sounds": [
+      "rp_music:records/ultranecrozma_battle"
     ]
   }
 }

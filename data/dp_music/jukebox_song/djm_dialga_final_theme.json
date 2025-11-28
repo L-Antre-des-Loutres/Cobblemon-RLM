@@ -1,0 +1,8 @@
+{
+  "comparator_output": 12,
+  "description": "DJM - Dialga Battle Theme",
+  "length_in_seconds": 500,
+  "sound_event": {
+    "sound_id": "rp_music:djm_dialga_final_theme"
+  }
+}

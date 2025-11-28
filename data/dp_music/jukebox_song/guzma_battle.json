@@ -1,0 +1,8 @@
+{
+  "comparator_output": 12,
+  "description": "SL - Guzma Battle Theme",
+  "length_in_seconds": 300,
+  "sound_event": {
+    "sound_id": "rp_music:guzma_battle"
+  }
+}
