@@ -1,0 +1,55 @@
+{
+  "target": "cobblemon:sunflora",
+  "features": ["rlm", "volcan"],
+  "forms": [
+    {
+      "name": "volcan",
+      "primaryType": "grass",
+      "secondaryType": "fire",
+      "baseStats": {
+        "hp": 45,
+        "attack": 85,
+        "defence": 85,
+        "special_attack": 85,
+        "special_defence": 85,
+        "speed": 115
+      },
+      "pokedex": [
+        "cobblemon.species.sunflora.desc"
+      ],
+      "labels": [
+        "custom"
+      ],
+      "aspects": [
+        "rlm", "volcan"
+      ],
+      "abilities": [
+        "drought",
+        "chlorophyll",
+        "h:contrary"
+      ],
+      "moves": [
+        "1:growth",
+        "1:flamewheel",
+        "1:stomp",
+        "4:flamecharge",
+        "7:bodyslam",
+        "10:protect",
+        "16:stealthrock",
+        "19:synthesis",
+        "22:bodyslam",
+        "25:takedown",
+        "28:firespin",
+        "34:solarbeam",
+        "37:overheat",
+        "39:eruption",
+        "40:sunnyday",
+        "43:overheat",
+        "50:flareblitz",
+        "60:fireblast",
+        "100:magmastorm"
+      ],
+      "battleOnly": false
+    }
+  ]
+}
