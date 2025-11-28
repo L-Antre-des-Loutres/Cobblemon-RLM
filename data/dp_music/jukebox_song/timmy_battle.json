@@ -1,7 +1,7 @@
 {
   "comparator_output": 12,
   "description": "ROSA - Timmy Battle Theme",
-  "length_in_seconds": 300,
+  "length_in_seconds": 500,
   "sound_event": {
     "sound_id": "rp_music:timmy_battle"
   }

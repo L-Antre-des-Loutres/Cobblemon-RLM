@@ -1,0 +1,8 @@
+{
+  "comparator_output": 12,
+  "description": "BW2 - Rival Battle Theme",
+  "length_in_seconds": 500,
+  "sound_event": {
+    "sound_id": "rp_music:rival_battle_n2b2"
+  }
+}

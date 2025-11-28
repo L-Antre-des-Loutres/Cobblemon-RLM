@@ -1,0 +1,8 @@
+{
+  "comparator_output": 12,
+  "description": "SL - Red & Blue Battle Theme",
+  "length_in_seconds": 500,
+  "sound_event": {
+    "sound_id": "rp_music:red_blue_battle"
+  }
+}

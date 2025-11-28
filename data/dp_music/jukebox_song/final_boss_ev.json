@@ -1,7 +1,7 @@
 {
   "comparator_output": 12,
   "description": "EV - Final boss Theme",
-  "length_in_seconds": 300,
+  "length_in_seconds": 500,
   "sound_event": {
     "sound_id": "rp_music:final_boss_ev"
   }

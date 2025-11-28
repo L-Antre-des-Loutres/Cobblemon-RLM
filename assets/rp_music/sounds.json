@@ -68,5 +68,35 @@
     "sounds": [
       "rp_music:records/gladio_battle"
     ]
+  },
+  "gym_battle_eb": {
+    "sounds": [
+      "rp_music:records/gym_battle_eb"
+    ]
+  },
+  "gym_battle_sl": {
+    "sounds": [
+      "rp_music:records/gym_battle_sl"
+    ]
+  },
+  "iris_battle": {
+    "sounds": [
+      "rp_music:records/iris_battle"
+    ]
+  },
+  "jacinthe_battle": {
+    "sounds": [
+      "rp_music:records/jacinthe_battle"
+    ]
+  },
+  "penny_battle": {
+    "sounds": [
+      "rp_music:records/penny_battle"
+    ]
+  },
+  "rival_battle_n2b2": {
+    "sounds": [
+      "rp_music:records/rival_battle_n2b2"
+    ]
   }
 }
