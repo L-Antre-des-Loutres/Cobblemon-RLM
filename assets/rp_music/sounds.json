@@ -48,5 +48,25 @@
     "sounds": [
       "rp_music:records/corvault_battle"
     ]
+  },
+  "dianthea_battle": {
+    "sounds": [
+      "rp_music:records/dianthea_battle"
+    ]
+  },
+  "djm_dialga_final_theme": {
+    "sounds": [
+      "rp_music:records/djm_dialga_final_theme"
+    ]
+  },
+  "final_boss_ev": {
+    "sounds": [
+      "rp_music:records/final_boss_ev"
+    ]
+  },
+  "gladio_battle": {
+    "sounds": [
+      "rp_music:records/gladio_battle"
+    ]
   }
 }
