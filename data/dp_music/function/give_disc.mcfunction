@@ -2,4 +2,5 @@ give @p music_disc_strad[minecraft:jukebox_playable={song:"dp_music:elsa_mina_ba
 give @p music_disc_far[minecraft:jukebox_playable={song:"dp_music:red_battle"}]
 give @p music_disc_wait[minecraft:jukebox_playable={song:"dp_music:timmy_battle"}]
 give @p music_disc_stal[minecraft:jukebox_playable={song:"dp_music:volo_battle"}]
-give @p music_disc_stal[minecraft:jukebox_playable={song:"dp_music:corvault_battle"}]
+give @p music_disc_chirp[minecraft:jukebox_playable={song:"dp_music:corvault_battle"}]
+give @p music_disc_strad[minecraft:jukebox_playable={song:"dp_music:cynthia_battle"}]
