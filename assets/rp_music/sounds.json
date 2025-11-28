@@ -18,5 +18,30 @@
     "sounds": [
       "rp_music:records/vole_battle"
     ]
+  },
+  "cynthia_battle": {
+    "sounds": [
+      "rp_music:records/cynthia_battle"
+    ]
+  },
+  "guzma_battle": {
+    "sounds": [
+      "rp_music:records/guzma_battle"
+    ]
+  },
+  "red_blue_battle": {
+    "sounds": [
+      "rp_music:records/red_blue_battle"
+    ]
+  },
+  "travis_battle": {
+    "sounds": [
+      "rp_music:records/travis_battle"
+    ]
+  },
+  "zacian_illusion": {
+    "sounds": [
+      "rp_music:records/zacian_illusion"
+    ]
   }
 }
