@@ -46,6 +46,10 @@
 				},
 				"fin": {
 					"rotation": [0, 0, "12 * Math.sin(query.anim_time * 180)"]
+				},
+				"body": {
+					"rotation": [90, 0, 0],
+					"position": [0, 9, 7]
 				}
 			}
 		},
@@ -54,8 +58,8 @@
 			"animation_length": 2,
 			"bones": {
 				"body": {
-					"rotation": [-8, 0, 0],
-					"position": [0, -1.5, 0]
+					"rotation": [90, 0, 0],
+					"position": [0, 9, 7]
 				},
 				"neck": {
 					"rotation": ["19+math.sin(q.anim_time*90*2)*0.75", 0, 0],
@@ -84,6 +88,21 @@
 				},
 				"fin": {
 					"rotation": [0, 0, "-8 * Math.sin(query.anim_time * 180)"]
+				},
+				"torso": {
+					"rotation": ["math.sin(q.anim_time*90*4-45)*1", "math.sin(q.anim_time*10/4-45/2)*3", 0]
+				},
+				"petals_front": {
+					"rotation": [0, "-(q.anim_time * 180) + 5", 0]
+				},
+				"petals_back": {
+					"rotation": [0, "(q.anim_time * 180) + 5", 0]
+				},
+				"arm_left": {
+					"rotation": [-10, 0, "-math.sin(q.anim_time*90*4-45)*1*2"]
+				},
+				"arm_right": {
+					"rotation": [-10, 0, "-math.sin(q.anim_time*90*4-45)*1*2"]
 				}
 			}
 		},
@@ -669,6 +688,10 @@
 				},
 				"fin": {
 					"rotation": [0, "-2 * Math.sin(query.anim_time * 180)", "10 * Math.sin(query.anim_time * 180*2)"]
+				},
+				"body": {
+					"rotation": [90, 0, 0],
+					"position": [0, 9, 7]
 				}
 			}
 		},
@@ -717,6 +740,10 @@
 				},
 				"fin": {
 					"rotation": [0, "-2 * Math.sin(query.anim_time * 180)", "10 * Math.sin(query.anim_time * 180*2)"]
+				},
+				"body": {
+					"rotation": [90, 0, 0],
+					"position": [0, 9, 7]
 				}
 			}
 		}
