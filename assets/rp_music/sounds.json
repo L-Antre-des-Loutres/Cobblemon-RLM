@@ -43,5 +43,10 @@
     "sounds": [
       "rp_music:records/zacian_illusion"
     ]
+  },
+  "corvault_battle": {
+    "sounds": [
+      "rp_music:records/corvault_battle"
+    ]
   }
 }
