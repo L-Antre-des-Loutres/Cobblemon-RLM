@@ -1,0 +1,6 @@
+{
+  "keys": ["ocean"],
+  "type": "flag",
+  "isAspect": true,
+  "default": false
+}

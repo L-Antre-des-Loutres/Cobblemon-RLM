@@ -1,0 +1,6 @@
+{
+  "keys": ["ciel"],
+  "type": "flag",
+  "isAspect": true,
+  "default": false
+}
