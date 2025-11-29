@@ -1,0 +1,53 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "sunflora-rlm-ocean",
+      "pokemon": "sunflora rlm ocean",
+      "presets": [ "natural" ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "20-50",
+      "weight": 9.2,
+      "weightMultiplier": {
+        "multiplier": 5.0,
+        "condition": {
+          "isRaining": true
+        }
+      },
+      "condition": {
+        "canSeeSky": true,
+        "biomes": [ "#cobblemon:is_beach", "#cobblemon:is_ocean" ]
+      }
+    },
+    {
+      "id": "sunflora-rlm-ciel",
+      "pokemon": "sunflora rlm ciel",
+      "presets": [ "natural" ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "20-50",
+      "weight": 2,
+      "condition": {
+        "biomes": [ "#cobblemon:is_plains" ]
+      }
+    },
+    {
+      "id": "sunflora-rlm-volcan",
+      "pokemon": "sunflora rlm volcan",
+      "presets": [ "natural" ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "20-50",
+      "weight": 9.2,
+      "condition": {
+        "biomes": [ "#minecraft:is_nether" ]
+      }
+    }
+  ]
+}
