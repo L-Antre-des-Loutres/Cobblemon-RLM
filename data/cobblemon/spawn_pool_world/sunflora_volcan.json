@@ -1,0 +1,20 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "sunflora-rlm-volcan",
+      "pokemon": "sunflora rlm volcan",
+      "presets": [ "natural" ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "20-50",
+      "weight": 9.2,
+      "condition": {
+        "biomes": [ "#cobblemon:is_nether" ]
+      }
+    }
+  ]
+}
