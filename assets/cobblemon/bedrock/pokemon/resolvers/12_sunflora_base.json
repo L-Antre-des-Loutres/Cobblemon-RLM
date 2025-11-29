@@ -1,0 +1,14 @@
+{
+  "species": "cobblemon:sunflora",
+  "order": 10,
+  "variations": [
+    {
+      "aspects": ["rlm", "volcan"],
+      "texture": "cobblemon:textures/pokemon/sunflora_rlm_volcan/sunflora_rlm_volcan.png"
+    },
+    {
+      "aspects": [ "rlm", "volcan", "shiny" ],
+      "texture": "cobblemon:textures/pokemon/sunflora_rlm_volcan/sunflora_rlm_volcan_shiny.png"
+    }
+  ]
+}
