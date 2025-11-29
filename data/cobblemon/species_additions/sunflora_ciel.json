@@ -8,14 +8,28 @@
       "secondaryType": "flying",
       "baseStats": {
         "hp": 85,
-        "attack": 40,
-        "defence": 92,
-        "special_attack": 108,
-        "special_defence": 92,
-        "speed": 78
+        "attack": 115,
+        "defence": 85,
+        "special_attack": 45,
+        "special_defence": 85,
+        "speed": 85
+      },
+      "behaviour": {
+        "moving": {
+          "canLook": false,
+          "fly": {
+            "canFly": false,
+            "flySpeed": 1
+          },
+          "swim": {
+            "swimSpeed": 0.2,
+            "canSwimInWater": false,
+            "canBreatheUnderwater": false
+          }
+        }
       },
       "pokedex": [
-        "cobblemon.species.spiritomb.desc"
+        "cobblemon.species.sunflora.desc"
       ],
       "labels": [
         "custom"
@@ -24,11 +38,30 @@
         "rlm", "ciel"
       ],
       "abilities": [
-        "compoundeyes",
-        "h:shadowtag"
+        "deltastream",
+        "unburden",
+        "h:contrary"
       ],
       "moves": [
-        "1:dragonascent"
+        "1:lifeforce",
+        "1:stomp",
+        "1:flowergathering",
+        "4:sweetscent",
+        "7:grasswhistle",
+        "10:airslash",
+        "13:leechseed",
+        "16:airblade",
+        "19:worryseed",
+        "22:leafblade",
+        "25:flail",
+        "28:defog",
+        "31:acrobatics",
+        "34:solarbeam",
+        "37:doubleedge",
+        "40:overheat",
+        "43:fly",
+        "50:seedflare",
+        "100:dragonascent"
       ],
       "battleOnly": false
     }
