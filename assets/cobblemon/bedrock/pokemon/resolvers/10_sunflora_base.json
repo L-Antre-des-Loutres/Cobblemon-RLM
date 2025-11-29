@@ -9,8 +9,8 @@
       "texture": "cobblemon:textures/pokemon/sunflora_rlm_ocean/sunflora_rlm_ocean.png"
     },
     {
-      "aspects": [ "rlm", "ocean", "shiny" ],
-      "texture": "cobblemon:textures/pokemon/sunflora_rlm_ocean/sunflora_rlm_ocean.png"
+      "aspects": ["rlm", "ocean", "shiny"],
+      "texture": "cobblemon:textures/pokemon/sunflora_rlm_ocean/sunflora_rlm_ocean_shiny.png"
     }
   ]
 }
