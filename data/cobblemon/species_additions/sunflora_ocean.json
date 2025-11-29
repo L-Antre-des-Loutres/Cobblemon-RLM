@@ -7,15 +7,28 @@
       "primaryType": "grass",
       "secondaryType": "water",
       "baseStats": {
-        "hp": 85,
-        "attack": 40,
-        "defence": 92,
-        "special_attack": 108,
-        "special_defence": 92,
-        "speed": 78
+        "hp": 115,
+        "attack": 85,
+        "defence": 85,
+        "special_attack": 45,
+        "special_defence": 85,
+        "speed": 85
+      },
+      "behaviour": {
+        "moving": {
+          "canLook": false,
+          "fly": {
+            "canFly": false
+          },
+          "swim": {
+            "swimSpeed": 1,
+            "canSwimInWater": true,
+            "canBreatheUnderwater": true
+          }
+        }
       },
       "pokedex": [
-        "cobblemon.species.spiritomb.desc"
+        "cobblemon.species.sunflora.desc"
       ],
       "labels": [
         "custom"
@@ -24,11 +37,32 @@
         "rlm", "ocean"
       ],
       "abilities": [
-        "compoundeyes",
-        "h:shadowtag"
+        "drizzle",
+        "swiftswim",
+        "h:contrary"
       ],
       "moves": [
-        "1:hydropump"
+        "1:growth",
+        "1:payday",
+        "1:stomp",
+        "4:flowergathering",
+        "4:watergun",
+        "7:disable",
+        "10:aquaring",
+        "13:protect",
+        "16:aquajet",
+        "19:confusion",
+        "22:waterfall",
+        "25:signaturemove",
+        "28:drainingkiss",
+        "31:yawn",
+        "34:solarbeam",
+        "35:flipturn",
+        "37:doubleedge",
+        "40:raindance",
+        "43:recover",
+        "50:extremespeed",
+        "100:originpulse"
       ],
       "battleOnly": false
     }
