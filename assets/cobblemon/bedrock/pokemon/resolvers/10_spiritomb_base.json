@@ -23,18 +23,19 @@
       ]
     },
     {
-      "aspects": ["shiny"],
+      "aspects": ["rlm", "shiny"],
+      "texture": "cobblemon:textures/pokemon/spiritomb_rlm/spiritomb_rlm.png",
       "layers": [
         {
           "name": "emissive",
           "emissive": true,
-          "texture": "cobblemon:textures/pokemon/0442_spiritomb/spiritomb_shiny_emissive.png",
+          "texture": "cobblemon:textures/pokemon/spiritomb_rlm/spiritomb_rlm_emissive_shiny.png",
           "translucent": true
         },
         {
           "name": "transparent_emissive",
           "emissive": true,
-          "texture": "cobblemon:textures/pokemon/0442_spiritomb/spiritomb_shiny_transparency.png",
+          "texture": "cobblemon:textures/pokemon/spiritomb_rlm/spiritomb_rlm_transparency_shiny.png",
           "translucent": true
         }
       ]
