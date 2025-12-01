@@ -42,7 +42,7 @@
 ### 📥 Installation
 1.  Download the `.jar` file.
 2.  Place it in your `mods` folder.
-3.  Requires **Cobblemon** and **Fabric**.
+3.  Requires **Cobblemon**.
 
 ---
 
