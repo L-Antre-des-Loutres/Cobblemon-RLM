@@ -39,6 +39,10 @@
 *   **Aphelis**
 *   **Rhinecaille**
 
+### 🎵 Custom Music
+The pack includes **22 music discs** featuring iconic Pokémon themes.
+*   **Command to obtain them:** `/function dp_music:give_disc`
+
 ### 📥 Installation
 1.  Download the `.jar` file.
 2.  Place it in your `mods` folder.
