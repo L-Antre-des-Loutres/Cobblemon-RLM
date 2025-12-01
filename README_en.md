@@ -1,10 +1,8 @@
 <div align="center">
-  <img src="assets/logos/CobblemonRLM-big.png" alt="Cobblemon RLM Logo" width="400">
+  <img src="assets/logos/CobblemonRLM-big.png" alt="Cobblemon RLM Logo" width="600">
 </div>
 
 ---
-
-# Cobblemon RLM
 
 [🇫🇷 Version Française](README.md)
 
