@@ -9,15 +9,21 @@
       "presets": [ "natural" ],
       "type": "pokemon",
       "context": "grounded",
-      "bucket": "rare",
+      "bucket": "uncommon",
       "level": "20-40",
-      "weight": 2.0,
+      "weight": 20.0,
       "condition": {
         "biomes": [
           "#cobblemon:is_overworld"
         ],
         "neededNearbyBlocks": [
-          "minecraft:soul_sand"
+          "minecraft:soul_sand",
+          "minecraft:soul_soil",
+          "minecraft:soul_fire",
+          "minecraft:soul_campfire",
+          "minecraft:soul_torch",
+          "minecraft:soul_wall_torch",
+          "minecraft:soul_lantern"
         ]
       }
     }

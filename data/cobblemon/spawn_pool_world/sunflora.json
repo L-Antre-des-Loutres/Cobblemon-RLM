@@ -11,7 +11,7 @@
       "context": "grounded",
       "bucket": "uncommon",
       "level": "20-50",
-      "weight": 9.2,
+      "weight": 10,
       "weightMultiplier": {
         "multiplier": 5.0,
         "condition": {
@@ -31,7 +31,7 @@
       "context": "grounded",
       "bucket": "uncommon",
       "level": "20-50",
-      "weight": 2,
+      "weight": 10,
       "condition": {
         "biomes": [ "#cobblemon:is_plains" ]
       }
@@ -44,7 +44,7 @@
       "context": "grounded",
       "bucket": "uncommon",
       "level": "20-50",
-      "weight": 9.2,
+      "weight": 10,
       "condition": {
         "biomes": [ "#minecraft:is_nether" ]
       }
