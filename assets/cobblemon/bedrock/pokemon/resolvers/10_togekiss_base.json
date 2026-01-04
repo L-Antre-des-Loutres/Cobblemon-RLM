@@ -1,0 +1,17 @@
+
+{
+  "species": "cobblemon:togekiss",
+  "order": 0,
+  "variations": [
+    {
+      "aspects": ["rlm"],
+      "model": "cobblemon:togekiss_rlm.geo",
+      "texture": "cobblemon:textures/pokemon/togekiss_rlm/togekiss_rlm.png",
+      "layers": []
+    },
+    {
+      "aspects": [ "rlm", "shiny" ],
+      "texture": "cobblemon:textures/pokemon/togekiss_rlm/togekiss_rlm_shiny.png"
+    }
+  ]
+}
