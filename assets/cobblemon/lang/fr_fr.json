@@ -5,5 +5,7 @@
   "cobblemon.move.frostyslide": "Glissade glacée",
   "cobblemon.move.frostyslide.desc": "+2 priorité",
   "cobblemon.move.highpropulsion": "Haute Propulsion",
-  "cobblemon.move.highpropulsion.desc": "Une attaque d'une vitesse exceptionnelle. Priorité +1. L'utilisateur subira un contrecoup"
+  "cobblemon.move.highpropulsion.desc": "Une attaque d'une vitesse exceptionnelle. Priorité +1. L'utilisateur subira un contrecoup",
+  "cobblemon.move.electrosiphon": "Siphon Énergétique",
+  "cobblemon.move.electrosiphon.desc": "Si le Pokémon adverse survit, il obtient un boost de 2 cran en attaque spéciale."
 }
