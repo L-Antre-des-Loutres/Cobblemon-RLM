@@ -34,22 +34,13 @@
         "swiftswim",
         "h:sheerforce"
       ],
-      "drops": {
-      "amount": "2",
-        "entries": [
-          {
-            "item": "minecraft:blaze_rod",
-            "quantityRange": "1-64",
-            "percentage": 66
-          }
-        ]
-      },
       "moves": [
         "egg:disable",
         "1:bubble",
         "1:aquajet",
         "1:metalclaw",
         "1:peck",
+        "36:electrosiphon",
         "38:voltswitch",
         "40:razorshell",
         "44:swagger",
