@@ -3,5 +3,7 @@
   "cobblemon.species.flammiko.desc1": "placeholder",
   "cobblemon.species.flammiko.desc2": "placeholder",
   "cobblemon.move.frostyslide": "Frosty Slide",
-  "cobblemon.move.frostyslide.desc": "+2 priority move"
+  "cobblemon.move.frostyslide.desc": "+2 priority move",
+  "cobblemon.move.highpropulsion": "High Propulsion",
+  "cobblemon.move.highpropulsion.desc": "A strike of exceptional speed. Priority +1. The user will suffer recoil."
 }

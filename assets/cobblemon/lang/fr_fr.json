@@ -3,5 +3,7 @@
   "cobblemon.species.flammiko.desc1": "placeholder",
   "cobblemon.species.flammiko.desc2": "placeholder",
   "cobblemon.move.frostyslide": "Glissade glacée",
-  "cobblemon.move.frostyslide.desc": "+2 priorité"
+  "cobblemon.move.frostyslide.desc": "+2 priorité",
+  "cobblemon.move.highpropulsion": "Haute Propulsion",
+  "cobblemon.move.highpropulsion.desc": "Une attaque d'une vitesse exceptionnelle. Priorité +1. L'utilisateur subira un contrecoup"
 }
