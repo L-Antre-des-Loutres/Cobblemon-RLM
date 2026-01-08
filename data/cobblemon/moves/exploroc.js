@@ -1,5 +1,5 @@
 ({
-    num: 153,
+    num: 500,
     accuracy: 100,
     basePower: 250,
     category: "Physical",
@@ -7,7 +7,7 @@
     pp: 5,
     priority: 0,
     flags: { protect: 1, mirror: 1, metronome: 1, noparentalbond: 1, reflectable: 1, mustpressure: 1 },
-    sideCondition: "stealthrock",
+    sideCondition: "exploroc",
     condition: {
         // this is a side condition
         onSideStart(side) {
