@@ -3,18 +3,14 @@
     "order": 10,
     "variations": [
         {
-            "aspects": [
-                "rlm"
-            ],
+            "aspects": ["rlm"],
+            "poser": "cobblemon:luxray_rlm",
             "model": "cobblemon:luxray_rlm.geo",
             "texture": "cobblemon:textures/pokemon/luxray_rlm/luxray_rlm.png",
             "layers": []
         },
         {
-            "aspects": [
-                "rlm",
-                "shiny"
-            ],
+            "aspects": ["rlm", "shiny"],
             "texture": "cobblemon:textures/pokemon/luxray_rlm/luxray_rlm_shiny.png"
         }
     ]
