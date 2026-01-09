@@ -1,6 +1,8 @@
 {
   "target": "cobblemon:luxray",
-  "features": ["rlm"],
+  "features": [
+    "rlm"
+  ],
   "forms": [
     {
       "name": "rlm",
