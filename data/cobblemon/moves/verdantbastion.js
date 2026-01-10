@@ -2,12 +2,13 @@
     accuracy: true,
     basePower: 0,
     category: "Status",
+    isNonstandard: "Past",
     name: "Verdant Bastion",
     pp: 10,
     priority: 4,
-    flags: { noassist: 1, failcopycat: 1 },
+    flags: { noassist: 1, failcopycat: 1, failinstruct: 1 },
     stallingMove: true,
-    volatileStatus: "verdantbastion",
+    volatileStatus: "kingsshield",
     onPrepareHit(pokemon) {
         return !!this.queue.willAct() && this.runEvent("StallMove", pokemon);
     },
@@ -17,7 +18,7 @@
     condition: {
         duration: 1,
         onStart(target) {
-            this.add("-singleturn", target, "move: Protect");
+            this.add("-singleturn", target, "Protect");
         },
         onTryHitPriority: 3,
         onTryHit(target, source, move) {
@@ -40,28 +41,23 @@
                 }
             }
             if (this.checkMoveMakesContact(move, source, target)) {
-                this.add("-activate", target, "move: Verdant Bastion");
                 source.side.addSideCondition("spikes");
+            } else {
+                this.boost({ def: 1 }, target, target, this.dex.getActiveMove("King's Shield"));
             }
             return this.NOT_FAIL;
         },
         onHit(target, source, move) {
-            if (move.category === "Physical") {
-                this.effectState.hitByPhysical = true;
-            }
             if (move.isZOrMaxPowered && this.checkMoveMakesContact(move, source, target)) {
-                this.damage(source.baseMaxhp / 8, source, target);
-            }
-        },
-        onEnd(target) {
-            if (!this.effectState.hitByPhysical) {
-                this.boost({ def: 1 }, target);
+                source.side.addSideCondition("spikes");
+            } else if (move.isZOrMaxPowered) {
+                this.boost({ def: 1 }, target, target, this.dex.getActiveMove("King's Shield"));
             }
         }
     },
     secondary: null,
     target: "self",
     type: "Steel",
-    zMove: { boost: { def: 1 } },
-    contestType: "Tough"
+    zMove: { effect: "clearnegativeboost" },
+    contestType: "Cool"
 })
