@@ -1,0 +1,38 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "luxray-rlm",
+      "pokemon": "luxray rlm",
+      "presets": [ "natural" ],
+      "type": "pokemon",
+      "spawnablePositionType": "grounded",
+      "bucket": "ultra-rare",
+      "level": "30-60",
+      "weight": 8.0,
+      "condition": {
+        "biomes": [
+          "#cobblemon:is_freezing"
+        ]
+      }
+    },
+    {
+      "id": "luxray2-rlm",
+      "pokemon": "luxray rlm",
+      "presets": [ "natural" ],
+      "type": "pokemon",
+      "spawnablePositionType": "grounded",
+      "bucket": "uncommon",
+      "level": "30-60",
+      "weight": 8.0,
+      "condition": {
+        "biomes": [
+          "#cobblemon:is_snowy_forest",
+          "#cobblemon:is_snowy_taiga"
+        ]
+      }
+    }
+  ]
+}

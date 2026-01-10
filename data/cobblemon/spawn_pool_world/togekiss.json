@@ -4,19 +4,17 @@
   "neededUninstalledMods": [],
   "spawns": [
     {
-      "id": "flaaffy-rlm",
-      "pokemon": "flaaffy rlm",
+      "id": "togekiss-rlm",
+      "pokemon": "togekiss rlm",
       "presets": [ "natural" ],
       "type": "pokemon",
       "spawnablePositionType": "grounded",
-      "bucket": "uncommon",
-      "level": "1-17",
-      "weight": 1.0,
+      "bucket": "ultra-rare",
+      "level": "30-60",
+      "weight": 3.0,
       "condition": {
         "biomes": [
-          "#cobblemon:nether/is_soul_sand",
-          "#cobblemon:is_end",
-          "#cobblemon:is_spooky"
+          "#cobblemon:is_end"
         ]
       }
     }
