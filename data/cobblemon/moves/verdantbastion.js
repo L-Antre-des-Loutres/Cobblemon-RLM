@@ -7,7 +7,7 @@
     priority: 4,
     flags: { noassist: 1, failcopycat: 1 },
     stallingMove: true,
-    volatileStatus: "spikyshield",
+    volatileStatus: "verdantbastion",
     onPrepareHit(pokemon) {
         return !!this.queue.willAct() && this.runEvent("StallMove", pokemon);
     },
@@ -40,16 +40,22 @@
                 }
             }
             if (this.checkMoveMakesContact(move, source, target)) {
-                this.add("-activate", source, "move: Verdant Bastion");
+                this.add("-activate", target, "move: Verdant Bastion");
                 source.side.addSideCondition("spikes");
-            } else {
-                this.boost({ def: 1 }, this.activeTarget);
             }
             return this.NOT_FAIL;
         },
         onHit(target, source, move) {
+            if (move.category === "Physical") {
+                this.effectState.hitByPhysical = true;
+            }
             if (move.isZOrMaxPowered && this.checkMoveMakesContact(move, source, target)) {
                 this.damage(source.baseMaxhp / 8, source, target);
+            }
+        },
+        onEnd(target) {
+            if (!this.effectState.hitByPhysical) {
+                this.boost({ def: 1 }, target);
             }
         }
     },
