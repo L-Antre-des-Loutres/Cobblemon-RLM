@@ -44,16 +44,6 @@
                 "bedrock(luxray_rlm, battle_idle)",
                 "bedrock(luxray_rlm, blink)"
             ]
-        },
-        "floating": {
-            "poseName": "floating",
-            "transformTicks": 10,
-            "poseTypes": [
-                "FLOAT"
-            ],
-            "animations": [
-                "bedrock(luxray_rlm, ground_idle)"
-            ]
         }
     }
 }
