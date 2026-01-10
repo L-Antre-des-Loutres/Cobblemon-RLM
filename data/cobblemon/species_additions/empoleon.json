@@ -34,16 +34,6 @@
         "swiftswim",
         "h:sheerforce"
       ],
-      "drops": {
-      "amount": "2",
-        "entries": [
-          {
-            "item": "minecraft:blaze_rod",
-            "quantityRange": "1-64",
-            "percentage": 66
-          }
-        ]
-      },
       "moves": [
         "1:tackle",
         "1:growl",
