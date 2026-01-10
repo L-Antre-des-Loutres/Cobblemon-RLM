@@ -20,6 +20,7 @@
         "standing": {
             "poseName": "standing",
             "transformTicks": 10,
+            "isBattle": false,
             "poseTypes": [
                 "STAND",
                 "NONE",
@@ -28,20 +29,28 @@
             ],
             "animations": [
                 "q.look('head')",
-                "bedrock(luxray_rlm, ground_idle)",
-                "bedrock(luxray_rlm, blink)"
+                "bedrock(luxray_rlm, ground_idle)"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('luxray_rlm', 'blink')"
             ]
         },
         "battle-standing": {
             "poseTypes": ["STAND"],
             "isBattle": true,
-            "animations": ["q.look('head')", "q.bedrock('luxray_rlm', 'battle_idle')"],
-            "quirks": ["q.bedrock_quirk('luxray_rlm', 'blink')"]
+            "animations": [
+                "q.look('head')",
+                "q.bedrock('luxray_rlm', 'battle_idle')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('luxray_rlm', 'blink')"
+            ]
         },
         "sleep": {
             "poseTypes": ["SLEEP"],
-            "animations": ["q.bedrock('luxray_rlm', 'sleep')"]
+            "animations": [
+                "q.bedrock('luxray_rlm', 'sleep')"
+            ]
         }
-
     }
 }
