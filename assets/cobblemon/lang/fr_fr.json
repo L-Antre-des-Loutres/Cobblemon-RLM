@@ -9,5 +9,7 @@
   "cobblemon.move.electrosiphon": "Siphon Énergétique",
   "cobblemon.move.electrosiphon.desc": "Si le Pokémon adverse survit, il obtient un boost de 2 cran en attaque spéciale.",
   "cobblemon.move.verdantbastion": "Rempart Floracier",
-  "cobblemon.move.verdantbastion.desc": "Un abri comme Bouclier Royal pour l'instant."
+  "cobblemon.move.verdantbastion.desc": "Un abri comme Bouclier Royal pour l'instant.",
+  "cobblemon.ability.dragonlate": "Peau Draconique",
+  "cobblemon.ability.dragonlate.desc": "Sa peau draconique transforme les attaques normal en attaque de type Dragon."
 }

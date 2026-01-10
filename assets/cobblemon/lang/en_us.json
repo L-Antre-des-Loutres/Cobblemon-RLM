@@ -9,5 +9,7 @@
   "cobblemon.move.electrosiphon": "Electro Siphon",
   "cobblemon.move.electrosiphon.desc": "If the opposing Pokémon survives, it gains a 2-stage boost to Special Attack.",
   "cobblemon.move.verdantbastion": "Verdant Bastion",
-  "cobblemon.move.verdantbastion.desc": "King Shield copy (for the moment)."
+  "cobblemon.move.verdantbastion.desc": "King Shield copy (for the moment).",
+  "cobblemon.ability.dragonlate": "Dragonate",
+  "cobblemon.ability.dragonlate.desc": "Its draconic skin turns Normal-type moves into Dragon-type moves."
 }
