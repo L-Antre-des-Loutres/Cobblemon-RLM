@@ -7,15 +7,17 @@
       "id": "ampharos-rlm",
       "pokemon": "ampharos rlm",
       "presets": [ "natural" ],
-      "timeRange": ["night"],
       "type": "pokemon",
-      "context": "grounded",
+      "spawnablePositionType": "grounded",
       "bucket": "ultra-rare",
       "level": "30-60",
       "weight": 3.0,
       "condition": {
-        "canSeeSky": true,
-        "biomes": [ "#cobblemon:is_plains" ]
+        "biomes": [
+          "#cobblemon:nether/is_soul_sand",
+          "#cobblemon:is_end",
+          "#cobblemon:is_spooky"
+        ]
       }
     }
   ]
