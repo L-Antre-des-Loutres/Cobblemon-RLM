@@ -32,16 +32,6 @@
                 "bedrock(luxray_rlm, blink)"
             ]
         },
-        "walking": {
-            "poseName": "walking",
-            "transformTicks": 10,
-            "poseTypes": [
-                "WALK"
-            ],
-            "animations": [
-                "bedrock(luxray_rlm, ground_idle)"
-            ]
-        },
         "battle-standing": {
             "poseName": "battle-standing",
             "transformTicks": 10,
@@ -60,16 +50,6 @@
             "transformTicks": 10,
             "poseTypes": [
                 "FLOAT"
-            ],
-            "animations": [
-                "bedrock(luxray_rlm, ground_idle)"
-            ]
-        },
-        "swimming": {
-            "poseName": "swimming",
-            "transformTicks": 10,
-            "poseTypes": [
-                "SWIM"
             ],
             "animations": [
                 "bedrock(luxray_rlm, ground_idle)"
