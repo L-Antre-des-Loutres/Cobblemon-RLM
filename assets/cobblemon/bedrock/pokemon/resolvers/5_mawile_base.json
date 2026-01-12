@@ -7,7 +7,6 @@
             "poser": "cobblemon:new_mawile",
             "model": "cobblemon:new_mawile.geo",
             "texture": "cobblemon:textures/pokemon/mawile/new_mawile.png",
-            "shoulderMountable":true,
             "layers": []
         }
     ]
