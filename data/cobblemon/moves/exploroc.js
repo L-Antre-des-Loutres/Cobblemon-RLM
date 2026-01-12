@@ -1,4 +1,5 @@
 ({
+    num: 17002,
     accuracy: 100,
     basePower: 250,
     category: "Physical",
