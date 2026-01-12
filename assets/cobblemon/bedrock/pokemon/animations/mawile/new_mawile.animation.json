@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.mawile.ground_idle": {
+		"animation.new_mawile.ground_idle": {
 			"loop": true,
 			"animation_length": 10,
 			"bones": {
@@ -109,7 +109,7 @@
 				}
 			}
 		},
-		"animation.mawile.battle_idle": {
+		"animation.new_mawile.battle_idle": {
 			"loop": true,
 			"animation_length": 10,
 			"bones": {
@@ -240,7 +240,7 @@
 				}
 			}
 		},
-		"animation.mawile.blink": {
+		"animation.new_mawile.blink": {
 			"animation_length": 0.1667,
 			"bones": {
 				"eyelid_left": {
@@ -259,7 +259,7 @@
 				}
 			}
 		},
-		"animation.mawile.shoulder_left": {
+		"animation.new_mawile.shoulder_left": {
 			"loop": true,
 			"animation_length": 3,
 			"bones": {
@@ -380,7 +380,7 @@
 				}
 			}
 		},
-		"animation.mawile.shoulder_right": {
+		"animation.new_mawile.shoulder_right": {
 			"loop": true,
 			"bones": {
 				"body": {
@@ -503,8 +503,9 @@
 				}
 			}
 		},
-		"animation.mawile.quirk_look": {
+		"animation.new_mawile.quirk_look": {
 			"animation_length": 3,
+			"override_previous_animation": true,
 			"bones": {
 				"arm_left": {
 					"rotation": [0, -25, 47.5]
@@ -709,10 +710,7 @@
 							"pre": [0, 0, 0],
 							"post": [0, 0, 1]
 						},
-						"2.9583": {
-							"pre": [0, 0, 1],
-							"post": [0, 0, 1]
-						}
+						"2.9583": [0, 0, 1]
 					}
 				},
 				"pupil_left": {
@@ -722,15 +720,12 @@
 							"pre": [0, 0, 1],
 							"post": [0, 0, 0]
 						},
-						"2.9583": {
-							"pre": [0, 0, 0],
-							"post": [0, 0, 0]
-						}
+						"2.9583": [0, 0, 0]
 					}
 				}
 			}
 		},
-		"animation.mawile.cry": {
+		"animation.new_mawile.cry": {
 			"animation_length": 1.5,
 			"bones": {
 				"head": {
@@ -783,7 +778,7 @@
 				}
 			}
 		},
-		"animation.mawile.damage": {
+		"animation.new_mawile.damage": {
 			"animation_length": 0.6667,
 			"bones": {
 				"arm_left": {
@@ -1110,7 +1105,7 @@
 				}
 			}
 		},
-		"animation.mawile.faint": {
+		"animation.new_mawile.faint": {
 			"animation_length": 3,
 			"bones": {
 				"arm_left": {
@@ -1592,7 +1587,7 @@
 				}
 			}
 		},
-		"animation.mawile.special": {
+		"animation.new_mawile.special": {
 			"animation_length": 1.25,
 			"bones": {
 				"arm_left": {
@@ -1860,8 +1855,9 @@
 				}
 			}
 		},
-		"animation.mawile.quick_rotate": {
+		"animation.new_mawile.quick_rotate": {
 			"animation_length": 1.25,
+			"override_previous_animation": true,
 			"bones": {
 				"arm_left": {
 					"rotation": {
