@@ -11,5 +11,7 @@
   "cobblemon.move.verdantbastion": "Rempart Floracier",
   "cobblemon.move.verdantbastion.desc": "Un abri comme Bouclier Royal pour l'instant.",
   "cobblemon.ability.dragonlate": "Peau Draconique",
-  "cobblemon.ability.dragonlate.desc": "Sa peau draconique transforme les attaques normal en attaque de type Dragon."
+  "cobblemon.ability.dragonlate.desc": "Sa peau draconique transforme les attaques normal en attaque de type Dragon.",
+  "cobblemon.ability.psychoprio": "Psycho-Prio",
+  "cobblemon.ability.psychoprio.desc": "L’utilisateur du talent est prioritaire sur l’ensemble de ses attaques tant qu’il a plus de 50 % de ses PV."
 }
