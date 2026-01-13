@@ -1,14 +1,14 @@
 {
-    "portraitScale": 1.25,
+    "portraitScale": 2.2,
     "portraitTranslation": [
         0,
-        0.5,
+        -0.5,
         0
     ],
-    "profileScale": 0.8,
+    "profileScale": 1,
     "profileTranslation": [
-        0,
-        0.4,
+        -0.2,
+        0.3,
         0
     ],
     "rootBone": "mawile",
@@ -32,7 +32,7 @@
                 "bedrock(new_mawile, ground_idle)"
             ],
             "quirks": [
-                "q.bedrock_quirk('new_mawile', 'blink')"
+                "q.bedrock_primary_quirk ('new_mawile', q.array('blink', 'quick_rotate'), 6, 20, 1)"
             ]
         },
         "battle-standing": {
@@ -43,27 +43,28 @@
                 "q.bedrock('new_mawile', 'battle_idle')"
             ],
             "quirks": [
-                "q.bedrock_quirk('new_mawile', 'blink')",
-                "q.bedrock_quirk('new_mawile', 'quirk_look')",
-                "q.bedrock_quirk('new_mawile', 'quick_rotate')"
+                "q.bedrock_primary_quirk ('new_mawile', q.array('quirk_look', 'quick_rotate'), 6, 20, 1)",
+                "q.bedrock_quirk ('new_mawile', q.array('blink', 'cry'), 6, 20, 1)"
             ]
         },
         "shoulder_left": {
             "poseTypes": ["SHOULDER_LEFT"],
             "animations": [
                 "q.look('head')",
-                "q.bedrock('new_mawile', 'shoulder_left')",
-                "q.bedrock_quirk('new_mawile', 'blink')",
-                "q.bedrock_quirk('new_mawile', 'cry')"
+                "q.bedrock('new_mawile', 'shoulder_left')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('new_mawile', q.array('blink', 'cry', 'quirk_look', 'quick_rotate'), 6, 20, 1)"
             ]
         },
         "shoulder_right": {
             "poseTypes": ["SHOULDER_RIGHT"],
             "animations": [
                 "q.look('head')",
-                "q.bedrock('new_mawile', 'shoulder_right')",
-                "q.bedrock_quirk('new_mawile', 'blink')",
-                "q.bedrock_quirk('new_mawile', 'cry')"
+                "q.bedrock('new_mawile', 'shoulder_right')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('new_mawile', q.array('blink', 'cry', 'quirk_look', 'quick_rotate'), 6, 20, 1)"
             ]
         }
     }
