@@ -8,6 +8,7 @@
       "name": "rlm",
       "primaryType": "ice",
       "shoulderMountable":true,
+      "shoulderEffects": [ "night_vision" ],
       "baseStats": {
         "hp": 45,
         "attack": 75,
