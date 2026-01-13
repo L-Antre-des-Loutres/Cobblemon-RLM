@@ -1,8 +1,8 @@
 {
-    "portraitScale": 1.25,
+    "portraitScale": 1.75,
     "portraitTranslation": [
-        0,
-        0.5,
+        -0.8,
+        0.6,
         0
     ],
     "profileScale": 0.8,
