@@ -30,8 +30,8 @@
         "rlm"
       ],
       "abilities": [
-        "magicguard",
-        "mistysurge",
+        "psychoprio",
+        "psychoprio",
         "h:mistysurge"
       ],
       "drops": {
@@ -39,7 +39,7 @@
         "entries": [
           {
             "item": "minecraft:blaze_rod",
-            "quantityRange": "1-64",
+            "quantityRange": "1-5",
             "percentage": 66
           }
         ]
