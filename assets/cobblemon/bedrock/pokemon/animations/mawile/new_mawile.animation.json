@@ -3822,6 +3822,24 @@
 				"head_jaw3": {
 					"rotation": ["-0.5+math.sin(q.anim_time*80)", 0, 0]
 				},
+				"hair_left": {
+					"rotation": [0, -30, 0]
+				},
+				"hair_left2": {
+					"rotation": [-2.53841, -7.93398, 92.52416]
+				},
+				"hair_left3": {
+					"rotation": [-6.0816, 0.5276, 3.33377]
+				},
+				"hair_right": {
+					"rotation": [-25.50518, -30.83767, 68.65657]
+				},
+				"hair_right2": {
+					"rotation": [0, 0, 17.5]
+				},
+				"hair_right3": {
+					"rotation": [0, 0, -67.5]
+				},
 				"leg_left": {
 					"rotation": ["-34.8851175073 - 3 - math.sin(q.anim_time*80)", 46.22792, 14.83051]
 				},
