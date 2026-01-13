@@ -1,0 +1,78 @@
+{
+    "portraitScale": 1.8,
+    "portraitTranslation": [
+        -0.4,
+        -0.2,
+        0
+    ],
+    "profileScale": 0.8,
+    "profileTranslation": [
+        0,
+        0.4,
+        0
+    ],
+    "rootBone": "shinx",
+    "animations": {
+        "cry": "q.bedrock_stateful('shinx_rlm', 'cry')"
+    },
+    "poses": {
+        "standing": {
+            "poseName": "standing",
+            "isBattle": false,
+            "transformTicks": 10,
+            "poseTypes": [
+                "STAND",
+                "NONE",
+                "PORTRAIT",
+                "PROFILE"
+            ],
+            "animations": [
+                "q.look('head')",
+                "q.bedrock('shinx_rlm', 'ground_idle')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('shinx_rlm', 'blink')",
+                "q.bedrock_quirk('shinx_rlm', 'quirk')"
+            ]
+        },
+        "battle-standing": {
+            "poseTypes": ["STAND"],
+            "isBattle": true,
+            "animations": [
+                "q.look('head')",
+                "q.bedrock('shinx_rlm', 'ground_idle')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('shinx_rlm', 'blink')",
+                "q.bedrock_quirk('shinx_rlm', 'cry')",
+                "q.bedrock_quirk('shinx_rlm', 'quirk')"
+            ]
+        },
+        "shoulder_left": {
+            "poseTypes": ["SHOULDER_LEFT"],
+            "animations": [
+                "q.look('head')",
+                "q.bedrock('shinx_rlm', 'shoulder_left')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('shinx_rlm', q.array('blink', 'cry', 'quirk'), 6, 20, 1)"
+            ]
+        },
+        "shoulder_right": {
+            "poseTypes": ["SHOULDER_RIGHT"],
+            "animations": [
+                "q.look('head')",
+                "q.bedrock('shinx_rlm', 'shoulder_right')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('shinx_rlm', q.array('blink', 'cry', 'quirk'), 6, 20, 1)"
+            ]
+        },
+        "sleep": {
+            "poseTypes": ["SLEEP"],
+            "animations": [
+                "q.bedrock('shinx_rlm', 'sleep')"
+            ]
+        }
+    }
+}

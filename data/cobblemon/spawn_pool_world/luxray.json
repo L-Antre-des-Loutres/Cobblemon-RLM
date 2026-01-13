@@ -11,22 +11,7 @@
       "spawnablePositionType": "grounded",
       "bucket": "ultra-rare",
       "level": "30-60",
-      "weight": 8.0,
-      "condition": {
-        "biomes": [
-          "#cobblemon:is_freezing"
-        ]
-      }
-    },
-    {
-      "id": "luxray2-rlm",
-      "pokemon": "luxray rlm",
-      "presets": [ "natural" ],
-      "type": "pokemon",
-      "spawnablePositionType": "grounded",
-      "bucket": "uncommon",
-      "level": "30-60",
-      "weight": 8.0,
+      "weight": 12.0,
       "condition": {
         "biomes": [
           "#cobblemon:is_snowy_forest",

@@ -1,5 +1,5 @@
 {
-  "target": "cobblemon:luxray",
+  "target": "cobblemon:luxio",
   "features": [
     "rlm"
   ],
@@ -8,15 +8,15 @@
       "name": "rlm",
       "primaryType": "ice",
       "baseStats": {
-        "hp": 84,
-        "attack": 130,
-        "defence": 70,
-        "special_attack": 75,
-        "special_defence": 74,
-        "speed": 90
+        "hp": 60,
+        "attack": 95,
+        "defence": 49,
+        "special_attack": 50,
+        "special_defence": 49,
+        "speed": 60
       },
       "pokedex": [
-        "cobblemon.species.luxray.desc"
+        "cobblemon.species.luxio.desc"
       ],
       "labels": [
         "custom"
@@ -159,8 +159,20 @@
         "legacy:snore",
         "legacy:toxic"
       ],
-      "preEvolution": "luxio",
-      "evolutions": [],
+      "preEvolution": "shinx",
+      "evolutions": [
+        {
+        "id": "luxio-luxray-rlm",
+        "variant": "level_up",
+        "result": "luxray rlm=true",
+        "consumeHeldItem": false,
+        "requirements": [
+          {
+            "variant": "level",
+            "minLevel": 30
+          }
+        ]
+      }],
       "battleOnly": false
     }
   ]
