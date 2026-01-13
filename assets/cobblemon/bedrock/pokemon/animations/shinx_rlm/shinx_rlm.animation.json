@@ -325,7 +325,7 @@
 			"bones": {
 				"body": {
 					"rotation": [-30, 0, 0],
-					"position": [0, -4, 3]
+					"position": [-2, -4, 3]
 				},
 				"tail_1": {
 					"rotation": [25, "-Math.sin(query.anim_time * 180) * 30", 0]
@@ -388,7 +388,7 @@
 			"bones": {
 				"body": {
 					"rotation": [-30, 0, 0],
-					"position": [0, -4, 3]
+					"position": [2, -4, 3]
 				},
 				"tail_1": {
 					"rotation": [25, "Math.sin(query.anim_time * 180) * 30", 0]
@@ -443,7 +443,8 @@
 						"3.4167": [15, 0, 0]
 					}
 				}
-			}
+			},
+			"sound_effects": {}
 		}
 	}
 }
