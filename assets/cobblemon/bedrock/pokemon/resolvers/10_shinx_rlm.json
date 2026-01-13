@@ -9,7 +9,6 @@
             "poser": "cobblemon:shinx_rlm",
             "model": "cobblemon:shinx_rlm.geo",
             "texture": "cobblemon:textures/pokemon/shinx_rlm/shinx_rlm.png",
-            "shoulderMountable":true,
             "layers": [
                 {
                     "name": "emissive",
@@ -30,7 +29,6 @@
             "poser": "cobblemon:shinx",
             "model": "cobblemon:shinx_rlm.geo",
             "texture": "cobblemon:textures/pokemon/shinx_rlm/shinx_rlm_shiny.png",
-            "shoulderMountable":true,
             "layers": [
                 {
                     "name": "emissive",

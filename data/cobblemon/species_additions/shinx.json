@@ -7,6 +7,7 @@
     {
       "name": "rlm",
       "primaryType": "ice",
+      "shoulderMountable":true,
       "baseStats": {
         "hp": 45,
         "attack": 75,
