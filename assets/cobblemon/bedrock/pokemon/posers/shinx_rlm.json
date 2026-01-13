@@ -1,0 +1,56 @@
+{
+    "portraitScale": 1.25,
+    "portraitTranslation": [
+        0,
+        0.5,
+        0
+    ],
+    "profileScale": 0.8,
+    "profileTranslation": [
+        0,
+        0.4,
+        0
+    ],
+    "rootBone": "luxio",
+    "animations": {
+        "cry": "q.bedrock_stateful('luxio_rlm', 'cry')"
+    },
+    "poses": {
+        "standing": {
+            "poseName": "standing",
+            "isBattle": false,
+            "transformTicks": 10,
+            "poseTypes": [
+                "STAND",
+                "NONE",
+                "PORTRAIT",
+                "PROFILE"
+            ],
+            "animations": [
+                "q.look('head')",
+                "bedrock(luxio_rlm, ground_idle)"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('luxio_rlm', 'blink')"
+            ]
+        },
+        "battle-standing": {
+            "poseTypes": ["STAND"],
+            "isBattle": true,
+            "animations": [
+                "q.look('head')",
+                "q.bedrock('luxio_rlm', 'ground_idle')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('luxio_rlm', 'blink')",
+                "q.bedrock_quirk('luxio_rlm', 'cry')"
+            ]
+        },
+        "sleep": {
+            "poseTypes": ["SLEEP"], 
+            "animations": [
+                "q.bedrock('luxio_rlm', 'sleep')"
+            ]
+        }
+    }
+}

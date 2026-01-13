@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.luxio.idle": {
+		"animation.luxio_rlm.ground_idle": {
 			"loop": true,
 			"animation_length": 10,
 			"bones": {
@@ -37,7 +37,7 @@
 				}
 			}
 		},
-		"animation.luxio.sleep": {
+		"animation.luxio_rlm.sleep": {
 			"loop": true,
 			"animation_length": 14.4167,
 			"bones": {
@@ -143,7 +143,7 @@
 				}
 			}
 		},
-		"animation.luxio.blink": {
+		"animation.luxio_rlm.blink": {
 			"animation_length": 0.1,
 			"bones": {
 				"eye_right": {
@@ -160,39 +160,39 @@
 				}
 			}
 		},
-		"animation.luxio.cry": {
+		"animation.luxio_rlm.cry": {
 			"animation_length": 3,
 			"bones": {
 				"neck": {
 					"rotation": {
-						"0.0": [0, 0, 0],
-						"0.0417": [-0.32016, 0, 0],
-						"0.0833": [-1.20089, 0, 0],
-						"0.125": [-2.43399, 0, 0],
-						"0.2083": [-5.02126, 0, 0],
-						"0.25": [-6.07924, 0, 0],
-						"0.2917": [-6.90635, 0, 0],
-						"0.3333": [-7.5, 0, 0]
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.3333": {
+							"post": [-7.5, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"3.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
 					}
 				},
 				"head": {
 					"rotation": {
-						"0.0": [0, 0, 0],
-						"0.0417": [-0.75975, 0, 0],
-						"0.0833": [-2.55701, 0, 0],
-						"0.125": [-4.04694, 0, 0],
-						"0.1667": [-5.23363, 0, 0],
-						"0.2083": [-6.22621, 0, 0],
-						"0.7083": [-12.8412, 0, 0],
-						"1.0": [-15, 0, 0],
-						"1.2917": [-16.28303, 0, 0],
-						"1.5": [-16.1103, 0, 0],
-						"1.6667": [-14.7379, 0, 0],
-						"1.7083": [-14.15291, 0, 0],
-						"2.0": [-8.14723, 0, 0],
-						"2.2083": [-4.51549, 0, 0],
-						"2.5833": [-0.96172, 0, 0],
-						"2.7917": [0, 0, 0]
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.0": {
+							"post": [-15, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"3.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
 					}
 				},
 				"mouth_closed": {
