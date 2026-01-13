@@ -1,0 +1,38 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "shinx-rlm",
+      "pokemon": "shinx rlm",
+      "presets": [ "natural" ],
+      "type": "pokemon",
+      "spawnablePositionType": "grounded",
+      "bucket": "uncommon",
+      "level": "3-15",
+      "weight": 8.0,
+      "condition": {
+        "biomes": [
+          "#cobblemon:is_freezing"
+        ]
+      }
+    },
+    {
+      "id": "shinx2-rlm",
+      "pokemon": "shinx rlm",
+      "presets": [ "natural" ],
+      "type": "pokemon",
+      "spawnablePositionType": "grounded",
+      "bucket": "common",
+      "level": "3-15",
+      "weight": 8.0,
+      "condition": {
+        "biomes": [
+          "#cobblemon:is_snowy_forest",
+          "#cobblemon:is_snowy_taiga"
+        ]
+      }
+    }
+  ]
+}
