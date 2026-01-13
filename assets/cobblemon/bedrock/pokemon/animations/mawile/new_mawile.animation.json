@@ -1069,10 +1069,22 @@
 					"rotation": [0, -135, 0],
 					"position": {
 						"0.0": [3, -0.5, 0],
-						"1.125": {"pre": [3, -0.5, 0], "post": [3, -0.6, 0]},
-						"1.2083": {"pre": [3, -0.6, 0], "post": [3, -0.5, 0]},
-						"1.2917": {"pre": [3, -0.5, 0], "post": [3, -0.6, 0]},
-						"1.375": {"pre": [3, -0.6, 0], "post": [3, -0.5, 0]}
+						"1.125": {
+							"pre": [3, -0.5, 0],
+							"post": [3, -0.6, 0]
+						},
+						"1.2083": {
+							"pre": [3, -0.6, 0],
+							"post": [3, -0.5, 0]
+						},
+						"1.2917": {
+							"pre": [3, -0.5, 0],
+							"post": [3, -0.6, 0]
+						},
+						"1.375": {
+							"pre": [3, -0.6, 0],
+							"post": [3, -0.5, 0]
+						}
 					}
 				},
 				"torso": {
@@ -3823,6 +3835,74 @@
 							"post": [0, 0, 0]
 						}
 					}
+				}
+			}
+		},
+		"animation.new_mawile.sleep": {
+			"loop": true,
+			"animation_length": 4.5,
+			"bones": {
+				"body": {
+					"rotation": [90, 0, -90],
+					"position": [0, 1, 0]
+				},
+				"torso": {
+					"rotation": [0, 20, 0]
+				},
+				"chest": {
+					"rotation": [0, 15, 0]
+				},
+				"arm_left": {
+					"rotation": [0, 100, 0]
+				},
+				"arm_left2": {
+					"rotation": [-37.5, 10, 0]
+				},
+				"hand_left": {
+					"rotation": [0, 12.5, 0]
+				},
+				"arm_right": {
+					"rotation": [-40, 45, 0]
+				},
+				"arm_right2": {
+					"rotation": [-32.5, 0, 0]
+				},
+				"hand_right": {
+					"rotation": [0, 0, -30]
+				},
+				"head": {
+					"rotation": [0, 0, 0]
+				},
+				"eyelid_left": {
+					"position": [0.1, 0, 0]
+				},
+				"eyelid_right": {
+					"position": [-0.1, 0, 0]
+				},
+				"head_mouth_neck": {
+					"rotation": [4.30963, -29.7174, -48.64388],
+					"position": [-1, 0, 0]
+				},
+				"head_mouth_neck2": {
+					"rotation": [0, 0, -40]
+				},
+				"head_mouth_neck3": {
+					"rotation": [0, 0, -25]
+				},
+				"head_mouth": {
+					"rotation": [689.82386, -78.94254, -405.03331]
+				},
+				"head_jaw2": {
+					"rotation": ["-1+math.sin(q.anim_time*80)", 0, 0]
+				},
+				"head_jaw3": {
+					"rotation": ["-0.5+math.sin(q.anim_time*80)", 0, 0]
+				},
+				"leg_left": {
+					"rotation": ["-34.8851175073 - 3 - math.sin(q.anim_time*80)", 46.22792, 14.83051]
+				},
+				"leg_right": {
+					"rotation": ["41.4455737171 - 3 - math.sin(q.anim_time*80)", 19.23655, 4.05496]
 				}
 			}
 		},
