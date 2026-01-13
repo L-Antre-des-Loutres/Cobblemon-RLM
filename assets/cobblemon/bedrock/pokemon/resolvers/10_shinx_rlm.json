@@ -26,7 +26,7 @@
                 "rlm",
                 "shiny"
             ],
-            "poser": "cobblemon:shinx",
+            "poser": "cobblemon:shinx_rlm",
             "model": "cobblemon:shinx_rlm.geo",
             "texture": "cobblemon:textures/pokemon/shinx_rlm/shinx_rlm_shiny.png",
             "layers": [
