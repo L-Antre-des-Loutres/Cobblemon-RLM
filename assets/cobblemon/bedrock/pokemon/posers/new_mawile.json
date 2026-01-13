@@ -47,6 +47,24 @@
                 "q.bedrock_quirk('new_mawile', 'quirk_look')",
                 "q.bedrock_quirk('new_mawile', 'quick_rotate')"
             ]
+        },
+        "shoulder_left": {
+            "poseTypes": ["SHOULDER_LEFT"],
+            "animations": [
+                "q.look('head')",
+                "q.bedrock('new_mawile', 'shoulder_left')",
+                "q.bedrock_quirk('new_mawile', 'blink')",
+                "q.bedrock_quirk('new_mawile', 'cry')"
+            ]
+        },
+        "shoulder_right": {
+            "poseTypes": ["SHOULDER_RIGHT"],
+            "animations": [
+                "q.look('head')",
+                "q.bedrock('new_mawile', 'shoulder_right')",
+                "q.bedrock_quirk('new_mawile', 'blink')",
+                "q.bedrock_quirk('new_mawile', 'cry')"
+            ]
         }
     }
 }
