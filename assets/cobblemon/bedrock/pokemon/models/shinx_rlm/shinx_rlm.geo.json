@@ -193,6 +193,14 @@
 					]
 				},
 				{
+					"name": "surprised_mouth",
+					"parent": "head",
+					"pivot": [0, 10.25, -5.75],
+					"cubes": [
+						{"origin": [-0.75, 9.5, -5.75], "size": [1.5, 1.5, 0], "inflate": 0.02, "uv": [17, 63]}
+					]
+				},
+				{
 					"name": "back_leg_right",
 					"parent": "body",
 					"pivot": [-1.75, 5, 5],
