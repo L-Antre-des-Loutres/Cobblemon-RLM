@@ -1,0 +1,16 @@
+{
+  "species": "cobblemon:rineshell",
+  "order": 0,
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon:rineshell",
+      "model": "cobblemon:rineshell.geo",
+      "texture": "cobblemon:textures/pokemon/rineshell/rineshell.png"
+    },
+    {
+      "aspects": [ "shiny" ],
+      "texture": "cobblemon:textures/pokemon/rineshell/rineshell_shiny.png"
+    }
+  ]
+}

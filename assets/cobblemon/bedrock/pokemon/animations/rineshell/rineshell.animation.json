@@ -88,10 +88,7 @@
 				},
 				"head": {
 					"rotation": ["15 + 2 * Math.sin(query.anim_time * 108)", -30, "-15 - 2 * Math.sin(query.anim_time * 108)"],
-					"position": {
-						"0.0": [0, 0, 0],
-						"2.0417": [0, 0, -1]
-					}
+					"position": [0, 0, -1]
 				},
 				"front_leg_right": {
 					"rotation": [0, 0, 10]
