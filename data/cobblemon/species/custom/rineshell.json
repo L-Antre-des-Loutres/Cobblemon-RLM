@@ -1,0 +1,98 @@
+{
+  "implemented": true,
+  "name": "rineshell",
+  "nationalPokedexNumber": 1027,
+  "labels": [ "custom" ],
+  "pokedex": [
+    "cobblemon.species.rineshell.desc1",
+    "cobblemon.species.rineshell.desc2"
+  ],
+  "height": 2,
+  "weight": 100,
+  "features": [],
+  "forms": [
+    { "name": "normal" }
+  ],
+  "shoulderMountable": true,
+  "shoulderEffects": [
+    {
+      "type": "potion_effect",
+      "effect": "minecraft:resistance",
+      "amplifier": 1,
+      "ambient": true,
+      "showParticles": false,
+      "showIcon": false
+    }
+  ],
+
+  "primaryType": "steel",
+  "secondaryType": "normal",
+  "baseStats": {
+    "hp": 50,
+    "attack": 40,
+    "defence": 80,
+    "special_attack": 40,
+    "special_defence": 80,
+    "speed": 70
+  },
+  "catchRate": 255,
+  "maleRatio": 0.5,
+  "baseExperienceYield": 120,
+  "experienceGroup": "fast",
+  "eggCycles": 25,
+  "eggGroups": [
+    "monster"
+  ],
+  "baseFriendship": 70,
+  "evYield": {
+    "special_attack": 1,
+    "speed": 2
+  },
+
+  "moves": [
+    "1:tackle"
+  ],
+  "abilities": [
+    "sturdy",
+    "anticipation",
+    "h:weakarmor"
+  ],
+
+  "evolutions": [ ],
+
+  "baseScale": 0.5,
+  "hitbox": {
+    "width": 1,
+    "height": 1.4,
+    "fixed": false
+  },
+  "drops": {
+    "amount": "2",
+    "entries": [
+      {
+        "item": "minecraft:rabbit_foot",
+        "quantityRange": "1-4",
+        "percentage": 44
+      }
+    ]
+  },
+  "behaviour": {
+    "moving": {
+      "canLook": false,
+      "fly": {
+        "canFly": false
+      },
+      "swim": {
+        "swimSpeed": 0.1,
+        "canSwimInWater": true,
+        "canBreatheUnderwater": false
+      },
+      "resting": {
+        "canSleep": true,
+        "willSleepOnBed": true,
+        "depth": "normal",
+        "light": "0-12"
+      }
+    }
+  }
+}
