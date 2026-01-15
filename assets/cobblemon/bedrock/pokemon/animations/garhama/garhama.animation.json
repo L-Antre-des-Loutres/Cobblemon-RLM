@@ -6,7 +6,7 @@
 			"animation_length": 9,
 			"bones": {
 				"body": {
-					"rotation": ["2 * Math.sin(query.anim_time * 40)", 0, 0],
+					"rotation": ["2 * Math.sin(query.anim_time * 40)", "2 * Math.sin(query.anim_time * 40*2)", 0],
 					"position": [0, "0.2 * Math.sin(query.anim_time * 40)", 0]
 				},
 				"waist": {
@@ -1118,25 +1118,37 @@
 				"eye_open_left": {
 					"position": {
 						"0.0": [0, 0, 0],
-						"1.0": {"pre": [0, 0, 0], "post": [-1, 0, 0]}
+						"1.0": {
+							"pre": [0, 0, 0],
+							"post": [-1, 0, 0]
+						}
 					}
 				},
 				"eye_open_right": {
 					"position": {
 						"0.0": [0, 0, 0],
-						"1.0": {"pre": [0, 0, 0], "post": [1, 0, 0]}
+						"1.0": {
+							"pre": [0, 0, 0],
+							"post": [1, 0, 0]
+						}
 					}
 				},
 				"eye_closed_left": {
 					"position": {
 						"0.0": [0, 0, 0],
-						"1.0": {"pre": [0, 0, 0], "post": [1, 0, 0]}
+						"1.0": {
+							"pre": [0, 0, 0],
+							"post": [1, 0, 0]
+						}
 					}
 				},
 				"eye_closed_right": {
 					"position": {
 						"0.0": [0, 0, 0],
-						"1.0": {"pre": [0, 0, 0], "post": [-1, 0, 0]}
+						"1.0": {
+							"pre": [0, 0, 0],
+							"post": [-1, 0, 0]
+						}
 					}
 				}
 			}
