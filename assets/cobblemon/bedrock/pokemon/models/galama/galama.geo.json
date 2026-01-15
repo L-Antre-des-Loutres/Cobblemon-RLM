@@ -3,10 +3,10 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.garhama",
+				"identifier": "geometry.galama",
 				"texture_width": 128,
 				"texture_height": 128,
-				"visible_bounds_width": 7,
+				"visible_bounds_width": 13,
 				"visible_bounds_height": 4.5,
 				"visible_bounds_offset": [0, 1.75, 0]
 			},
@@ -176,7 +176,7 @@
 					"parent": "eyes",
 					"pivot": [0, 17, -11.5],
 					"cubes": [
-						{"origin": [-4.5, 17, -17], "size": [0, 3, 3], "uv": [56, 43]}
+						{"origin": [-4.6, 17, -17], "size": [0, 3, 3], "uv": [56, 43]}
 					]
 				},
 				{
@@ -192,7 +192,7 @@
 					"parent": "eyes",
 					"pivot": [0, 17, -11.5],
 					"cubes": [
-						{"origin": [-3.5, 17, -17], "size": [0, 3, 3], "uv": [98, 41]}
+						{"origin": [-3.6, 17, -17], "size": [0, 3, 3], "uv": [98, 41]}
 					]
 				},
 				{

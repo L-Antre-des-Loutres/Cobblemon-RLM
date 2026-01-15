@@ -1,12 +1,12 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.garhama.ground_idle": {
+		"animation.galama.ground_idle": {
 			"loop": true,
 			"animation_length": 9,
 			"bones": {
 				"body": {
-					"rotation": ["2 * Math.sin(query.anim_time * 40)", "2 * Math.sin(query.anim_time * 40*2)", 0],
+					"rotation": ["2 * Math.sin(query.anim_time * 40)", 0, 0],
 					"position": [0, "0.2 * Math.sin(query.anim_time * 40)", 0]
 				},
 				"waist": {
@@ -35,7 +35,7 @@
 				}
 			}
 		},
-		"animation.garhama.battle_idle": {
+		"animation.galama.battle_idle": {
 			"loop": true,
 			"animation_length": 9,
 			"bones": {
@@ -112,7 +112,7 @@
 				}
 			}
 		},
-		"animation.garhama.ground_walk": {
+		"animation.galama.ground_walk": {
 			"loop": true,
 			"animation_length": 1,
 			"bones": {
@@ -701,7 +701,7 @@
 				}
 			}
 		},
-		"animation.garhama.sleep": {
+		"animation.galama.sleep": {
 			"loop": true,
 			"animation_length": 3.9583,
 			"bones": {
@@ -786,7 +786,7 @@
 				}
 			}
 		},
-		"animation.garhama.cry": {
+		"animation.galama.cry": {
 			"animation_length": 2.5,
 			"bones": {
 				"head": {
@@ -843,7 +843,7 @@
 				}
 			}
 		},
-		"animation.garhama.recoil": {
+		"animation.galama.recoil": {
 			"animation_length": 1.5,
 			"bones": {
 				"body": {
@@ -973,7 +973,7 @@
 				}
 			}
 		},
-		"animation.garhama.faint": {
+		"animation.galama.faint": {
 			"animation_length": 3,
 			"bones": {
 				"body": {
@@ -1154,7 +1154,7 @@
 				}
 			}
 		},
-		"animation.garhama.battle_quirk": {
+		"animation.galama.battle_quirk": {
 			"animation_length": 2.5,
 			"bones": {
 				"body": {
@@ -1207,7 +1207,7 @@
 				}
 			}
 		},
-		"animation.garhama.walkspeed": {
+		"animation.galama.walkspeed": {
 			"loop": true,
 			"bones": {
 				"gogoat": {
@@ -1215,6 +1215,35 @@
 				},
 				"pokemon": {
 					"position": [0, 0, "47-q.anim_time*90*0.6"]
+				}
+			}
+		},
+		"animation.galama.blink": {
+			"animation_length": 0.25,
+			"bones": {
+				"eye_open_left": {
+					"position": {
+						"0.0": [-1, 0, 0],
+						"0.25": {"pre": [-1, 0, 0], "post": [0, 0, 0]}
+					}
+				},
+				"eye_open_right": {
+					"position": {
+						"0.0": [1, 0, 0],
+						"0.25": {"pre": [1, 0, 0], "post": [0, 0, 0]}
+					}
+				},
+				"eye_closed_left": {
+					"position": {
+						"0.0": [1, 0, 0],
+						"0.25": {"pre": [1, 0, 0], "post": [0, 0, 0]}
+					}
+				},
+				"eye_closed_right": {
+					"position": {
+						"0.0": [-1, 0, 0],
+						"0.25": {"pre": [-1, 0, 0], "post": [0, 0, 0]}
+					}
 				}
 			}
 		}

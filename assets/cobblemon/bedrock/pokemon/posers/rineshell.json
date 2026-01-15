@@ -1,13 +1,13 @@
 {
     "portraitScale": 2.0,
     "portraitTranslation": [
-        0,
-        -0,
+        -0.2,
+        -0.6,
         0
     ],
     "profileScale": 1,
     "profileTranslation": [
-        -0,
+        0,
         0,
         0
     ],
