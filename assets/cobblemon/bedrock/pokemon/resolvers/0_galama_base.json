@@ -1,0 +1,16 @@
+{
+  "species": "cobblemon:galama",
+  "order": 0,
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon:galama",
+      "model": "cobblemon:galama.geo",
+      "texture": "cobblemon:textures/pokemon/galama/galama.png"
+    },
+    {
+      "aspects": [ "shiny" ],
+      "texture": "cobblemon:textures/pokemon/galama/galama_shiny.png"
+    }
+  ]
+}

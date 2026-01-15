@@ -1,11 +1,11 @@
 {
   "implemented": true,
-  "name": "rineshell",
-  "nationalPokedexNumber": 1027,
+  "name": "galama",
+  "nationalPokedexNumber": 1028,
   "labels": [ "custom" ],
   "pokedex": [
-    "cobblemon.species.rineshell.desc1",
-    "cobblemon.species.rineshell.desc2"
+    "cobblemon.species.galama.desc1",
+    "cobblemon.species.galama.desc2"
   ],
   "height": 2,
   "weight": 100,
@@ -55,20 +55,8 @@
     "h:weakarmor"
   ],
 
-  "evolutions": [
-    {
-      "id": "rineshell_galama",
-      "variant": "level_up",
-      "result": "galama",
-      "consumeHeldItem": false,
-      "requirements": [
-        {
-          "variant": "level",
-          "minLevel": 26
-        }
-      ]
-    }
-  ],
+  "preEvolution": "rineshell",
+  "evolutions": [ ],
 
   "baseScale": 0.8,
   "hitbox": {

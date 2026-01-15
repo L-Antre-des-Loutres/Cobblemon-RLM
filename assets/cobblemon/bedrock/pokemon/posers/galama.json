@@ -1,0 +1,59 @@
+{
+    "portraitScale": 1.25,
+    "portraitTranslation": [
+        -0.75,
+        0.75,
+        0
+    ],
+    "profileScale": 0.75,
+    "profileTranslation": [
+        -0.1,
+        0.5,
+        0
+    ],
+    "rootBone": "galama",
+    "animations": {
+        "cry": "q.bedrock_stateful('galama', 'cry')",
+        "faint": "q.bedrock_primary('galama', 'faint', q.curve('one'))",
+        "recoil": "q.bedrock_stateful('galama', 'recoil')"
+    },
+    "poses": {
+        "standing": {
+            "poseName": "standing",
+            "transformTicks": 10,
+            "isBattle": false,
+            "poseTypes": [
+                "STAND",
+                "NONE",
+                "PORTRAIT",
+                "PROFILE"
+            ],
+            "animations": [
+                "q.look('head')",
+                "bedrock(galama, ground_idle)"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('galama', q.array('blink', 'cry'), 6, 20, 1)"
+            ]
+        },
+        "battle-standing": {
+            "poseTypes": ["STAND"],
+            "isBattle": true,
+            "animations": [
+                "q.look('head')",
+                "q.bedrock('galama', 'battle_idle')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('galama', q.array('blink', 'cry', 'battle_idle'), 6, 20, 1)"
+            ]
+        },
+        "walking": {
+            "poseTypes": ["WALK"],
+            "animations": [
+                "q.look('head')",
+                "q.bedrock('galama', 'ground_walk')"
+            ],
+            "quirks": ["q.bedrock_quirk('galama', 'blink')"]
+        }
+    }
+}
