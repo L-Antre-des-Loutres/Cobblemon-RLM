@@ -703,15 +703,16 @@
 		},
 		"animation.garhama.sleep": {
 			"loop": true,
+			"animation_length": 3.9583,
 			"bones": {
 				"body": {
-					"rotation": [-5, 0, 0]
+					"rotation": ["-5 - math.sin(q.anim_time * 90)*0.2", 0, 0]
 				},
 				"tail": {
 					"rotation": [-5.47603, -32.45854, 1.02774]
 				},
 				"head": {
-					"rotation": [80, 0, 0]
+					"rotation": ["80 - math.sin(q.anim_time * 90)*0.4", 0, 0]
 				},
 				"neck": {
 					"rotation": [-32.5, 0, 0],
