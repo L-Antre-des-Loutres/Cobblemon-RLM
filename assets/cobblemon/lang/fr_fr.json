@@ -1,7 +1,6 @@
 {
   "cobblemon.species.flammiko.name": "Flammiko",
-  "cobblemon.species.flammiko.desc1": "placeholder",
-  "cobblemon.species.flammiko.desc2": "placeholder",
+  "cobblemon.species.flammiko.desc": "placeholder",
   "cobblemon.move.frostyslide": "Glissade glacée",
   "cobblemon.move.frostyslide.desc": "+2 priorité",
   "cobblemon.move.highpropulsion": "Haute Propulsion",
@@ -13,5 +12,7 @@
   "cobblemon.ability.dragonlate": "Peau Draconique",
   "cobblemon.ability.dragonlate.desc": "Sa peau draconique transforme les attaques normal en attaque de type Dragon.",
   "cobblemon.ability.psychoprio": "Psycho-Prio",
-  "cobblemon.ability.psychoprio.desc": "L’utilisateur du talent est prioritaire sur l’ensemble de ses attaques tant qu’il a plus de 50 % de ses PV."
+  "cobblemon.ability.psychoprio.desc": "L’utilisateur du talent est prioritaire sur l’ensemble de ses attaques tant qu’il a plus de 50 % de ses PV.",
+
+  "cobblemon.species.ampharos-rlm.desc": "This ampharos is dead."
 }
