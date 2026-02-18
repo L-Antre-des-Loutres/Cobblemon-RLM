@@ -1,0 +1,15 @@
+{
+      "target": "cobblemon:ninjask",
+      "features": ["rlm"],
+      "forms": [
+        {
+            "name": "rlm",
+            "labels": [
+              "custom"
+            ],
+            "aspects": [
+              "rlm"
+            ]
+      }
+    ]
+  }
