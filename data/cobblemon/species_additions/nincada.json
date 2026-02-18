@@ -1,0 +1,15 @@
+{
+  "target": "cobblemon:nincada",
+  "features": ["rlm"],
+  "forms": [
+    {
+      "name": "rlm",
+      "labels": [
+        "custom"
+      ],
+      "aspects": [
+        "rlm"
+      ]
+    }
+  ]
+}
