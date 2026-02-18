@@ -13,6 +13,8 @@
   "cobblemon.ability.dragonlate.desc": "Sa peau draconique transforme les attaques normal en attaque de type Dragon.",
   "cobblemon.ability.psychoprio": "Psycho-Prio",
   "cobblemon.ability.psychoprio.desc": "L’utilisateur du talent est prioritaire sur l’ensemble de ses attaques tant qu’il a plus de 50 % de ses PV.",
+  "cobblemon.ability.dullnessguard": "Garde Septik",
+  "cobblemon.ability.dullnessguard.desc": "Une puissance mystérieuse protège le Pokémon contre toutes les capacités, sauf celles « peu efficaces ».",
 
   "cobblemon.species.mareep-rlm.desc": "This mareep is dead.",
   "cobblemon.species.ampharos-rlm.desc": "This ampharos is dead.",

@@ -13,6 +13,8 @@
   "cobblemon.ability.dragonlate.desc": "Its draconic skin turns Normal-type moves into Dragon-type moves.",
   "cobblemon.ability.psychoprio": "Psycho-Prio",
   "cobblemon.ability.psychoprio.desc": "The user of this ability has priority on all of its attacks as long as it has more than 50% of its HP.",
+  "cobblemon.ability.dullnessguard": "Dullness Guard",
+  "cobblemon.ability.dullnessguard.desc": "A mysterious power protects the Pokémon from all moves, except for those that are « not very effective ».",
 
   "cobblemon.ui.pokedex.info.form.mareep": "",
   "cobblemon.ui.pokedex.info.form.mareep-rlm": "RLM",
