@@ -1,6 +1,8 @@
 {
   "target": "cobblemon:delphox",
-  "features": ["rlm"],
+  "features": [
+    "rlm"
+  ],
   "forms": [
     {
       "name": "rlm",
@@ -21,7 +23,7 @@
       "height": 19,
       "weight": 745,
       "pokedex": [
-        "cobblemon.species.delphox.desc"
+        "cobblemon.species.delphox-rlm.desc"
       ],
       "labels": [
         "custom"
@@ -35,7 +37,7 @@
         "h:mistysurge"
       ],
       "drops": {
-      "amount": "2",
+        "amount": "2",
         "entries": [
           {
             "item": "minecraft:blaze_rod",
@@ -231,6 +233,6 @@
       "preEvolution": "braixen",
       "evolutions": [],
       "battleOnly": false
-    }    
+    }
   ]
 }

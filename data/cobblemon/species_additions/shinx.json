@@ -7,8 +7,11 @@
     {
       "name": "rlm",
       "primaryType": "ice",
-      "shoulderMountable":true,
-      "shoulderEffects": [ "night_vision", "speed" ],
+      "shoulderMountable": true,
+      "shoulderEffects": [
+        "night_vision",
+        "speed"
+      ],
       "baseStats": {
         "hp": 45,
         "attack": 75,
@@ -18,7 +21,7 @@
         "speed": 45
       },
       "pokedex": [
-        "cobblemon.species.shinx.desc"
+        "cobblemon.species.shinx-rlm.desc"
       ],
       "labels": [
         "custom"
@@ -174,7 +177,8 @@
               "minLevel": 15
             }
           ]
-        }],
+        }
+      ],
       "battleOnly": false
     }
   ]
