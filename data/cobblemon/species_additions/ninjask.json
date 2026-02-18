@@ -1,15 +1,20 @@
 {
-      "target": "cobblemon:ninjask",
-      "features": ["rlm"],
-      "forms": [
-        {
-            "name": "rlm",
-            "labels": [
-              "custom"
-            ],
-            "aspects": [
-              "rlm"
-            ]
-      }
-    ]
-  }
+  "target": "cobblemon:ninjask",
+  "features": [
+    "rlm"
+  ],
+  "forms": [
+    {
+      "name": "rlm",
+      "pokedex": [
+        "cobblemon.species.ninjask-rlm.desc"
+      ],
+      "labels": [
+        "custom"
+      ],
+      "aspects": [
+        "rlm"
+      ]
+    }
+  ]
+}

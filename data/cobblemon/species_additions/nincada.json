@@ -1,9 +1,14 @@
 {
   "target": "cobblemon:nincada",
-  "features": ["rlm"],
+  "features": [
+    "rlm"
+  ],
   "forms": [
     {
       "name": "rlm",
+      "pokedex": [
+        "cobblemon.species.nincada-rlm.desc"
+      ],
       "labels": [
         "custom"
       ],
