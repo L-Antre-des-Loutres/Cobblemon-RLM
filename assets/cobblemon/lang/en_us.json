@@ -93,5 +93,17 @@
 
   "cobblemon.ui.pokedex.info.form.wartortle": "",
   "cobblemon.ui.pokedex.info.form.wartortle-rlm": "RLM",
-  "cobblemon.species.wartortle-rlm.desc": "This wartortle is dead."
+  "cobblemon.species.wartortle-rlm.desc": "This wartortle is dead.",
+
+  "cobblemon.ui.pokedex.info.form.nincada": "",
+  "cobblemon.ui.pokedex.info.form.nincada-rlm": "RLM",
+  "cobblemon.species.nincada-rlm.desc": "Ce nincada est mort.",
+
+  "cobblemon.ui.pokedex.info.form.ninjask": "",
+  "cobblemon.ui.pokedex.info.form.ninjask-rlm": "RLM",
+  "cobblemon.species.ninjask-rlm.desc": "Ce ninjask est mort.",
+
+  "cobblemon.ui.pokedex.info.form.shedinja": "",
+  "cobblemon.ui.pokedex.info.form.shedinja-rlm": "RLM",
+  "cobblemon.species.shedinja-rlm.desc": "Ce shedinja est mort."
 }

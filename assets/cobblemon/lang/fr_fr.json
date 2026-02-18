@@ -15,10 +15,7 @@
   "cobblemon.ability.psychoprio.desc": "L’utilisateur du talent est prioritaire sur l’ensemble de ses attaques tant qu’il a plus de 50 % de ses PV.",
   "cobblemon.ability.dullnessguard": "Garde Septik",
   "cobblemon.ability.dullnessguard.desc": "Une puissance mystérieuse protège le Pokémon contre toutes les capacités, sauf celles « peu efficaces ».",
-
   "cobblemon.species.mareep-rlm.desc": "This mareep is dead.",
-  "cobblemon.species.ampharos-rlm.desc": "This ampharos is dead.",
-  "cobblemon.species.bayleef-rlm.desc": "This bayleef is dead.",
   "cobblemon.species.blastoise-rlm.desc": "This blastoise is dead.",
   "cobblemon.species.braixen-rlm.desc": "This braixen is dead.",
   "cobblemon.species.delphox-rlm.desc": "This delphox is dead.",
@@ -36,5 +33,10 @@
   "cobblemon.species.sunflora-ocean.desc": "This sunflora is dead.",
   "cobblemon.species.sunflora-volcan.desc": "This sunflora is dead.",
   "cobblemon.species.togekiss-rlm.desc": "This togekiss is dead.",
-  "cobblemon.species.wartortle-rlm.desc": "This wartortle is dead."
+  "cobblemon.species.wartortle-rlm.desc": "Ce wartortle est mort.",
+  "cobblemon.species.bayleef-rlm.desc": "Ce bayleef est mort.",
+  "cobblemon.species.nincada-rlm.desc": "Ce nincada est mort.",
+  "cobblemon.species.ninjask-rlm.desc": "Ce ninjask est mort.",
+  "cobblemon.species.shedinja-rlm.desc": "Ce shedinja est mort.",
+  "cobblemon.species.ampharos-rlm.desc": "Ce ampharos est mort."
 }
