@@ -1,0 +1,16 @@
+{
+    "species": "cobblemon:shedinja",
+    "order": 10,
+    "variations": [
+        {
+            "aspects": ["rlm"],
+            "model": "cobblemon:shedinja_rlm.geo",
+            "texture": "cobblemon:textures/pokemon/shedinja_rlm/shedinja_rlm.png",
+            "layers": []
+        },
+        {
+            "aspects": [ "shiny" ],
+            "texture": "cobblemon:textures/pokemon/shedinja_rlm/shedinja_rlm.png"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "entryId": "cobblemon:shedinja",
+    "forms": [
+        {
+            "displayForm": "rlm",
+            "unlockForms": [
+                "rlm"
+            ]
+        }
+    ]
+}

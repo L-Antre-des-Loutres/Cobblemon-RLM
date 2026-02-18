@@ -1,6 +1,9 @@
 {
   "target": "cobblemon:sunflora",
-  "features": ["rlm", "ciel"],
+  "features": [
+    "rlm",
+    "ciel"
+  ],
   "forms": [
     {
       "name": "ciel",
@@ -29,13 +32,14 @@
         }
       },
       "pokedex": [
-        "cobblemon.species.sunflora.desc"
+        "cobblemon.species.sunflora-ciel.desc"
       ],
       "labels": [
         "custom"
       ],
       "aspects": [
-        "rlm", "ciel"
+        "rlm",
+        "ciel"
       ],
       "abilities": [
         "deltastream",

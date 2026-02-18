@@ -1,6 +1,8 @@
 {
   "target": "cobblemon:flaaffy",
-  "features": ["rlm"],
+  "features": [
+    "rlm"
+  ],
   "forms": [
     {
       "name": "rlm",
@@ -15,7 +17,7 @@
         "speed": 80
       },
       "pokedex": [
-        "cobblemon.species.flaaffy.desc"
+        "cobblemon.species.flaaffy-rlm.desc"
       ],
       "labels": [
         "custom"

@@ -1,6 +1,8 @@
 {
   "target": "cobblemon:empoleon",
-  "features": ["rlm"],
+  "features": [
+    "rlm"
+  ],
   "forms": [
     {
       "name": "rlm",
@@ -21,7 +23,7 @@
       "height": 19,
       "weight": 745,
       "pokedex": [
-        "cobblemon.species.empoleon.desc"
+        "cobblemon.species.empoleon-rlm.desc"
       ],
       "labels": [
         "custom"
@@ -228,6 +230,6 @@
       "preEvolution": "prinplup",
       "evolutions": [],
       "battleOnly": false
-    }    
+    }
   ]
 }

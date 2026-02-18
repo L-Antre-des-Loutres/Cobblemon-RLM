@@ -1,6 +1,8 @@
 {
   "target": "cobblemon:probopass",
-  "features": ["rlm"],
+  "features": [
+    "rlm"
+  ],
   "forms": [
     {
       "name": "rlm",
@@ -20,7 +22,7 @@
       "height": 1.4,
       "weight": 340,
       "pokedex": [
-        "cobblemon.species.probopass.desc"
+        "cobblemon.species.probopass-rlm.desc"
       ],
       "labels": [
         "custom"

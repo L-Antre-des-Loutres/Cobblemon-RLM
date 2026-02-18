@@ -1,6 +1,8 @@
 {
   "target": "cobblemon:spiritomb",
-  "features": ["rlm"],
+  "features": [
+    "rlm"
+  ],
   "forms": [
     {
       "name": "rlm",
@@ -15,7 +17,7 @@
         "speed": 78
       },
       "pokedex": [
-        "cobblemon.species.spiritomb.desc"
+        "cobblemon.species.spiritomb-rlm.desc"
       ],
       "labels": [
         "custom"

@@ -1,6 +1,8 @@
 {
   "target": "cobblemon:wartortle",
-  "features": ["rlm"],
+  "features": [
+    "rlm"
+  ],
   "forms": [
     {
       "name": "rlm",
@@ -24,6 +26,9 @@
             }
           ]
         }
+      ],
+      "pokedex": [
+        "cobblemon.species.wartortle-rlm.desc"
       ]
     }
   ]
