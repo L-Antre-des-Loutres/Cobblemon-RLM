@@ -1,0 +1,22 @@
+{
+      "target": "cobblemon:shedinja",
+      "features": ["rlm"],
+      "forms": [
+        {
+            "name": "rlm",
+            "labels": [
+              "custom"
+            ],
+            "aspects": [
+              "rlm"
+            ],
+
+          "abilities": [
+            "dullnessguard",
+            "h:dullnessguard"
+          ],
+
+          "preEvolution": "chikorita"
+      }
+    ]
+  }
