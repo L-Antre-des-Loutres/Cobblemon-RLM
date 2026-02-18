@@ -1,0 +1,16 @@
+{
+    "species": "cobblemon:ninjask",
+    "order": 10,
+    "variations": [
+        {
+            "aspects": ["rlm"],
+            "model": "cobblemon:shedinja_rlm.geo",
+            "texture": "cobblemon:textures/pokemon/ninjask_rlm/ninjask_rlm.png",
+            "layers": []
+        },
+        {
+            "aspects": [ "shiny" ],
+            "texture": "cobblemon:textures/pokemon/ninjask_rlm/ninjask_rlm.png"
+        }
+    ]
+}
