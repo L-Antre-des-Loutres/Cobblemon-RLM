@@ -1,6 +1,9 @@
 {
   "target": "cobblemon:sunflora",
-  "features": ["rlm", "volcan"],
+  "features": [
+    "rlm",
+    "volcan"
+  ],
   "forms": [
     {
       "name": "volcan",
@@ -15,13 +18,14 @@
         "speed": 115
       },
       "pokedex": [
-        "cobblemon.species.sunflora.desc"
+        "cobblemon.species.sunflora-volcan.desc"
       ],
       "labels": [
         "custom"
       ],
       "aspects": [
-        "rlm", "volcan"
+        "rlm",
+        "volcan"
       ],
       "abilities": [
         "drought",

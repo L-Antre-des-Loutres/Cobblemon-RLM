@@ -16,7 +16,7 @@
         "speed": 60
       },
       "pokedex": [
-        "cobblemon.species.luxio.desc"
+        "cobblemon.species.luxio-rlm.desc"
       ],
       "labels": [
         "custom"
@@ -162,17 +162,18 @@
       "preEvolution": "shinx",
       "evolutions": [
         {
-        "id": "luxio-luxray-rlm",
-        "variant": "level_up",
-        "result": "luxray rlm=true",
-        "consumeHeldItem": false,
-        "requirements": [
-          {
-            "variant": "level",
-            "minLevel": 30
-          }
-        ]
-      }],
+          "id": "luxio-luxray-rlm",
+          "variant": "level_up",
+          "result": "luxray rlm=true",
+          "consumeHeldItem": false,
+          "requirements": [
+            {
+              "variant": "level",
+              "minLevel": 30
+            }
+          ]
+        }
+      ],
       "battleOnly": false
     }
   ]

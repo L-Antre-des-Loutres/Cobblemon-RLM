@@ -1,0 +1,11 @@
+{
+  "entryId": "cobblemon:luxio",
+  "forms": [
+    {
+      "displayForm": "rlm",
+      "unlockForms": [
+        "rlm"
+      ]
+    }
+  ]
+}

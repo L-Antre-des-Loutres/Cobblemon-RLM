@@ -1,6 +1,8 @@
 {
   "target": "cobblemon:nosepass",
-  "features": ["rlm"],
+  "features": [
+    "rlm"
+  ],
   "forms": [
     {
       "name": "rlm",
@@ -20,7 +22,7 @@
       "height": 1.2,
       "weight": 90,
       "pokedex": [
-        "cobblemon.species.nosepass.desc"
+        "cobblemon.species.nosepass-rlm.desc"
       ],
       "labels": [
         "custom"
