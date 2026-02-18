@@ -15,10 +15,7 @@
         "speed": 40
       },
       "pokedex": [
-        "cobblemon.species.mareep.desc"
-      ],
-      "labels": [
-        "custom"
+        "cobblemon.species.mareep-rlm.desc"
       ],
       "aspects": [
         "rlm"

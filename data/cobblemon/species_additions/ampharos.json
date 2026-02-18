@@ -15,10 +15,7 @@
         "speed": 90
       },
       "pokedex": [
-        "cobblemon.species.ampharos.desc"
-      ],
-      "labels": [
-        "custom"
+        "cobblemon.species.ampharos-rlm.desc"
       ],
       "aspects": [
         "rlm"

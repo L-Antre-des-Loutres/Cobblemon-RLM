@@ -1,6 +1,8 @@
 {
   "target": "cobblemon:togekiss",
-  "features": ["rlm"],
+  "features": [
+    "rlm"
+  ],
   "forms": [
     {
       "name": "rlm",
@@ -15,7 +17,7 @@
         "speed": 90
       },
       "pokedex": [
-        "cobblemon.species.togekiss.desc"
+        "cobblemon.species.togekiss-rlm.desc"
       ],
       "labels": [
         "custom"

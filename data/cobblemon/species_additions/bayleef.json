@@ -4,12 +4,12 @@
       "forms": [
         {
             "name": "rlm",
-            "labels": [
-              "custom"
-            ],
             "aspects": [
               "rlm"
             ],
+          "pokedex": [
+            "cobblemon.species.bayleef-rlm.desc"
+          ],
           "preEvolution": "chikorita",
         "evolutions": [
           {

@@ -1,6 +1,9 @@
 {
   "target": "cobblemon:sunflora",
-  "features": ["rlm", "ocean"],
+  "features": [
+    "rlm",
+    "ocean"
+  ],
   "forms": [
     {
       "name": "ocean",
@@ -28,13 +31,14 @@
         }
       },
       "pokedex": [
-        "cobblemon.species.sunflora.desc"
+        "cobblemon.species.sunflora-ocean.desc"
       ],
       "labels": [
         "custom"
       ],
       "aspects": [
-        "rlm", "ocean"
+        "rlm",
+        "ocean"
       ],
       "abilities": [
         "drizzle",

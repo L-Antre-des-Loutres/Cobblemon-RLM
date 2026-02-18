@@ -1,12 +1,14 @@
 {
   "target": "cobblemon:prinplup",
-  "features": ["rlm"],
+  "features": [
+    "rlm"
+  ],
   "forms": [
     {
       "name": "rlm",
       "primaryType": "water",
       "pokedex": [
-        "cobblemon.species.prinplup.desc"
+        "cobblemon.species.prinplup-rlm.desc"
       ],
       "labels": [
         "custom"
