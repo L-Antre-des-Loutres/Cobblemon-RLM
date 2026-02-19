@@ -328,6 +328,11 @@
 						"1.4583": [0, 0, 0]
 					}
 				}
+			},
+			"sound_effects": {
+				"0.375": {
+					"effect": "cobblemon:pokemon.shedinja.cry"
+				}
 			}
 		},
 		"animation.shedinja_rlm.blink_WIP": {

@@ -887,6 +887,11 @@
 						"1.25": [0, 0, 0]
 					}
 				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "cobblemon:pokemon.mamoswine.cry"
+				}
 			}
 		},
 		"animation.luxray_rlm.blink": {
@@ -1503,6 +1508,11 @@
 						}
 					}
 				}
+			},
+			"sound_effects": {
+				"0.125": {
+					"effect": "cobblemon:pokemon.mamoswine.cry"
+				}
 			}
 		},
 		"animation.luxray_rlm.runspeed": {
@@ -1510,6 +1520,39 @@
 			"bones": {
 				"body": {
 					"position": [0, 0, "-q.anim_time*90*0.11"]
+				}
+			}
+		},
+		"animation.luxray.cry": {
+			"animation_length": 1.26,
+			"bones": {
+				"neck": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [-7.5, 0, 0],
+						"1.25": [0, 0, 0]
+					}
+				},
+				"head": {
+					"rotation": {
+						"0.25": [0, 0, 0],
+						"1.0": [-12.5, 0, -10],
+						"1.25": [0, 0, 0]
+					}
+				},
+				"mouth": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [47.5, 0, 0],
+						"0.7917": [0, 0, 0],
+						"1.0": [47.5, 0, 0],
+						"1.25": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "cobblemon:pokemon.mamoswine.cry"
 				}
 			}
 		}
