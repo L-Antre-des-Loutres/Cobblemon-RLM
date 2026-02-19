@@ -9,6 +9,12 @@
       "pokedex": [
         "cobblemon.species.ninjask-rlm.desc"
       ],
+      "labels": [
+        "custom"
+      ],
+      "aspects": [
+        "rlm"
+      ],
       "primaryType": "bug",
       "secondaryType": "water",
       "abilities": [
@@ -156,12 +162,6 @@
             "item": "cobblemon:shed_shell",
             "percentage": 5.0
           }
-        ],
-        "labels": [
-          "custom"
-        ],
-        "aspects": [
-          "rlm"
         ]
       }
     }
