@@ -4,13 +4,17 @@
     "variations": [
         {
             "aspects": ["rlm"],
+            "poser": "cobblemon:shedinja_rlm",
             "model": "cobblemon:shedinja_rlm.geo",
             "texture": "cobblemon:textures/pokemon/shedinja_rlm/shedinja_rlm.png",
             "layers": []
         },
         {
-            "aspects": [ "shiny" ],
-            "texture": "cobblemon:textures/pokemon/shedinja_rlm/shedinja_rlm.png"
+            "aspects": [ "shiny", "rlm" ],
+            "poser": "cobblemon:shedinja_rlm",
+            "model": "cobblemon:shedinja_rlm.geo",
+            "texture": "cobblemon:textures/pokemon/shedinja_rlm/shedinja_rlm.png",
+            "layers": []
         }
     ]
 }
