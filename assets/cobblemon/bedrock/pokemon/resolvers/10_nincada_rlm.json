@@ -9,8 +9,8 @@
             "layers": []
         },
         {
-            "aspects": [ "shiny" ],
-            "texture": "cobblemon:textures/pokemon/nincada_rlm/nincada_rlm.png"
+            "aspects": [ "shiny", "rlm" ],
+            "texture": "cobblemon:textures/pokemon/nincada_rlm/nincada_rlm_shiny.png"
         }
     ]
 }

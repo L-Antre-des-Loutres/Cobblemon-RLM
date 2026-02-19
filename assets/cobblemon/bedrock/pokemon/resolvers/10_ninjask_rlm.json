@@ -13,7 +13,7 @@
             "aspects": [ "shiny", "rlm" ],
             "poser": "cobblemon:ninjask_rlm",
             "model": "cobblemon:ninjask_rlm.geo",
-            "texture": "cobblemon:textures/pokemon/ninjask_rlm/ninjask_rlm.png",
+            "texture": "cobblemon:textures/pokemon/ninjask_rlm/ninjask_rlm_shiny.png",
             "layers": []
         }
     ]

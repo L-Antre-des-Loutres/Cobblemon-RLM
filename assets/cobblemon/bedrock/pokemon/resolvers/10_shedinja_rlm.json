@@ -13,7 +13,7 @@
             "aspects": [ "shiny", "rlm" ],
             "poser": "cobblemon:shedinja_rlm",
             "model": "cobblemon:shedinja_rlm.geo",
-            "texture": "cobblemon:textures/pokemon/shedinja_rlm/shedinja_rlm.png",
+            "texture": "cobblemon:textures/pokemon/shedinja_rlm/shedinja_rlm_shiny.png",
             "layers": []
         }
     ]
