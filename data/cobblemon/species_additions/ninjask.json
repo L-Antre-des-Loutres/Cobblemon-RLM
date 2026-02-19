@@ -15,19 +15,20 @@
       "aspects": [
         "rlm"
       ],
-      "primaryType": "bug",
-      "secondaryType": "water",
+      "primaryType": "water",
+      "secondaryType": "flying",
       "abilities": [
         "speedboost",
-        "h:infiltrator"
+        "infiltrator",
+        "h:swiftswim"
       ],
       "baseStats": {
         "hp": 61,
-        "attack": 90,
-        "defence": 45,
-        "special_attack": 50,
-        "special_defence": 50,
-        "speed": 160
+        "attack": 100,
+        "defence": 70,
+        "special_attack": 30,
+        "special_defence": 70,
+        "speed": 135
       },
       "evYield": {
         "hp": 0,
@@ -50,6 +51,11 @@
         "1:aerialace",
         "1:doubleteam",
         "1:metalclaw",
+        "1:uturn",
+        "1:stickyweb",
+        "1:waterfall",
+        "1:flipturn",
+        "1:acrobatics",
         "15:agility",
         "23:absorb",
         "29:bugbite",
