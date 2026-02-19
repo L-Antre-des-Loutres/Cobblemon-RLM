@@ -1,0 +1,15 @@
+{
+  "species": "cobblemon:apheos",
+  "order": 0,
+  "variations": [
+    {
+      "aspects": [],
+      "model": "cobblemon:apheos.geo",
+      "texture": "cobblemon:textures/pokemon/apheos/apheos.png"
+    },
+    {
+      "aspects": [ "shiny" ],
+      "texture": "cobblemon:textures/pokemon/apheos/apheos.png"
+    }
+  ]
+}

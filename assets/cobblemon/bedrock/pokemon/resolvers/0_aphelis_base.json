@@ -1,0 +1,15 @@
+{
+  "species": "cobblemon:aphelis",
+  "order": 0,
+  "variations": [
+    {
+      "aspects": [],
+      "model": "cobblemon:aphelis.geo",
+      "texture": "cobblemon:textures/pokemon/aphelis/aphelis.png"
+    },
+    {
+      "aspects": [ "shiny" ],
+      "texture": "cobblemon:textures/pokemon/aphelis/aphelis.png"
+    }
+  ]
+}
