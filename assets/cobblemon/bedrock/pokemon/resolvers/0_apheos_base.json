@@ -4,7 +4,7 @@
   "variations": [
     {
       "aspects": [],
-      "poser": "cobblemon:apheos",
+      "poser": "cobblemon:taillow",
       "model": "cobblemon:apheos.geo",
       "texture": "cobblemon:textures/pokemon/apheos/apheos.png"
     },

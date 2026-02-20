@@ -4,7 +4,7 @@
   "variations": [
     {
       "aspects": [],
-      "poser": "cobblemon:aphelis",
+      "poser": "cobblemon:unfezant_female",
       "model": "cobblemon:aphelis.geo",
       "texture": "cobblemon:textures/pokemon/aphelis/aphelis.png"
     },
