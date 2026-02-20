@@ -12,7 +12,11 @@
         0
     ],
     "rootBone": "unfezant",
-    "animations": {},
+    "animations": {
+        "cry": "q.bedrock_stateful('aphelis', 'cry')",
+        "faint": "q.bedrock_primary('aphelis', 'faint', q.curve('one'))",
+        "recoil": "q.bedrock_stateful('aphelis', 'recoil')"
+    },
     "poses": {
         "standing": {
             "poseName": "standing",
@@ -22,18 +26,64 @@
                 "STAND",
                 "NONE",
                 "PORTRAIT",
-                "PROFILE",
-                "WALK",
-                "SWIM"
+                "PROFILE"
             ],
-            "animations": []
+            "animations": [
+                "q.look('head_ai')",
+                "bedrock(aphelis, ground_idle)"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('aphelis', 'cry', 6, 20, 1)"
+            ]
         },
         "battle-standing": {
             "poseTypes": [
                 "STAND"
             ],
             "isBattle": true,
-            "animations": []
+            "animations": [
+                "q.look('head_ai')",
+                "q.bedrock('aphelis', 'battle_idle')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('aphelis', q.array('cry', 'battle_idle'), 6, 20, 1)"
+            ]
+        },
+        "walking": {
+            "poseTypes": [
+                "WALK"
+            ],
+            "animations": [
+                "q.look('head_ai')",
+                "q.bedrock('aphelis', 'ground_walk')"
+            ]
+        },
+        "flying": {
+            "poseTypes": [
+                "FLY",
+                "HOVER"
+            ],
+            "animations": [
+                "q.look('head_ai')",
+                "q.bedrock('aphelis', 'ground_idle')"
+            ]
+        },
+        "sleeping": {
+            "poseTypes": [
+                "SLEEP"
+            ],
+            "animations": [
+                "q.bedrock('aphelis', 'sleep')"
+            ]
+        },
+        "swimming": {
+            "poseTypes": [
+                "SWIM"
+            ],
+            "animations": [
+                "q.look('head_ai')",
+                "q.bedrock('aphelis', 'ground_walk')"
+            ]
         }
     }
 }

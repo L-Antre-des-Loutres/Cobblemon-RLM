@@ -12,7 +12,11 @@
         0
     ],
     "rootBone": "taillow",
-    "animations": {},
+    "animations": {
+        "cry": "q.bedrock_stateful('apheos', 'cry')",
+        "faint": "q.bedrock_primary('apheos', 'faint', q.curve('one'))",
+        "recoil": "q.bedrock_stateful('apheos', 'recoil')"
+    },
     "poses": {
         "standing": {
             "poseName": "standing",
@@ -22,18 +26,64 @@
                 "STAND",
                 "NONE",
                 "PORTRAIT",
-                "PROFILE",
-                "WALK",
-                "SWIM"
+                "PROFILE"
             ],
-            "animations": []
+            "animations": [
+                "q.look('head_ai')",
+                "bedrock(apheos, ground_idle)"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('apheos', 'cry', 6, 20, 1)"
+            ]
         },
         "battle-standing": {
             "poseTypes": [
                 "STAND"
             ],
             "isBattle": true,
-            "animations": []
+            "animations": [
+                "q.look('head_ai')",
+                "q.bedrock('apheos', 'battle_idle')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('apheos', q.array('cry', 'battle_idle'), 6, 20, 1)"
+            ]
+        },
+        "walking": {
+            "poseTypes": [
+                "WALK"
+            ],
+            "animations": [
+                "q.look('head_ai')",
+                "q.bedrock('apheos', 'ground_walk')"
+            ]
+        },
+        "flying": {
+            "poseTypes": [
+                "FLY",
+                "HOVER"
+            ],
+            "animations": [
+                "q.look('head_ai')",
+                "q.bedrock('apheos', 'ground_idle')"
+            ]
+        },
+        "sleeping": {
+            "poseTypes": [
+                "SLEEP"
+            ],
+            "animations": [
+                "q.bedrock('apheos', 'sleep')"
+            ]
+        },
+        "swimming": {
+            "poseTypes": [
+                "SWIM"
+            ],
+            "animations": [
+                "q.look('head_ai')",
+                "q.bedrock('apheos', 'ground_walk')"
+            ]
         }
     }
 }
