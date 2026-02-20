@@ -30,7 +30,7 @@
             ]
         }
     ],
-    "primaryType": "normal",
+    "primaryType": "fairy",
     "secondaryType": "flying",
     "baseStats": {
         "hp": 55,
