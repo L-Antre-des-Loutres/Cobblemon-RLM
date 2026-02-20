@@ -1,0 +1,48 @@
+{
+  "species": "cobblemon:flammiko",
+  "order": 1,
+  "variations": [
+    {
+      "aspects": [ "mega" ],
+      "poser": "cobblemon:spinda",
+      "model": "cobblemon:flammiko_mega.geo",
+      "texture": "cobblemon:textures/pokemon/flammiko_mega/flammiko_mega.png",
+      "layers": [
+        {
+          "name": "animation",
+          "texture": {
+            "frames": [
+              "cobblemon:textures/pokemon/flammiko_mega/animation/flammiko_mega_flammes1.png",
+              "cobblemon:textures/pokemon/flammiko_mega/animation/flammiko_mega_flammes2.png",
+              "cobblemon:textures/pokemon/flammiko_mega/animation/flammiko_mega_flammes3.png",
+              "cobblemon:textures/pokemon/flammiko_mega/animation/flammiko_mega_flammes4.png"
+            ],
+            "fps": 6,
+            "loop": true
+          },
+          "emissive": true
+        }
+      ]
+    },
+    {
+      "aspects": [ "mega", "shiny" ],
+      "texture": "cobblemon:textures/pokemon/flammiko_mega/flammiko_mega_shiny.png",
+      "layers": [
+        {
+          "name": "animation",
+          "texture": {
+            "frames": [
+              "cobblemon:textures/pokemon/flammiko_mega/animation_shiny/flammiko_mega_flammes1.png",
+              "cobblemon:textures/pokemon/flammiko_mega/animation_shiny/flammiko_mega_flammes2.png",
+              "cobblemon:textures/pokemon/flammiko_mega/animation_shiny/flammiko_mega_flammes3.png",
+              "cobblemon:textures/pokemon/flammiko_mega/animation_shiny/flammiko_mega_flammes4.png"
+            ],
+            "fps": 6,
+            "loop": true
+          },
+          "emissive": true
+        }
+      ]
+    }
+  ]
+}
