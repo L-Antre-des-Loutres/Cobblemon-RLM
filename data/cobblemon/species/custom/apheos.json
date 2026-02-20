@@ -1,0 +1,94 @@
+{
+    "implemented": true,
+    "name": "apheos",
+    "nationalPokedexNumber": 1031,
+    "labels": [
+        "custom"
+    ],
+    "pokedex": [
+        "cobblemon.species.apheos.desc"
+    ],
+    "height": 1,
+    "weight": 25,
+    "features": [],
+    "forms": [
+        {
+            "name": "normal"
+        }
+    ],
+    "primaryType": "normal",
+    "secondaryType": "flying",
+    "baseStats": {
+        "hp": 55,
+        "attack": 45,
+        "defence": 35,
+        "special_attack": 35,
+        "special_defence": 35,
+        "speed": 85
+    },
+    "catchRate": 200,
+    "maleRatio": 0.5,
+    "baseExperienceYield": 60,
+    "experienceGroup": "medium_fast",
+    "eggCycles": 15,
+    "eggGroups": [
+        "flying"
+    ],
+    "baseFriendship": 70,
+    "evYield": {
+        "speed": 1
+    },
+    "moves": [
+        "1:peck",
+        "1:growl",
+        "5:quickattack",
+        "9:wingattack",
+        "13:doubleteam",
+        "17:endeavor",
+        "21:aerialace",
+        "25:agility",
+        "29:airslash",
+        "33:bravebird"
+    ],
+    "abilities": [
+        "guts",
+        "scrappy",
+        "h:hustle"
+    ],
+    "evolutions": [],
+    "baseScale": 0.8,
+    "hitbox": {
+        "width": 0.5,
+        "height": 0.6,
+        "fixed": false
+    },
+    "drops": {
+        "amount": "1",
+        "entries": [
+            {
+                "item": "minecraft:feather",
+                "quantityRange": "1-2",
+                "percentage": 66
+            }
+        ]
+    },
+    "behaviour": {
+        "moving": {
+            "canLook": true,
+            "fly": {
+                "canFly": false
+            },
+            "swim": {
+                "swimSpeed": 0.1,
+                "canSwimInWater": false,
+                "canBreatheUnderwater": false
+            },
+            "resting": {
+                "canSleep": true,
+                "willSleepOnBed": false,
+                "depth": "normal",
+                "light": "0-12"
+            }
+        }
+    }
+}

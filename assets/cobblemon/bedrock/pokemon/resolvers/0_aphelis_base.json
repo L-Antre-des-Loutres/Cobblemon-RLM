@@ -8,7 +8,9 @@
       "texture": "cobblemon:textures/pokemon/aphelis/aphelis.png"
     },
     {
-      "aspects": [ "shiny" ],
+      "aspects": [
+        "shiny"
+      ],
       "texture": "cobblemon:textures/pokemon/aphelis/aphelis.png"
     }
   ]

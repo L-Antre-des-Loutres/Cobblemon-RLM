@@ -15,70 +15,53 @@
   "cobblemon.ability.psychoprio.desc": "The user of this ability has priority on all of its attacks as long as it has more than 50% of its HP.",
   "cobblemon.ability.dullnessguard": "Dullness Guard",
   "cobblemon.ability.dullnessguard.desc": "A mysterious power protects the Pokémon from all moves, except for those that are « not very effective ».",
-
   "cobblemon.ui.pokedex.info.form.mareep": "",
   "cobblemon.ui.pokedex.info.form.mareep-rlm": "RLM",
   "cobblemon.species.mareep-rlm.desc": "This mareep is dead.",
-
   "cobblemon.ui.pokedex.info.form.ampharos": "",
   "cobblemon.ui.pokedex.info.form.ampharos-rlm": "RLM",
   "cobblemon.species.ampharos-rlm.desc": "This ampharos is dead.",
-
   "cobblemon.ui.pokedex.info.form.bayleef": "",
   "cobblemon.ui.pokedex.info.form.bayleef-rlm": "RLM",
   "cobblemon.species.bayleef-rlm.desc": "This bayleef is dead.",
-
   "cobblemon.ui.pokedex.info.form.blastoise": "",
   "cobblemon.ui.pokedex.info.form.blastoise-rlm": "RLM",
   "cobblemon.species.blastoise-rlm.desc": "This blastoise is dead.",
-
   "cobblemon.ui.pokedex.info.form.braixen": "",
   "cobblemon.ui.pokedex.info.form.braixen-rlm": "RLM",
   "cobblemon.species.braixen-rlm.desc": "This braixen is dead.",
-
   "cobblemon.ui.pokedex.info.form.delphox-rlm": "RLM",
   "cobblemon.species.delphox-rlm.desc": "This delphox is dead.",
-
   "cobblemon.ui.pokedex.info.form.empoleon": "",
   "cobblemon.ui.pokedex.info.form.empoleon-rlm": "RLM",
   "cobblemon.species.empoleon-rlm.desc": "This empoleon is dead.",
-
   "cobblemon.ui.pokedex.info.form.flaaffy": "",
   "cobblemon.ui.pokedex.info.form.flaaffy-rlm": "RLM",
   "cobblemon.species.flaaffy-rlm.desc": "This flaaffy is dead.",
-
   "cobblemon.ui.pokedex.info.form.luxio": "",
   "cobblemon.ui.pokedex.info.form.luxio-rlm": "RLM",
   "cobblemon.species.luxio-rlm.desc": "This luxio is dead.",
-
   "cobblemon.ui.pokedex.info.form.luxray": "",
   "cobblemon.ui.pokedex.info.form.luxray-rlm": "RLM",
   "cobblemon.species.luxray-rlm.desc": "This luxray is dead.",
-
   "cobblemon.ui.pokedex.info.form.meganium": "",
   "cobblemon.ui.pokedex.info.form.meganium-rlm": "RLM",
   "cobblemon.species.meganium-rlm.desc": "This meganium is dead.",
-
   "cobblemon.ui.pokedex.info.form.nosepass": "",
   "cobblemon.ui.pokedex.info.form.nosepass-rlm": "RLM",
   "cobblemon.species.nosepass-rlm.desc": "This nosepass is dead.",
-
   "cobblemon.ui.pokedex.info.form.prinplup": "",
   "cobblemon.ui.pokedex.info.form.prinplup-rlm": "RLM",
   "cobblemon.species.prinplup-rlm.desc": "This prinplup is dead.",
-
   "cobblemon.ui.pokedex.info.form.probopass": "",
   "cobblemon.ui.pokedex.info.form.probopass-rlm": "RLM",
   "cobblemon.species.probopass-rlm.desc": "This probopass is dead.",
-
   "cobblemon.ui.pokedex.info.form.shinx": "",
   "cobblemon.ui.pokedex.info.form.shinx-rlm": "RLM",
   "cobblemon.species.shinx-rlm.desc": "This shinx is dead.",
-
   "cobblemon.ui.pokedex.info.form.spiritomb": "",
   "cobblemon.ui.pokedex.info.form.spiritomb-rlm": "RLM",
   "cobblemon.species.spiritomb-rlm.desc": "This spiritomb is dead.",
-
   "cobblemon.ui.pokedex.info.form.sunflora": "",
   "cobblemon.ui.pokedex.info.form.sunflora-ciel": "RLM Ciel",
   "cobblemon.species.sunflora-ciel.desc": "This sunflora is dead.",
@@ -86,24 +69,23 @@
   "cobblemon.species.sunflora-ocean.desc": "This sunflora is dead.",
   "cobblemon.ui.pokedex.info.form.sunflora-volcan": "RLM Volcan",
   "cobblemon.species.sunflora-volcan.desc": "This sunflora is dead.",
-
   "cobblemon.ui.pokedex.info.form.togekiss": "",
   "cobblemon.ui.pokedex.info.form.togekiss-rlm": "RLM",
   "cobblemon.species.togekiss-rlm.desc": "This togekiss is dead.",
-
   "cobblemon.ui.pokedex.info.form.wartortle": "",
   "cobblemon.ui.pokedex.info.form.wartortle-rlm": "RLM",
   "cobblemon.species.wartortle-rlm.desc": "This wartortle is dead.",
-
   "cobblemon.ui.pokedex.info.form.nincada": "",
   "cobblemon.ui.pokedex.info.form.nincada-rlm": "RLM",
   "cobblemon.species.nincada-rlm.desc": "Ce nincada est mort.",
-
   "cobblemon.ui.pokedex.info.form.ninjask": "",
   "cobblemon.ui.pokedex.info.form.ninjask-rlm": "RLM",
   "cobblemon.species.ninjask-rlm.desc": "Ce ninjask est mort.",
-
   "cobblemon.ui.pokedex.info.form.shedinja": "",
   "cobblemon.ui.pokedex.info.form.shedinja-rlm": "RLM",
-  "cobblemon.species.shedinja-rlm.desc": "Ce shedinja est mort."
+  "cobblemon.species.shedinja-rlm.desc": "Ce shedinja est mort.",
+  "cobblemon.species.aphelis.name": "Aphelis",
+  "cobblemon.species.aphelis.desc": "placeholder",
+  "cobblemon.species.apheos.name": "Apheos",
+  "cobblemon.species.apheos.desc": "placeholder"
 }
