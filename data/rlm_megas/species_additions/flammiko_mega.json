@@ -4,21 +4,20 @@
   "forms": [
     {
       "name": "Mega",
-      "primaryType": "ice",
+      "primaryType": "fire",
+      "secondaryType": "electric",
       "pokedex": ["cobblemon.species.flammiko.desc"],
       "labels": ["mega"], 
       "aspects": ["mega"],
-      "abilities": ["simple", "h:simple"],
+      "abilities": ["simple"],
       "baseStats": {
-        "hp": 90,
-        "attack": 80,
-        "defence": 110,
-        "special_attack":85,
-        "special_defence": 135,
-        "speed": 75
+        "hp": 55,
+        "attack": 140,
+        "defence": 50,
+        "special_attack": 160,
+        "special_defence": 50,
+        "speed": 130
       },
-
-
       "evolutions": [], 
       "battleOnly": false
     }
