@@ -1,0 +1,26 @@
+{
+  "target": "cobblemon:Flammiko",
+  "features": ["mega_evolution"],
+  "forms": [
+    {
+      "name": "Mega",
+      "primaryType": "ice",
+      "pokedex": ["cobblemon.species.flammiko.desc"],
+      "labels": ["mega"], 
+      "aspects": ["mega"],
+      "abilities": ["simple", "h:simple"],
+      "baseStats": {
+        "hp": 90,
+        "attack": 80,
+        "defence": 110,
+        "special_attack":85,
+        "special_defence": 135,
+        "speed": 75
+      },
+
+
+      "evolutions": [], 
+      "battleOnly": false
+    }
+  ]
+}
