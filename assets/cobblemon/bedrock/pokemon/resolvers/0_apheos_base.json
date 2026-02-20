@@ -4,11 +4,14 @@
   "variations": [
     {
       "aspects": [],
+      "poser": "cobblemon:apheos",
       "model": "cobblemon:apheos.geo",
       "texture": "cobblemon:textures/pokemon/apheos/apheos.png"
     },
     {
-      "aspects": [ "shiny" ],
+      "aspects": [
+        "shiny"
+      ],
       "texture": "cobblemon:textures/pokemon/apheos/apheos.png"
     }
   ]

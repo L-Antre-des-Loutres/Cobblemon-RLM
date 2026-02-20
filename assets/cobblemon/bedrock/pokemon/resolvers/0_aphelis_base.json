@@ -4,6 +4,7 @@
   "variations": [
     {
       "aspects": [],
+      "poser": "cobblemon:aphelis",
       "model": "cobblemon:aphelis.geo",
       "texture": "cobblemon:textures/pokemon/aphelis/aphelis.png"
     },
