@@ -261,6 +261,7 @@
     "queenlymajesty",
     "h:naturalcure"
   ],
+  "preEvolution": "apheos",
   "evolutions": [],
   "baseScale": 1,
   "hitbox": {
