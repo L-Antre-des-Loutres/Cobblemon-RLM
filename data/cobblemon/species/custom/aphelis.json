@@ -2,7 +2,9 @@
   "implemented": true,
   "name": "aphelis",
   "nationalPokedexNumber": 1030,
-  "labels": [ "custom" ],
+  "labels": [
+    "custom"
+  ],
   "pokedex": [
     "cobblemon.species.aphelis.desc"
   ],
@@ -10,9 +12,10 @@
   "weight": 100,
   "features": [],
   "forms": [
-    { "name": "normal" }
+    {
+      "name": "normal"
+    }
   ],
-
   "primaryType": "fairy",
   "secondaryType": "flying",
   "baseStats": {
@@ -35,7 +38,6 @@
   "evYield": {
     "speed": 2
   },
-
   "moves": [
     "1:skyattack",
     "1:extremespeed",
@@ -244,15 +246,12 @@
     "legacy:toxic",
     "legacy:zapcannon"
   ],
-
   "abilities": [
     "competitive",
     "queenlymajesty",
     "h:naturalcure"
   ],
-
-  "evolutions": [ ],
-
+  "evolutions": [],
   "baseScale": 1,
   "hitbox": {
     "width": 1,
@@ -273,7 +272,7 @@
     "moving": {
       "canLook": false,
       "fly": {
-        "canFly": false
+        "canFly": true
       },
       "swim": {
         "swimSpeed": 0.1,
@@ -288,6 +287,4 @@
       }
     }
   }
-
-
 }
