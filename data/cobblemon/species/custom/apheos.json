@@ -48,14 +48,71 @@
         "21:aerialace",
         "25:agility",
         "29:airslash",
-        "33:bravebird"
+        "33:bravebird",
+        "tm:aerialace",
+        "tm:airslash",
+        "tm:attract",
+        "tm:bravebird",
+        "tm:defog",
+        "tm:doubleteam",
+        "tm:echoedvoice",
+        "tm:endure",
+        "tm:facade",
+        "tm:falseswipe",
+        "tm:fly",
+        "tm:frustration",
+        "tm:gigaimpact",
+        "tm:helpinghand",
+        "tm:hiddenpower",
+        "tm:hyperbeam",
+        "tm:pluck",
+        "tm:protect",
+        "tm:raindance",
+        "tm:rest",
+        "tm:return",
+        "tm:roost",
+        "tm:round",
+        "tm:skyattack",
+        "tm:sleeptalk",
+        "tm:steelwing",
+        "tm:substitute",
+        "tm:sunnyday",
+        "tm:swagger",
+        "tm:swift",
+        "tm:tailwind",
+        "tm:takedown",
+        "tm:terablast",
+        "tm:thief",
+        "tm:toxic",
+        "tm:uturn",
+        "tm:workup",
+        "egg:featherdance",
+        "egg:flail",
+        "egg:mirrormove",
+        "egg:skyattack",
+        "egg:supersonic",
+        "egg:uproar",
+        "egg:whirlwind"
     ],
     "abilities": [
         "guts",
         "scrappy",
         "h:hustle"
     ],
-    "evolutions": [],
+    "evolutions": [
+        {
+            "id": "apheos_aphelis",
+            "variant": "level_up",
+            "result": "aphelis",
+            "consumeHeldItem": false,
+            "requirements": [
+                {
+                    "variant": "level",
+                    "minLevel": 33
+                }
+            ]
+        }
+    ],
     "baseScale": 0.8,
     "hitbox": {
         "width": 0.5,

@@ -39,6 +39,16 @@
     "speed": 2
   },
   "moves": [
+    "1:peck",
+    "1:growl",
+    "1:quickattack",
+    "1:wingattack",
+    "1:doubleteam",
+    "1:endeavor",
+    "1:aerialace",
+    "1:agility",
+    "1:airslash",
+    "1:bravebird",
     "1:skyattack",
     "1:extremespeed",
     "1:aurasphere",
