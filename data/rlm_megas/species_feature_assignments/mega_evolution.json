@@ -1,7 +1,8 @@
 {
   "replace": false,
   "pokemon": [
-    "flammiko"
+    "flammiko",
+    "ampharos"
   ],
   "features": [
     "mega_evolution"

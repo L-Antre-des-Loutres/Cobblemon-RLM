@@ -1,0 +1,29 @@
+{
+  "target": "cobblemon:Ampharos",
+  "features": ["rlm","mega_evolution"],
+  "forms": [
+    {
+      "name": "MegaRlm",
+      "primaryType": "electric",
+      "secondaryType": "fire",
+      "pokedex": ["cobblemon.species.ampharos-rlm-mega.desc"],
+      "labels": ["rlm","mega"],
+      "aspects": ["rlm","mega"],
+      "abilities": [
+        "shadowtag",
+        "shadowtag",
+        "h:shadowtag"
+      ],
+      "baseStats": {
+        "hp": 80,
+        "attack": 60,
+        "defence": 120,
+        "special_attack": 140,
+        "special_defence": 120,
+        "speed": 100
+      },
+      "evolutions": [], 
+      "battleOnly": false
+    }
+  ]
+}

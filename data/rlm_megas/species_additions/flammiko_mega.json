@@ -6,10 +6,14 @@
       "name": "Mega",
       "primaryType": "fire",
       "secondaryType": "electric",
-      "pokedex": ["cobblemon.species.flammiko.desc"],
+      "pokedex": ["cobblemon.species.flammiko-mega.desc"],
       "labels": ["mega"], 
       "aspects": ["mega"],
-      "abilities": ["simple"],
+      "abilities": [
+        "simple",
+        "simple",
+        "h:simple"
+      ],
       "baseStats": {
         "hp": 55,
         "attack": 140,
