@@ -13,7 +13,21 @@
     "features": [],
     "forms": [
         {
-            "name": "normal"
+            "name": "normal",
+            "evolutions": [
+                {
+                    "id": "apheos_aphelis",
+                    "variant": "level_up",
+                    "result": "aphelis",
+                    "consumeHeldItem": false,
+                    "requirements": [
+                        {
+                            "variant": "level",
+                            "minLevel": 33
+                        }
+                    ]
+                }
+            ]
         }
     ],
     "primaryType": "normal",
@@ -98,20 +112,6 @@
         "guts",
         "scrappy",
         "h:hustle"
-    ],
-    "evolutions": [
-        {
-            "id": "apheos_aphelis",
-            "variant": "level_up",
-            "result": "aphelis",
-            "consumeHeldItem": false,
-            "requirements": [
-                {
-                    "variant": "level",
-                    "minLevel": 33
-                }
-            ]
-        }
     ],
     "baseScale": 0.8,
     "hitbox": {
