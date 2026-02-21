@@ -1,0 +1,15 @@
+{
+    "id": "cobblemon:aphelis",
+    "speciesId": "cobblemon:aphelis",
+    "displayAspects": [],
+    "conditionAspects": [],
+    "forms": [
+        {
+            "displayForm": "Normal",
+            "unlockForms": [
+                "Normal"
+            ]
+        }
+    ],
+    "variations": []
+}
