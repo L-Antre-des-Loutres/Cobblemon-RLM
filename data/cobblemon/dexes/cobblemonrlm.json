@@ -1,0 +1,12 @@
+{
+  "type": "cobblemon:simple_pokedex_def",
+  "id": "cobblemon:cobblemonrlm",
+  "sortOrder": 20,
+  "entries": [
+    "cobblemon:flammiko",
+    "cobblemon:rineshell",
+    "cobblemon:galama",
+    "cobblemon:aphelis",
+    "cobblemon:apheos"
+  ]
+}

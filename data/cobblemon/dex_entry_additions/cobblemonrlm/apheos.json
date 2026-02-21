@@ -1,0 +1,11 @@
+{
+    "entryId": "cobblemon:apheos",
+    "forms": [
+        {
+            "displayForm": "normal",
+            "unlockForms": [
+                "normal"
+            ]
+        }
+    ]
+}

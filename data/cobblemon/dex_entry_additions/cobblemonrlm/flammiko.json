@@ -1,0 +1,11 @@
+{
+    "entryId": "cobblemon:flammiko",
+    "forms": [
+        {
+            "displayForm": "normal",
+            "unlockForms": [
+                "normal"
+            ]
+        }
+    ]
+}
