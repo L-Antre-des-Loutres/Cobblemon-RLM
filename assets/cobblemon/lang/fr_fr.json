@@ -38,5 +38,9 @@
   "cobblemon.species.nincada-rlm.desc": "Ce nincada est mort.",
   "cobblemon.species.ninjask-rlm.desc": "Ce ninjask est mort.",
   "cobblemon.species.shedinja-rlm.desc": "Ce shedinja est mort.",
-  "cobblemon.species.ampharos-rlm.desc": "Ce ampharos est mort."
+  "cobblemon.species.ampharos-rlm.desc": "Ce ampharos est mort.",
+  "cobblemon.species.apheos.name": "Apheos",
+  "cobblemon.species.apheos.desc": "placeholder",
+  "cobblemon.species.aphelis.name": "Aphelis",
+  "cobblemon.species.aphelis.desc": "placeholder"
 }

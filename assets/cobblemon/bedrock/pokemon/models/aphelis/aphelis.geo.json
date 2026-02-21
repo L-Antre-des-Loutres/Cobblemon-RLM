@@ -12,12 +12,12 @@
 			},
 			"bones": [
 				{
-					"name": "aphelis",
+					"name": "unfezant",
 					"pivot": [0, 0, 0]
 				},
 				{
 					"name": "locator_root",
-					"parent": "aphelis",
+					"parent": "unfezant",
 					"pivot": [0, 0, 0],
 					"locators": {
 						"root": [0, 0, 2]
@@ -25,7 +25,7 @@
 				},
 				{
 					"name": "locator_top",
-					"parent": "aphelis",
+					"parent": "unfezant",
 					"pivot": [0, 35, 0],
 					"locators": {
 						"top": [0, 35, 0]
@@ -33,7 +33,7 @@
 				},
 				{
 					"name": "body",
-					"parent": "aphelis",
+					"parent": "unfezant",
 					"pivot": [0, 14.5, 0]
 				},
 				{

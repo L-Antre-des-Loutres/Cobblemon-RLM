@@ -1,0 +1,18 @@
+{
+  "species": "cobblemon:aphelis",
+  "order": 0,
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon:unfezant_female",
+      "model": "cobblemon:aphelis.geo",
+      "texture": "cobblemon:textures/pokemon/aphelis/aphelis.png"
+    },
+    {
+      "aspects": [
+        "shiny"
+      ],
+      "texture": "cobblemon:textures/pokemon/aphelis/aphelis.png"
+    }
+  ]
+}
