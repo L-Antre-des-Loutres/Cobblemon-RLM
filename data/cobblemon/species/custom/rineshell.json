@@ -4,8 +4,7 @@
   "nationalPokedexNumber": 1027,
   "labels": [ "custom" ],
   "pokedex": [
-    "cobblemon.species.rineshell.desc1",
-    "cobblemon.species.rineshell.desc2"
+    "cobblemon.species.rineshell.desc"
   ],
   "height": 2,
   "weight": 100,
@@ -44,16 +43,56 @@
     "special_attack": 1,
     "speed": 2
   },
-
   "moves": [
-    "1:tackle"
+    "1:tackle",
+    "1:tailwhip",
+    "4:hornattack",
+    "8:rapidspin",
+    "12:metalclaw",
+    "16:rollout",
+    "20:irondefense",
+    "24:smartstrike",
+    "28:takedown",
+    "32:ironhead",
+    "36:horndrill",
+    "40:megahorn",
+    "tm:attract",
+    "tm:bulldoze",
+    "tm:dig",
+    "tm:doubleteam",
+    "tm:earthquake",
+    "tm:endure",
+    "tm:facade",
+    "tm:flashcannon",
+    "tm:furyattack",
+    "tm:hornattack",
+    "tm:irondefense",
+    "tm:ironhead",
+    "tm:megahorn",
+    "tm:metalclaw",
+    "tm:protect",
+    "tm:rest",
+    "tm:rockslide",
+    "tm:rocktomb",
+    "tm:rollout",
+    "tm:sandstorm",
+    "tm:smartstrike",
+    "tm:stealthrock",
+    "tm:steelbeam",
+    "tm:stomp",
+    "tm:substitute",
+    "tm:takedown",
+    "tm:terablast",
+    "egg:curse",
+    "egg:counter",
+    "egg:metalburst",
+    "egg:skullbash"
   ],
   "abilities": [
     "sturdy",
     "anticipation",
     "h:weakarmor"
   ],
-
   "evolutions": [
     {
       "id": "rineshell_galama",
