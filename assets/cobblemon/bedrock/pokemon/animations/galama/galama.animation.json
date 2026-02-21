@@ -841,6 +841,11 @@
 						}
 					}
 				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "cobblemon:pokemon.bastiodon.cry"
+				}
 			}
 		},
 		"animation.galama.recoil": {
@@ -1224,25 +1229,37 @@
 				"eye_open_left": {
 					"position": {
 						"0.0": [-1, 0, 0],
-						"0.25": {"pre": [-1, 0, 0], "post": [0, 0, 0]}
+						"0.25": {
+							"pre": [-1, 0, 0],
+							"post": [0, 0, 0]
+						}
 					}
 				},
 				"eye_open_right": {
 					"position": {
 						"0.0": [1, 0, 0],
-						"0.25": {"pre": [1, 0, 0], "post": [0, 0, 0]}
+						"0.25": {
+							"pre": [1, 0, 0],
+							"post": [0, 0, 0]
+						}
 					}
 				},
 				"eye_closed_left": {
 					"position": {
 						"0.0": [1, 0, 0],
-						"0.25": {"pre": [1, 0, 0], "post": [0, 0, 0]}
+						"0.25": {
+							"pre": [1, 0, 0],
+							"post": [0, 0, 0]
+						}
 					}
 				},
 				"eye_closed_right": {
 					"position": {
 						"0.0": [-1, 0, 0],
-						"0.25": {"pre": [-1, 0, 0], "post": [0, 0, 0]}
+						"0.25": {
+							"pre": [-1, 0, 0],
+							"post": [0, 0, 0]
+						}
 					}
 				}
 			}

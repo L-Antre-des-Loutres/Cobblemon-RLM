@@ -35,19 +35,13 @@
 					"name": "wing_left",
 					"parent": "torso",
 					"pivot": [5, 8, -1],
-					"rotation": [0, -30, -5],
-					"cubes": [
-						{"origin": [5, 5.5, -1], "size": [7, 4, 0], "uv": [36, 0]}
-					]
+					"rotation": [0, -30, -5]
 				},
 				{
 					"name": "wing_right",
 					"parent": "torso",
 					"pivot": [-5, 8, -1],
-					"rotation": [0, 30, 5],
-					"cubes": [
-						{"origin": [-12, 5.5, -1], "size": [7, 4, 0], "uv": [36, 4], "mirror": true}
-					]
+					"rotation": [0, 30, 5]
 				},
 				{
 					"name": "head",

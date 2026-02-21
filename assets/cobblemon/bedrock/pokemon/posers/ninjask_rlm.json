@@ -1,0 +1,89 @@
+{
+    "portraitScale": 1.95,
+    "portraitTranslation": [
+        -0.4,
+        -0.6,
+        0
+    ],
+    "profileScale": 0.85,
+    "profileTranslation": [
+        0.05,
+        0.5,
+        0
+    ],
+    "rootBone": "ninjask",
+    "animations": {
+        "cry": "q.bedrock_stateful('ninjask_rlm', 'cry')",
+        "faint": "q.bedrock_primary('ninjask_rlm', 'faint', q.curve('one'))",
+        "recoil": "q.bedrock_stateful('ninjask_rlm', 'recoil')",
+        "special": "q.bedrock_primary('ninjask_rlm', 'special')",
+        "physical": "q.bedrock_primary('ninjask_rlm', 'physical')",
+        "status": "q.bedrock_primary('ninjask_rlm', 'status')"
+    },
+    "poses": {
+        "standing": {
+            "poseName": "standing",
+            "transformTicks": 10,
+            "isBattle": false,
+            "poseTypes": [
+                "STAND",
+                "NONE",
+                "PORTRAIT",
+                "PROFILE"
+            ],
+            "animations": [
+                "q.look('head')",
+                "bedrock(ninjask_rlm, ground_idle)"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('ninjask_rlm', 'blink')"
+            ]
+        },
+        "battle-standing": {
+            "poseTypes": ["STAND", "HOVER"],
+            "isBattle": true,
+            "animations": [
+                "q.look('head')",
+                "q.bedrock('ninjask_rlm', 'battle_idle')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('ninjask_rlm', 'blink')"
+            ]
+        },
+        "walking": {
+            "poseTypes": ["WALK"],
+            "animations": [
+                "q.look('head')",
+                "q.bedrock('ninjask_rlm', 'ground_walk')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('ninjask_rlm', 'blink')"
+            ]
+        },
+        "hover": {
+            "poseTypes": ["HOVER"],
+            "animations": [
+                "q.look('head')",
+                "q.bedrock('ninjask_rlm', 'air_idle')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('ninjask_rlm', 'blink')"
+            ]
+        },
+        "fly": {
+            "poseTypes": ["FLY"],
+            "animations": [
+                "q.look('head')",
+                "q.bedrock('ninjask_rlm', 'air_fly')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('ninjask_rlm', 'run_quirk')",
+                "q.bedrock_quirk('ninjask_rlm', 'blink')"
+            ]
+        },
+        "sleep": {
+            "poseTypes": ["SLEEP"],
+            "animations": ["q.bedrock('ninjask_rlm', 'sleep')"]
+        }
+    }
+}

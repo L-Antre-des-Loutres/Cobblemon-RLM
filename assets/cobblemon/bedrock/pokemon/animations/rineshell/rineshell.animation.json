@@ -430,6 +430,11 @@
 						}
 					}
 				}
+			},
+			"sound_effects": {
+				"0.25": {
+					"effect": "cobblemon:pokemon.cranidos.cry"
+				}
 			}
 		},
 		"animation.rineshell.blink": {

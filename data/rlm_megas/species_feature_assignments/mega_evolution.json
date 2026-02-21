@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "pokemon": [
+    "flammiko",
+    "ampharos"
+  ],
+  "features": [
+    "mega_evolution"
+  ]
+}

@@ -670,6 +670,11 @@
 						}
 					}
 				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "cobblemon:pokemon.purrloin.cry"
+				}
 			}
 		},
 		"animation.shinx_rlm.blink": {
@@ -1034,6 +1039,11 @@
 				},
 				"surprised_mouth": {
 					"position": [0, 0, -2]
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "cobblemon:pokemon.purrloin.cry"
 				}
 			}
 		},

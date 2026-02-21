@@ -715,6 +715,11 @@
 						}
 					}
 				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "cobblemon:pokemon.piloswine.cry"
+				}
 			}
 		},
 		"animation.luxio_rlm.blink": {
@@ -1664,6 +1669,11 @@
 							"lerp_mode": "catmullrom"
 						}
 					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "cobblemon:pokemon.piloswine.cry"
 				}
 			}
 		}
