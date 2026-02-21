@@ -30,6 +30,17 @@
             ]
         }
     ],
+    "shoulderMountable": true,
+    "shoulderEffects": [
+        {
+            "type": "potion_effect",
+            "effect": "minecraft:slow_falling",
+            "amplifier": 1,
+            "ambient": true,
+            "showParticles": false,
+            "showIcon": false
+        }
+    ],
     "primaryType": "fairy",
     "secondaryType": "flying",
     "baseStats": {
