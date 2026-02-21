@@ -4,8 +4,7 @@
   "nationalPokedexNumber": 1027,
   "labels": [ "custom" ],
   "pokedex": [
-    "cobblemon.species.rineshell.desc1",
-    "cobblemon.species.rineshell.desc2"
+    "cobblemon.species.rineshell.desc"
   ],
   "height": 2,
   "weight": 100,
@@ -24,12 +23,12 @@
 
   "primaryType": "normal",
   "baseStats": {
-    "hp": 50,
-    "attack": 40,
-    "defence": 80,
-    "special_attack": 40,
-    "special_defence": 80,
-    "speed": 70
+    "hp": 90,
+    "attack": 75,
+    "defence": 100,
+    "special_attack": 75,
+    "special_defence": 100,
+    "speed": 80
   },
   "catchRate": 255,
   "maleRatio": 0.5,
@@ -44,16 +43,68 @@
     "special_attack": 1,
     "speed": 2
   },
-
   "moves": [
-    "1:tackle"
+    "1:tackle",
+    "1:defensecurl",
+    "4:rockthrow",
+    "8:irondefense",
+    "12:rockpolish",
+    "16:headbutt",
+    "20:ironhead",
+    "24:bodyslam",
+    "28:rockslide",
+    "32:autotomize",
+    "36:gyroball",
+    "40:stealthrock",
+    "44:heavyslam",
+    "48:stoneedge",
+    "52:doubleedge",
+    "tm:tackle",
+    "tm:protect",
+    "tm:rest",
+    "tm:rockslide",
+    "tm:irondefense",
+    "tm:substitute",
+    "tm:endure",
+    "tm:sleeptalk",
+    "tm:ironhead",
+    "tm:stealthrock",
+    "tm:bodyslam",
+    "tm:heavyslam",
+    "tm:gyroball",
+    "tm:flashcannon",
+    "tm:stoneedge",
+    "tm:earthquake",
+    "tm:bulldoze",
+    "tm:rocktomb",
+    "tm:sandstorm",
+    "tm:rockpolish",
+    "tm:bodypress",
+    "tm:steelbeam",
+    "tm:meteorbeam",
+    "tm:payback",
+    "tm:facade",
+    "tm:return",
+    "tm:frustration",
+    "tm:hiddenpower",
+    "tm:toxic",
+    "tm:attract",
+    "tm:round",
+    "tm:swagger",
+    "tm:doubleteam",
+    "tm:takedown",
+    "tm:terablast",
+    "egg:curse",
+    "egg:rollout",
+    "egg:rapidspin",
+    "egg:counter",
+    "egg:wideguard"
   ],
   "abilities": [
     "sturdy",
     "anticipation",
     "h:weakarmor"
   ],
-
   "evolutions": [
     {
       "id": "rineshell_galama",

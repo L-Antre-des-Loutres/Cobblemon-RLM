@@ -4,11 +4,10 @@
   "nationalPokedexNumber": 1028,
   "labels": [ "custom" ],
   "pokedex": [
-    "cobblemon.species.galama.desc1",
-    "cobblemon.species.galama.desc2"
+    "cobblemon.species.galama.desc"
   ],
-  "height": 2,
-  "weight": 100,
+  "height": 0.5,
+  "weight": 171,
   "features": [],
   "shoulderMountable": true,
   "shoulderEffects": [
@@ -45,9 +44,50 @@
     "special_attack": 1,
     "speed": 2
   },
-
   "moves": [
-    "1:tackle"
+    "1:tackle",
+    "1:tailwhip",
+    "4:hornattack",
+    "8:rapidspin",
+    "12:metalclaw",
+    "16:rollout",
+    "20:irondefense",
+    "24:smartstrike",
+    "28:takedown",
+    "32:ironhead",
+    "36:horndrill",
+    "40:megahorn",
+    "tm:attract",
+    "tm:bulldoze",
+    "tm:dig",
+    "tm:doubleteam",
+    "tm:earthquake",
+    "tm:endure",
+    "tm:facade",
+    "tm:flashcannon",
+    "tm:furyattack",
+    "tm:hornattack",
+    "tm:irondefense",
+    "tm:ironhead",
+    "tm:megahorn",
+    "tm:metalclaw",
+    "tm:protect",
+    "tm:rest",
+    "tm:rockslide",
+    "tm:rocktomb",
+    "tm:rollout",
+    "tm:sandstorm",
+    "tm:smartstrike",
+    "tm:stealthrock",
+    "tm:steelbeam",
+    "tm:stomp",
+    "tm:substitute",
+    "tm:takedown",
+    "tm:terablast",
+    "egg:curse",
+    "egg:counter",
+    "egg:metalburst",
+    "egg:skullbash"
   ],
   "abilities": [
     "sturdy",
@@ -60,7 +100,7 @@
 
   "baseScale": 0.8,
   "hitbox": {
-    "width": 1,
+    "width": 1.4,
     "height": 1.4,
     "fixed": false
   },
@@ -68,7 +108,7 @@
     "amount": "2",
     "entries": [
       {
-        "item": "minecraft:rabbit_foot",
+        "item": "minecraft:iron_ingot",
         "quantityRange": "1-4",
         "percentage": 44
       }
