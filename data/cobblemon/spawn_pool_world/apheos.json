@@ -23,6 +23,23 @@
                     "#cobblemon:is_mountain"
                 ]
             }
+        },
+        {
+            "id": "apheos-end",
+            "pokemon": "apheos",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "common",
+            "level": "30-60",
+            "weight": 3.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_end"
+                ]
+            }
         }
     ]
 }

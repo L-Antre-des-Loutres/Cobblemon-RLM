@@ -23,6 +23,23 @@
                     "#cobblemon:is_mountain"
                 ]
             }
+        },
+        {
+            "id": "aphelis-end",
+            "pokemon": "aphelis",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "spawnablePositionType": "grounded",
+            "bucket": "uncommon",
+            "level": "40-60",
+            "weight": 10.0,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_end"
+                ]
+            }
         }
     ]
 }
