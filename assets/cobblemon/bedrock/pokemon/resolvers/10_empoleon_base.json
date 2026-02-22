@@ -4,13 +4,14 @@
   "variations": [
     {
       "aspects": ["rlm"],
-      "model": "cobblemon:empoleonrlm.geo",
-      "texture": "cobblemon:textures/pokemon/empoleonrlm/empoleonrlm.png",
+      "model": "cobblemon:empoleon_rlm.geo",
+      "texture": "cobblemon:textures/pokemon/empoleon_rlm/empoleon_rlm.png",
       "layers": []
     },
     {
       "aspects": [ "rlm", "shiny" ],
-      "texture": "cobblemon:textures/pokemon/empoleonrlm/empoleonrlm_shiny.png"
+      "texture": "cobblemon:textures/pokemon/empoleon_rlm/empoleon_rlm_shiny.png"
     }
   ]
 }
+

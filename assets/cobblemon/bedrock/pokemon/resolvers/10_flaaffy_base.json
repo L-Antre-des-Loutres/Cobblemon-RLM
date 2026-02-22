@@ -5,28 +5,28 @@
   "variations": [
     {
       "aspects": ["rlm"],
-      "model": "cobblemon:flaaffyrlm.geo",
+      "model": "cobblemon:flaaffy_rlm.geo",
       "layers": [ {
         "name": "emissive",
         "texture": {
           "frames": [
-            "cobblemon:textures/pokemon/flaaffyrlm/flaaffyrlm_emissive.png"
+            "cobblemon:textures/pokemon/flaaffy_rlm/flaaffy_rlm_emissive.png"
           ]
         },
         "emissive": true
       }
       ],
-      "texture": "cobblemon:textures/pokemon/flaaffyrlm/flaaffyrlm.png"
+      "texture": "cobblemon:textures/pokemon/flaaffy_rlm/flaaffy_rlm.png"
     },
     {
       "aspects": [ "rlm", "shiny" ],
-      "texture": "cobblemon:textures/pokemon/flaaffyrlm/flaaffyrlm_shiny.png",
+      "texture": "cobblemon:textures/pokemon/flaaffy_rlm/flaaffy_rlm_shiny.png",
 
       "layers": [ {
         "name": "emissive",
         "texture": {
           "frames": [
-            "cobblemon:textures/pokemon/flaaffyrlm/flaaffyrlm_emissive_shiny.png"
+            "cobblemon:textures/pokemon/flaaffy_rlm/flaaffy_rlm_emissive_shiny.png"
           ]
         },
         "emissive": true
@@ -36,3 +36,4 @@
 
   ]
 }
+
