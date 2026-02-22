@@ -3,6 +3,8 @@
   "cobblemon.starterselection.category.rlm": "RLM",
   "cobblemon.species.flammiko.name": "Flammiko",
   "cobblemon.species.flammiko.desc": "placeholder",
+  "item.name.flammikite": "Flammikite",
+  "item.desc.flammikite": "Allows Flammiko to Mega Evolve into Mega Flammiko.",
   "cobblemon.move.frostyslide": "Frosty Slide",
   "cobblemon.move.frostyslide.desc": "+2 priority move",
   "cobblemon.move.highpropulsion": "High Propulsion",
