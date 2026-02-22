@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:paper",
+            "components": {
+                "minecraft:custom_model_data": 291012
+            }
+        },
+        "title": {
+            "translate": "advancement.rlm.root.title"
+        },
+        "description": {
+            "translate": "advancement.rlm.root.desc"
+        },
+        "background": "minecraft:textures/block/amethyst_block.png",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

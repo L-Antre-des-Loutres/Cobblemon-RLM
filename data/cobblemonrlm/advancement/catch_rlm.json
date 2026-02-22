@@ -1,0 +1,58 @@
+{
+    "parent": "cobblemonrlm:root",
+    "display": {
+        "icon": {
+            "id": "cobblemon:pokemon_model",
+            "components": {
+                "cobblemon:pokemon_item": {
+                    "species": "cobblemon:nosepass",
+                    "aspects": [
+                        "rlm"
+                    ]
+                }
+            }
+        },
+        "title": {
+            "translate": "advancement.rlm.catch_rlm.title"
+        },
+        "description": {
+            "translate": "advancement.rlm.catch_rlm.desc"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "sound": "minecraft:ui.toast.challenge_complete"
+    },
+    "criteria": {
+        "caught_rlm_party": {
+            "trigger": "cobblemon:party",
+            "conditions": {
+                "party": [
+                    {
+                        "species": "any",
+                        "aspects": [
+                            "rlm"
+                        ]
+                    }
+                ]
+            }
+        },
+        "caught_rlm_catch": {
+            "trigger": "cobblemon:catch_pokemon",
+            "conditions": {
+                "count": 1,
+                "species": "any",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "caught_rlm_party",
+            "caught_rlm_catch"
+        ]
+    ]
+}
