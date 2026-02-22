@@ -8,7 +8,7 @@
     "profileScale": 1,
     "profileTranslation": [
         0,
-        0,
+        0.2,
         0
     ],
     "rootBone": "rineshell",
