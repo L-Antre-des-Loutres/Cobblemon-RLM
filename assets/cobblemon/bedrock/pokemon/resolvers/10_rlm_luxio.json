@@ -1,0 +1,88 @@
+{
+    "species": "cobblemon:luxio",
+    "order": 10,
+    "variations": [
+        {
+            "aspects": [
+                "rlm",
+                "male"
+            ],
+            "poser": "cobblemon:luxio_rlm",
+            "model": "cobblemon:luxio_rlm.geo",
+            "texture": "cobblemon:textures/pokemon/luxio_rlm/luxio_rlm_male.png",
+            "layers": [
+                {
+                    "name": "emissive",
+                    "texture": {
+                        "frames": [
+                            "cobblemon:textures/pokemon/luxio_rlm/luxio_rlm_male_emissive.png"
+                        ]
+                    },
+                    "emissive": true
+                }
+            ]
+        },
+        {
+            "aspects": [
+                "rlm",
+                "male",
+                "shiny"
+            ],
+            "poser": "cobblemon:luxio_rlm",
+            "model": "cobblemon:luxio_rlm.geo",
+            "texture": "cobblemon:textures/pokemon/luxio_rlm/luxio_rlm_male_shiny.png",
+            "layers": [
+                {
+                    "name": "emissive",
+                    "texture": {
+                        "frames": [
+                            "cobblemon:textures/pokemon/luxio_rlm/luxio_rlm_male_emissive_shiny.png"
+                        ]
+                    },
+                    "emissive": true
+                }
+            ]
+        },
+        {
+            "aspects": [
+                "rlm",
+                "female"
+            ],
+            "poser": "cobblemon:luxio_rlm",
+            "model": "cobblemon:luxio_rlm.geo",
+            "texture": "cobblemon:textures/pokemon/luxio_rlm/luxio_rlm_female.png",
+            "layers": [
+                {
+                    "name": "emissive",
+                    "texture": {
+                        "frames": [
+                            "cobblemon:textures/pokemon/luxio_rlm/luxio_rlm_female_emissive.png"
+                        ]
+                    },
+                    "emissive": true
+                }
+            ]
+        },
+        {
+            "aspects": [
+                "rlm",
+                "female",
+                "shiny"
+            ],
+            "poser": "cobblemon:luxio_rlm",
+            "model": "cobblemon:luxio_rlm.geo",
+            "texture": "cobblemon:textures/pokemon/luxio_rlm/luxio_rlm_female_shiny.png",
+            "layers": [
+                {
+                    "name": "emissive",
+                    "texture": {
+                        "frames": [
+                            "cobblemon:textures/pokemon/luxio_rlm/luxio_rlm_female_emissive_shiny.png"
+                        ]
+                    },
+                    "emissive": true
+                }
+            ]
+        }
+    ]
+}
