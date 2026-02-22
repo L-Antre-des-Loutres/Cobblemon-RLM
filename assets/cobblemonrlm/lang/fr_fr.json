@@ -7,14 +7,6 @@
     "advancement.rlm.catch_rlm.desc": "Obtenir un Pokémon de forme RLM.",
     "advancement.rlm.catch_rlm_shiny.title": "C'est IMPOSSIBLE !",
     "advancement.rlm.catch_rlm_shiny.desc": "Obtenir un Pokémon de forme RLM Chromatique (Shiny).",
-    "advancement.rlm.catch_sunflora_forms.title": "Le Botaniste Solaire",
-    "advancement.rlm.catch_sunflora_forms.desc": "Capturer et réunir les 3 formes d'Héliatronc RLM (Ciel, Océan, Volcan).",
-    "advancement.rlm.evolve_shedinja_rlm.title": "L'Héritage Fantôme",
-    "advancement.rlm.evolve_shedinja_rlm.desc": "Obtenir un Munja RLM issu de l'évolution d'un Ningale RLM.",
-    "advancement.rlm.catch_rlm_starter.title": "Nouveau Départ",
-    "advancement.rlm.catch_rlm_starter.desc": "Accueillir un des starters régionaux dans votre équipe (Germignon, Carapuce, Feunnec ou Tiplouf RLM).",
-    "advancement.rlm.ascension_rlm.title": "L'Ascension RLM",
-    "advancement.rlm.ascension_rlm.desc": "Obtenir la forme évoluée finale d'un Pokémon RLM.",
-    "advancement.rlm.full_rlm_party.title": "Collectionneur de Merveilles",
-    "advancement.rlm.full_rlm_party.desc": "Former une équipe complète (6) uniquement constituée de Pokémon RLM."
+    "advancement.rlm.catch_sunflora_forms.title": "3 FORMES POUR SUNFLORA !!!",
+    "advancement.rlm.catch_sunflora_forms.desc": "Capturer et réunir les 3 formes d'Héliatronc RLM (Ciel, Océan, Volcan)."
 }
