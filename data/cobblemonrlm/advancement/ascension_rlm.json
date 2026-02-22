@@ -1,0 +1,165 @@
+{
+    "parent": "cobblemonrlm:catch_rlm",
+    "display": {
+        "icon": {
+            "id": "cobblemon:rare_candy"
+        },
+        "title": {
+            "translate": "advancement.rlm.ascension_rlm.title"
+        },
+        "description": {
+            "translate": "advancement.rlm.ascension_rlm.desc"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "sound": "minecraft:ui.toast.challenge_complete"
+    },
+    "criteria": {
+        "meganium": {
+            "trigger": "cobblemon:party",
+            "conditions": {
+                "party": [
+                    {
+                        "species": "cobblemon:meganium",
+                        "aspects": [
+                            "rlm"
+                        ]
+                    }
+                ]
+            }
+        },
+        "blastoise": {
+            "trigger": "cobblemon:party",
+            "conditions": {
+                "party": [
+                    {
+                        "species": "cobblemon:blastoise",
+                        "aspects": [
+                            "rlm"
+                        ]
+                    }
+                ]
+            }
+        },
+        "delphox": {
+            "trigger": "cobblemon:party",
+            "conditions": {
+                "party": [
+                    {
+                        "species": "cobblemon:delphox",
+                        "aspects": [
+                            "rlm"
+                        ]
+                    }
+                ]
+            }
+        },
+        "empoleon": {
+            "trigger": "cobblemon:party",
+            "conditions": {
+                "party": [
+                    {
+                        "species": "cobblemon:empoleon",
+                        "aspects": [
+                            "rlm"
+                        ]
+                    }
+                ]
+            }
+        },
+        "luxray": {
+            "trigger": "cobblemon:party",
+            "conditions": {
+                "party": [
+                    {
+                        "species": "cobblemon:luxray",
+                        "aspects": [
+                            "rlm"
+                        ]
+                    }
+                ]
+            }
+        },
+        "togekiss": {
+            "trigger": "cobblemon:party",
+            "conditions": {
+                "party": [
+                    {
+                        "species": "cobblemon:togekiss",
+                        "aspects": [
+                            "rlm"
+                        ]
+                    }
+                ]
+            }
+        },
+        "probopass": {
+            "trigger": "cobblemon:party",
+            "conditions": {
+                "party": [
+                    {
+                        "species": "cobblemon:probopass",
+                        "aspects": [
+                            "rlm"
+                        ]
+                    }
+                ]
+            }
+        },
+        "golem": {
+            "trigger": "cobblemon:party",
+            "conditions": {
+                "party": [
+                    {
+                        "species": "cobblemon:golem",
+                        "aspects": [
+                            "rlm"
+                        ]
+                    }
+                ]
+            }
+        },
+        "ampharos": {
+            "trigger": "cobblemon:party",
+            "conditions": {
+                "party": [
+                    {
+                        "species": "cobblemon:ampharos",
+                        "aspects": [
+                            "rlm"
+                        ]
+                    }
+                ]
+            }
+        },
+        "ninjask": {
+            "trigger": "cobblemon:party",
+            "conditions": {
+                "party": [
+                    {
+                        "species": "cobblemon:ninjask",
+                        "aspects": [
+                            "rlm"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "meganium",
+            "blastoise",
+            "delphox",
+            "empoleon",
+            "luxray",
+            "togekiss",
+            "probopass",
+            "golem",
+            "ampharos",
+            "ninjask"
+        ]
+    ]
+}

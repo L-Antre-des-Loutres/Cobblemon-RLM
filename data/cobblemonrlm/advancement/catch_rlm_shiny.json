@@ -1,0 +1,61 @@
+{
+    "parent": "cobblemonrlm:catch_rlm",
+    "display": {
+        "icon": {
+            "id": "cobblemon:pokemon_model",
+            "components": {
+                "cobblemon:pokemon_item": {
+                    "species": "cobblemon:meganium",
+                    "aspects": [
+                        "rlm",
+                        "shiny"
+                    ]
+                }
+            }
+        },
+        "title": {
+            "translate": "advancement.rlm.catch_rlm_shiny.title"
+        },
+        "description": {
+            "translate": "advancement.rlm.catch_rlm_shiny.desc"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "sound": "minecraft:ui.toast.challenge_complete"
+    },
+    "criteria": {
+        "caught_rlm_shiny_party": {
+            "trigger": "cobblemon:party",
+            "conditions": {
+                "party": [
+                    {
+                        "species": "any",
+                        "aspects": [
+                            "rlm",
+                            "shiny"
+                        ]
+                    }
+                ]
+            }
+        },
+        "caught_rlm_shiny_catch": {
+            "trigger": "cobblemon:catch_pokemon",
+            "conditions": {
+                "count": 1,
+                "species": "any",
+                "aspects": [
+                    "rlm",
+                    "shiny"
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "caught_rlm_shiny_party",
+            "caught_rlm_shiny_catch"
+        ]
+    ]
+}

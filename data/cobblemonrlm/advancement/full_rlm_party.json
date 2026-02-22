@@ -1,0 +1,64 @@
+{
+    "parent": "cobblemonrlm:ascension_rlm",
+    "display": {
+        "icon": {
+            "id": "cobblemon:pc"
+        },
+        "title": {
+            "translate": "advancement.rlm.full_rlm_party.title"
+        },
+        "description": {
+            "translate": "advancement.rlm.full_rlm_party.desc"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "sound": "minecraft:ui.toast.challenge_complete"
+    },
+    "criteria": {
+        "full_rlm_party": {
+            "trigger": "cobblemon:party",
+            "conditions": {
+                "party": [
+                    {
+                        "species": "any",
+                        "aspects": [
+                            "rlm"
+                        ]
+                    },
+                    {
+                        "species": "any",
+                        "aspects": [
+                            "rlm"
+                        ]
+                    },
+                    {
+                        "species": "any",
+                        "aspects": [
+                            "rlm"
+                        ]
+                    },
+                    {
+                        "species": "any",
+                        "aspects": [
+                            "rlm"
+                        ]
+                    },
+                    {
+                        "species": "any",
+                        "aspects": [
+                            "rlm"
+                        ]
+                    },
+                    {
+                        "species": "any",
+                        "aspects": [
+                            "rlm"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

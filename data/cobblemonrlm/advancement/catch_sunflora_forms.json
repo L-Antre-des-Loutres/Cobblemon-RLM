@@ -1,0 +1,71 @@
+{
+    "parent": "cobblemonrlm:catch_rlm",
+    "display": {
+        "icon": {
+            "id": "cobblemon:pokemon_model",
+            "components": {
+                "cobblemon:pokemon_item": {
+                    "species": "cobblemon:sunflora",
+                    "aspects": [
+                        "rlm",
+                        "ciel"
+                    ]
+                }
+            }
+        },
+        "title": {
+            "translate": "advancement.rlm.catch_sunflora_forms.title"
+        },
+        "description": {
+            "translate": "advancement.rlm.catch_sunflora_forms.desc"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "sound": "minecraft:ui.toast.challenge_complete"
+    },
+    "criteria": {
+        "ciel": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:sunflora",
+                "aspects": [
+                    "rlm",
+                    "ciel"
+                ]
+            }
+        },
+        "ocean": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:sunflora",
+                "aspects": [
+                    "rlm",
+                    "ocean"
+                ]
+            }
+        },
+        "volcan": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:sunflora",
+                "aspects": [
+                    "rlm",
+                    "volcan"
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "ciel"
+        ],
+        [
+            "ocean"
+        ],
+        [
+            "volcan"
+        ]
+    ]
+}
