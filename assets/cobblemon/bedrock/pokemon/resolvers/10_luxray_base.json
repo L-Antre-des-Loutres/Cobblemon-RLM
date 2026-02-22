@@ -8,14 +8,14 @@
                 "male"
             ],
             "poser": "cobblemon:luxray_rlm",
-            "model": "cobblemon:luxray_male_rlm.geo",
-            "texture": "cobblemon:textures/pokemon/luxray_rlm/luxray_male_rlm.png",
+            "model": "cobblemon:luxray_rlm_male.geo",
+            "texture": "cobblemon:textures/pokemon/luxray_rlm/luxray_rlm_male.png",
             "layers": [
                 {
                     "name": "emissive",
                     "texture": {
                         "frames": [
-                            "cobblemon:textures/pokemon/luxray_rlm/luxray_male_rlm_emissive.png"
+                            "cobblemon:textures/pokemon/luxray_rlm/luxray_rlm_male_emissive.png"
                         ]
                     },
                     "emissive": true
@@ -29,14 +29,14 @@
                 "shiny"
             ],
             "poser": "cobblemon:luxray_rlm",
-            "model": "cobblemon:luxray_male_rlm.geo",
-            "texture": "cobblemon:textures/pokemon/luxray_rlm/luxray_male_rlm_shiny.png",
+            "model": "cobblemon:luxray_rlm_male.geo",
+            "texture": "cobblemon:textures/pokemon/luxray_rlm/luxray_rlm_male_shiny.png",
             "layers": [
                 {
                     "name": "emissive",
                     "texture": {
                         "frames": [
-                            "cobblemon:textures/pokemon/luxray_rlm/luxray_male_rlm_emissive_shiny.png"
+                            "cobblemon:textures/pokemon/luxray_rlm/luxray_rlm_male_emissive_shiny.png"
                         ]
                     },
                     "emissive": true
@@ -49,14 +49,14 @@
                 "female"
             ],
             "poser": "cobblemon:luxray_rlm",
-            "model": "cobblemon:luxray_female_rlm.geo",
-            "texture": "cobblemon:textures/pokemon/luxray_rlm/luxray_female_rlm.png",
+            "model": "cobblemon:luxray_rlm_female.geo",
+            "texture": "cobblemon:textures/pokemon/luxray_rlm/luxray_rlm_female.png",
             "layers": [
                 {
                     "name": "emissive",
                     "texture": {
                         "frames": [
-                            "cobblemon:textures/pokemon/luxray_rlm/luxray_female_rlm_emissive.png"
+                            "cobblemon:textures/pokemon/luxray_rlm/luxray_rlm_female_emissive.png"
                         ]
                     },
                     "emissive": true
@@ -70,14 +70,14 @@
                 "shiny"
             ],
             "poser": "cobblemon:luxray_rlm",
-            "model": "cobblemon:luxray_female_rlm.geo",
-            "texture": "cobblemon:textures/pokemon/luxray_rlm/luxray_female_rlm_shiny.png",
+            "model": "cobblemon:luxray_rlm_female.geo",
+            "texture": "cobblemon:textures/pokemon/luxray_rlm/luxray_rlm_female_shiny.png",
             "layers": [
                 {
                     "name": "emissive",
                     "texture": {
                         "frames": [
-                            "cobblemon:textures/pokemon/luxray_rlm/luxray_female_rlm_emissive_shiny.png"
+                            "cobblemon:textures/pokemon/luxray_rlm/luxray_rlm_female_emissive_shiny.png"
                         ]
                     },
                     "emissive": true
