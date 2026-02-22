@@ -1,6 +1,8 @@
 {
   "cobblemon.species.flammiko.name": "Flammiko",
   "cobblemon.species.flammiko.desc": "placeholder",
+  "item.name.flammikite": "Flammikite",
+  "item.desc.flammikite": "Permet à Flammiko de Méga-Évoluer en Méga Flammiko.",
   "cobblemon.move.frostyslide": "Glissade glacée",
   "cobblemon.move.frostyslide.desc": "+2 priorité",
   "cobblemon.move.highpropulsion": "Haute Propulsion",
