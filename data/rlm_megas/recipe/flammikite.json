@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "cobblemon:fire_gem"
+  },
+  "base": {
+    "item": "mega_showdown:mega_stone"
+  },
+  "addition": {
+    "item": "cobblemon:electric_gem"
+  },
+  "result": {
+    "id": "minecraft:red_dye",
+    "components": {
+      "minecraft:custom_model_data": 291011,
+      "minecraft:item_name": "{\"translate\":\"item.name.flammikite\", \"italic\":false}",
+      "minecraft:lore": [
+        "{\"translate\":\"item.desc.flammikite\", \"color\":\"gray\", \"italic\":false}"
+      ],
+      "mega_showdown:registry_type_component": "mega",
+      "mega_showdown:registry_location_component": "rlm_megas:flammikite"
+    },
+    "count": 1
+  }
+}

@@ -1,6 +1,8 @@
 {
   "target": "cobblemon:meganium",
-  "features": ["rlm"],
+  "features": [
+    "rlm"
+  ],
   "forms": [
     {
       "name": "rlm",
@@ -18,7 +20,7 @@
       "height": 18,
       "weight": 3000,
       "pokedex": [
-        "cobblemon.species.meganium.desc"
+        "cobblemon.species.meganium-rlm.desc"
       ],
       "labels": [
         "custom"
@@ -32,7 +34,7 @@
         "h:grassysurge"
       ],
       "drops": {
-      "amount": "2",
+        "amount": "2",
         "entries": [
           {
             "item": "minecraft:iron_ingot",
@@ -198,6 +200,6 @@
       "preEvolution": "bayleef",
       "evolutions": [],
       "battleOnly": false
-    }    
+    }
   ]
 }

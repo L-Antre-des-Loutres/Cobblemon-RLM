@@ -13,7 +13,9 @@
     ],
     "rootBone": "shinx",
     "animations": {
-        "cry": "q.bedrock_stateful('shinx_rlm', 'cry')"
+        "cry": "q.bedrock_stateful('shinx_rlm', 'cry')",
+        "recoil": "q.bedrock_stateful('shinx_rlm', 'recoil')",
+        "faint": "q.bedrock_primary('shinx_rlm', 'faint', q.curve('one'))"
     },
     "poses": {
         "standing": {
@@ -32,7 +34,7 @@
             ],
             "quirks": [
                 "q.bedrock_quirk('shinx_rlm', 'blink')",
-                "q.bedrock_quirk('shinx_rlm', 'quirk')"
+                "q.bedrock_quirk('shinx_rlm', 'quirk_happy')"
             ]
         },
         "battle-standing": {
@@ -45,7 +47,7 @@
             "quirks": [
                 "q.bedrock_quirk('shinx_rlm', 'blink')",
                 "q.bedrock_quirk('shinx_rlm', 'cry')",
-                "q.bedrock_quirk('shinx_rlm', 'quirk')"
+                "q.bedrock_quirk('shinx_rlm', 'quirk_happy')"
             ]
         },
         "shoulder_left": {
@@ -55,7 +57,7 @@
                 "q.bedrock('shinx_rlm', 'shoulder_left')"
             ],
             "quirks": [
-                "q.bedrock_quirk('shinx_rlm', q.array('blink', 'cry', 'quirk'), 6, 20, 1)"
+                "q.bedrock_quirk('shinx_rlm', q.array('blink', 'cry', 'quirk_happy'), 6, 20, 1)"
             ]
         },
         "shoulder_right": {
@@ -65,7 +67,7 @@
                 "q.bedrock('shinx_rlm', 'shoulder_right')"
             ],
             "quirks": [
-                "q.bedrock_quirk('shinx_rlm', q.array('blink', 'cry', 'quirk'), 6, 20, 1)"
+                "q.bedrock_quirk('shinx_rlm', q.array('blink', 'cry', 'quirk_happy'), 6, 20, 1)"
             ]
         },
         "sleep": {
@@ -73,6 +75,14 @@
             "animations": [
                 "q.bedrock('shinx_rlm', 'sleep')"
             ]
+        },
+        "walking": {
+            "poseTypes": ["WALK"],
+            "animations": [
+                "q.look('head')",
+                "q.bedrock('shinx_rlm', 'ground_walk')"
+            ],
+            "quirks": ["q.bedrock_quirk('shinx_rlm', 'blink')"]
         }
     }
 }

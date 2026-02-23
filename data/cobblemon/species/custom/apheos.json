@@ -1,0 +1,162 @@
+{
+    "implemented": true,
+    "name": "apheos",
+    "nationalPokedexNumber": 1030,
+    "labels": [
+        "custom"
+    ],
+    "pokedex": [
+        "cobblemon.species.apheos.desc"
+    ],
+    "height": 1,
+    "weight": 25,
+    "features": [],
+    "forms": [
+        {
+            "name": "normal",
+            "evolutions": [
+                {
+                    "id": "apheos_aphelis",
+                    "variant": "level_up",
+                    "result": "aphelis",
+                    "consumeHeldItem": false,
+                    "requirements": [
+                        {
+                            "variant": "level",
+                            "minLevel": 33
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "shoulderMountable": true,
+    "shoulderEffects": [
+        {
+            "type": "potion_effect",
+            "effect": "minecraft:slow_falling",
+            "amplifier": 1,
+            "ambient": true,
+            "showParticles": false,
+            "showIcon": false
+        }
+    ],
+    "primaryType": "fairy",
+    "secondaryType": "flying",
+    "baseStats": {
+        "hp": 55,
+        "attack": 45,
+        "defence": 35,
+        "special_attack": 35,
+        "special_defence": 35,
+        "speed": 85
+    },
+    "catchRate": 200,
+    "maleRatio": 0.5,
+    "baseExperienceYield": 60,
+    "experienceGroup": "medium_fast",
+    "eggCycles": 15,
+    "eggGroups": [
+        "flying"
+    ],
+    "baseFriendship": 70,
+    "evYield": {
+        "speed": 1
+    },
+    "moves": [
+        "1:peck",
+        "1:growl",
+        "5:quickattack",
+        "9:wingattack",
+        "13:doubleteam",
+        "17:endeavor",
+        "21:aerialace",
+        "25:agility",
+        "29:airslash",
+        "33:bravebird",
+        "tm:aerialace",
+        "tm:airslash",
+        "tm:attract",
+        "tm:bravebird",
+        "tm:defog",
+        "tm:doubleteam",
+        "tm:echoedvoice",
+        "tm:endure",
+        "tm:facade",
+        "tm:falseswipe",
+        "tm:fly",
+        "tm:frustration",
+        "tm:gigaimpact",
+        "tm:helpinghand",
+        "tm:hiddenpower",
+        "tm:hyperbeam",
+        "tm:pluck",
+        "tm:protect",
+        "tm:raindance",
+        "tm:rest",
+        "tm:return",
+        "tm:roost",
+        "tm:round",
+        "tm:skyattack",
+        "tm:sleeptalk",
+        "tm:steelwing",
+        "tm:substitute",
+        "tm:sunnyday",
+        "tm:swagger",
+        "tm:swift",
+        "tm:tailwind",
+        "tm:takedown",
+        "tm:terablast",
+        "tm:thief",
+        "tm:toxic",
+        "tm:uturn",
+        "tm:workup",
+        "egg:featherdance",
+        "egg:flail",
+        "egg:mirrormove",
+        "egg:skyattack",
+        "egg:supersonic",
+        "egg:uproar",
+        "egg:whirlwind"
+    ],
+    "abilities": [
+        "guts",
+        "scrappy",
+        "h:hustle"
+    ],
+    "baseScale": 0.8,
+    "hitbox": {
+        "width": 0.5,
+        "height": 0.6,
+        "fixed": false
+    },
+    "drops": {
+        "amount": "1",
+        "entries": [
+            {
+                "item": "minecraft:feather",
+                "quantityRange": "1-2",
+                "percentage": 66
+            }
+        ]
+    },
+    "behaviour": {
+        "moving": {
+            "canLook": true,
+            "fly": {
+                "canFly": true
+            },
+            "swim": {
+                "swimSpeed": 0.1,
+                "canSwimInWater": false,
+                "canBreatheUnderwater": false
+            },
+            "resting": {
+                "canSleep": true,
+                "willSleepOnBed": false,
+                "depth": "normal",
+                "light": "0-12"
+            }
+        }
+    }
+}

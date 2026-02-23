@@ -4,13 +4,14 @@
   "variations": [
     {
       "aspects": ["rlm"],
-      "model": "cobblemon:nosepassrlm.geo",
-      "texture": "cobblemon:textures/pokemon/nosepassrlm/nosepassrlm.png",
+      "model": "cobblemon:nosepass_rlm.geo",
+      "texture": "cobblemon:textures/pokemon/nosepass_rlm/nosepass_rlm.png",
       "layers": []
     },
     {
       "aspects": [ "rlm", "shiny" ],
-      "texture": "cobblemon:textures/pokemon/nosepassrlm/nosepassrlm_shiny.png"
+      "texture": "cobblemon:textures/pokemon/nosepass_rlm/nosepass_rlm_shiny.png"
     }
   ]
 }
+

@@ -2,16 +2,19 @@
   "implemented": true,
   "name": "flammiko",
   "nationalPokedexNumber": 1026,
-  "labels": [ "custom" ],
+  "labels": [
+    "custom"
+  ],
   "pokedex": [
-    "cobblemon.species.flammiko.desc1",
-    "cobblemon.species.flammiko.desc2"
+    "cobblemon.species.flammiko.desc"
   ],
   "height": 2,
   "weight": 100,
   "features": [],
   "forms": [
-    { "name": "normal" }
+    {
+      "name": "normal"
+    }
   ],
   "shoulderMountable": true,
   "shoulderEffects": [
@@ -24,7 +27,6 @@
       "showIcon": false
     }
   ],
-
   "primaryType": "fire",
   "secondaryType": "electric",
   "baseStats": {
@@ -49,7 +51,6 @@
     "special_attack": 1,
     "speed": 2
   },
-
   "moves": [
     "egg:disable",
     "1:ember",
@@ -83,11 +84,7 @@
     "flashfire",
     "h:simple"
   ],
-  
-
-  "evolutions": [ ],
-  
-
+  "evolutions": [],
   "baseScale": 0.5,
   "hitbox": {
     "width": 1,
@@ -95,7 +92,7 @@
     "fixed": false
   },
   "drops": {
-  "amount": "2",
+    "amount": "2",
     "entries": [
       {
         "item": "minecraft:gunpowder",
@@ -109,7 +106,7 @@
       "canLook": false,
       "fly": {
         "canFly": false
-      },          
+      },
       "swim": {
         "swimSpeed": 0.1,
         "canSwimInWater": true,
@@ -123,6 +120,4 @@
       }
     }
   }
-
-
 }

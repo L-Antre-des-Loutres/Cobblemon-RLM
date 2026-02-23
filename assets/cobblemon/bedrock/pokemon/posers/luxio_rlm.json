@@ -13,7 +13,9 @@
     ],
     "rootBone": "luxio",
     "animations": {
-        "cry": "q.bedrock_stateful('luxio_rlm', 'cry')"
+        "cry": "q.bedrock_stateful('luxio_rlm', 'cry')",
+        "recoil": "q.bedrock_stateful('luxio_rlm', 'recoil')",
+        "faint": "q.bedrock_primary('luxio_rlm', 'faint', q.curve('one'))"
     },
     "poses": {
         "standing": {
@@ -51,6 +53,14 @@
             "animations": [
                 "q.bedrock('luxio_rlm', 'sleep')"
             ]
+        },
+        "walking": {
+            "poseTypes": ["WALK"],
+            "animations": [
+                "q.look('head')",
+                "q.bedrock('luxio_rlm', 'ground_walk')"
+            ],
+            "quirks": ["q.bedrock_quirk('luxio_rlm', 'blink')"]
         }
     }
 }

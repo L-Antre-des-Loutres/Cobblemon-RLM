@@ -1,0 +1,15 @@
+{
+    "id": "cobblemon:rineshell",
+    "speciesId": "cobblemon:rineshell",
+    "displayAspects": [],
+    "conditionAspects": [],
+    "forms": [
+        {
+            "displayForm": "Normal",
+            "unlockForms": [
+                "Normal"
+            ]
+        }
+    ],
+    "variations": []
+}

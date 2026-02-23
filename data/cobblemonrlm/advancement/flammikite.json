@@ -1,0 +1,42 @@
+{
+    "parent": "cobblemonrlm:root",
+    "display": {
+        "icon": {
+            "id": "minecraft:red_dye",
+            "components": {
+                "minecraft:custom_model_data": 291011
+            }
+        },
+        "title": {
+            "translate": "advancement.rlm.flammikite.title"
+        },
+        "description": {
+            "translate": "advancement.rlm.flammikite.desc"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "sound": "minecraft:ui.toast.challenge_complete"
+    },
+    "criteria": {
+        "has_flammikite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:red_dye",
+                        "components": {
+                            "minecraft:custom_model_data": 291011
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "has_flammikite"
+        ]
+    ]
+}

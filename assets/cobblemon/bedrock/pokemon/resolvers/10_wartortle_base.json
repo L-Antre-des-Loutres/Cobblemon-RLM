@@ -5,13 +5,13 @@
   "variations": [
     {
       "aspects": ["rlm"],
-      "model": "cobblemon:wartortlerlm.geo",
-      "texture": "cobblemon:textures/pokemon/wartortlerlm/wartortlerlm.png",
+      "model": "cobblemon:wartortle_rlm.geo",
+      "texture": "cobblemon:textures/pokemon/wartortle_rlm/wartortle_rlm.png",
       "layers": []
     },
     {
       "aspects": [ "rlm", "shiny" ],
-      "texture": "cobblemon:textures/pokemon/wartortlerlm/wartortlerlm_shiny.png"
+      "texture": "cobblemon:textures/pokemon/wartortle_rlm/wartortle_rlm_shiny.png"
     }
   ]
 }

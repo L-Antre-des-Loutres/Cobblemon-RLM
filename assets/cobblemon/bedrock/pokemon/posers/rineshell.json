@@ -1,0 +1,82 @@
+{
+    "portraitScale": 2.0,
+    "portraitTranslation": [
+        -0.2,
+        -0.6,
+        0
+    ],
+    "profileScale": 1,
+    "profileTranslation": [
+        0,
+        0.2,
+        0
+    ],
+    "rootBone": "rineshell",
+    "animations": {
+        "cry": "q.bedrock_stateful('rineshell', 'cry')",
+        "faint": "q.bedrock_primary('rineshell', 'faint', q.curve('one'))",
+        "recoil": "q.bedrock_stateful('rineshell', 'recoil')",
+        "physical": "q.bedrock_primary('rineshell', 'physical', q.curve('symmetrical_wide'))",
+        "special": "q.bedrock_primary('rineshell', 'physical', q.curve('symmetrical_wide'))",
+        "status": "q.bedrock_primary('rineshell', 'physical', q.curve('symmetrical_wide'))"
+    },
+    "poses": {
+        "standing": {
+            "poseName": "standing",
+            "transformTicks": 10,
+            "isBattle": false,
+            "poseTypes": [
+                "STAND",
+                "NONE",
+                "PORTRAIT",
+                "PROFILE"
+            ],
+            "animations": [
+                "q.look('head')",
+                "bedrock(rineshell, ground_idle)"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('rineshell', q.array('blink', 'cry'), 6, 20, 1)"
+            ]
+        },
+        "battle-standing": {
+            "poseTypes": ["STAND"],
+            "isBattle": true,
+            "animations": [
+                "q.look('head')",
+                "q.bedrock('rineshell', 'battle_idle')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('rineshell', q.array('blink', 'cry'), 6, 20, 1)"
+            ]
+        },
+        "shoulder_left": {
+            "poseTypes": ["SHOULDER_LEFT"],
+            "animations": [
+                "q.look('head')",
+                "q.bedrock('rineshell', 'shoulder_left')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('rineshell', q.array('blink', 'cry'), 6, 20, 1)"
+            ]
+        },
+        "shoulder_right": {
+            "poseTypes": ["SHOULDER_RIGHT"],
+            "animations": [
+                "q.look('head')",
+                "q.bedrock('rineshell', 'shoulder_right')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('rineshell', q.array('blink', 'cry'), 6, 20, 1)"
+            ]
+        },
+        "walking": {
+            "poseTypes": ["WALK"],
+            "animations": [
+                "q.look('head')",
+                "q.bedrock('rineshell', 'ground_walk')"
+            ],
+            "quirks": ["q.bedrock_quirk('rineshell', 'blink')"]
+        }
+    }
+}

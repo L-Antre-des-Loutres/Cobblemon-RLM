@@ -70,28 +70,21 @@
 				"mouth_open": {
 					"scale": {
 						"0.0": [0, 0, 0],
-						"0.25": {
-							"pre": [0, 0, 0],
-							"post": [1, 1, 1]
-						},
-						"1.25": {
-							"pre": [1, 1, 1],
-							"post": [0, 0, 0]
-						}
+						"0.25": {"pre": [0, 0, 0], "post": [1, 1, 1]},
+						"1.25": {"pre": [1, 1, 1], "post": [0, 0, 0]}
 					}
 				},
 				"mouth_closed": {
 					"scale": {
 						"0.0": [1, 1, 1],
-						"0.25": {
-							"pre": [1, 1, 1],
-							"post": [0, 0, 0]
-						},
-						"1.25": {
-							"pre": [0, 0, 0],
-							"post": [1, 1, 1]
-						}
+						"0.25": {"pre": [1, 1, 1], "post": [0, 0, 0]},
+						"1.25": {"pre": [0, 0, 0], "post": [1, 1, 1]}
 					}
+				}
+			},
+			"sound_effects": {
+				"0.25": {
+					"effect": "cobblemon:pokemon.chandelure.cry"
 				}
 			}
 		},
@@ -205,6 +198,11 @@
 							"lerp_mode": "catmullrom"
 						}
 					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "cobblemon:pokemon.chandelure.cry"
 				}
 			}
 		},

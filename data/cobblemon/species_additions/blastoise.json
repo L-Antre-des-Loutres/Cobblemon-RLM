@@ -20,17 +20,14 @@
       "height": 2,
       "weight": 75.5,
       "pokedex": [
-        "cobblemon.species.blastoise.desc"
-      ],
-      "labels": [
-        "custom"
+        "cobblemon.species.blastoise-rlm.desc"
       ],
       "aspects": [
         "rlm"
       ],
       "abilities": [
-        "rockhead",
-        "swiftswim",
+        "marinevortex",
+        "marinevortex",
         "h:rockhead"
       ],
       "moves": [

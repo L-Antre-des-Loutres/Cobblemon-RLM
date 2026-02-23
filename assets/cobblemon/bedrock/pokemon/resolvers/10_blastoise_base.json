@@ -5,13 +5,13 @@
   "variations": [
     {
       "aspects": ["rlm"],
-      "model": "cobblemon:blastoiserlm.geo",
-      "texture": "cobblemon:textures/pokemon/blastoiserlm/blastoiserlm.png",
+      "model": "cobblemon:blastoise_rlm.geo",
+      "texture": "cobblemon:textures/pokemon/blastoise_rlm/blastoise_rlm.png",
       "layers": []
     },
     {
       "aspects": [ "rlm", "shiny" ],
-      "texture": "cobblemon:textures/pokemon/blastoiserlm/blastoiserlm_shiny.png"
+      "texture": "cobblemon:textures/pokemon/blastoise_rlm/blastoise_rlm_shiny.png"
     }
   ]
 }

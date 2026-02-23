@@ -4,13 +4,14 @@
   "variations": [
     {
       "aspects": ["rlm"],
-      "model": "cobblemon:probopassrlm.geo",
-      "texture": "cobblemon:textures/pokemon/probopassrlm/probopassrlm.png",
+      "model": "cobblemon:probopass_rlm.geo",
+      "texture": "cobblemon:textures/pokemon/probopass_rlm/probopass_rlm.png",
       "layers": []
     },
     {
       "aspects": [ "shiny" ],
-      "texture": "cobblemon:textures/pokemon/probopassrlm/probopassrlm_shiny.png"
+      "texture": "cobblemon:textures/pokemon/probopass_rlm/probopass_rlm_shiny.png"
     }
   ]
 }
+

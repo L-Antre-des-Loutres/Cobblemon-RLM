@@ -51,6 +51,14 @@
             "animations": [
                 "q.bedrock('luxray_rlm', 'sleep')"
             ]
+        },
+        "walking": {
+            "poseTypes": ["WALK"],
+            "animations": [
+                "q.look('head')",
+                "q.bedrock('luxray_rlm', 'ground_walk')"
+            ],
+            "quirks": ["q.bedrock_quirk('luxray_rlm', 'blink')"]
         }
     }
 }

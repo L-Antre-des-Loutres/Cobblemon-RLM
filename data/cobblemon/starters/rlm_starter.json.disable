@@ -1,0 +1,9 @@
+{
+    "name": "RLM",
+    "displayName": "cobblemon.starterselection.category.rlm",
+    "pokemon": [
+        "Fennekin level=10",
+        "Squirtle level=10",
+        "Chikorita level=10"
+    ]
+}

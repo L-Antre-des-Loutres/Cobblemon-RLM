@@ -1,0 +1,144 @@
+{
+  "target": "cobblemon:nincada",
+  "features": [
+    "rlm"
+  ],
+  "forms": [
+    {
+      "name": "rlm",
+      "pokedex": [
+        "cobblemon.species.nincada-rlm.desc"
+      ],
+
+      "primaryType": "bug",
+      "secondaryType": "water",
+      "abilities": [
+        "compoundeyes",
+        "h:runaway"
+      ],
+
+      "baseStats": {
+        "hp": 31,
+        "attack": 45,
+        "defence": 90,
+        "special_attack": 30,
+        "special_defence": 30,
+        "speed": 40
+      },
+
+      "drops": {
+        "amount": 1,
+        "entries": [
+          {
+            "item": "cobblemon:soft_sand",
+            "percentage": 2.5
+          }
+        ]
+      },
+      "moves": [
+        "1:scratch",
+        "1:sandattack",
+        "5:harden",
+        "6:watergun",
+        "10:falseswipe",
+        "15:mudslap",
+        "21:absorb",
+        "25:metalclaw",
+        "30:furyswipes",
+        "35:mindreader",
+        "40:dig",
+        "egg:bide",
+        "egg:bugbite",
+        "egg:feintattack",
+        "egg:finalgambit",
+        "egg:flail",
+        "egg:gust",
+        "egg:nightslash",
+        "tm:aerialace",
+        "tm:bugbite",
+        "tm:bugbuzz",
+        "tm:cut",
+        "tm:dig",
+        "tm:endure",
+        "tm:facade",
+        "tm:falseswipe",
+        "tm:flash",
+        "tm:furycutter",
+        "tm:gigadrain",
+        "tm:honeclaws",
+        "tm:leechlife",
+        "tm:metalclaw",
+        "tm:mudslap",
+        "tm:protect",
+        "tm:rest",
+        "tm:sandstorm",
+        "tm:shadowball",
+        "tm:silverwind",
+        "tm:skittersmack",
+        "tm:sleeptalk",
+        "tm:solarbeam",
+        "tm:spite",
+        "tm:stringshot",
+        "tm:strugglebug",
+        "tm:substitute",
+        "tm:sunnyday",
+        "tm:terablast",
+        "tm:xscissor",
+        "tutor:aerialace",
+        "tutor:bugbite",
+        "tutor:falseswipe",
+        "tutor:furycutter",
+        "tutor:gigadrain",
+        "tutor:leechlife",
+        "tutor:mudslap",
+        "tutor:rest",
+        "tutor:shadowball",
+        "tutor:skittersmack",
+        "tutor:sleeptalk",
+        "tutor:spite",
+        "tutor:stringshot",
+        "tutor:xscissor",
+        "legacy:confide",
+        "legacy:doubleedge",
+        "legacy:doubleteam",
+        "legacy:frustration",
+        "legacy:hiddenpower",
+        "legacy:mimic",
+        "legacy:naturalgift",
+        "legacy:return",
+        "legacy:round",
+        "legacy:secretpower",
+        "legacy:snore",
+        "legacy:swagger",
+        "legacy:toxic"
+      ],
+      "evolutions": [
+        {
+          "id": "nincada_ninjask",
+          "shedder": "shedinja",
+          "variant": "level_up",
+          "result": "ninjask rlm",
+          "consumeHeldItem": false,
+          "learnableMoves": [
+            "doubleteam",
+            "screech",
+            "furycutter"
+          ],
+          "requirements": [
+            {
+              "variant": "level",
+              "minLevel": 20
+            }
+          ]
+        }
+      ],
+
+      "labels": [
+        "custom"
+      ],
+      "aspects": [
+        "rlm"
+      ]
+    }
+  ]
+}

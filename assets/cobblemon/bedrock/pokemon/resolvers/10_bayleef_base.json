@@ -5,13 +5,14 @@
   "variations": [
     {
       "aspects": ["rlm"],
-      "model": "cobblemon:bayleefrlm.geo",
-      "texture": "cobblemon:textures/pokemon/bayleefrlm/bayleefrlm.png",
+      "model": "cobblemon:bayleef_rlm.geo",
+      "texture": "cobblemon:textures/pokemon/bayleef_rlm/bayleef_rlm.png",
       "layers": []
     },
     {
       "aspects": [ "rlm", "shiny" ],
-      "texture": "cobblemon:textures/pokemon/bayleefrlm/bayleefrlm_shiny.png"
+      "texture": "cobblemon:textures/pokemon/bayleef_rlm/bayleef_rlm_shiny.png"
     }
   ]
 }
+

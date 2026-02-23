@@ -1,0 +1,11 @@
+{
+  "entryId": "cobblemon:sunflora",
+  "forms": [
+    {
+      "displayForm": "ocean",
+      "unlockForms": [
+        "ocean"
+      ]
+    }
+  ]
+}

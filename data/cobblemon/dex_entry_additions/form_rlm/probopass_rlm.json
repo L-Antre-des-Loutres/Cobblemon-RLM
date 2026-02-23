@@ -1,0 +1,11 @@
+{
+  "entryId": "cobblemon:probopass",
+  "forms": [
+    {
+      "displayForm": "rlm",
+      "unlockForms": [
+        "rlm"
+      ]
+    }
+  ]
+}
