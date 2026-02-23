@@ -52,5 +52,7 @@
   "cobblemon.ability.dullnessguard": "Garde Émoussée",
   "cobblemon.ability.dullnessguard.desc": "Un pouvoir mystérieux protège le Pokémon de toutes les capacités, sauf celles qui sont « peu efficaces ».",
   "cobblemon.ability.psychoprio": "Psycho-Prio",
-  "cobblemon.ability.psychoprio.desc": "Le détenteur de cette capacité bénéficie de la priorité sur ses attaques tant qu'il a plus de 50% de ses PV."
+  "cobblemon.ability.psychoprio.desc": "Le détenteur de cette capacité bénéficie de la priorité sur ses attaques tant qu'il a plus de 50% de ses PV.",
+  "cobblemon.ability.marinevortex": "Trombe Marine",
+  "cobblemon.ability.marinevortex.desc": "En entrant sur le terrain, lance la pluie. Sous la pluie, l'Attaque et l'Attaque Spéciale sont multipliées par 1,5."
 }
