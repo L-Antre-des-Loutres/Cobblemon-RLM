@@ -18,5 +18,5 @@
     flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, failskillswap: 1, breakable: 1 },
     name: "Dullness Guard",
     rating: 5,
-    num: 25
+    num: 17003
 })
