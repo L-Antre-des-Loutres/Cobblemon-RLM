@@ -47,6 +47,26 @@
                 "q.bedrock_quirk('galama', q.array('blink', 'cry', 'battle_idle'), 6, 20, 1)"
             ]
         },
+        "shoulder_left": {
+            "poseTypes": ["SHOULDER_LEFT"],
+            "animations": [
+                "q.look('head')",
+                "q.bedrock('galama', 'mount')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('galama', q.array('blink', 'cry'), 6, 20, 1)"
+            ]
+        },
+        "shoulder_right": {
+            "poseTypes": ["SHOULDER_RIGHT"],
+            "animations": [
+                "q.look('head')",
+                "q.bedrock('galama', 'mount')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('galama', q.array('blink', 'cry'), 6, 20, 1)"
+            ]
+        },
         "walking": {
             "poseTypes": ["WALK"],
             "animations": [

@@ -54,7 +54,7 @@
             "poseTypes": ["SHOULDER_LEFT"],
             "animations": [
                 "q.look('head')",
-                "q.bedrock('rineshell', 'battle_idle')"
+                "q.bedrock('rineshell', 'shoulder_left')"
             ],
             "quirks": [
                 "q.bedrock_quirk('rineshell', q.array('blink', 'cry'), 6, 20, 1)"
@@ -64,7 +64,7 @@
             "poseTypes": ["SHOULDER_RIGHT"],
             "animations": [
                 "q.look('head')",
-                "q.bedrock('rineshell', 'battle_idle')"
+                "q.bedrock('rineshell', 'shoulder_right')"
             ],
             "quirks": [
                 "q.bedrock_quirk('rineshell', q.array('blink', 'cry'), 6, 20, 1)"
