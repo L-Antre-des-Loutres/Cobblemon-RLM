@@ -1,0 +1,59 @@
+{
+    "portraitScale": 1.25,
+    "portraitTranslation": [
+        -0.75,
+        0.75,
+        0
+    ],
+    "profileScale": 0.75,
+    "profileTranslation": [
+        -0.1,
+        0.5,
+        0
+    ],
+    "rootBone": "kotora",
+    "animations": {
+        "cry": "q.bedrock_stateful('kotora', 'cry')",
+        "faint": "q.bedrock_primary('kotora', 'faint', q.curve('one'))",
+        "recoil": "q.bedrock_stateful('kotora', 'recoil')"
+    },
+    "poses": {
+        "standing": {
+            "poseName": "standing",
+            "transformTicks": 10,
+            "isBattle": false,
+            "poseTypes": [
+                "STAND",
+                "NONE",
+                "PORTRAIT",
+                "PROFILE"
+            ],
+            "animations": [
+                "q.look('head')",
+                "bedrock(kotora, ground_idle)"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('kotora', q.array('face_blink'), 6, 20, 1)"
+            ]
+        },
+        "battle-standing": {
+            "poseTypes": ["STAND"],
+            "isBattle": true,
+            "animations": [
+                "q.look('head')",
+                "q.bedrock('kotora', 'battle_idle')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('kotora', q.array('face_blink', 'cry'), 6, 20, 1)"
+            ]
+        },
+        "walking": {
+            "poseTypes": ["WALK"],
+            "animations": [
+                "q.look('head')",
+                "q.bedrock('kotora', 'ground_walk')"
+            ],
+            "quirks": ["q.bedrock_quirk('kotora', 'face_blink')"]
+        }
+    }
+}
