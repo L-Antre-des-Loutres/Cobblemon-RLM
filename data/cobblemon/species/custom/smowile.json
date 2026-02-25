@@ -1,0 +1,106 @@
+{
+    "implemented": true,
+    "name": "smowile",
+    "nationalPokedexNumber": 1033,
+    "labels": [
+        "custom"
+    ],
+    "pokedex": [
+        "cobblemon.species.smowile.desc"
+    ],
+    "height": 1,
+    "weight": 25,
+    "features": [],
+    "forms": [
+        {
+            "name": "normal"
+        }
+    ],
+    "shoulderMountable": true,
+    "shoulderEffects": [
+        {
+            "type": "potion_effect",
+            "effect": "minecraft:strength",
+            "amplifier": 2,
+            "ambient": true,
+            "showParticles": false,
+            "showIcon": false
+        }
+    ],
+    "primaryType": "fairy",
+    "baseStats": {
+        "hp": 35,
+        "attack": 55,
+        "defence": 55,
+        "special_attack": 45,
+        "special_defence": 45,
+        "speed": 35
+    },
+    "catchRate": 255,
+    "maleRatio": 0.5,
+    "baseExperienceYield": 60,
+    "experienceGroup": "medium_fast",
+    "eggCycles": 15,
+    "eggGroups": [
+        "field",
+        "fairy"
+    ],
+    "baseFriendship": 70,
+    "evYield": {
+        "attack": 1
+    },
+    "moves": [
+        "1:bite",
+        "1:fairywind",
+        "6:faketears",
+        "16:knockoff",
+        "20:charm",
+        "23:drainingkiss",
+        "25:irondefense",
+        "28:crunch",
+        "34:ironhead",
+        "38:taunt",
+        "44:playrough",
+        "48:dynamicpunch"
+    ],
+    "abilities": [
+        "hypercutter",
+        "intimidate",
+        "h:sheerforce"
+    ],
+    "baseScale": 0.75,
+    "hitbox": {
+        "width": 0.5,
+        "height": 0.95,
+        "fixed": false
+    },
+    "drops": {
+        "amount": "1",
+        "entries": [
+            {
+                "item": "minecraft:copper",
+                "quantityRange": "1-2",
+                "percentage": 66
+            }
+        ]
+    },
+    "behaviour": {
+        "moving": {
+            "canLook": true,
+            "fly": {
+                "canFly": false
+            },
+            "swim": {
+                "swimSpeed": 0.1,
+                "canSwimInWater": true,
+                "canBreatheUnderwater": false
+            },
+            "resting": {
+                "canSleep": true,
+                "willSleepOnBed": true,
+                "depth": "normal",
+                "light": "0-18"
+            }
+        }
+    }
+}
