@@ -13,7 +13,21 @@
     "features": [],
     "forms": [
         {
-            "name": "normal"
+            "name": "normal",
+            "evolutions": [
+                {
+                    "id": "smowile_mawile",
+                    "variant": "level_up",
+                    "result": "mawile",
+                    "consumeHeldItem": false,
+                    "requirements": [
+                        {
+                            "variant": "level",
+                            "minLevel": 20
+                        }
+                    ]
+                }
+            ]
         }
     ],
     "shoulderMountable": true,
@@ -21,7 +35,7 @@
         {
             "type": "potion_effect",
             "effect": "minecraft:strength",
-            "amplifier": 2,
+            "amplifier": 3,
             "ambient": true,
             "showParticles": false,
             "showIcon": false
@@ -68,10 +82,11 @@
         "intimidate",
         "h:sheerforce"
     ],
-    "baseScale": 0.75,
+    "evolutions": [],
+    "baseScale": 0.5,
     "hitbox": {
-        "width": 0.5,
-        "height": 0.95,
+        "width": 0.45,
+        "height": 0.90,
         "fixed": false
     },
     "drops": {
