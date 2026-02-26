@@ -1,0 +1,83 @@
+{
+  "implemented": true,
+  "name": "wamek",
+  "nationalPokedexNumber": 1035,
+  "labels": [
+    "custom"
+  ],
+  "pokedex": [
+    "cobblemon.species.wamek.desc"
+  ],
+  "height": 2,
+  "weight": 100,
+  "features": [],
+  "forms": [
+    {
+      "name": "normal"
+    }
+  ],
+  "primaryType": "bug",
+  "secondaryType": "fighting",
+  "baseStats": {
+    "hp": 100,
+    "attack": 40,
+    "defence": 90,
+    "special_attack": 70,
+    "special_defence": 90,
+    "speed": 130
+  },
+  "catchRate": 45,
+  "maleRatio": 0.5,
+  "baseExperienceYield": 236,
+  "experienceGroup": "fast",
+  "eggCycles": 25,
+  "eggGroups": [
+    "flying"
+  ],
+  "baseFriendship": 70,
+  "evYield": {
+    "speed": 2
+  },
+  "moves": [
+    "1:growl"
+  ],
+  "abilities": [
+    "competitive",
+    "queenlymajesty",
+    "h:naturalcure"
+  ],
+  "preEvolution": "eevee",
+  "evolutions": [],
+  "baseScale": 1,
+  "hitbox": {
+    "width": 1,
+    "height": 1.4,
+    "fixed": false
+  },
+  "drops": {
+    "amount": "2",
+    "entries": [
+      {
+        "item": "minecraft:gunpowder",
+        "quantityRange": "1-2",
+        "percentage": 66
+      }
+    ]
+  },
+  "behaviour": {
+    "moving": {
+      "canLook": false,
+      "swim": {
+        "swimSpeed": 0.1,
+        "canSwimInWater": true,
+        "canBreatheUnderwater": false
+      },
+      "resting": {
+        "canSleep": true,
+        "willSleepOnBed": true,
+        "depth": "normal",
+        "light": "0-12"
+      }
+    }
+  }
+}

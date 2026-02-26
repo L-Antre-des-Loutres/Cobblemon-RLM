@@ -1,0 +1,18 @@
+{
+  "species": "cobblemon:wamek",
+  "order": 0,
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon:wamek",
+      "model": "cobblemon:wamek.geo",
+      "texture": "cobblemon:textures/pokemon/wamek/wamek.png"
+    },
+    {
+      "aspects": [
+        "shiny"
+      ],
+      "texture": "cobblemon:textures/pokemon/wamek/wamek_shiny.png"
+    }
+  ]
+}
