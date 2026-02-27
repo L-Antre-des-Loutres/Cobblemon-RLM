@@ -19,22 +19,22 @@
   "primaryType": "bug",
   "secondaryType": "fighting",
   "baseStats": {
-    "hp": 100,
-    "attack": 40,
-    "defence": 90,
-    "special_attack": 70,
-    "special_defence": 90,
-    "speed": 130
+    "hp": 60,
+    "attack": 114,
+    "defence": 70,
+    "special_attack": 90,
+    "special_defence": 80,
+    "speed": 114
   },
-  "catchRate": 45,
-  "maleRatio": 0.5,
-  "baseExperienceYield": 236,
-  "experienceGroup": "fast",
-  "eggCycles": 25,
+  "catchRate": 25,
+  "maleRatio": -1,
+  "baseExperienceYield": 300,
+  "experienceGroup": "slow",
+  "eggCycles": 40,
   "eggGroups": [
     "flying"
   ],
-  "baseFriendship": 70,
+  "baseFriendship": 40,
   "evYield": {
     "speed": 2
   },
@@ -44,9 +44,9 @@
     "1:watergun"
   ],
   "abilities": [
-    "competitive",
-    "queenlymajesty",
-    "h:naturalcure"
+    "innerfocus ",
+    "steadfast",
+    "h:adaptability"
   ],
   "preEvolution": "eevee",
   "evolutions": [],
@@ -60,9 +60,9 @@
     "amount": "2",
     "entries": [
       {
-        "item": "minecraft:gunpowder",
+        "item": "minecraft:string",
         "quantityRange": "1-2",
-        "percentage": 66
+        "percentage": 33
       }
     ]
   },
