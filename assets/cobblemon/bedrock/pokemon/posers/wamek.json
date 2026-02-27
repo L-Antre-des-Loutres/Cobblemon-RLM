@@ -1,19 +1,24 @@
 {
-    "portraitScale": 1.25,
+    "portraitScale": 1.95,
     "portraitTranslation": [
-        0,
-        0,
+        -0.25,
+        1.85,
         0
     ],
-    "profileScale": 0.75,
+    "profileScale": 0.6,
     "profileTranslation": [
         0,
-        0.5,
+        0.85,
         0
     ],
     "rootBone": "wamek",
     "animations": {
-        "cry": "q.bedrock_stateful('wamek', 'cry')"
+        "cry": "q.bedrock_stateful('wamek', 'cry')",
+        "faint": "q.bedrock_primary('wamek', 'faint', q.curve('one'))",
+        "recoil": "q.bedrock_stateful('wamek', 'recoil')",
+        "physical": "q.bedrock_primary('wamek', 'physical_move', q.curve('symmetrical_wide'))",
+        "special": "q.bedrock_primary('wamek', 'special_move', q.curve('symmetrical_wide'))",
+        "status": "q.bedrock_primary('wamek', 'special_move', q.curve('symmetrical_wide'))"
     },
     "poses": {
         "standing": {
@@ -22,13 +27,68 @@
             "isBattle": false,
             "poseTypes": [
                 "STAND",
-                "NONE",
+                "NONE"
+            ],
+            "animations": [
+                "q.look('head')",
+                "bedrock(wamek, ground_idle)"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('wamek', q.array('blink', 'quirk_lookaround'), 6, 20, 1)"
+            ]
+        },
+        "portrait": {
+            "poseName": "standing",
+            "transformTicks": 10,
+            "isBattle": false,
+            "poseTypes": [
                 "PORTRAIT",
                 "PROFILE"
             ],
             "animations": [
+                "bedrock(wamek, aurafarm)"
+            ]
+        },
+        "sleep": {
+            "transformTicks": 10,
+            "poseTypes": ["SLEEP"],
+            "animations": [
+                "q.bedrock('wamek', 'sleep')"
+            ]
+        },
+        "battle-standing": {
+            "poseTypes": ["STAND"],
+            "isBattle": true,
+            "animations": [
                 "q.look('head')",
-                "bedrock('wamek', 'ground_idle')"
+                "bedrock(wamek, battle_idle)"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('wamek', q.array('blink'), 6, 20, 1)"
+            ]
+        },
+        "walking": {
+            "poseTypes": ["WALK"],
+            "animations": [
+                "q.bedrock('wamek', 'ground_walk')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('wamek', q.array('blink', 'quirk_lookaround'), 6, 20, 1)"
+            ]
+        },
+        "hover": {
+            "poseTypes": ["HOVER", "FLOAT"],
+            "animations": [
+                "q.bedrock('wamek', 'hover')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('wamek', q.array('blink', 'quirk_lookaround'), 6, 20, 1)"
+            ]
+        },
+        "fly": {
+            "poseTypes": ["FLY", "SWIM"],
+            "animations": [
+                "q.bedrock('wamek', 'fly')"
             ],
             "quirks": [
                 "q.bedrock_quirk('wamek', q.array('blink'), 6, 20, 1)"
