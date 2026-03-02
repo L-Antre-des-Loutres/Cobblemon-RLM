@@ -510,6 +510,79 @@
 				}
 			}
 		},
+		"animation.mawile_rlm_dragon.fly": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": ["-0 - 2 * Math.sin(query.anim_time * 180/2)", "30 - 10 * Math.sin(query.anim_time * 180/2)", "0 + 8 * Math.sin(query.anim_time * 108/1.5)"],
+					"position": [0, 7, 0]
+				},
+				"arm_left": {
+					"rotation": [-74.05621, 26.02541, "11.7513229836 + 10 * Math.sin(query.anim_time * 108/1.5)"]
+				},
+				"arm_left2": {
+					"rotation": [0, 0, "57.5 + 8 * Math.sin(query.anim_time * 108/1.5)"]
+				},
+				"arm_right": {
+					"rotation": [-77.03752, "39.2734502074 - 10* Math.sin(query.anim_time * 108/1.5)", 8.29012]
+				},
+				"arm_right2": {
+					"rotation": [-9.25249, 3.81024, "-117.8084343748 + 8 * Math.sin(query.anim_time * 108/1.5)"],
+					"position": [-1, 0, 0]
+				},
+				"head": {
+					"rotation": ["-0 - 2 * Math.sin(query.anim_time * 108/1.5)", -30, 0]
+				},
+				"hair_left2": {
+					"rotation": [0, 0, "0 + 2 * Math.sin(query.anim_time * 108/1.5)"]
+				},
+				"hair_left3": {
+					"rotation": [0, 0, "0 + 2 * Math.sin(query.anim_time * 108/1.5)"]
+				},
+				"hair_right2": {
+					"rotation": [0, 0, "0 + 2 * Math.sin(query.anim_time * 108/1.5)"]
+				},
+				"hair_right3": {
+					"rotation": [0, 0, "0 + 2 * Math.sin(query.anim_time * 108/1.5)"]
+				},
+				"leg_left": {
+					"rotation": [-5, 0, 0]
+				},
+				"leg_left2": {
+					"rotation": [7.5, 0, 0]
+				},
+				"foot_left": {
+					"rotation": [0, -25, 0]
+				},
+				"foot_right": {
+					"rotation": [0, -17.5, 0]
+				},
+				"head_mouth_neck": {
+					"rotation": [-12.5, 0, 0]
+				},
+				"head_mouth_neck2": {
+					"rotation": [-10, 0, 0]
+				},
+				"head_mouth_neck3": {
+					"rotation": [-27.5, 0, 0]
+				},
+				"head_mouth_neck4": {
+					"rotation": [-22.5, 0, 0]
+				},
+				"head_mouth_neck5": {
+					"rotation": [-45, 0, 0]
+				},
+				"head_mouth_neck6": {
+					"rotation": [-35, 0, 0]
+				},
+				"head_mouth_neck_end": {
+					"rotation": [-22.5, 0, 0]
+				},
+				"dragon_head": {
+					"rotation": [5, 0, 0]
+				}
+			}
+		},
 		"animation.mawile_rlm_dragon.blink": {
 			"animation_length": 0.1667,
 			"bones": {
