@@ -1,0 +1,36 @@
+{
+  "species": "cobblemon:mawile",
+  "order": 10,
+  "variations": [
+    {
+      "aspects": [
+        "rlm", "dragon", "mega"
+      ],
+      "poser": "cobblemon:mawile_rlm_dragon_mega",
+      "model": "cobblemon:mawile_rlm_dragon_mega.geo",
+      "texture": "cobblemon:textures/pokemon/mawile_rlm_dragon/mega/mawile_rlm_dragon.png",
+      "layers": [
+        {
+          "name": "animation",
+          "texture": {
+            "frames": [
+              "cobblemon:textures/pokemon/mawile_rlm_dragon/mega/mega_portal/mega_portal1.png",
+              "cobblemon:textures/pokemon/mawile_rlm_dragon/mega/mega_portal/mega_portal2.png",
+              "cobblemon:textures/pokemon/mawile_rlm_dragon/mega/mega_portal/mega_portal3.png",
+              "cobblemon:textures/pokemon/mawile_rlm_dragon/mega/mega_portal/mega_portal4.png"
+            ],
+            "fps": 6,
+            "loop": true
+          },
+          "emissive": true
+        }
+      ]
+    },
+    {
+      "aspects": [
+        "rlm", "dragon", "shiny", "mega"
+      ],
+      "texture": "cobblemon:textures/pokemon/mawile_rlm_dragon/mega/mawile_rlm_dragon_shiny.png"
+    }
+  ]
+}
