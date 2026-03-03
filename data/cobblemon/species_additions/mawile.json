@@ -1,0 +1,107 @@
+{
+  "target": "cobblemon:mawile",
+  "features": [
+    "rlm", "dragon", "poison"
+  ],
+  "forms": [
+    {
+      "name": "poison",
+      "aspects": [
+        "rlm", "poison"
+      ],
+      "primaryType": "poison",
+      "secondaryType": "fairy",
+      "baseStats": {
+        "hp": 50,
+        "attack": 55,
+        "defence": 55,
+        "special_attack": 85,
+        "special_defence": 85,
+        "speed": 50
+      },
+      "shoulderMountable": true,
+      "shoulderEffects": [
+        {
+          "type": "potion_effect",
+          "effect": "minecraft:unluck",
+          "amplifier": 0,
+          "ambient": true,
+          "showParticles": false,
+          "showIcon": false
+        }
+      ],
+      "pokedex": [
+        "cobblemon.species.mawile-rlm-poison.desc"
+      ],
+      "abilities": [
+        "gooey",
+        "poisonheal",
+        "h:purepower"
+      ],
+      "moves": [
+        "1:growl",
+        "1:thunderwave",
+        "1:astonish",
+        "1:shadowball"
+      ],
+      "preEvolution": "smowile",
+      "evolutions": [],
+      "battleOnly": false
+    },
+    {
+      "name": "dragon",
+      "aspects": [
+        "rlm", "dragon"
+      ],
+      "primaryType": "dragon",
+      "secondaryType": "fairy",
+      "baseStats": {
+        "hp": 50,
+        "attack": 55,
+        "defence": 55,
+        "special_attack": 85,
+        "special_defence": 55,
+        "speed": 85
+      },
+      "shoulderMountable": true,
+      "shoulderEffects": [
+        {
+          "type": "potion_effect",
+          "effect": "minecraft:strength",
+          "amplifier": 1,
+          "ambient": true,
+          "showParticles": false,
+          "showIcon": false
+        }
+      ],
+      "pokedex": [
+        "cobblemon.species.mawile-rlm-dragon.desc"
+      ],
+      "abilities": [
+        "intimidate",
+        "strongjaw",
+        "h:guts"
+      ],
+      "moves": [
+        "1:growl",
+        "1:thunderwave",
+        "1:astonish",
+        "1:shadowball"
+      ],
+      "preEvolution": "smowile",
+      "evolutions": [],
+      "battleOnly": false,
+      "behaviour": {
+        "moving": {
+          "canLook": true,
+          "fly": {
+            "canFly": true
+          },
+          "resting": {
+            "canSleep": false
+          }
+        }
+      }
+    }
+  ]
+}
