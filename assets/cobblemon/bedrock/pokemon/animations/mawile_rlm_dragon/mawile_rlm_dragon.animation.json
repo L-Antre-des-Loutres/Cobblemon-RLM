@@ -401,7 +401,7 @@
 			"bones": {
 				"body": {
 					"rotation": ["-0 - 2 * Math.sin(query.anim_time * 180/2)", "30 - 10 * Math.sin(query.anim_time * 180/2)", "0 + 8 * Math.sin(query.anim_time * 108/1.5)"],
-					"position": [0, 7, 0]
+					"position": [0, 11, 0]
 				},
 				"arm_left": {
 					"rotation": [-74.05621, 26.02541, "11.7513229836 + 10 * Math.sin(query.anim_time * 108/1.5)"]
