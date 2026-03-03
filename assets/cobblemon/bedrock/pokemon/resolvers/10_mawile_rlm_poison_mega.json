@@ -4,11 +4,11 @@
   "variations": [
     {
       "aspects": [
-        "rlm", "poison"
+        "rlm", "poison", "mega"
       ],
-      "poser": "cobblemon:mawile_rlm_poison",
-      "model": "cobblemon:mawile_rlm_poison.geo",
-      "texture": "cobblemon:textures/pokemon/mawile_rlm_poison/mawile_rlm_poison.png",
+      "poser": "cobblemon:mawile_rlm_poison_mega",
+      "model": "cobblemon:mawile_rlm_poison_mega.geo",
+      "texture": "cobblemon:textures/pokemon/mawile_rlm_poison/mega/mawile_rlm_poison.png",
       "layers": [
         {
           "name": "emissive",
@@ -23,9 +23,9 @@
     },
     {
       "aspects": [
-        "rlm", "poison", "shiny"
+        "rlm", "poison", "shiny", "mega"
       ],
-      "texture": "cobblemon:textures/pokemon/mawile_rlm_poison/mawile_rlm_poison_shiny.png",
+      "texture": "cobblemon:textures/pokemon/mawile_rlm_poison/mega/mawile_rlm_poison_shiny.png",
       "layers": [
         {
           "name": "emissive",

@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.mawile_rlm_poison.ground_idle": {
+		"animation.mawile_rlm_poison_mega.ground_idle": {
 			"loop": true,
 			"bones": {
 				"arm_left": {
@@ -99,7 +99,7 @@
 				}
 			}
 		},
-		"animation.mawile_rlm_poison.ground_walk": {
+		"animation.mawile_rlm_poison_mega.ground_walk": {
 			"loop": true,
 			"animation_length": 1.5,
 			"bones": {
@@ -396,7 +396,7 @@
 				}
 			}
 		},
-		"animation.mawile_rlm_poison.battle_idle": {
+		"animation.mawile_rlm_poison_mega.battle_idle": {
 			"loop": true,
 			"bones": {
 				"arm_left": {
@@ -433,35 +433,150 @@
 					"rotation": [0, 5, -30]
 				},
 				"head": {
-					"rotation": ["26.3923 - 2 * Math.sin(query.anim_time * 108/1.5)", -18.05775, -8.74473]
+					"rotation": ["27.8377 - 2 * Math.sin(query.anim_time * 108/1.5)", -17.84072, -9.19025]
+				},
+				"leg_left": {
+					"rotation": {
+						"0.0": {
+							"post": ["-0 - 2 * Math.sin(query.anim_time * 108/1.5)", 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
 				},
 				"leg_left2": {
-					"rotation": [5, 0, 0]
+					"rotation": [17.5, 0, 0]
 				},
 				"foot_left": {
-					"rotation": [0, 0, 2.5]
+					"rotation": [32.5, 0, 2.5]
 				},
 				"leg_right": {
-					"rotation": [-2.5, 0, 0]
+					"rotation": {
+						"0.0": {
+							"post": ["-2.5 - 2 * Math.sin(query.anim_time * 108/1.5)", 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
 				},
 				"leg_right2": {
-					"rotation": [5, 0, 0]
+					"rotation": [50, 0, 0]
 				},
 				"leg_right3": {
-					"rotation": [0, 0, 0]
+					"rotation": ["15 - 2 * Math.sin(query.anim_time * 108/1.5)", 0, 0]
 				},
 				"foot_right": {
-					"rotation": [-2.5, 0, 0]
+					"rotation": [37.5, 0, 0]
 				},
 				"chest": {
-					"rotation": ["-0 - 3 * Math.sin(query.anim_time * 108/1.5)", 0, 0]
+					"rotation": ["-0 - 2 * Math.sin(query.anim_time * 108/1.5)", 0, 0]
 				},
 				"body": {
-					"rotation": [0, 20, 0]
+					"rotation": ["-0 - 0.5 * Math.sin(query.anim_time * 108/4)", 20, 0],
+					"position": [0, 7, 0]
+				},
+				"torso": {
+					"rotation": {
+						"0.0": {
+							"post": ["-0 - 2 * Math.sin(query.anim_time * 108/1.5)", 0, -10],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"leg_left3": {
+					"rotation": ["10 - 2 * Math.sin(query.anim_time * 108/1.5)", 0, 0]
 				}
 			}
 		},
-		"animation.mawile_rlm_poison.battle_special": {
+		"animation.mawile_rlm_poison_mega.battle_special": {
+			"animation_length": 0.75,
+			"bones": {
+				"arm_left": {
+					"rotation": ["-60 - 4 * Math.sin(query.anim_time * 108/1.5)", 0, 47.5]
+				},
+				"arm_left2": {
+					"rotation": [0, 17.5, 0]
+				},
+				"hand_left": {
+					"rotation": [0, 0, 7.5]
+				},
+				"finger_left1": {
+					"rotation": [0, 7.5, 22.5]
+				},
+				"finger_left2": {
+					"rotation": [0, 0, 17.5]
+				},
+				"finger_left3": {
+					"rotation": [0, -5, 30]
+				},
+				"arm_right": {
+					"rotation": ["-60 - 4 * Math.sin(query.anim_time * 108/1.5)", 0, "- 47.5"]
+				},
+				"arm_right2": {
+					"rotation": [0, -17.5, 0]
+				},
+				"hand_right": {
+					"rotation": [0, 0, -7.5]
+				},
+				"finger_right1": {
+					"rotation": [0, -7.5, -22.5]
+				},
+				"finger_right3": {
+					"rotation": [0, 5, -30]
+				},
+				"head": {
+					"rotation": ["27.8377 - 2 * Math.sin(query.anim_time * 108/1.5)", -17.84072, -9.19025]
+				},
+				"leg_left": {
+					"rotation": {
+						"0.0": {
+							"post": ["-0 - 2 * Math.sin(query.anim_time * 108/1.5)", 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"leg_left2": {
+					"rotation": [17.5, 0, 0]
+				},
+				"foot_left": {
+					"rotation": [32.5, 0, 2.5]
+				},
+				"leg_right": {
+					"rotation": {
+						"0.0": {
+							"post": ["-2.5 - 2 * Math.sin(query.anim_time * 108/1.5)", 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"leg_right2": {
+					"rotation": [50, 0, 0]
+				},
+				"leg_right3": {
+					"rotation": ["15 - 2 * Math.sin(query.anim_time * 108/1.5)", 0, 0]
+				},
+				"foot_right": {
+					"rotation": [37.5, 0, 0]
+				},
+				"chest": {
+					"rotation": ["-0 - 2 * Math.sin(query.anim_time * 108/1.5)", 0, 0]
+				},
+				"body": {
+					"rotation": ["-0 - 0.5 * Math.sin(query.anim_time * 108/4)", 20, 0],
+					"position": [0, 7, 0]
+				},
+				"torso": {
+					"rotation": {
+						"0.0": {
+							"post": ["-0 - 2 * Math.sin(query.anim_time * 108/1.5)", 0, -10],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"leg_left3": {
+					"rotation": ["10 - 2 * Math.sin(query.anim_time * 108/1.5)", 0, 0]
+				}
+			}
+		},
+		"animation.mawile_rlm_poison_mega.battle_special_old": {
 			"animation_length": 2.5,
 			"bones": {
 				"body": {
@@ -682,6 +797,12 @@
 							"lerp_mode": "catmullrom"
 						}
 					}
+				},
+				"eye_shine_left": {
+					"position": [-1, 0, 0]
+				},
+				"eye_shine_right": {
+					"position": [1, 0, 0]
 				},
 				"hair_left2": {
 					"rotation": {
@@ -925,7 +1046,7 @@
 				}
 			}
 		},
-		"animation.mawile_rlm_poison.battle_recoil": {
+		"animation.mawile_rlm_poison_mega.battle_recoil": {
 			"animation_length": 0.75,
 			"bones": {
 				"torso": {
@@ -995,7 +1116,7 @@
 				}
 			}
 		},
-		"animation.mawile_rlm_poison.faint": {
+		"animation.mawile_rlm_poison_mega.faint": {
 			"animation_length": 3,
 			"bones": {
 				"body": {
@@ -1095,10 +1216,6 @@
 						"2.25": {
 							"post": [-77.5, 0, -2],
 							"lerp_mode": "catmullrom"
-						},
-						"2.375": {
-							"post": [-72.5, 0, -2],
-							"lerp_mode": "catmullrom"
 						}
 					},
 					"position": {
@@ -1106,16 +1223,20 @@
 							"post": [0, 0, 0],
 							"lerp_mode": "catmullrom"
 						},
+						"1.0833": {
+							"post": [0, -0.8, 2.63],
+							"lerp_mode": "catmullrom"
+						},
 						"2.0": {
-							"post": [0, -1, 5],
+							"post": [0, -2, 5],
 							"lerp_mode": "catmullrom"
 						},
 						"2.25": {
-							"post": [0, -3, 7],
+							"post": [0, -4, 7],
 							"lerp_mode": "catmullrom"
 						},
 						"2.375": {
-							"post": [0, -4, 8],
+							"post": [0, -6, 8],
 							"lerp_mode": "catmullrom"
 						}
 					}
@@ -2142,7 +2263,7 @@
 				}
 			}
 		},
-		"animation.mawile_rlm_poison.blink": {
+		"animation.mawile_rlm_poison_mega.blink": {
 			"animation_length": 0.1667,
 			"bones": {
 				"eyelid_left": {
@@ -2165,7 +2286,7 @@
 				}
 			}
 		},
-		"animation.mawile_rlm_poison.cry": {
+		"animation.mawile_rlm_poison_mega.cry": {
 			"animation_length": 1.25,
 			"bones": {
 				"head": {
@@ -2292,12 +2413,12 @@
 				}
 			}
 		},
-		"animation.mawile_rlm_poison.shoulder_left": {
+		"animation.mawile_rlm_poison_mega.shoulder_left": {
 			"loop": true,
 			"bones": {
 				"body": {
 					"rotation": [0, 0, 7.5],
-					"position": [0, -7, 2]
+					"position": [0, -10, 2]
 				},
 				"chest": {
 					"rotation": [12.5, 0, 0]
@@ -2403,12 +2524,12 @@
 				}
 			}
 		},
-		"animation.mawile_rlm_poison.shoulder_right": {
+		"animation.mawile_rlm_poison_mega.shoulder_right": {
 			"loop": true,
 			"bones": {
 				"body": {
 					"rotation": [0, 0, -7.5],
-					"position": [0, -7, 2]
+					"position": [0, -10, 2]
 				},
 				"chest": {
 					"rotation": [12.5, 0, 0]
@@ -2514,7 +2635,7 @@
 				}
 			}
 		},
-		"animation.mawile_rlm_poison.quirk": {
+		"animation.mawile_rlm_poison_mega.quirk": {
 			"animation_length": 1.5,
 			"bones": {
 				"head_mouth_neck_end": {
@@ -2547,11 +2668,11 @@
 				}
 			}
 		},
-		"animation.mawile_rlm_poison.render": {
+		"animation.mawile_rlm_poison_mega.render": {
 			"loop": true,
 			"bones": {
 				"body": {
-					"rotation": [0, 0, 0]
+					"rotation": [0, -7.5, 0]
 				},
 				"arm_left": {
 					"rotation": [-54.82763, 64.97081, 32.6694]
@@ -2572,30 +2693,6 @@
 				},
 				"torso": {
 					"rotation": [-18, 5, 10]
-				},
-				"hair_left": {
-					"rotation": [0, 27.5, 0]
-				},
-				"hair_left2": {
-					"rotation": [0, 0, 10]
-				},
-				"hair_right": {
-					"rotation": [0, -12.5, 0]
-				},
-				"hair_right2": {
-					"rotation": [0, 0, -7.5]
-				},
-				"hair_left_front": {
-					"rotation": [0, 0, 2.5]
-				},
-				"hair_left_front2": {
-					"rotation": [0, 0, 7.5]
-				},
-				"hair_right_front": {
-					"rotation": [0, 0, -2.5]
-				},
-				"hair_right_front2": {
-					"rotation": [0, 0, -5]
 				}
 			}
 		}
