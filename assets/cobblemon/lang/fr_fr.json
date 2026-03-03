@@ -54,5 +54,9 @@
   "cobblemon.ability.psychoprio": "Psycho-Prio",
   "cobblemon.ability.psychoprio.desc": "Le détenteur de cette capacité bénéficie de la priorité sur ses attaques tant qu'il a plus de 50% de ses PV.",
   "cobblemon.ability.marinevortex": "Trombe Marine",
-  "cobblemon.ability.marinevortex.desc": "En entrant sur le terrain, lance la pluie. Sous la pluie, l'Attaque et l'Attaque Spéciale sont multipliées par 1,5."
+  "cobblemon.ability.marinevortex.desc": "En entrant sur le terrain, lance la pluie. Sous la pluie, l'Attaque et l'Attaque Spéciale sont multipliées par 1,5.",
+  "cobblemon.ability.mystiforce": "Mystiforce",
+  "cobblemon.ability.mystiforce.desc": "L’Attaque Spéciale du Pokémon est doublée.",
+  "cobblemon.ability.venomarmor": "Armure Venimeuse",
+  "cobblemon.ability.venomarmor.desc": "La Défense Spéciale du Pokémon est doublée et a 50% de chances d'empoisonner gravement au contact."
 }

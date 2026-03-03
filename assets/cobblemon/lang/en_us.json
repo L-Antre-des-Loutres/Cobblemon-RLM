@@ -103,5 +103,9 @@
   "cobblemon.ability.psychoprio": "Psycho-Prio",
   "cobblemon.ability.psychoprio.desc": "The user of this ability has priority on all of its attacks as long as it has more than 50% of its HP.",
   "cobblemon.ability.marinevortex": "Marine Vortex",
-  "cobblemon.ability.marinevortex.desc": "Summons rain on entry. In rain, Attack and Sp. Atk are 1.5x."
+  "cobblemon.ability.marinevortex.desc": "Summons rain on entry. In rain, Attack and Sp. Atk are 1.5x.",
+  "cobblemon.ability.mystiforce": "Mystiforce",
+  "cobblemon.ability.mystiforce.desc": "The Pokémon’s Special Attack stat is doubled.",
+  "cobblemon.ability.venomarmor": "Venom Armor",
+  "cobblemon.ability.venomarmor.desc": "The Pokémon's Special Def stat is doubled and has a 50% chance to badly poison on contact."
 }
