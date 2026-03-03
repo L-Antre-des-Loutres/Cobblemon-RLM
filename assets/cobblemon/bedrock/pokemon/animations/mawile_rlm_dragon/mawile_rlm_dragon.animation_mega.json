@@ -59,6 +59,9 @@
 				"dragon_head": {
 					"rotation": [5, 0, 0]
 				},
+				"bang": {
+					"rotation": ["-0 - 5 * Math.sin(query.anim_time * 108)", "-0 - 5 * Math.sin(query.anim_time * 108)", "0 + 5 * Math.sin(query.anim_time * 108)"]
+				},
 				"black_dragon_head": {
 					"rotation": ["query.anim_time * 90", 0, 0]
 				},
