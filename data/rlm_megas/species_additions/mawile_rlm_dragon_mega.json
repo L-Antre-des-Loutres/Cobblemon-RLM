@@ -10,9 +10,9 @@
       "primaryType": "dragon",
       "secondaryType": "fairy",
       "abilities": [
-        "purepower",
-        "purepower",
-        "h:purepower"
+        "mystiforce",
+        "mystiforce",
+        "h:mystiforce"
       ],
       "baseStats": {
         "hp": 95,

@@ -1,8 +1,6 @@
 {
   "target": "cobblemon:mawile",
-  "features": [
-    "rlm", "dragon", "poison"
-  ],
+  "features": ["rlm", "dragon", "poison"],
   "forms": [
     {
       "name": "poison",
@@ -238,6 +236,12 @@
         "strongjaw",
         "h:mystiforce"
       ],
+      "baseScale": 0.8,
+      "hitbox": {
+        "width": 0.6,
+        "height": 1.6,
+        "fixed": false
+      },
       "moves": [
         "1:tackle",
         "1:visegrip",
@@ -381,7 +385,6 @@
         "tutor:thunderfang",
         "tutor:thunderpunch"
       ],
-
       "preEvolution": "smowile",
       "evolutions": [],
       "battleOnly": false,

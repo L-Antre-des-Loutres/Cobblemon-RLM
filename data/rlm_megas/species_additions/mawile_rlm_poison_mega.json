@@ -10,9 +10,9 @@
       "primaryType": "poison",
       "secondaryType": "fairy",
       "abilities": [
-        "purepower",
-        "purepower",
-        "h:purepower"
+        "venomarmor",
+        "venomarmor",
+        "h:venomarmor"
       ],
       "baseStats": {
         "hp": 95,
