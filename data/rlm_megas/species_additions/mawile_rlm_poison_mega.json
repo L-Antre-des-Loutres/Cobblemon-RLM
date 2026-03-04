@@ -16,11 +16,11 @@
       ],
       "baseStats": {
         "hp": 95,
-        "attack": 20,
+        "attack": 35,
         "defence": 85,
         "special_attack": 105,
-        "special_defence": 115,
-        "speed": 60
+        "special_defence": 80,
+        "speed": 90
       },
       "shoulderMountable": true,
       "shoulderEffects": [
