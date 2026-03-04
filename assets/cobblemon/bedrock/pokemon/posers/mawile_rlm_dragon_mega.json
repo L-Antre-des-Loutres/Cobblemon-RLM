@@ -16,15 +16,31 @@
         "cry": "q.bedrock_stateful('mawile_rlm_dragon_mega', 'cry')"
     },
     "poses": {
-        "standing": {
+        "default": {
             "poseName": "standing",
             "transformTicks": 10,
+            "isBattle": false,
             "poseTypes": [
                 "STAND",
                 "NONE"
             ],
             "animations": [
                 "q.bedrock('mawile_rlm_dragon_mega', 'default')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('mawile_rlm_dragon', q.array('blink'), 6, 20, 1)"
+            ]
+        },
+        "battle-default": {
+            "poseName": "standing",
+            "transformTicks": 10,
+            "isBattle": true,
+            "poseTypes": [
+                "STAND",
+                "NONE"
+            ],
+            "animations": [
+                "q.bedrock('mawile_rlm_dragon_mega', 'battle_default')"
             ],
             "quirks": [
                 "q.bedrock_quirk('mawile_rlm_dragon', q.array('blink'), 6, 20, 1)"
