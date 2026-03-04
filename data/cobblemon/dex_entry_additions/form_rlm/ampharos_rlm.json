@@ -6,6 +6,12 @@
       "unlockForms": [
         "rlm"
       ]
+    },
+    {
+      "displayForm": "MegaRlm",
+      "unlockForms": [
+        "rlm"
+      ]
     }
   ]
 }

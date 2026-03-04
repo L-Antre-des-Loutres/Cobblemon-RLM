@@ -3,7 +3,7 @@
   "features": ["rlm", "dragon", "mega_evolution"],
   "forms": [
     {
-      "name": "MegaRlm",
+      "name": "MegaRlmDragon",
       "pokedex": ["cobblemon.species.mawile-rlm-dragon-mega.desc"],
       "labels": ["rlm", "dragon", "mega"],
       "aspects": ["rlm", "dragon", "mega"],

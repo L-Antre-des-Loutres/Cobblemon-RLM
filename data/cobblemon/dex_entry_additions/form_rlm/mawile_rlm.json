@@ -1,0 +1,29 @@
+{
+  "entryId": "cobblemon:mawile",
+  "forms": [
+    {
+      "displayForm": "poison",
+      "unlockForms": [
+        "rlm poison"
+      ]
+    },
+    {
+      "displayForm": "MegaRlmPoison",
+      "unlockForms": [
+        "rlm poison"
+      ]
+    },
+    {
+      "displayForm": "dragon",
+      "unlockForms": [
+        "rlm dragon"
+      ]
+    },
+    {
+      "displayForm": "MegaRlmDragon",
+      "unlockForms": [
+        "rlm dragon"
+      ]
+    }
+  ]
+}

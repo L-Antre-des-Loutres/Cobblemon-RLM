@@ -3,7 +3,7 @@
   "features": ["rlm", "poison", "mega_evolution"],
   "forms": [
     {
-      "name": "MegaRlm",
+      "name": "MegaRlmPoison",
       "pokedex": ["cobblemon.species.mawile-rlm-poison-mega.desc"],
       "labels": ["rlm", "poison", "mega"],
       "aspects": ["rlm", "poison", "mega"],
