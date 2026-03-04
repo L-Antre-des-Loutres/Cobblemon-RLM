@@ -4,6 +4,8 @@
   "cobblemon.species.flammiko.name": "Flammiko",
   "cobblemon.species.galama.name": "Galama",
   "cobblemon.species.rineshell.name": "Rhinécaille",
+  "cobblemon.species.tinywone.name": "Ptimek",
+  "cobblemon.species.wamek.name": "Guerriek",
 
   "cobblemon.species.aphelis.desc": "Connus comme les fiers gardiens des cieux, les Aphelis nouent rarement des liens avec les humains. Ils sont farouchement protecteurs et interviennent souvent pour sauver d'autres Pokémon des griffes des braconniers.",
   "cobblemon.species.apheos.desc": "Animé par une ambition brûlante, Apheos s'efforce de devenir un gardien comme son évolution. Cependant, sa petite taille et son manque de puissance le poussent souvent à relever des défis qu'il ne peut pas encore surmonter.",
@@ -34,6 +36,8 @@
   "cobblemon.species.sunflora-volcan.desc": "Étonnamment, ce Héliatronc se croit être le meilleur ami de Groudon, affirmant avoir combattu Kyogre aux côtés du titan légendaire. Étrangement, aucune preuve n'a jamais été trouvée.",
   "cobblemon.species.togekiss-rlm.desc": "Corrompu par la malveillance et les guerres incessantes des humains, ce Togekiss a perdu son esprit paisible. Il lutte constamment pour réprimer une rage draconique férale bouillonnant en lui. Il est désormais un annonciateur de conflits.",
   "cobblemon.species.wartortle-rlm.desc": "Carabaffe est un rêveur persistant, souvent trouvé en train de pratiquer des manœuvres aériennes en sautant dans les courants ascendants. Ses oreilles-ailes ne lui permettent que de planer brièvement, mais il reste déterminé.",
+  "cobblemon.species.tinywone.desc": "Extrêmement faible, ce Pokémon a conscience de son potentiel. Il médite scrupuleusement tous les jours en pensant au jour où il sera grand et fort, capable d’enfin être fier de sa force.",
+  "cobblemon.species.wamek.desc": "Enfin évolué, les Guerriek sont fiers de leur force. Cependant, ils ne se reposent pas sur leurs lauriers et continuent de s’entraîner rigoureusement. Bien qu’ils possèdent de puissants pouvoirs psychiques, les Guerriek semblent préférer user de leur force physique en combat.",
 
   "item.name.flammikite": "Flammikite",
   "item.desc.flammikite": "Permet à Flammiko de méga-évoluer en Méga-Flammiko.",

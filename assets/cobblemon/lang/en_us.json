@@ -53,6 +53,8 @@
   "cobblemon.species.flammiko.name": "Flammiko",
   "cobblemon.species.galama.name": "Galama",
   "cobblemon.species.rineshell.name": "Rineshell",
+  "cobblemon.species.tinywone.name": "Tinywone",
+  "cobblemon.species.wamek.name": "Wamek",
 
   "cobblemon.species.aphelis.desc": "Known as proud guardians of the skies, Aphelis rarely form bonds with humans. They are fiercely protective, often intervening to save other and any Pokémon from the clutches of poachers.",
   "cobblemon.species.apheos.desc": "Driven by a burning ambition, Apheos strives to be a guardian like its evolution. However, its small stature and lack of power often lead it to take on challenges it cannot yet overcome.",
@@ -83,6 +85,8 @@
   "cobblemon.species.sunflora-volcan.desc": "Surprisingly, this Sunflora believes itself to be Groudon's best friend, claiming to have battled Kyogre alongside the legendary titan. Strangely enough, no proof of this has ever been found.",
   "cobblemon.species.togekiss-rlm.desc": "Corrupted by the malice and endless wars of humanity, this Togekiss has lost its peaceful spirit. It struggles constantly to suppress the feral, draconic rage boiling within its body. No longer a bringer of blessings, it is now a harbinger of the very conflict it once sought to avoid.",
   "cobblemon.species.wartortle-rlm.desc": "Wartortle is a persistent dreamer, often found practicing aerial maneuvers by leaping into strong updrafts. While its ear-wings only allow it to hover for short moments, it remains undeterred. It hones its balance and steering using its long tail, preparing its body for the explosive power it will one day unlock.",
+  "cobblemon.species.tinywone.desc": "Extremely weak, this Pokémon is aware of its potential. It meditates diligently every day, thinking about the day it will become tall and strong, finally able to be proud of its strength.",
+  "cobblemon.species.wamek.desc": "Finally evolved, Wamek are proud of their strength. However, they do not rest on their laurels and continue to train rigorously. Although they possess powerful psychic abilities, Wamek seem to prefer relying on their physical strength in battle.",
 
   "item.name.flammikite": "Flammikite",
   "item.desc.flammikite": "Allows Flammiko to Mega Evolve into Mega Flammiko.",
