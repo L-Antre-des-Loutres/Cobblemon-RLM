@@ -6,7 +6,7 @@
 				"identifier": "geometry.mawile_rlm_dragon_mega",
 				"texture_width": 108,
 				"texture_height": 76,
-				"visible_bounds_width": 7,
+				"visible_bounds_width": 13,
 				"visible_bounds_height": 5.5,
 				"visible_bounds_offset": [0, 2.25, 0]
 			},
@@ -16,8 +16,13 @@
 					"pivot": [0, 0, 0]
 				},
 				{
-					"name": "body",
+					"name": "wholestuff",
 					"parent": "mawile",
+					"pivot": [0, 33.5, 0]
+				},
+				{
+					"name": "body",
+					"parent": "wholestuff",
 					"pivot": [0, 33, 0]
 				},
 				{
@@ -733,8 +738,13 @@
 					]
 				},
 				{
+					"name": "dragon_heads",
+					"parent": "wholestuff",
+					"pivot": [0, 0, 0]
+				},
+				{
 					"name": "black_dragon_head",
-					"parent": "mawile",
+					"parent": "dragon_heads",
 					"pivot": [0, 33.5, 0],
 					"rotation": [0, 90, 90]
 				},
@@ -1079,7 +1089,7 @@
 				},
 				{
 					"name": "white_dragon_head",
-					"parent": "mawile",
+					"parent": "dragon_heads",
 					"pivot": [0, 33.5, 0],
 					"rotation": [0, -90, -90]
 				},
