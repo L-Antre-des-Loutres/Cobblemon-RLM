@@ -2033,30 +2033,30 @@
 		},
 		"animation.wamek.blink": {
 			"loop": true,
-			"animation_length": 0.25,
+			"animation_length": 0.5,
 			"bones": {
 				"eye_left": {
 					"position": {
 						"0.0": [0, 0, 1],
-						"0.25": {"pre": [0, 0, 1], "post": [0, 0, 0]}
+						"0.5": {"pre": [0, 0, 1], "post": [0, 0, 0]}
 					}
 				},
 				"eye_right": {
 					"position": {
 						"0.0": [1, 0, 0],
-						"0.25": {"pre": [1, 0, 0], "post": [0, 0, 0]}
+						"0.5": {"pre": [1, 0, 0], "post": [0, 0, 0]}
 					}
 				},
 				"eye_right_closed": {
 					"position": {
 						"0.0": [-1, 0, 0],
-						"0.25": {"pre": [-1, 0, 0], "post": [0, 0, 0]}
+						"0.5": {"pre": [-1, 0, 0], "post": [0, 0, 0]}
 					}
 				},
 				"eye_left_closed": {
 					"position": {
 						"0.0": [0, 0, -1],
-						"0.25": {"pre": [0, 0, -1], "post": [0, 0, 0]}
+						"0.5": {"pre": [0, 0, -1], "post": [0, 0, 0]}
 					}
 				}
 			}
