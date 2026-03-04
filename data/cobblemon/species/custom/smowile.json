@@ -26,6 +26,30 @@
                             "minLevel": 20
                         }
                     ]
+                },
+                {
+                    "id": "smowile_mawile_rlm_poison",
+                    "variant": "level_up",
+                    "result": "mawile rlm poison",
+                    "consumeHeldItem": false,
+                    "requirements": [
+                        {
+                            "variant": "level",
+                            "minLevel": 20
+                        }
+                    ]
+                },
+                {
+                    "id": "smowile_mawile_rlm_dragon",
+                    "variant": "level_up",
+                    "result": "mawile rlm dragon",
+                    "consumeHeldItem": false,
+                    "requirements": [
+                        {
+                            "variant": "level",
+                            "minLevel": 20
+                        }
+                    ]
                 }
             ]
         }
