@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "cobblemon:bug_gem"
+  },
+  "base": {
+    "item": "mega_showdown:mega_stone"
+  },
+  "addition": {
+    "item": "cobblemon:dragon_gem"
+  },
+  "result": {
+    "id": "minecraft:purple_dye",
+    "components": {
+      "minecraft:custom_model_data": 291011,
+      "minecraft:item_name": "{\"translate\":\"item.name.wamekite\", \"italic\":false}",
+      "minecraft:lore": [
+        "{\"translate\":\"item.desc.wamekite\", \"color\":\"gray\", \"italic\":false}"
+      ],
+      "mega_showdown:registry_type_component": "mega",
+      "mega_showdown:registry_location_component": "rlm_megas:wamekite"
+    },
+    "count": 1
+  }
+}
