@@ -1661,6 +1661,9 @@
 				"chest_base": {
 					"rotation": ["-2+math.sin(q.anim_time*90*2)*2", 0, 0]
 				},
+				"spine": {
+					"position": [0, -2, 0]
+				},
 				"thorax": {
 					"rotation": ["2.5-math.sin(q.anim_time*90*2-45)*1", 0, "0+math.sin(q.anim_time*90*1)*0.5"]
 				},
