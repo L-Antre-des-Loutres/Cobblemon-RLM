@@ -1,6 +1,6 @@
 {
   "species": "cobblemon:mawile",
-  "order": 10,
+  "order": 13,
   "variations": [
     {
       "aspects": [
@@ -14,7 +14,7 @@
           "name": "emissive",
           "texture": {
             "frames": [
-              "cobblemon:textures/pokemon/mawile_rlm_poison/mawile_rlm_poison_emissive.png"
+              "cobblemon:textures/pokemon/mawile_rlm_poison/mega/mawile_rlm_poison_emissive.png"
             ]
           },
           "emissive": true
@@ -23,7 +23,7 @@
     },
     {
       "aspects": [
-        "rlm", "poison", "shiny", "mega"
+        "rlm", "poison", "mega", "shiny"
       ],
       "texture": "cobblemon:textures/pokemon/mawile_rlm_poison/mega/mawile_rlm_poison_shiny.png",
       "layers": [
@@ -31,7 +31,7 @@
           "name": "emissive",
           "texture": {
             "frames": [
-              "cobblemon:textures/pokemon/mawile_rlm_poison/mawile_rlm_poison_shiny_emissive.png"
+              "cobblemon:textures/pokemon/mawile_rlm_poison/mega/mawile_rlm_poison_shiny_emissive.png"
             ]
           },
           "emissive": true
