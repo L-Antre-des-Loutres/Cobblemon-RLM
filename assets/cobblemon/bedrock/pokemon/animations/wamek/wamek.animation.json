@@ -295,7 +295,7 @@
 					"rotation": ["-10+math.sin(q.anim_time*98*2)", 0, -55]
 				},
 				"cape_base": {
-					"rotation": ["-50+10*math.sin(q.anim_time*90*2*2)", 0, 0]
+					"rotation": ["-50-2*math.sin(q.anim_time*90*4)", 0, 0]
 				},
 				"cape1": {
 					"rotation": ["-5+math.sin(q.anim_time*92)", 0, 0]
@@ -304,7 +304,7 @@
 					"rotation": ["-7+math.sin(q.anim_time*96)", 0, 0]
 				},
 				"cape3": {
-					"rotation": ["-9+math.sin(q.anim_time*98)", 0, 0]
+					"rotation": ["-11.5+math.sin(q.anim_time*98)", 0, 0]
 				},
 				"left_antenna1": {
 					"rotation": ["-2*math.sin(q.anim_time*98*6)", 0, 0]
@@ -342,28 +342,47 @@
 				"head": {
 					"rotation": [2.5, 0, 0]
 				},
+				"left_shoulder": {
+					"rotation": [0, 50, 0]
+				},
+				"left_upper_arm": {
+					"rotation": [87.5081, 67.98356, 109.68417],
+					"position": [0.5, 0.5, 0]
+				},
+				"left_lower_arm": {
+					"rotation": [0, 45, 0]
+				},
+				"right_shoulder": {
+					"rotation": [0, -35, 0]
+				},
+				"right_upper_arm": {
+					"rotation": [66.18, -66.417, -97.40412],
+					"position": [1, -1, -0.9]
+				},
+				"right_lower_arm": {
+					"rotation": [0, -57.5, 0]
+				},
+				"cape_base": {
+					"rotation": ["-50+5*math.sin(q.anim_time*90*3)", 0, 0]
+				},
+				"cape1": {
+					"rotation": ["-5+math.sin(q.anim_time*92)", 0, 0]
+				},
+				"cape2": {
+					"rotation": ["-7+math.sin(q.anim_time*96)", 0, 0]
+				},
+				"cape3": {
+					"rotation": ["-9+math.sin(q.anim_time*98)", 0, 0]
+				},
 				"left_antenna1": {
 					"rotation": ["-2*math.sin(q.anim_time*98*6)", 0, 0]
 				},
 				"right_antenna1": {
 					"rotation": ["-2*math.sin(q.anim_time*98*6)", 0, 0]
 				},
-				"left_upper_arm": {
-					"rotation": [0, 0, 57.5],
-					"position": [0, "2 + 0.3 * math.sin(q.anim_time*90*2-45)*1", 0]
-				},
-				"left_lower_arm": {
-					"rotation": [0, 0, 30]
-				},
 				"left_hand": {
-					"rotation": [0, 0, 10]
-				},
-				"right_upper_arm": {
-					"rotation": [0, 0, -57.5],
-					"position": [0, "2 + 0.3 * math.sin(q.anim_time*90*2-45)*1", 0]
-				},
-				"right_lower_arm": {
-					"rotation": [0, 0, -30]
+					"rotation": [7.6734, 26.48829, 16.80857],
+					"position": [0, 0, 0.3]
 				},
 				"right_hand": {
 					"rotation": [0, 0, -10]
