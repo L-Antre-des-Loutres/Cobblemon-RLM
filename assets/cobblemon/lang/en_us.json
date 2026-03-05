@@ -52,6 +52,10 @@
   "cobblemon.ui.pokedex.info.form.mawile-megarlmpoison": "Mega (Poison)",
   "cobblemon.ui.pokedex.info.form.mawile-megarlmdragon": "Mega (Dragon)",
   "cobblemon.ui.pokedex.info.form.ampharos-megarlm": "Mega (RLM)",
+  "cobblemon.ui.pokedex.info.form.wamek": "",
+  "cobblemon.ui.pokedex.info.form.wamek-mega": "Mega",
+  "cobblemon.ui.pokedex.info.form.flammiko": "",
+  "cobblemon.ui.pokedex.info.form.flammiko-mega": "Mega",
 
   "cobblemon.species.aphelis.name": "Aphelis",
   "cobblemon.species.apheos.name": "Apheos",
@@ -65,6 +69,7 @@
   "cobblemon.species.aphelis.desc": "Known as proud guardians of the skies, Aphelis rarely form bonds with humans. They are fiercely protective, often intervening to save other and any Pokémon from the clutches of poachers.",
   "cobblemon.species.apheos.desc": "Driven by a burning ambition, Apheos strives to be a guardian like its evolution. However, its small stature and lack of power often lead it to take on challenges it cannot yet overcome.",
   "cobblemon.species.flammiko.desc": "Always lost and never able to stand correctly, scientists have yet to discover the miracle behind this species' survival. Despite having very few thoughts, Flammiko are incredibly friendly and will do anything to protect their friends.",
+  "cobblemon.species.flammiko-mega.desc": "Even after Mega Evolution, it retains its awkward stance and unbalanced appearance. Despite how unimpressive it may seem, it should never be underestimated: Mega FLammiko possesses truly terrifying power.",
   "cobblemon.species.galama.desc": "Often mistaken for a simple rock formation, Galama is a remarkably calm Pokémon that possesses a thick, carapace-like plate on its head. This natural helmet is nearly indestructible, allowing Galama to ignore most threats while it rests. It is so relaxed that smaller Pokémon are often seen napping in the shade provided by its metallic head-shell.",
   "cobblemon.species.rineshell.desc": "Though its metallic shell is not yet fully formed, Rineshell possesses a stubborn spirit, never backing down from a challenge. It dreams of the day its headplate will be strong enough to withstand any blow without it having to move a muscle.",
   "cobblemon.species.ampharos-rlm.desc": "Now a full conduit for spiritual energy, the orb on its tail acts as a lighthouse for lost souls. It doesn't emit light to guide ships, but to lead wandering spirits toward the afterlife. Its electric discharges are silent, appearing as ghostly apparitions that vanish upon impact.",
@@ -94,6 +99,7 @@
   "cobblemon.species.wartortle-rlm.desc": "Wartortle is a persistent dreamer, often found practicing aerial maneuvers by leaping into strong updrafts. While its ear-wings only allow it to hover for short moments, it remains undeterred. It hones its balance and steering using its long tail, preparing its body for the explosive power it will one day unlock.",
   "cobblemon.species.tinywone.desc": "Extremely weak, this Pokémon is aware of its potential. It meditates diligently every day, thinking about the day it will become tall and strong, finally able to be proud of its strength.",
   "cobblemon.species.wamek.desc": "Finally evolved, Wamek are proud of their strength. However, they do not rest on their laurels and continue to train rigorously. Although they possess powerful psychic abilities, Wamek seem to prefer relying on their physical strength in battle.",
+  "cobblemon.species.wamek-mega.desc": "Mega Evolution has pushed its strength even further. Now larger, tougher, and more powerful, it enters battle with complete confidence in its victory.",
   "cobblemon.species.smowile.desc": "This adorable Pokémon is extremely timid and hides at the slightest sign of others. Though it appears fragile, it harbors hidden potential and awaits the Trainer who can bring it to light.",
   "cobblemon.species.mawile-rlm-poison.desc": "This form of Mawile was poisoned while it was still a Mawile’s pre-evolution. Since then, a toxic aura constantly seeps from its pigtail-like jaw, discouraging anyone from approaching. To suppress this curse, it channels its mystical powers. Though this helps restrain the poison, the effort drains a great deal of its energy.",
   "cobblemon.species.mawile-rlm-poison-mega.desc": "Mega Evolution granted it the strength needed to fully control its poison. Freed from its burden, this Mawile finally reveals its true potential, displaying newfound confidence and joy. However, it remains aware that this surge of power is only temporary.",
@@ -102,6 +108,8 @@
 
   "item.name.flammikite": "Flammikite",
   "item.desc.flammikite": "Allows Flammiko to Mega Evolve into Mega Flammiko.",
+  "item.name.wamekite": "Wamekite",
+  "item.desc.wamekite": "Allows Wamek to Mega Evolve into Mega Wamek.",
 
   "cobblemon.move.electrosiphon": "Electro Siphon",
   "cobblemon.move.electrosiphon.desc": "If the opposing Pokémon survives, the user gains a 2-stage boost to Special Attack.",
