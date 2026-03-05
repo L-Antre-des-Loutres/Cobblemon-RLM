@@ -12,7 +12,7 @@
     },
     {
       "aspects": [
-        "rlm", "poison", "shiny"
+        "rlm", "dragon", "shiny"
       ],
       "texture": "cobblemon:textures/pokemon/mawile_rlm_dragon/mawile_rlm_dragon_shiny.png"
     }
