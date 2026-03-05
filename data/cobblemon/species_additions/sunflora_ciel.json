@@ -47,14 +47,14 @@
         "h:contrary"
       ],
       "moves": [
-        "1:lifeforce",
+        "1:tackle",
         "1:stomp",
-        "1:flowergathering",
+        "1:recover",
         "4:sweetscent",
         "7:grasswhistle",
         "10:airslash",
         "13:leechseed",
-        "16:airblade",
+        "16:airslash",
         "19:worryseed",
         "22:leafblade",
         "25:flail",
