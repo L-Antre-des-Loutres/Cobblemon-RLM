@@ -38,16 +38,37 @@
     "special_defence": 1
   },
   "moves": [
-    "1:tackle",
+    "1:furyswipes",
     "1:growl",
-    "1:watergun"
+    "1:stringshot",
+    "1:confusion",
+    "4:poweruppunch",
+    "7:bulkup",
+    "10:pinmissile",
+    "13:endure"
   ],
   "abilities": [
     "innerfocus",
     "steadfast",
     "h:adaptability"
   ],
-  "evolutions": [],
+  "evolutions": [
+    {
+      "id": "tinywone_wamek",
+      "variant": "level_up",
+      "result": "mawile",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "ultralaser"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 15
+        }
+      ]
+    }
+  ],
   "baseScale": 0.65,
   "hitbox": {
     "width": 0.75,

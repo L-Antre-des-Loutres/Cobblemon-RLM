@@ -39,9 +39,29 @@
     "speed": 2
   },
   "moves": [
-    "1:tackle",
+    "1:furyswipes",
     "1:growl",
-    "1:watergun"
+    "1:stringshot",
+    "1:confusion",
+    "4:poweruppunch",
+    "7:bulkup",
+    "10:pinmissile",
+    "13:endure",
+    "18:brickbreak",
+    "21:doubleteam",
+    "24:silverwind",
+    "27:aurasphere",
+    "30:psychic",
+    "33:firstimpression",
+    "36:poweruppunch",
+    "39:calmmind",
+    "42:gigaimpact",
+    "45:closecombat",
+    "48:xscissor",
+    "51:fly",
+    "54:machpunch",
+    "57:falseswipe",
+    "60:swordsdance"
   ],
   "abilities": [
     "innerfocus",
