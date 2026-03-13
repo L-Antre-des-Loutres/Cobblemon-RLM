@@ -1,0 +1,33 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "snowile-1",
+      "pokemon": "smowile",
+      "presets": [ "natural" ],
+      "timeRange": "day",
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "uncommon",
+      "level": "5-15",
+      "weight": 8.0,
+      "condition": {
+        "canSeeSky": true,
+        "biomes": [
+          "#cobblemon:is_floral",
+          "#cobblemon:is_magical",
+          "#cobblemon:is_sky"
+        ]
+      },
+      "anticondition": {
+        "biomes": [
+          "#cobblemon:is_plains",
+          "#cobblemon:is_spooky"
+        ]
+      }
+
+    }
+  ]
+}
