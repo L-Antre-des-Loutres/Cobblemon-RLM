@@ -10,6 +10,8 @@
 
 ---
 
+[![Wiki Pokédex](https://img.shields.io/badge/Wiki-Pokédex-blue?style=for-the-badge)](https://antredesloutres.fr/pokemon/wiki/pokedex/)
+
 ## 🇺🇸 English
 
 ### 🦦 What is "Cobblemon RLM"?
