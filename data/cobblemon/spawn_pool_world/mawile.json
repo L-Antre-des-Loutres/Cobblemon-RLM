@@ -6,19 +6,16 @@
     {
       "id": "mawile-rlm-dragon",
       "pokemon": "mawile rlm dragon",
-      "presets": [
-        "natural"
-      ],
+      "presets": ["natural"],
       "type": "pokemon",
       "spawnablePositionType": "grounded",
       "bucket": "ultra-rare",
-      "level": "13-38",
-      "weight": 1.0,
+      "level": "40-70",
+      "weight": 0.2,
       "condition": {
-        "minSkyLight": 0,
-        "maxSkyLight": 7,
+        "canSeeSky": true,
         "biomes": [
-          "#cobblemon:is_deep_dark"
+          "#cobblemon:is_mountain"
         ]
       }
     },
@@ -30,12 +27,18 @@
       "spawnablePositionType": "grounded",
       "bucket": "ultra-rare",
       "level": "40-70",
-      "weight": 1.0,
+      "weight": 0.2,
       "condition": {
         "biomes": [
           "#cobblemon:is_spooky"
         ]
+      },
+      "anticondition": {
+        "biomes": [
+          "#cobblemon:is_deep_dark"
+        ]
       }
+
     }
   ]
 }

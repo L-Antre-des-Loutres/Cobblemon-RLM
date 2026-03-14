@@ -12,7 +12,7 @@
       "context": "grounded",
       "bucket": "uncommon",
       "level": "5-15",
-      "weight": 8.0,
+      "weight": 9.0,
       "condition": {
         "canSeeSky": true,
         "biomes": [
@@ -23,7 +23,6 @@
       },
       "anticondition": {
         "biomes": [
-          "#cobblemon:is_plains",
           "#cobblemon:is_spooky"
         ]
       }
