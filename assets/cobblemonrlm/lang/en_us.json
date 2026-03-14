@@ -8,5 +8,9 @@
     "advancement.rlm.catch_rlm_shiny.title": "That's IMPOSSIBLE!",
     "advancement.rlm.catch_rlm_shiny.desc": "Obtain a Shiny RLM regional form.",
     "advancement.rlm.catch_sunflora_forms.title": "3 FORMS FOR SUNFLORA !!!",
-    "advancement.rlm.catch_sunflora_forms.desc": "Capture and gather the 3 forms of RLM Sunflora (Sky, Ocean, Volcano)."
+    "advancement.rlm.catch_sunflora_forms.desc": "Capture and gather the 3 forms of RLM Sunflora (Sky, Ocean, Volcano).",
+    "advancement.rlm.wamekite.title": "Wamekite power is here!",
+    "advancement.rlm.wamekite.desc": "Obtain a Wamekite.",
+    "advancement.rlm.catch_mawile_family.title": "Mawile Family Master",
+    "advancement.rlm.catch_mawile_family.desc": "Catch the complete RLM Mawile family line (Smowile, Mawile Poison RLM, Mawile Dragon RLM)."
 }
