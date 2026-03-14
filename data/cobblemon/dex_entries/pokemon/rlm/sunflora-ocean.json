@@ -1,0 +1,15 @@
+{
+    "id": "cobblemon:sunflora-ocean",
+    "speciesId": "cobblemon:sunflora",
+    "displayAspects": [],
+    "conditionAspects": [],
+    "forms": [
+        {
+            "displayForm": "ocean",
+            "unlockForms": [
+                "ocean"
+            ]
+        }
+    ],
+    "variations": []
+}
