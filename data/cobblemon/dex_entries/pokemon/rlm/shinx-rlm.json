@@ -1,0 +1,15 @@
+﻿{
+    "id": "cobblemon:shinx-rlm",
+    "speciesId": "cobblemon:shinx",
+    "displayAspects": [],
+    "conditionAspects": [],
+    "forms": [
+        {
+            "displayForm": "rlm",
+            "unlockForms": [
+                "rlm"
+            ]
+        }
+    ],
+    "variations": []
+}

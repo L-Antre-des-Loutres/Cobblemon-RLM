@@ -1,0 +1,15 @@
+﻿{
+    "id": "cobblemon:ninjask-rlm",
+    "speciesId": "cobblemon:ninjask",
+    "displayAspects": [],
+    "conditionAspects": [],
+    "forms": [
+        {
+            "displayForm": "rlm",
+            "unlockForms": [
+                "rlm"
+            ]
+        }
+    ],
+    "variations": []
+}
