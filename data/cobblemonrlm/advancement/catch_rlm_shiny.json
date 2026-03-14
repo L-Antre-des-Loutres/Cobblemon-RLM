@@ -27,12 +27,11 @@
     },
     "criteria": {
         "catch_any_shiny_rlm": {
-            "trigger": "cobblemon:catch_pokemon",
+            "trigger": "cobblemon:catch_shiny_pokemon",
             "conditions": {
                 "count": 1,
                 "aspects": [
-                    "rlm",
-                    "shiny"
+                    "rlm"
                 ]
             }
         }

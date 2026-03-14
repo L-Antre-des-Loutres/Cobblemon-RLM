@@ -1,5 +1,5 @@
 {
-    "parent": "cobblemonrlm:root",
+    "parent": "cobblemonrlm:mega_showdown",
     "display": {
         "icon": {
             "id": "minecraft:purple_dye",
