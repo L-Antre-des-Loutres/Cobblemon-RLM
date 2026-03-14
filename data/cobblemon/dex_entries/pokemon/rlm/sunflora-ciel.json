@@ -1,0 +1,15 @@
+{
+    "id": "cobblemon:sunflora-ciel",
+    "speciesId": "cobblemon:sunflora",
+    "displayAspects": [],
+    "conditionAspects": [],
+    "forms": [
+        {
+            "displayForm": "ciel",
+            "unlockForms": [
+                "ciel"
+            ]
+        }
+    ],
+    "variations": []
+}

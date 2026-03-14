@@ -1,0 +1,21 @@
+{
+    "id": "cobblemon:mawile-poison",
+    "speciesId": "cobblemon:mawile",
+    "displayAspects": [],
+    "conditionAspects": [],
+    "forms": [
+        {
+            "displayForm": "poison",
+            "unlockForms": [
+                "poison"
+            ]
+        },
+        {
+            "displayForm": "MegaRlmPoison",
+            "unlockForms": [
+                "MegaRlmPoison"
+            ]
+        }
+    ],
+    "variations": []
+}

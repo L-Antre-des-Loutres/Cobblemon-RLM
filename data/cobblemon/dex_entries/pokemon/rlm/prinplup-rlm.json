@@ -1,0 +1,15 @@
+﻿{
+    "id": "cobblemon:prinplup-rlm",
+    "speciesId": "cobblemon:prinplup",
+    "displayAspects": [],
+    "conditionAspects": [],
+    "forms": [
+        {
+            "displayForm": "rlm",
+            "unlockForms": [
+                "rlm"
+            ]
+        }
+    ],
+    "variations": []
+}

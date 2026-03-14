@@ -1,0 +1,21 @@
+﻿{
+    "id": "cobblemon:ampharos-rlm",
+    "speciesId": "cobblemon:ampharos",
+    "displayAspects": [],
+    "conditionAspects": [],
+    "forms": [
+        {
+            "displayForm": "rlm",
+            "unlockForms": [
+                "rlm"
+            ]
+        },
+        {
+            "displayForm": "MegaRlm",
+            "unlockForms": [
+                "MegaRlm"
+            ]
+        }
+    ],
+    "variations": []
+}

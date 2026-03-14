@@ -1,0 +1,15 @@
+﻿{
+    "id": "cobblemon:probopass-rlm",
+    "speciesId": "cobblemon:probopass",
+    "displayAspects": [],
+    "conditionAspects": [],
+    "forms": [
+        {
+            "displayForm": "rlm",
+            "unlockForms": [
+                "rlm"
+            ]
+        }
+    ],
+    "variations": []
+}
