@@ -1,0 +1,91 @@
+{
+    "portraitScale": 1.95,
+    "portraitTranslation": [
+        -0.25,
+        2.85,
+        0
+    ],
+    "profileScale": 0.55,
+    "profileTranslation": [
+        0,
+        0.9,
+        0
+    ],
+    "rootBone": "wamek_mega",
+    "animations": {
+        "cry": "q.bedrock_stateful('wamek_mega', 'cry')",
+        "faint": "q.bedrock_primary('wamek_mega', 'faint', q.curve('one'))",
+        "recoil": "q.bedrock_stateful('wamek_mega', 'recoil')",
+        "physical": "q.bedrock_primary('wamek_mega', 'physical_move', q.curve('symmetrical_wide'))",
+        "special": "q.bedrock_primary('wamek_mega', 'special_move', q.curve('symmetrical_wide'))",
+        "status": "q.bedrock_primary('wamek_mega', 'special_move', q.curve('symmetrical_wide'))"
+    },
+    "poses": {
+        "standing": {
+            "poseName": "standing",
+            "transformTicks": 10,
+            "isBattle": false,
+            "poseTypes": [
+                "STAND",
+                "NONE"
+            ],
+            "animations": [
+                "q.look('head')",
+                "bedrock(wamek_mega, ground_idle)"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('wamek_mega', q.array('blink', 'quirk_lookaround'), 6, 20, 1)"
+            ]
+        },
+        "portrait": {
+            "poseName": "standing",
+            "transformTicks": 10,
+            "isBattle": false,
+            "poseTypes": [
+                "PORTRAIT",
+                "PROFILE"
+            ],
+            "animations": [
+                "bedrock(wamek_mega, render)"
+            ]
+        },
+        "battle-standing": {
+            "poseTypes": ["STAND"],
+            "isBattle": true,
+            "animations": [
+                "q.look('head')",
+                "bedrock(wamek_mega, battle_idle)"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('wamek_mega', q.array('blink'), 6, 20, 1)"
+            ]
+        },
+        "walking": {
+            "poseTypes": ["WALK"],
+            "animations": [
+                "q.bedrock('wamek_mega', 'ground_walk')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('wamek_mega', q.array('blink', 'quirk_lookaround'), 6, 20, 1)"
+            ]
+        },
+        "hover": {
+            "poseTypes": ["HOVER", "FLOAT"],
+            "animations": [
+                "q.bedrock('wamek_mega', 'hover')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('wamek_mega', q.array('blink', 'quirk_lookaround'), 6, 20, 1)"
+            ]
+        },
+        "fly": {
+            "poseTypes": ["FLY", "SWIM"],
+            "animations": [
+                "q.bedrock('wamek_mega', 'fly')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('wamek_mega', q.array('blink'), 6, 20, 1)"
+            ]
+        }
+    }
+}

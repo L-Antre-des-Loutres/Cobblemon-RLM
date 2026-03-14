@@ -1,0 +1,86 @@
+{
+    "portraitScale": 1.75,
+    "portraitTranslation": [
+        -0.3,
+        2.6,
+        0.1
+    ],
+    "profileScale": 0.8,
+    "profileTranslation": [
+        0,
+        0.59,
+        0
+    ],
+    "rootBone": "mawile",
+    "animations": {
+        "cry": "q.bedrock_stateful('mawile_rlm_dragon_mega', 'cry')"
+    },
+    "poses": {
+        "default": {
+            "poseName": "standing",
+            "transformTicks": 10,
+            "isBattle": false,
+            "poseTypes": [
+                "STAND",
+                "NONE"
+            ],
+            "animations": [
+                "q.bedrock('mawile_rlm_dragon_mega', 'default')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('mawile_rlm_dragon', q.array('blink'), 6, 20, 1)"
+            ]
+        },
+        "battle-default": {
+            "poseName": "standing",
+            "transformTicks": 10,
+            "isBattle": true,
+            "poseTypes": [
+                "STAND",
+                "NONE"
+            ],
+            "animations": [
+                "q.bedrock('mawile_rlm_dragon_mega', 'battle_default')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('mawile_rlm_dragon', q.array('blink'), 6, 20, 1)"
+            ]
+        },
+        "portrait": {
+            "poseName": "standing",
+            "poseTypes": [
+                "PORTRAIT"
+            ],
+            "animations": [
+                "q.bedrock('mawile_rlm_dragon_mega', 'render_portrait')"
+            ]
+        },
+        "profile": {
+            "poseName": "standing",
+            "poseTypes": [
+                "PROFILE"
+            ],
+            "animations": [
+                "q.bedrock('mawile_rlm_dragon_mega', 'render_profile')"
+            ]
+        },
+        "shoulder_left": {
+            "poseTypes": ["SHOULDER_LEFT"],
+            "animations": [
+                "q.bedrock('mawile_rlm_dragon_mega', 'shoulder_left')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('mawile_rlm_dragon', q.array('blink'), 6, 20, 1)"
+            ]
+        },
+        "shoulder_right": {
+            "poseTypes": ["SHOULDER_RIGHT"],
+            "animations": [
+                "q.bedrock('mawile_rlm_dragon_mega', 'shoulder_right')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('mawile_rlm_dragon', q.array('blink'), 6, 20, 1)"
+            ]
+        }
+    }
+}

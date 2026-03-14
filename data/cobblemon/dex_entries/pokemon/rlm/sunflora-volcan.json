@@ -1,0 +1,15 @@
+{
+    "id": "cobblemon:sunflora-volcan",
+    "speciesId": "cobblemon:sunflora",
+    "displayAspects": [],
+    "conditionAspects": [],
+    "forms": [
+        {
+            "displayForm": "volcan",
+            "unlockForms": [
+                "volcan"
+            ]
+        }
+    ],
+    "variations": []
+}

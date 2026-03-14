@@ -2,7 +2,9 @@
   "replace": false,
   "pokemon": [
     "flammiko",
-    "ampharos"
+    "wamek",
+    "ampharos",
+    "mawile"
   ],
   "features": [
     "mega_evolution"

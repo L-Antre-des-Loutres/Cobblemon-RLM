@@ -1,0 +1,40 @@
+{
+  "target": "cobblemon:Mawile",
+  "features": ["rlm", "dragon", "mega_evolution"],
+  "forms": [
+    {
+      "name": "MegaRlmDragon",
+      "pokedex": ["cobblemon.species.mawile-rlm-dragon-mega.desc"],
+      "labels": ["rlm", "dragon", "mega"],
+      "aspects": ["rlm", "dragon", "mega"],
+      "primaryType": "dragon",
+      "secondaryType": "fairy",
+      "abilities": [
+        "mystiforce",
+        "mystiforce",
+        "h:mystiforce"
+      ],
+      "baseStats": {
+        "hp": 90,
+        "attack": 90,
+        "defence": 60,
+        "special_attack": 95,
+        "special_defence": 60,
+        "speed": 85
+      },
+      "shoulderMountable": true,
+      "shoulderEffects": [
+        {
+          "type": "potion_effect",
+          "effect": "minecraft:strength",
+          "amplifier": 2,
+          "ambient": true,
+          "showParticles": false,
+          "showIcon": false
+        }
+      ],
+      "evolutions": [], 
+      "battleOnly": false
+    }
+  ]
+}

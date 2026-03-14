@@ -1,0 +1,21 @@
+{
+    "id": "cobblemon:mawile-dragon",
+    "speciesId": "cobblemon:mawile",
+    "displayAspects": [],
+    "conditionAspects": [],
+    "forms": [
+        {
+            "displayForm": "dragon",
+            "unlockForms": [
+                "dragon"
+            ]
+        },
+        {
+            "displayForm": "MegaRlmDragon",
+            "unlockForms": [
+                "MegaRlmDragon"
+            ]
+        }
+    ],
+    "variations": []
+}

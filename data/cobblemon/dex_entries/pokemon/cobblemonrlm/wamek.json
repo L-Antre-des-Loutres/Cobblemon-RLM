@@ -1,0 +1,21 @@
+{
+    "id": "cobblemon:wamek",
+    "speciesId": "cobblemon:wamek",
+    "displayAspects": [],
+    "conditionAspects": [],
+    "forms": [
+        {
+            "displayForm": "Normal",
+            "unlockForms": [
+                "Normal"
+            ]
+        },
+        {
+            "displayForm": "Mega",
+            "unlockForms": [
+                "Normal"
+            ]
+        }
+    ],
+    "variations": []
+}

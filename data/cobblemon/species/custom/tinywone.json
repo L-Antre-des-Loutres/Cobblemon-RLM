@@ -1,0 +1,107 @@
+{
+  "implemented": true,
+  "name": "tinywone",
+  "nationalPokedexNumber": 1035,
+  "labels": [
+    "custom"
+  ],
+  "pokedex": [
+    "cobblemon.species.tinywone.desc"
+  ],
+  "height": 2,
+  "weight": 100,
+  "features": [],
+  "forms": [
+    {
+      "name": "normal"
+    }
+  ],
+  "primaryType": "bug",
+  "baseStats": {
+    "hp": 40,
+    "attack": 20,
+    "defence": 50,
+    "special_attack": 40,
+    "special_defence": 60,
+    "speed": 45
+  },
+  "catchRate": 255,
+  "maleRatio": -1,
+  "baseExperienceYield": 100,
+  "experienceGroup": "slow",
+  "eggCycles": 40,
+  "eggGroups": [
+    "flying"
+  ],
+  "baseFriendship": 40,
+  "evYield": {
+    "special_defence": 1
+  },
+  "moves": [
+    "1:furyswipes",
+    "1:growl",
+    "1:stringshot",
+    "1:confusion",
+    "4:poweruppunch",
+    "7:bulkup",
+    "10:pinmissile",
+    "13:endure"
+  ],
+  "abilities": [
+    "innerfocus",
+    "steadfast",
+    "h:adaptability"
+  ],
+  "evolutions": [
+    {
+      "id": "tinywone_wamek",
+      "variant": "level_up",
+      "result": "mawile",
+      "consumeHeldItem": false,
+      "learnableMoves": [
+        "ultralaser"
+      ],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 15
+        }
+      ]
+    }
+  ],
+  "baseScale": 0.65,
+  "hitbox": {
+    "width": 0.75,
+    "height": 0.9,
+    "fixed": false
+  },
+  "drops": {
+    "amount": "2",
+    "entries": [
+      {
+        "item": "minecraft:string",
+        "quantityRange": "1",
+        "percentage": 33
+      }
+    ]
+  },
+  "behaviour": {
+    "moving": {
+      "canLook": false,
+      "fly": {
+        "canFly": false
+      },
+      "swim": {
+        "swimSpeed": 0.1,
+        "canSwimInWater": false,
+        "canBreatheUnderwater": false
+      },
+      "resting": {
+        "canSleep": true,
+        "willSleepOnBed": false,
+        "depth": "normal",
+        "light": "0-15"
+      }
+    }
+  }
+}

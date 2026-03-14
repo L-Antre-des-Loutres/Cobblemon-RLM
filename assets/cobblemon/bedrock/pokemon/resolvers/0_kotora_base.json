@@ -1,0 +1,18 @@
+{
+  "species": "cobblemon:kotora",
+  "order": 0,
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon:kotora",
+      "model": "cobblemon:kotora.geo",
+      "texture": "cobblemon:textures/pokemon/kotora/kotora.png"
+    },
+    {
+      "aspects": [
+        "shiny"
+      ],
+      "texture": "cobblemon:textures/pokemon/kotora/kotora_shiny.png"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "species": "cobblemon:smowile",
+  "order": 0,
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon:smowile",
+      "model": "cobblemon:smowile.geo",
+      "texture": "cobblemon:textures/pokemon/smowile/smowile.png"
+    },
+    {
+      "aspects": [
+        "shiny"
+      ],
+      "texture": "cobblemon:textures/pokemon/smowile/smowile_shiny.png"
+    }
+  ]
+}

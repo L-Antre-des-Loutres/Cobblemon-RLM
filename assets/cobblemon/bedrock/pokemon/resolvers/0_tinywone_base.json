@@ -1,0 +1,18 @@
+{
+  "species": "cobblemon:tinywone",
+  "order": 0,
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon:tinywone",
+      "model": "cobblemon:tinywone.geo",
+      "texture": "cobblemon:textures/pokemon/tinywone/tinywone.png"
+    },
+    {
+      "aspects": [
+        "shiny"
+      ],
+      "texture": "cobblemon:textures/pokemon/tinywone/tinywone_shiny.png"
+    }
+  ]
+}

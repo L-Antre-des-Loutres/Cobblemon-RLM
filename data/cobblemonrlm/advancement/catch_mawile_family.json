@@ -1,0 +1,64 @@
+{
+    "parent": "cobblemonrlm:catch_rlm",
+    "display": {
+        "icon": {
+            "id": "cobblemon:pokemon_model",
+            "components": {
+                "cobblemon:pokemon_item": {
+                    "species": "cobblemon:smowile",
+                    "aspects": [
+                        "normal"
+                    ]
+                }
+            }
+        },
+        "title": {
+            "translate": "advancement.rlm.catch_mawile_family.title"
+        },
+        "description": {
+            "translate": "advancement.rlm.catch_mawile_family.desc"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "sound": "minecraft:ui.toast.challenge_complete"
+    },
+    "criteria": {
+        "smowile": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:smowile"
+            }
+        },
+        "poison": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:mawile",
+                "aspects": [
+                    "poison"
+                ]
+            }
+        },
+        "dragon": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:mawile",
+                "aspects": [
+                    "dragon"
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "smowile"
+        ],
+        [
+            "poison"
+        ],
+        [
+            "dragon"
+        ]
+    ]
+}

@@ -1,0 +1,40 @@
+{
+  "target": "cobblemon:Mawile",
+  "features": ["rlm", "poison", "mega_evolution"],
+  "forms": [
+    {
+      "name": "MegaRlmPoison",
+      "pokedex": ["cobblemon.species.mawile-rlm-poison-mega.desc"],
+      "labels": ["rlm", "poison", "mega"],
+      "aspects": ["rlm", "poison", "mega"],
+      "primaryType": "poison",
+      "secondaryType": "fairy",
+      "abilities": [
+        "venomarmor",
+        "venomarmor",
+        "h:venomarmor"
+      ],
+      "baseStats": {
+        "hp": 95,
+        "attack": 35,
+        "defence": 85,
+        "special_attack": 105,
+        "special_defence": 80,
+        "speed": 90
+      },
+      "shoulderMountable": true,
+      "shoulderEffects": [
+        {
+          "type": "potion_effect",
+          "effect": "minecraft:unluck",
+          "amplifier": 0,
+          "ambient": true,
+          "showParticles": false,
+          "showIcon": false
+        }
+      ],
+      "evolutions": [], 
+      "battleOnly": false
+    }
+  ]
+}

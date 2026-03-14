@@ -1,0 +1,75 @@
+{
+    "portraitScale": 2,
+    "portraitTranslation": [
+        0,
+        -0.6,
+        0
+    ],
+    "profileScale": 0.8,
+    "profileTranslation": [
+        0,
+        0.59,
+        0
+    ],
+    "rootBone": "tinywone",
+    "animations": {
+        "cry": "q.bedrock_stateful('tinywone', 'cry')"
+    },
+    "poses": {
+        "default": {
+            "poseName": "standing",
+            "transformTicks": 10,
+            "poseTypes": [
+                "STAND",
+                "NONE",
+                "PROFILE"
+            ],
+            "animations": [
+                "q.bedrock('tinywone', 'idle')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('wamek', q.array('blink'), 6, 20, 1)"
+            ]
+        },
+        "walking": {
+            "poseName": "walking",
+            "transformTicks": 10,
+            "poseTypes": [
+                "WALK"
+            ],
+            "animations": [
+                "q.bedrock('tinywone', 'bounce')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('wamek', q.array('blink'), 6, 20, 1)"
+            ]
+        },
+        "portrait": {
+            "poseName": "standing",
+            "poseTypes": [
+                "PORTRAIT"
+            ],
+            "animations": [
+                "q.bedrock('tinywone', 'render')"
+            ]
+        },
+        "shoulder_left": {
+            "poseTypes": ["SHOULDER_LEFT"],
+            "animations": [
+                "q.bedrock('tinywone', 'idle')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('wamek', q.array('blink'), 6, 20, 1)"
+            ]
+        },
+        "shoulder_right": {
+            "poseTypes": ["SHOULDER_RIGHT"],
+            "animations": [
+                "q.bedrock('tinywone', 'idle')"
+            ],
+            "quirks": [
+                "q.bedrock_quirk('wamek', q.array('blink'), 6, 20, 1)"
+            ]
+        }
+    }
+}

@@ -1,0 +1,15 @@
+﻿{
+    "id": "cobblemon:bayleef-rlm",
+    "speciesId": "cobblemon:bayleef",
+    "displayAspects": [],
+    "conditionAspects": [],
+    "forms": [
+        {
+            "displayForm": "rlm",
+            "unlockForms": [
+                "rlm"
+            ]
+        }
+    ],
+    "variations": []
+}

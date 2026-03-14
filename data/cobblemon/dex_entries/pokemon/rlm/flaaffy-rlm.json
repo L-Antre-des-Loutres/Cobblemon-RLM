@@ -1,0 +1,15 @@
+﻿{
+    "id": "cobblemon:flaaffy-rlm",
+    "speciesId": "cobblemon:flaaffy",
+    "displayAspects": [],
+    "conditionAspects": [],
+    "forms": [
+        {
+            "displayForm": "rlm",
+            "unlockForms": [
+                "rlm"
+            ]
+        }
+    ],
+    "variations": []
+}

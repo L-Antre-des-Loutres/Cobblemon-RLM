@@ -1,0 +1,42 @@
+{
+    "parent": "cobblemonrlm:mega_showdown",
+    "display": {
+        "icon": {
+            "id": "minecraft:purple_dye",
+            "components": {
+                "minecraft:custom_model_data": 291011
+            }
+        },
+        "title": {
+            "translate": "advancement.rlm.wamekite.title"
+        },
+        "description": {
+            "translate": "advancement.rlm.wamekite.desc"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "sound": "minecraft:ui.toast.challenge_complete"
+    },
+    "criteria": {
+        "has_wamekite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:purple_dye",
+                        "components": {
+                            "minecraft:custom_model_data": 291011
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "has_wamekite"
+        ]
+    ]
+}

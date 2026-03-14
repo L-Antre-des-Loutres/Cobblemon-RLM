@@ -5,13 +5,13 @@
     {
       "aspects": ["rlm", "mega"],
       "model": "cobblemon:ampharos_rlm_mega.geo",
-      "texture": "cobblemon:textures/pokemon/ampharos_rlm_mega/ampharos_rlm_mega.png",
+      "texture": "cobblemon:textures/pokemon/ampharos_rlm/mega/ampharos_rlm.png",
       "layers": [
         {
           "name": "emissive",
           "texture": {
             "frames": [
-              "cobblemon:textures/pokemon/ampharos_rlm_mega/ampharos_rlm_emissive_mega.png"
+              "cobblemon:textures/pokemon/ampharos_rlm/mega/ampharos_rlm_emissive.png"
             ]
           },
           "emissive": true
@@ -20,13 +20,13 @@
     },
     {
       "aspects": [ "rlm", "mega", "shiny" ],
-      "texture": "cobblemon:textures/pokemon/ampharos_rlm_mega/ampharos_rlm_shiny_mega.png",
+      "texture": "cobblemon:textures/pokemon/ampharos_rlm/mega/ampharos_rlm_shiny.png",
       "layers": [
         {
           "name": "emissive",
           "texture": {
             "frames": [
-              "cobblemon:textures/pokemon/ampharos_rlm_mega/ampharos_rlm_shiny_emissive_mega.png"
+              "cobblemon:textures/pokemon/ampharos_rlm/mega/ampharos_rlm_shiny_emissive.png"
             ]
           },
           "emissive": true

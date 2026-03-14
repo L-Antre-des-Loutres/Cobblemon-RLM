@@ -1,0 +1,95 @@
+{
+    "implemented": true,
+    "name": "kotora",
+    "nationalPokedexNumber": 1032,
+    "labels": [
+        "custom"
+    ],
+    "pokedex": [
+        "cobblemon.species.kotora.desc"
+    ],
+    "height": 1,
+    "weight": 25,
+    "features": [],
+    "forms": [
+        {
+            "name": "normal"
+        }
+    ],
+    "shoulderMountable": true,
+    "shoulderEffects": [
+        {
+            "type": "potion_effect",
+            "effect": "minecraft:slow_falling",
+            "amplifier": 1,
+            "ambient": true,
+            "showParticles": false,
+            "showIcon": false
+        }
+    ],
+    "primaryType": "electric",
+    "secondaryType": "fairy",
+    "baseStats": {
+        "hp": 55,
+        "attack": 45,
+        "defence": 35,
+        "special_attack": 35,
+        "special_defence": 35,
+        "speed": 85
+    },
+    "catchRate": 200,
+    "maleRatio": 0.5,
+    "baseExperienceYield": 60,
+    "experienceGroup": "medium_fast",
+    "eggCycles": 15,
+    "eggGroups": [
+        "flying"
+    ],
+    "baseFriendship": 70,
+    "evYield": {
+        "speed": 1
+    },
+    "moves": [
+        "1:growl"
+    ],
+    "abilities": [
+        "guts",
+        "scrappy",
+        "h:hustle"
+    ],
+    "baseScale": 0.5,
+    "hitbox": {
+        "width": 1,
+        "height": 1,
+        "fixed": false
+    },
+    "drops": {
+        "amount": "1",
+        "entries": [
+            {
+                "item": "minecraft:copper",
+                "quantityRange": "1-2",
+                "percentage": 66
+            }
+        ]
+    },
+    "behaviour": {
+        "moving": {
+            "canLook": true,
+            "fly": {
+                "canFly": false
+            },
+            "swim": {
+                "swimSpeed": 0.1,
+                "canSwimInWater": true,
+                "canBreatheUnderwater": false
+            },
+            "resting": {
+                "canSleep": true,
+                "willSleepOnBed": true,
+                "depth": "normal",
+                "light": "0-18"
+            }
+        }
+    }
+}

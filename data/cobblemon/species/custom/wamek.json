@@ -1,0 +1,246 @@
+{
+  "implemented": true,
+  "name": "wamek",
+  "nationalPokedexNumber": 1035,
+  "labels": [
+    "custom"
+  ],
+  "pokedex": [
+    "cobblemon.species.wamek.desc"
+  ],
+  "height": 2,
+  "weight": 100,
+  "features": [],
+  "forms": [
+    {
+      "name": "normal"
+    }
+  ],
+  "primaryType": "bug",
+  "secondaryType": "fighting",
+  "baseStats": {
+    "hp": 60,
+    "attack": 114,
+    "defence": 70,
+    "special_attack": 90,
+    "special_defence": 80,
+    "speed": 114
+  },
+  "catchRate": 25,
+  "maleRatio": -1,
+  "baseExperienceYield": 300,
+  "experienceGroup": "slow",
+  "eggCycles": 40,
+  "eggGroups": [
+    "flying"
+  ],
+  "baseFriendship": 40,
+  "evYield": {
+    "speed": 2
+  },
+  "moves": [
+    "1:furyswipes",
+    "1:growl",
+    "1:stringshot",
+    "1:confusion",
+    "4:poweruppunch",
+    "7:bulkup",
+    "10:pinmissile",
+    "13:endure",
+    "18:brickbreak",
+    "21:doubleteam",
+    "24:silverwind",
+    "27:aurasphere",
+    "30:psychic",
+    "33:firstimpression",
+    "36:poweruppunch",
+    "39:calmmind",
+    "42:gigaimpact",
+    "45:closecombat",
+    "48:xscissor",
+    "51:fly",
+    "54:machpunch",
+    "57:falseswipe",
+    "60:swordsdance"
+  ],
+  "abilities": [
+    "innerfocus",
+    "steadfast",
+    "h:adaptability"
+  ],
+  "preEvolution": "tinywone",
+  "evolutions": [],
+  "baseScale": 0.65,
+  "hitbox": {
+    "width": 0.85,
+    "height": 2.25,
+    "fixed": false
+  },
+  "drops": {
+    "amount": "2",
+    "entries": [
+      {
+        "item": "minecraft:string",
+        "quantityRange": "1-2",
+        "percentage": 33
+      }
+    ]
+  },
+  "behaviour": {
+    "moving": {
+      "canLook": false,
+      "fly": {
+        "canFly": true
+      },
+      "swim": {
+        "swimSpeed": 0.1,
+        "canSwimInWater": true,
+        "canBreatheUnderwater": false
+      },
+      "resting": {
+        "canSleep": true,
+        "willSleepOnBed": false,
+        "depth": "normal",
+        "light": "0-15"
+      }
+    }
+  },
+  "riding": {
+    "behaviours": {
+      "AIR": {
+        "speed": "Math.clamp(q.entity.velocity.horizontal_magnitude + 0.33, 0, 1)",
+        "key": "cobblemon:air/jet",
+        "rideSounds": [
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": false,
+            "playForPassengers": true,
+            "soundLocation": "cobblemon:ride.loop.wind.stereo",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          },
+          {
+            "muffleEnabled": true,
+            "pitchExpr": "math.max(1.0 ,0.2 + math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2))",
+            "playForNonPassengers": true,
+            "playForPassengers": false,
+            "soundLocation": "cobblemon:ride.loop.wind.mono",
+            "volumeExpr": "math.pow(math.min(q.ride_velocity() / 1.5, 1.0),2)"
+          }
+        ],
+        "gravity": "q.gravity * (0.1 + (q.passenger_count - 1) * 0.1)",
+        "jumpVector": [
+          0,
+          "0.3*q.jump_strength/50",
+          0
+        ],
+        "stats": {
+          "ACCELERATION": "50-70",
+          "JUMP": "50-100",
+          "SKILL": "50-60",
+          "SPEED": "55-65",
+          "STAMINA": "30-50"
+        }
+      },
+      "LAND": {
+        "speed": "Math.clamp(q.entity.velocity.horizontal_magnitude + 0.33, 0, 1)",
+        "key": "cobblemon:land/horse",
+        "rideSounds": [],
+        "gravity": "q.gravity * (0.1 + (q.passenger_count - 1) * 0.1)",
+        "jumpVector": [
+          0,
+          "0.3*q.jump_strength/50",
+          "-1 * 0.5*q.jump_strength/50"
+        ],
+        "stats": {
+          "ACCELERATION": "65-75",
+          "JUMP": "50-100",
+          "SKILL": "40-70",
+          "SPEED": "55-65",
+          "STAMINA": "50-60"
+        }
+      }
+    },
+    "seats": [
+      {
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "poseOffsets": [
+          {
+            "offset": {
+              "x": 0.0,
+              "y": -2.1011124,
+              "z": 0.16987759
+            },
+            "poseTypes": [
+              "STAND"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.01469376,
+              "y": -1.9109085,
+              "z": -0.45310298
+            },
+            "poseTypes": [
+              "WALK"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.05311563,
+              "y": -1.1318469,
+              "z": -0.39360297
+            },
+            "poseTypes": [
+              "HOVER"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.05311563,
+              "y": -1.1318469,
+              "z": -0.39360297
+            },
+            "poseTypes": [
+              "FLY"
+            ]
+          },
+          {
+            "offset": {
+              "x": 6.860052E-4,
+              "y": -2.1426969,
+              "z": -0.23987202
+            },
+            "poseTypes": [
+              "FLOAT"
+            ]
+          },
+          {
+            "offset": {
+              "x": 0.14164889,
+              "y": -1.6177647,
+              "z": -0.14327948
+            },
+            "poseTypes": [
+              "SWIM"
+            ]
+          },
+          {
+            "offset": {
+              "x": 8.643751E-4,
+              "y": -2.4092257,
+              "z": -0.33146888
+            },
+            "poseTypes": [
+              "GLIDE"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

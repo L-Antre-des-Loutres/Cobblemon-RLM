@@ -9,6 +9,12 @@
             "unlockForms": [
                 "Normal"
             ]
+        },
+        {
+            "displayForm": "Mega",
+            "unlockForms": [
+                "Normal"
+            ]
         }
     ],
     "variations": []
