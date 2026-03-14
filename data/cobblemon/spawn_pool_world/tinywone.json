@@ -4,8 +4,8 @@
   "neededUninstalledMods": [],
   "spawns": [
     {
-      "id": "wamek",
-      "pokemon": "wamek",
+      "id": "tinywone",
+      "pokemon": "tinywone",
       "presets": [ "natural" ],
       "type": "pokemon",
       "spawnablePositionType": "grounded",
