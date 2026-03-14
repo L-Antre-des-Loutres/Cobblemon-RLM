@@ -9,6 +9,12 @@
             "unlockForms": [
                 "poison"
             ]
+        },
+        {
+            "displayForm": "MegaRlmPoison",
+            "unlockForms": [
+                "MegaRlmPoison"
+            ]
         }
     ],
     "variations": []

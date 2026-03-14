@@ -9,6 +9,12 @@
             "unlockForms": [
                 "dragon"
             ]
+        },
+        {
+            "displayForm": "MegaRlmDragon",
+            "unlockForms": [
+                "MegaRlmDragon"
+            ]
         }
     ],
     "variations": []
