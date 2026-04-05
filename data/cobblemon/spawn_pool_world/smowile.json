@@ -4,15 +4,15 @@
   "neededUninstalledMods": [],
   "spawns": [
     {
-      "id": "snowile-1",
+      "id": "snowile",
       "pokemon": "smowile",
       "presets": [ "natural" ],
       "timeRange": "day",
       "type": "pokemon",
       "context": "grounded",
-      "bucket": "uncommon",
-      "level": "5-15",
-      "weight": 9.0,
+      "bucket": "common",
+      "level": "2-15",
+      "weight": 7.0,
       "condition": {
         "canSeeSky": true,
         "biomes": [
