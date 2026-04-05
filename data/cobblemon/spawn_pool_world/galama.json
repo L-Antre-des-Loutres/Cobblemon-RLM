@@ -22,7 +22,7 @@
             }
         },
         {
-            "id": "galama-end",
+            "id": "galama-plains",
             "pokemon": "galama",
             "presets": [
                 "natural"
@@ -34,7 +34,7 @@
             "weight": 4.0,
             "condition": {
                 "biomes": [
-                    "#cobblemon:is_end"
+                    "#cobblemon:is_plains"
                 ]
             }
         }

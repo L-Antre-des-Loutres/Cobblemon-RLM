@@ -13,7 +13,7 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "10-26",
-            "weight": 8.0,
+            "weight": 6.0,
             "condition": {
                 "canSeeSky": true,
                 "biomes": [
@@ -22,7 +22,7 @@
             }
         },
         {
-            "id": "rineshell-end",
+            "id": "rineshell-plains",
             "pokemon": "rineshell",
             "presets": [
                 "natural"
@@ -31,10 +31,10 @@
             "context": "grounded",
             "bucket": "common",
             "level": "10-26",
-            "weight": 4.0,
+            "weight": 6.0,
             "condition": {
                 "biomes": [
-                    "#cobblemon:is_end"
+                    "#cobblemon:is_plains"
                 ]
             }
         }
