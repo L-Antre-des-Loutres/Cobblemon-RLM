@@ -11,10 +11,10 @@
       "spawnablePositionType": "grounded",
       "bucket": "uncommon",
       "level": "30-60",
-      "weight": 3.0,
+      "weight": 6.0,
       "condition": {
         "biomes": [
-          "#cobblemon:is_end"
+          "#cobblemon:is_forest"
         ]
       }
     }

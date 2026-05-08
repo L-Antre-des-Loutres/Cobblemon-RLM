@@ -11,7 +11,7 @@
       "spawnablePositionType": "grounded",
       "bucket": "ultra-rare",
       "level": "40-70",
-      "weight": 0.2,
+      "weight": 2.0,
       "condition": {
         "canSeeSky": true,
         "biomes": [
@@ -27,7 +27,7 @@
       "spawnablePositionType": "grounded",
       "bucket": "ultra-rare",
       "level": "40-70",
-      "weight": 0.2,
+      "weight": 2.0,
       "condition": {
         "biomes": [
           "#cobblemon:is_spooky"

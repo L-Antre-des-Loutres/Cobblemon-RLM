@@ -11,7 +11,7 @@
       "spawnablePositionType": "grounded",
       "bucket": "ultra-rare",
       "level": "30-60",
-      "weight": 3.0,
+      "weight": 4.0,
       "condition": {
         "biomes": [
           "#cobblemon:is_end"
