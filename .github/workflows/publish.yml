@@ -30,19 +30,19 @@ jobs:
         with:
           modrinth-id: GC58bFHM
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-          files: "cobblemon-rlm-${{ env.VERSION }}.jar"
-          name: ${{ github.event.release.name }}
-          version: "${{ env.VERSION }}-jar"
+          files: "cobblemon-rlm-${{ github.event.release.tag_name }}.jar"
+          name: "${{ github.event.release.name }} (Mod)"
+          version: "${{ github.event.release.tag_name }}-jar"
+          version-resolver: exact
           changelog: ${{ github.event.release.body }}
           version-type: release
-          game-version-filter: any
           loaders: |
             fabric
             neoforge
           dependencies: |
             MdwFAVRL(required)
 
-      - name: Wait before publishing ZIP
+      - name: Wait for Modrinth Database
         run: sleep 30
 
       - name: Publish ZIP to Modrinth
@@ -50,12 +50,12 @@ jobs:
         with:
           modrinth-id: GC58bFHM
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-          files: "cobblemon-rlm-${{ env.VERSION }}.zip"
-          name: ${{ github.event.release.name }}
-          version: "${{ env.VERSION }}-zip"
+          files: "cobblemon-rlm-${{ github.event.release.tag_name }}.zip"
+          name: "${{ github.event.release.name }} (Datapack)"
+          version: "${{ github.event.release.tag_name }}-zip"
+          version-resolver: exact
           changelog: ${{ github.event.release.body }}
           version-type: release
-          game-version-filter: any
           loaders: |
             datapack
           dependencies: |
