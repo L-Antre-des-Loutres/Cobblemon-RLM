@@ -11,16 +11,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Build Datapack/Mod ZIP
+      - name: Build Datapack/Mod ZIP & JAR
         run: |
           zip -r "cobblemon-rlm-${{ github.event.release.tag_name }}.zip" assets data META-INF fabric.mod.json pack.mcmeta cobblemon_rlm_pack.png README.md
+          cp "cobblemon-rlm-${{ github.event.release.tag_name }}.zip" "cobblemon-rlm-${{ github.event.release.tag_name }}.jar"
 
       - name: Publish to Modrinth
         uses: Kir-Antipov/mc-publish@v3.3
         with:
           modrinth-id: vZ8CfI8h
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-          files: "cobblemon-rlm-${{ github.event.release.tag_name }}.zip"
+          files: |
+            cobblemon-rlm-${{ github.event.release.tag_name }}.zip
+            cobblemon-rlm-${{ github.event.release.tag_name }}.jar
           name: ${{ github.event.release.name }}
           version: ${{ github.event.release.tag_name }}
           changelog: ${{ github.event.release.body }}
