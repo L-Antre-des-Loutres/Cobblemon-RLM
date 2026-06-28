@@ -14,6 +14,9 @@ jobs:
       - name: Build Datapack/Mod ZIP & JAR
         run: |
           VERSION="${{ github.event.release.tag_name }}"
+          if [ -z "$VERSION" ]; then
+            VERSION="${{ github.ref_name }}"
+          fi
           VERSION="${VERSION#v}"
           
           # Build ZIP
@@ -31,8 +34,9 @@ jobs:
           modrinth-id: GC58bFHM
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           files: "cobblemon-rlm-${{ env.VERSION }}.jar"
-          name: "${{ github.event.release.name }} (Mod)"
+          name: "${{ github.event.release.name || github.ref_name }} (Mod)"
           version: "${{ env.VERSION }}-jar"
+          game-versions: 1.21.1
           game-version-filter: any
           changelog: ${{ github.event.release.body }}
           version-type: release
@@ -51,8 +55,9 @@ jobs:
           modrinth-id: GC58bFHM
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           files: "cobblemon-rlm-${{ env.VERSION }}.zip"
-          name: "${{ github.event.release.name }} (Datapack)"
+          name: "${{ github.event.release.name || github.ref_name }} (Datapack)"
           version: "${{ env.VERSION }}-zip"
+          game-versions: 1.21.1
           game-version-filter: any
           changelog: ${{ github.event.release.body }}
           version-type: release
