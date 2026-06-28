@@ -16,17 +16,33 @@ jobs:
           zip -r "cobblemon-rlm-${{ github.event.release.tag_name }}.zip" assets data META-INF fabric.mod.json pack.mcmeta cobblemon_rlm_pack.png README.md
           cp "cobblemon-rlm-${{ github.event.release.tag_name }}.zip" "cobblemon-rlm-${{ github.event.release.tag_name }}.jar"
 
-      - name: Publish to Modrinth
+      - name: Publish JAR to Modrinth
         uses: Kir-Antipov/mc-publish@v3.3
         with:
           modrinth-id: GC58bFHM
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-          files: |
-            cobblemon-rlm-${{ github.event.release.tag_name }}.zip
-            cobblemon-rlm-${{ github.event.release.tag_name }}.jar
+          files: "cobblemon-rlm-${{ github.event.release.tag_name }}.jar"
           name: ${{ github.event.release.name }}
-          version: ${{ github.event.release.tag_name }}
+          version: "${{ github.event.release.tag_name }}-jar"
           changelog: ${{ github.event.release.body }}
           version-type: release
+          loaders: |
+            fabric
+            neoforge
+          dependencies: |
+            MdwFAVRL(required)
+
+      - name: Publish ZIP to Modrinth
+        uses: Kir-Antipov/mc-publish@v3.3
+        with:
+          modrinth-id: GC58bFHM
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+          files: "cobblemon-rlm-${{ github.event.release.tag_name }}.zip"
+          name: ${{ github.event.release.name }}
+          version: "${{ github.event.release.tag_name }}-zip"
+          changelog: ${{ github.event.release.body }}
+          version-type: release
+          loaders: |
+            datapack
           dependencies: |
             MdwFAVRL(required)
