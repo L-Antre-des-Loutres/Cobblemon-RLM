@@ -28,14 +28,17 @@ jobs:
           files: "cobblemon-rlm-${{ github.event.release.tag_name }}.jar"
           name: ${{ github.event.release.name }}
           version: "${{ github.event.release.tag_name }}-jar"
-          version-resolver: exact
           changelog: ${{ github.event.release.body }}
           version-type: release
+          game-version-filter: any
           loaders: |
             fabric
             neoforge
           dependencies: |
             MdwFAVRL(required)
+
+      - name: Wait before publishing ZIP
+        run: sleep 15
 
       - name: Publish ZIP to Modrinth
         uses: Kir-Antipov/mc-publish@v3.3
@@ -45,9 +48,9 @@ jobs:
           files: "cobblemon-rlm-${{ github.event.release.tag_name }}.zip"
           name: ${{ github.event.release.name }}
           version: "${{ github.event.release.tag_name }}-zip"
-          version-resolver: exact
           changelog: ${{ github.event.release.body }}
           version-type: release
+          game-version-filter: any
           loaders: |
             datapack
           dependencies: |
