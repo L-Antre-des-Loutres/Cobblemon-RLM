@@ -13,21 +13,26 @@ jobs:
 
       - name: Build Datapack/Mod ZIP & JAR
         run: |
+          VERSION="${{ github.event.release.tag_name }}"
+          VERSION="${VERSION#v}"
+          
           # Build ZIP
-          zip -r "cobblemon-rlm-${{ github.event.release.tag_name }}.zip" assets data META-INF fabric.mod.json pack.mcmeta cobblemon_rlm_pack.png README.md
+          zip -r "cobblemon-rlm-${VERSION}.zip" assets data META-INF fabric.mod.json pack.mcmeta cobblemon_rlm_pack.png README.md
           
           # Build JAR with a tiny difference to change the file hash
           echo "mod_version" > .is_mod
-          zip -r "cobblemon-rlm-${{ github.event.release.tag_name }}.jar" assets data META-INF fabric.mod.json pack.mcmeta cobblemon_rlm_pack.png README.md .is_mod
+          zip -r "cobblemon-rlm-${VERSION}.jar" assets data META-INF fabric.mod.json pack.mcmeta cobblemon_rlm_pack.png README.md .is_mod
+          
+          echo "VERSION=${VERSION}" >> $GITHUB_ENV
 
       - name: Publish JAR to Modrinth
         uses: Kir-Antipov/mc-publish@v3.3
         with:
           modrinth-id: GC58bFHM
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-          files: "cobblemon-rlm-${{ github.event.release.tag_name }}.jar"
+          files: "cobblemon-rlm-${{ env.VERSION }}.jar"
           name: ${{ github.event.release.name }}
-          version: "${{ github.event.release.tag_name }}-jar"
+          version: "${{ env.VERSION }}-jar"
           changelog: ${{ github.event.release.body }}
           version-type: release
           game-version-filter: any
@@ -38,16 +43,16 @@ jobs:
             MdwFAVRL(required)
 
       - name: Wait before publishing ZIP
-        run: sleep 15
+        run: sleep 30
 
       - name: Publish ZIP to Modrinth
         uses: Kir-Antipov/mc-publish@v3.3
         with:
           modrinth-id: GC58bFHM
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-          files: "cobblemon-rlm-${{ github.event.release.tag_name }}.zip"
+          files: "cobblemon-rlm-${{ env.VERSION }}.zip"
           name: ${{ github.event.release.name }}
-          version: "${{ github.event.release.tag_name }}-zip"
+          version: "${{ env.VERSION }}-zip"
           changelog: ${{ github.event.release.body }}
           version-type: release
           game-version-filter: any
