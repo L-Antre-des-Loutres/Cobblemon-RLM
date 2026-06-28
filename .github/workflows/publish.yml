@@ -19,7 +19,7 @@ jobs:
       - name: Publish to Modrinth
         uses: Kir-Antipov/mc-publish@v3.3
         with:
-          modrinth-id: vZ8CfI8h
+          modrinth-id: GC58bFHM
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           files: |
             cobblemon-rlm-${{ github.event.release.tag_name }}.zip
@@ -28,3 +28,5 @@ jobs:
           version: ${{ github.event.release.tag_name }}
           changelog: ${{ github.event.release.body }}
           version-type: release
+          dependencies: |
+            MdwFAVRL(required)
