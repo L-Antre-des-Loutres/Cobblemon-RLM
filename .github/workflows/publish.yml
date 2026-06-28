@@ -35,7 +35,7 @@ jobs:
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           files: "cobblemon-rlm-${{ env.VERSION }}.jar"
           name: "${{ github.event.release.name || github.ref_name }} (Mod)"
-          version: "${{ env.VERSION }}-jar"
+          version: "${{ env.VERSION }}-mod"
           game-versions: 1.21.1
           game-version-filter: any
           changelog: ${{ github.event.release.body }}
@@ -56,7 +56,7 @@ jobs:
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           files: "cobblemon-rlm-${{ env.VERSION }}.zip"
           name: "${{ github.event.release.name || github.ref_name }} (Datapack)"
-          version: "${{ env.VERSION }}-zip"
+          version: "${{ env.VERSION }}-datapack"
           game-versions: 1.21.1
           game-version-filter: any
           changelog: ${{ github.event.release.body }}
