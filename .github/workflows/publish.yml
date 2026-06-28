@@ -13,8 +13,12 @@ jobs:
 
       - name: Build Datapack/Mod ZIP & JAR
         run: |
+          # Build ZIP
           zip -r "cobblemon-rlm-${{ github.event.release.tag_name }}.zip" assets data META-INF fabric.mod.json pack.mcmeta cobblemon_rlm_pack.png README.md
-          cp "cobblemon-rlm-${{ github.event.release.tag_name }}.zip" "cobblemon-rlm-${{ github.event.release.tag_name }}.jar"
+          
+          # Build JAR with a tiny difference to change the file hash
+          echo "mod_version" > .is_mod
+          zip -r "cobblemon-rlm-${{ github.event.release.tag_name }}.jar" assets data META-INF fabric.mod.json pack.mcmeta cobblemon_rlm_pack.png README.md .is_mod
 
       - name: Publish JAR to Modrinth
         uses: Kir-Antipov/mc-publish@v3.3
@@ -24,6 +28,7 @@ jobs:
           files: "cobblemon-rlm-${{ github.event.release.tag_name }}.jar"
           name: ${{ github.event.release.name }}
           version: "${{ github.event.release.tag_name }}-jar"
+          version-resolver: exact
           changelog: ${{ github.event.release.body }}
           version-type: release
           loaders: |
@@ -40,6 +45,7 @@ jobs:
           files: "cobblemon-rlm-${{ github.event.release.tag_name }}.zip"
           name: ${{ github.event.release.name }}
           version: "${{ github.event.release.tag_name }}-zip"
+          version-resolver: exact
           changelog: ${{ github.event.release.body }}
           version-type: release
           loaders: |
