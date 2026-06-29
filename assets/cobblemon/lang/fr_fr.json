@@ -68,7 +68,9 @@
   "cobblemon.move.highpropulsion": "Haute Propulsion",
   "cobblemon.move.highpropulsion.desc": "Une frappe d'une vitesse exceptionnelle. Priorité +1. Le lanceur subit des dégâts de recul.",
   "cobblemon.move.verdantbastion": "Bastion Verdoyant",
-  "cobblemon.move.verdantbastion.desc": "Copie de Blockhaus / Bouclier Royal (pour le moment).",
+  "cobblemon.move.verdantbastion.desc": "Le Pokémon pose un Abri. Si l'adversaire attaque l'Abri, une rangée de Picots est posée. Si l'adversaire ne touche pas l'Abri, la défense du Pokémon augmente. Ne peut pas être utilisée deux fois de suite.",
+  "cobblemon.move.mysticexchange": "Échange Psychomagique",
+  "cobblemon.move.mysticexchange.desc": "Vole les augmentations de statistiques de la cible et lui transfère les baisses de statistiques du lanceur.",
 
   "cobblemon.ability.dragonlate": "Dragonate",
   "cobblemon.ability.dragonlate.desc": "Sa peau draconique transforme les capacités de type Normal en type Dragon.",
