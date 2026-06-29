@@ -19,6 +19,15 @@ jobs:
           fi
           VERSION="${VERSION#v}"
           
+          # Extract the clean title (remove 'v1.5.5:' or similar prefix)
+          RAW_TITLE="${{ github.event.release.name || github.ref_name }}"
+          if [[ "$RAW_TITLE" == *":"* ]]; then
+            CLEAN_TITLE="${RAW_TITLE#*:}"
+            CLEAN_TITLE=$(echo "$CLEAN_TITLE" | xargs) # Trim spaces
+          else
+            CLEAN_TITLE="$RAW_TITLE"
+          fi
+          
           # Build ZIP
           zip -r "cobblemon-rlm-${VERSION}.zip" assets data META-INF fabric.mod.json pack.mcmeta cobblemon_rlm_pack.png README.md
           
@@ -27,14 +36,15 @@ jobs:
           zip -r "cobblemon-rlm-${VERSION}.jar" assets data META-INF fabric.mod.json pack.mcmeta cobblemon_rlm_pack.png README.md .is_mod
           
           echo "VERSION=${VERSION}" >> $GITHUB_ENV
+          echo "RELEASE_TITLE=${CLEAN_TITLE}" >> $GITHUB_ENV
 
       - name: Publish JAR to Modrinth
         uses: Kir-Antipov/mc-publish@v3.3
         with:
-          modrinth-id: GC58bFHM
+          modrinth-id: GC58bFHM²
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           files: "cobblemon-rlm-${{ env.VERSION }}.jar"
-          name: "${{ github.event.release.name || github.ref_name }} (Mod)"
+          name: "${{ env.RELEASE_TITLE }}"
           version: "${{ env.VERSION }}-mod"
           game-versions: 1.21.1
           game-version-filter: any
@@ -55,7 +65,7 @@ jobs:
           modrinth-id: GC58bFHM
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           files: "cobblemon-rlm-${{ env.VERSION }}.zip"
-          name: "${{ github.event.release.name || github.ref_name }} (Datapack)"
+          name: "${{ env.RELEASE_TITLE }}"
           version: "${{ env.VERSION }}-datapack"
           game-versions: 1.21.1
           game-version-filter: any
