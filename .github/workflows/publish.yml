@@ -41,7 +41,7 @@ jobs:
       - name: Publish JAR to Modrinth
         uses: Kir-Antipov/mc-publish@v3.3
         with:
-          modrinth-id: GC58bFHM²
+          modrinth-id: GC58bFHM
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           files: "cobblemon-rlm-${{ env.VERSION }}.jar"
           name: "${{ env.RELEASE_TITLE }}"

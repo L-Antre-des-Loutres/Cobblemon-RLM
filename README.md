@@ -1,81 +1,122 @@
 <div align="center">
   <img src="assets/logos/CobblemonRLM-big.png" alt="Cobblemon RLM Logo" width="600">
+
+  <br><br>
+
+  [![Modrinth](https://img.shields.io/modrinth/dt/GC58bFHM?style=for-the-badge&logo=modrinth&label=T%C3%A9l%C3%A9chargements&color=00AF5C)](https://modrinth.com/project/cobblemon-rlm)
+  [![Game Version](https://img.shields.io/badge/Minecraft-1.21.1-62B47A?style=for-the-badge&logo=minecraft)](https://minecraft.net)
+  [![Wiki](https://img.shields.io/badge/Wiki-Pok%C3%A9dex-3B82F6?style=for-the-badge)](https://antredesloutres.fr/pokemon/wiki/pokedex/)
+  [![License](https://img.shields.io/badge/Licence-All%20Rights%20Reserved-EF4444?style=for-the-badge)](LICENSE)
+
+  <br>
+
+  <a href="README_en.md"><strong>🇬🇧 Switch to English Version</strong></a>
+
 </div>
 
 ---
 
+## 🦦 Qu'est-ce que Cobblemon RLM ?
+
+**Cobblemon RLM** est un datapack / mod pour **[Cobblemon](https://cobblemon.com)** créé par l'**Antre des Loutres**.
+Il enrichit votre aventure avec des **formes régionales inédites**, des **Fakemons originaux**, de **nouveaux talents exclusifs** et des **Méga-Évolutions** issues de l'univers du **Royaume de Loutre Mer** (RLM).
+
+> Compatible **Fabric** et **NeoForge** — disponible en `.jar` (mod) et `.zip` (datapack).
+
+---
+
+## 📋 Contenu du Pack
+
+### 🔄 Formes Régionales RLM
+
+| Pokémon | Typing | Pré-évolution |
+|---------|--------|---------------|
+| **Meganium** | Plante / Acier | Macronium (Plante) |
+| **Tortank** | Eau / Vol | Carabaffe (Eau) |
+| **Pingoléon** | Eau / Électrik | Prinplouf (Eau) |
+| **Goupelin** | Feu / Fée | Roussil (Feu) |
+| **Pharamp** | Électrik / Spectre | Lainergie, Wattouat |
+| **Tarinorme** | Roche / Fée | Tarinor |
+| **Spiritomb** | Feu / Ténèbres | — |
+| **Luxray** | Glace | Luxio, Lixy |
+| **Togekiss** | Fée / Dragon | — |
+| **Ninjask** | Eau / Vol | Ningale (Insecte / Eau) |
+| **Munja** | Eau / Roche | — |
+| **Mysdibule** | Poison / Fée *ou* Dragon / Fée | Smowile (Fée) |
+| **Héliatronc** | 🌤️ Ciel : Plante / Vol · 🌊 Océan : Plante / Eau · 🌋 Volcan : Plante / Feu | — |
+
+### ✨ Fakemons Originaux
+
+| Pokémon | Typing | Notes |
+|---------|--------|-------|
+| **Flammiko** | Feu / Électrik | — |
+| **Apheos** & **Aphelis** | Fée / Vol | — |
+| **Rineshell** | Normal | Évolue en Galama |
+| **Galama** | Acier / Normal | — |
+| **Kotora** | Électrik / Fée | — |
+| **Tinywone** | Insecte | Évolue en Wamek |
+| **Wamek** | Insecte / Combat | — |
+| **Smowile** | Fée | Pré-évolution de Mysdibule |
+
+### 🧬 Talents Exclusifs
+
+| Talent | Effet |
+|--------|-------|
+| **Dragonate** | Transforme les capacités Normal en type Dragon. |
+| **Garde Émoussée** | Protège de toutes les capacités sauf celles « peu efficaces ». |
+| **Trombe Marine** | Invoque la pluie à l'entrée. Sous la pluie : Attaque et Att. Spé. ×1.5. |
+| **Mystiforce** | L'Attaque Spéciale est doublée. |
+| **Psycho-Prio** | Priorité sur les attaques tant que les PV dépassent 50%. |
+| **Armure Venimeuse** | Déf. Spé. +50% et 50% de chance d'empoisonner gravement au contact. |
+
+### 💎 Méga-Évolutions RLM
+
+> *Nécessite [Cobblemon: Mega Showdown](https://modrinth.com/project/mega-showdown)*
+
+| Pokémon | Typing | Talent |
+|---------|--------|--------|
+| **Méga-Pharamp RLM** | Électrik / Feu | — |
+| **Méga-Flammiko** | Feu / Électrik | Simple |
+| **Méga-Mysdibule** (Poison) | Poison / Fée | Armure Venimeuse |
+| **Méga-Mysdibule** (Dragon) | Dragon / Fée | Mystiforce |
+| **Méga-Wamek** | Insecte / Dragon | Dragonate |
+
+---
+
+## 📥 Installation
+
+### En tant que Mod (recommandé)
+1. Téléchargez le fichier **`.jar`** depuis [Modrinth](https://modrinth.com/project/cobblemon-rlm).
+2. Placez-le dans votre dossier **`mods/`**.
+3. Lancez Minecraft avec **Fabric** ou **NeoForge**.
+
+### En tant que Datapack
+1. Téléchargez le fichier **`.zip`** depuis [Modrinth](https://modrinth.com/project/cobblemon-rlm).
+2. Placez-le dans le dossier **`datapacks/`** de votre monde.
+
+### Prérequis
+- [**Cobblemon**](https://modrinth.com/mod/cobblemon) (obligatoire)
+- [**Cobblemon: Mega Showdown**](https://modrinth.com/project/mega-showdown) (optionnel, pour les Méga-Évolutions)
+
+---
+
+## 👥 Crédits
+
+| | |
+|---|---|
+| **Projet** | [Antre des Loutres](https://antredesloutres.fr) |
+| **Design & Développement** | [TheAzertor](https://github.com/Corentin-cott) · [RereBleue](https://github.com/matheo-1712) |
+| **Modèles & Textures de base** | [Cobblemon](https://cobblemon.com) |
+
+---
+
 <div align="center">
-  <a href="README_en.md"><strong>🇺🇸 Switch to English Version</strong></a>
-</div>
 
----
+  [![Télécharger](https://img.shields.io/badge/Télécharger%20sur-Modrinth-00AF5C?style=for-the-badge&logo=modrinth)](https://modrinth.com/project/cobblemon-rlm)
+  [![GitHub](https://img.shields.io/badge/Code%20source-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/L-Antre-des-Loutres/Cobblemon-RLM)
 
-[![Wiki Pokédex](https://img.shields.io/badge/Wiki-Pokédex-blue?style=for-the-badge)](https://antredesloutres.fr/pokemon/wiki/pokedex/)
+  <br>
 
-## 🇫🇷 Français
+  <sub>Made with ❤️ by <strong>Antre des Loutres</strong></sub>
 
-### 🦦 Qu'est-ce que "Cobblemon RLM" ?
-**Cobblemon RLM** est un datapack pour le mod **Cobblemon** qui intègre des Fakemons et des formes régionales issus de l'univers de l'**Antre des Loutres** (Royaume de Loutre Mer). Il ajoute de nouvelles créatures uniques ainsi que des variantes de Pokémon existants !
-
----
-
-### Liste des Ajouts
-
-#### Formes Régionales RLM
-*   **Meganium** (Plante / Acier) & **Macronium** (Plante)
-*   **Tortank** (Eau / Vol) & **Carabaffe** (Eau)
-*   **Pingoléon** (Eau / Électrik) & **Prinplouf** (Eau)
-*   **Goupelin** (Feu / Fée) & **Roussil** (Feu)
-*   **Pharamp**, **Lainergie**, **Wattouat** (Électrik / Spectre)
-*   **Tarinorme** & **Tarinor** (Roche / Fée)
-*   **Spiritomb** (Feu / Ténèbres)
-*   **Héliatronc** (Forme Ciel : Plante / Vol, Forme Océan : Plante / Eau, Forme Volcan : Plante / Feu)
-*   **Luxray**, **Luxio**, **Lixy** (Glace)
-*   **Togekiss** (Fée / Dragon)
-*   **Ninjask** (Eau / Vol), **Munja** (Eau / Roche) & **Ningale** (Insecte / Eau)
-*   **Mysdibule** (Poison / Fée & Dragon / Fée)
-
-#### Fakemons Uniques
-*   **Flammiko** (Feu / Électrik)
-*   **Apheos** & **Aphelis** (Fée / Vol)
-*   **Rineshell** (Normal) & **Galama** (Acier / Normal)
-*   **Kotora** (Électrik / Fée)
-*   **Tinywone** (Insecte) & **Wamek** (Insecte / Combat)
-*   **Smowile** (Fée) - *Pré-évolution de Mysdibule*
-
-#### Nouveaux Talents Exclusifs
-*   **Dragonate** : Sa peau draconique transforme les capacités de type Normal en type Dragon.
-*   **Garde Émoussée** : Un pouvoir mystérieux protège le Pokémon de toutes les capacités, sauf celles qui sont « peu efficaces ».
-*   **Trombe Marine** : En entrant sur le terrain, lance la pluie. Sous la pluie, l'Attaque et l'Attaque Spéciale sont multipliées par 1,5.
-*   **Mystiforce** : L’Attaque Spéciale du Pokémon est doublée.
-*   **Psycho-Prio** : Le détenteur de cette capacité bénéficie de la priorité sur ses attaques tant qu'il a plus de 50% de ses PV.
-*   **Armure Venimeuse** : La Défense Spéciale du Pokémon augmente de 50% et a 50% de chances d'empoisonner gravement au contact.
-
-(Nécessite Cobblemon: Mega Showdown)
-#### Méga-Évolutions RLM
-*   **Méga-Pharamp RLM** (Électrik / Feu)
-*   **Méga-Flammiko** (Feu / Électrik) - *Talent: Simple*
-*   **Méga-Mysdibule** (Poison / Fée => *Venom Armor* | Dragon / Fée => *Mystiforce*)
-*   **Méga-Wamek** (Insecte / Dragon) - *Talent: Dragonlate*
-
-### 🎵 Musiques Personnalisées
-Le pack ajoute **22 disques de musique** reprenant des thèmes emblématiques de la licence Pokémon pour ambiancer vos voyages. 🎧
-*   **Commande pour les obtenir :** `/function dp_music:give_disc`
-
----
-
-### 📥 Installation
-1.  **Téléchargez** le fichier `.jar` depuis la page du projet.
-2.  **Placez-le** dans votre dossier `mods` de votre instance Minecraft.
-3.  **Prérequis :** Nécessite le mod [**Cobblemon**](https://cobblemon.com).
-
----
-
-### 👥 Crédits et Remerciements
-*   **[Cobblemon](https://cobblemon.com)** : Modèles originaux et textures de base. Un immense merci à leur équipe !
-
----
-
-<div align="center">
-  <a href="https://modrinth.com/project/cobblemon-rlm"><img src="https://img.shields.io/badge/Télécharger%20sur-Modrinth-00AF5C?style=for-the-badge&logo=modrinth" alt="Télécharger sur Modrinth"></a>
 </div>
