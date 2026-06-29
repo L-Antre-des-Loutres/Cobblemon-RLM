@@ -118,7 +118,9 @@
   "cobblemon.move.highpropulsion": "High Propulsion",
   "cobblemon.move.highpropulsion.desc": "A strike of exceptional speed. Priority +1. The user will suffer recoil.",
   "cobblemon.move.verdantbastion": "Verdant Bastion",
-  "cobblemon.move.verdantbastion.desc": "King Shield copy (for the moment).",
+  "cobblemon.move.verdantbastion.desc": "The user protects itself. If the opponent attacks the Protect, a row of Spikes is laid. If the opponent does not touch the Protect, the user's Defense increases. Cannot be used twice in a row.",
+  "cobblemon.move.mysticexchange": "Mystic Exchange",
+  "cobblemon.move.mysticexchange.desc": "Steals the target's positive stat boosts and transfers the user's negative stat drops to the target.",
 
   "cobblemon.ability.dragonlate": "Dragonate",
   "cobblemon.ability.dragonlate.desc": "Its draconic skin turns Normal-type moves into Dragon-type moves.",
