@@ -26,7 +26,6 @@
             }
         }
         if (hasStolen) {
-            this.add('-clearpositiveboost', target, source, 'move: Échange Psychomagique');
             this.boost(positiveBoosts, source, source, move);
         }
         if (hasTransferred) {
