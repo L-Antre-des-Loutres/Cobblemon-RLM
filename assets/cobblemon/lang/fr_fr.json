@@ -67,8 +67,6 @@
   "cobblemon.move.frostyslide.desc": "Capacité de priorité +2.",
   "cobblemon.move.highpropulsion": "Haute Propulsion",
   "cobblemon.move.highpropulsion.desc": "Une frappe d'une vitesse exceptionnelle. Priorité +1. Le lanceur subit des dégâts de recul.",
-  "cobblemon.move.verdantbastion": "Bastion Verdoyant",
-  "cobblemon.move.verdantbastion.desc": "Le Pokémon pose un Abri. Si l'adversaire attaque l'Abri, une rangée de Picots est posée. Si l'adversaire ne touche pas l'Abri, la défense du Pokémon augmente. Ne peut pas être utilisée deux fois de suite.",
   "cobblemon.move.mysticexchange": "Échange Psychomagique",
   "cobblemon.move.mysticexchange.desc": "Vole les augmentations de statistiques de la cible et lui transfère les baisses de statistiques du lanceur.",
 
@@ -87,5 +85,9 @@
   "cobblemon.ability.soulrelease": "Relâchement des Âmes",
   "cobblemon.ability.soulrelease.desc": "Une seule fois par combat, quand le Pokémon subit une attaque, son masque se brise et inflige à l'attaquant des dégâts égaux à 10% de ses PV max pour chaque allié KO.",
   "cobblemon.battle.damage.soulrelease": "%s est blessé par la rancœur des alliés KO !",
-  "cobblemon.battle.activate.soulrelease": "Son masque se brise et libère la rancœur !"
+  "cobblemon.battle.activate.soulrelease": "Son masque se brise et libère la rancœur !",
+  "cobblemon.ability.verdantbastion": "Rempart Floracier",
+  "cobblemon.ability.verdantbastion.desc": "Inflige des dégâts à l'attaquant et pose une rangée de Picots s'il subit une attaque de contact.",
+  "cobblemon.battle.damage.verdantbastion": "%s se blesse sur le Rempart Floracier !",
+  "cobblemon.battle.activate.verdantbastion": "Le Rempart Floracier s'active !"
 }
