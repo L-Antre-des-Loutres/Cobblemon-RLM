@@ -117,8 +117,6 @@
   "cobblemon.move.frostyslide.desc": "+2 priority move",
   "cobblemon.move.highpropulsion": "High Propulsion",
   "cobblemon.move.highpropulsion.desc": "A strike of exceptional speed. Priority +1. The user will suffer recoil.",
-  "cobblemon.move.verdantbastion": "Verdant Bastion",
-  "cobblemon.move.verdantbastion.desc": "The user protects itself. If the opponent attacks the Protect, a row of Spikes is laid. If the opponent does not touch the Protect, the user's Defense increases. Cannot be used twice in a row.",
   "cobblemon.move.mysticexchange": "Mystic Exchange",
   "cobblemon.move.mysticexchange.desc": "Steals the target's positive stat boosts and transfers the user's negative stat drops to the target.",
 
@@ -137,5 +135,9 @@
   "cobblemon.ability.soulrelease": "Soul Release",
   "cobblemon.ability.soulrelease.desc": "Once per battle, when hit by an attack, its mask breaks, dealing damage to the attacker equal to 10% of its max HP for each fainted ally.",
   "cobblemon.battle.damage.soulrelease": "%s is hurt by the released souls!",
-  "cobblemon.battle.activate.soulrelease": "Its mask breaks and releases its grudge!"
+  "cobblemon.battle.activate.soulrelease": "Its mask breaks and releases its grudge!",
+  "cobblemon.ability.verdantbastion": "Verdant Bastion",
+  "cobblemon.ability.verdantbastion.desc": "Damages the attacker and sets a layer of Spikes upon making contact.",
+  "cobblemon.battle.damage.verdantbastion": "%s is hurt by the Verdant Bastion!",
+  "cobblemon.battle.activate.verdantbastion": "The Verdant Bastion is activated!"
 }
