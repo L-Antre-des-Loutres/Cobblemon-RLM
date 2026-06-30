@@ -83,5 +83,9 @@
   "cobblemon.ability.mystiforce": "Mystiforce",
   "cobblemon.ability.mystiforce.desc": "L’Attaque Spéciale du Pokémon est doublée.",
   "cobblemon.ability.venomarmor": "Armure Venimeuse",
-  "cobblemon.ability.venomarmor.desc": "La Défense Spéciale du Pokémon augmente de 50% et a 50% de chances d'empoisonner gravement au contact."
+  "cobblemon.ability.venomarmor.desc": "La Défense Spéciale du Pokémon augmente de 50% et a 50% de chances d'empoisonner gravement au contact.",
+  "cobblemon.ability.soulrelease": "Relâchement des Âmes",
+  "cobblemon.ability.soulrelease.desc": "Une seule fois par combat, quand le Pokémon subit une attaque, son masque se brise et inflige à l'attaquant des dégâts égaux à 10% de ses PV max pour chaque allié KO.",
+  "cobblemon.battle.damage.soulrelease": "%s est blessé par la rancœur des alliés KO !",
+  "cobblemon.battle.activate.soulrelease": "Son masque se brise et libère la rancœur !"
 }

@@ -133,5 +133,9 @@
   "cobblemon.ability.mystiforce": "Mystiforce",
   "cobblemon.ability.mystiforce.desc": "The Pokémon’s Special Attack stat is doubled.",
   "cobblemon.ability.venomarmor": "Venom Armor",
-  "cobblemon.ability.venomarmor.desc": "The Pokémon's Special Def stat is doubled and has a 50% chance to badly poison on contact."
+  "cobblemon.ability.venomarmor.desc": "The Pokémon's Special Def stat is doubled and has a 50% chance to badly poison on contact.",
+  "cobblemon.ability.soulrelease": "Soul Release",
+  "cobblemon.ability.soulrelease.desc": "Once per battle, when hit by an attack, its mask breaks, dealing damage to the attacker equal to 10% of its max HP for each fainted ally.",
+  "cobblemon.battle.damage.soulrelease": "%s is hurt by the released souls!",
+  "cobblemon.battle.activate.soulrelease": "Its mask breaks and releases its grudge!"
 }
