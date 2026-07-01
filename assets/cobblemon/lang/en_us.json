@@ -119,6 +119,8 @@
   "cobblemon.move.highpropulsion.desc": "A strike of exceptional speed. Priority +1. The user will suffer recoil.",
   "cobblemon.move.mysticexchange": "Mystic Exchange",
   "cobblemon.move.mysticexchange.desc": "Steals the target's positive stat boosts and transfers the user's negative stat drops to the target.",
+  "cobblemon.move.florasteelcharge": "Florasteel Charge",
+  "cobblemon.move.florasteelcharge.desc": "Deals damage and sets one layer of Spikes on the opposing side.",
 
   "cobblemon.ability.dragonlate": "Dragonate",
   "cobblemon.ability.dragonlate.desc": "Its draconic skin turns Normal-type moves into Dragon-type moves.",
