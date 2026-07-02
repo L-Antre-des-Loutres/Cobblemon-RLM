@@ -14,5 +14,17 @@
     "advancement.rlm.catch_mawile_family.title": "Maître de la Famille Mysdibule",
     "advancement.rlm.catch_mawile_family.desc": "Capturer la famille évolutive complète de Mysdibule RLM (Smowile, Mysdibule Poison RLM, Mysdibule Dragon RLM).",
     "advancement.rlm.mega_showdown.title": "Mega Showdown",
-    "advancement.rlm.mega_showdown.desc": "Découvrez l'incroyable puissance des Méga-Évolutions."
+    "advancement.rlm.mega_showdown.desc": "Découvrez l'incroyable puissance des Méga-Évolutions.",
+    "advancement.rlm.catch_fakemon.title": "Une Espèce du Royaume !",
+    "advancement.rlm.catch_fakemon.desc": "Obtenir l'un des Fakemon originaux créés dans le Royaume de Loutre Mer.",
+    "advancement.rlm.complete_fakemon_dex.title": "Maître des Espèces du RLM",
+    "advancement.rlm.complete_fakemon_dex.desc": "Capturer tous les Fakemon originaux du Royaume de Loutre Mer.",
+    "advancement.rlm.catch_starters_rlm.title": "La Relève des Starters du RLM",
+    "advancement.rlm.catch_starters_rlm.desc": "Réunir les quatre formes finales RLM des Pokémon Starters (Méganium, Tortank, Pingoléon, Goupelin).",
+    "advancement.rlm.catch_nincada_line.title": "Deux pour le Prix d'Un !",
+    "advancement.rlm.catch_nincada_line.desc": "Obtenir à la fois Ninjask RLM et Shedinja RLM issus de la même évolution de Ningale RLM.",
+    "advancement.rlm.catch_spiritomb_rlm.title": "Un Fantôme aux Flammes !",
+    "advancement.rlm.catch_spiritomb_rlm.desc": "Capturer Spiritombe RLM, le spectre de Feu et de Ténèbres du Royaume de Loutre Mer.",
+    "advancement.rlm.complete_rlm_dex.title": "Légende du Royaume de Loutre Mer",
+    "advancement.rlm.complete_rlm_dex.desc": "Compléter l'intégralité du Pokédex du Royaume de Loutre Mer, formes régionales et Fakemon compris."
 }

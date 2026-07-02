@@ -1,0 +1,96 @@
+{
+    "parent": "cobblemonrlm:root",
+    "display": {
+        "icon": {
+            "id": "cobblemon:pokemon_model",
+            "components": {
+                "cobblemon:pokemon_item": {
+                    "species": "cobblemon:flammiko",
+                    "aspects": [
+                        "normal"
+                    ]
+                }
+            }
+        },
+        "title": {
+            "translate": "advancement.rlm.catch_fakemon.title"
+        },
+        "description": {
+            "translate": "advancement.rlm.catch_fakemon.desc"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "sound": "minecraft:ui.toast.challenge_complete"
+    },
+    "criteria": {
+        "flammiko": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:flammiko"
+            }
+        },
+        "kotora": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:kotora"
+            }
+        },
+        "rineshell": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:rineshell"
+            }
+        },
+        "galama": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:galama"
+            }
+        },
+        "apheos": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:apheos"
+            }
+        },
+        "aphelis": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:aphelis"
+            }
+        },
+        "tinywone": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:tinywone"
+            }
+        },
+        "wamek": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:wamek"
+            }
+        },
+        "smowile": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:smowile"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "flammiko",
+            "kotora",
+            "rineshell",
+            "galama",
+            "apheos",
+            "aphelis",
+            "tinywone",
+            "wamek",
+            "smowile"
+        ]
+    ]
+}

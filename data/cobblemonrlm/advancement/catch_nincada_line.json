@@ -1,0 +1,55 @@
+{
+    "parent": "cobblemonrlm:catch_rlm",
+    "display": {
+        "icon": {
+            "id": "cobblemon:pokemon_model",
+            "components": {
+                "cobblemon:pokemon_item": {
+                    "species": "cobblemon:ninjask",
+                    "aspects": [
+                        "rlm"
+                    ]
+                }
+            }
+        },
+        "title": {
+            "translate": "advancement.rlm.catch_nincada_line.title"
+        },
+        "description": {
+            "translate": "advancement.rlm.catch_nincada_line.desc"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "sound": "minecraft:ui.toast.challenge_complete"
+    },
+    "criteria": {
+        "ninjask": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:ninjask",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "shedinja": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:shedinja",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "ninjask"
+        ],
+        [
+            "shedinja"
+        ]
+    ]
+}

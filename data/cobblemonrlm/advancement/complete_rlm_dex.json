@@ -1,0 +1,307 @@
+{
+    "parent": "cobblemonrlm:catch_rlm_shiny",
+    "display": {
+        "icon": {
+            "id": "cobblemon:pokemon_model",
+            "components": {
+                "cobblemon:pokemon_item": {
+                    "species": "cobblemon:aphelis",
+                    "aspects": [
+                        "shiny"
+                    ]
+                }
+            }
+        },
+        "title": {
+            "translate": "advancement.rlm.complete_rlm_dex.title"
+        },
+        "description": {
+            "translate": "advancement.rlm.complete_rlm_dex.desc"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true,
+        "sound": "minecraft:ui.toast.challenge_complete"
+    },
+    "criteria": {
+        "meganium": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:meganium",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "blastoise": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:blastoise",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "empoleon": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:empoleon",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "delphox": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:delphox",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "togekiss": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:togekiss",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "probopass": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:probopass",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "luxray": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:luxray",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "ampharos": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:ampharos",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "spiritomb": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:spiritomb",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "ninjask": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:ninjask",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "shedinja": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:shedinja",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "sunflora_ciel": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:sunflora",
+                "aspects": [
+                    "rlm",
+                    "ciel"
+                ]
+            }
+        },
+        "sunflora_ocean": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:sunflora",
+                "aspects": [
+                    "rlm",
+                    "ocean"
+                ]
+            }
+        },
+        "sunflora_volcan": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:sunflora",
+                "aspects": [
+                    "rlm",
+                    "volcan"
+                ]
+            }
+        },
+        "mawile_poison": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:mawile",
+                "aspects": [
+                    "poison"
+                ]
+            }
+        },
+        "mawile_dragon": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:mawile",
+                "aspects": [
+                    "dragon"
+                ]
+            }
+        },
+        "flammiko": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:flammiko"
+            }
+        },
+        "kotora": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:kotora"
+            }
+        },
+        "rineshell": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:rineshell"
+            }
+        },
+        "galama": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:galama"
+            }
+        },
+        "apheos": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:apheos"
+            }
+        },
+        "aphelis": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:aphelis"
+            }
+        },
+        "tinywone": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:tinywone"
+            }
+        },
+        "wamek": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:wamek"
+            }
+        },
+        "smowile": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:smowile"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "meganium"
+        ],
+        [
+            "blastoise"
+        ],
+        [
+            "empoleon"
+        ],
+        [
+            "delphox"
+        ],
+        [
+            "togekiss"
+        ],
+        [
+            "probopass"
+        ],
+        [
+            "luxray"
+        ],
+        [
+            "ampharos"
+        ],
+        [
+            "spiritomb"
+        ],
+        [
+            "ninjask"
+        ],
+        [
+            "shedinja"
+        ],
+        [
+            "sunflora_ciel"
+        ],
+        [
+            "sunflora_ocean"
+        ],
+        [
+            "sunflora_volcan"
+        ],
+        [
+            "mawile_poison"
+        ],
+        [
+            "mawile_dragon"
+        ],
+        [
+            "flammiko"
+        ],
+        [
+            "kotora"
+        ],
+        [
+            "rineshell"
+        ],
+        [
+            "galama"
+        ],
+        [
+            "apheos"
+        ],
+        [
+            "aphelis"
+        ],
+        [
+            "tinywone"
+        ],
+        [
+            "wamek"
+        ],
+        [
+            "smowile"
+        ]
+    ]
+}
