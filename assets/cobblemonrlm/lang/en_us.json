@@ -14,5 +14,17 @@
     "advancement.rlm.catch_mawile_family.title": "Mawile Family Master",
     "advancement.rlm.catch_mawile_family.desc": "Catch the complete RLM Mawile family line (Smowile, Mawile Poison RLM, Mawile Dragon RLM).",
     "advancement.rlm.mega_showdown.title": "Mega Showdown",
-    "advancement.rlm.mega_showdown.desc": "Discover the incredible power of Mega Evolutions."
+    "advancement.rlm.mega_showdown.desc": "Discover the incredible power of Mega Evolutions.",
+    "advancement.rlm.catch_fakemon.title": "A Species of the Kingdom!",
+    "advancement.rlm.catch_fakemon.desc": "Obtain one of the original Fakémon created in the Otter-Sea Kingdom.",
+    "advancement.rlm.complete_fakemon_dex.title": "RLM Species Master",
+    "advancement.rlm.complete_fakemon_dex.desc": "Capture all original Fakémon from the Otter-Sea Kingdom.",
+    "advancement.rlm.catch_starters_rlm.title": "The RLM Starters' Legacy",
+    "advancement.rlm.catch_starters_rlm.desc": "Gather the four RLM final forms of the Starter Pokémon (Meganium, Blastoise, Empoleon, Delphox).",
+    "advancement.rlm.catch_nincada_line.title": "Two for the Price of One!",
+    "advancement.rlm.catch_nincada_line.desc": "Obtain both RLM Ninjask and RLM Shedinja from the same Nincada RLM evolution.",
+    "advancement.rlm.catch_spiritomb_rlm.title": "A Ghost Wreathed in Flames!",
+    "advancement.rlm.catch_spiritomb_rlm.desc": "Catch RLM Spiritomb, the Fire and Dark spectre of the Otter-Sea Kingdom.",
+    "advancement.rlm.complete_rlm_dex.title": "Legend of the Otter-Sea Kingdom",
+    "advancement.rlm.complete_rlm_dex.desc": "Complete the entire Pokédex of the Otter-Sea Kingdom, including all regional forms and original Fakémon."
 }

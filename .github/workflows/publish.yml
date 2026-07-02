@@ -13,17 +13,41 @@ jobs:
 
       - name: Build Datapack/Mod ZIP & JAR
         run: |
-          zip -r "cobblemon-rlm-${{ github.event.release.tag_name }}.zip" assets data META-INF fabric.mod.json pack.mcmeta cobblemon_rlm_pack.png README.md
-          cp "cobblemon-rlm-${{ github.event.release.tag_name }}.zip" "cobblemon-rlm-${{ github.event.release.tag_name }}.jar"
+          VERSION="${{ github.event.release.tag_name }}"
+          if [ -z "$VERSION" ]; then
+            VERSION="${{ github.ref_name }}"
+          fi
+          VERSION="${VERSION#v}"
+          
+          # Extract the clean title (remove 'v1.5.5:' or similar prefix)
+          RAW_TITLE="${{ github.event.release.name || github.ref_name }}"
+          if [[ "$RAW_TITLE" == *":"* ]]; then
+            CLEAN_TITLE="${RAW_TITLE#*:}"
+            CLEAN_TITLE=$(echo "$CLEAN_TITLE" | xargs) # Trim spaces
+          else
+            CLEAN_TITLE="$RAW_TITLE"
+          fi
+          
+          # Build ZIP
+          zip -r "cobblemon-rlm-${VERSION}.zip" assets data META-INF fabric.mod.json pack.mcmeta cobblemon_rlm_pack.png README.md
+          
+          # Build JAR with a tiny difference to change the file hash
+          echo "mod_version" > .is_mod
+          zip -r "cobblemon-rlm-${VERSION}.jar" assets data META-INF fabric.mod.json pack.mcmeta cobblemon_rlm_pack.png README.md .is_mod
+          
+          echo "VERSION=${VERSION}" >> $GITHUB_ENV
+          echo "RELEASE_TITLE=${CLEAN_TITLE}" >> $GITHUB_ENV
 
       - name: Publish JAR to Modrinth
         uses: Kir-Antipov/mc-publish@v3.3
         with:
           modrinth-id: GC58bFHM
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-          files: "cobblemon-rlm-${{ github.event.release.tag_name }}.jar"
-          name: ${{ github.event.release.name }}
-          version: "${{ github.event.release.tag_name }}-jar"
+          files: "cobblemon-rlm-${{ env.VERSION }}.jar"
+          name: "${{ env.RELEASE_TITLE }}"
+          version: "${{ env.VERSION }}-mod"
+          game-versions: 1.21.1
+          game-version-filter: any
           changelog: ${{ github.event.release.body }}
           version-type: release
           loaders: |
@@ -32,14 +56,19 @@ jobs:
           dependencies: |
             MdwFAVRL(required)
 
+      - name: Wait for Modrinth Database
+        run: sleep 30
+
       - name: Publish ZIP to Modrinth
         uses: Kir-Antipov/mc-publish@v3.3
         with:
           modrinth-id: GC58bFHM
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-          files: "cobblemon-rlm-${{ github.event.release.tag_name }}.zip"
-          name: ${{ github.event.release.name }}
-          version: "${{ github.event.release.tag_name }}-zip"
+          files: "cobblemon-rlm-${{ env.VERSION }}.zip"
+          name: "${{ env.RELEASE_TITLE }}"
+          version: "${{ env.VERSION }}-datapack"
+          game-versions: 1.21.1
+          game-version-filter: any
           changelog: ${{ github.event.release.body }}
           version-type: release
           loaders: |
