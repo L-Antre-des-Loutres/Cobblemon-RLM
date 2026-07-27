@@ -10,7 +10,7 @@
   ],
   "height": 2,
   "weight": 100,
-  "features": [],
+  "features": ["mega_evolution"],
   "primaryType": "bug",
   "secondaryType": "fighting",
   "baseStats": {
