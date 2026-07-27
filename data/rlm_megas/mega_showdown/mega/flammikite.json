@@ -1,6 +1,6 @@
 {
   "showdown_id": "flammikite",
-  "pokemons": ["Flammiko"],
+  "pokemons": ["flammiko"],
   "aspect_conditions": {
     "apply": {
       "aspects": ["mega_evolution=mega"]

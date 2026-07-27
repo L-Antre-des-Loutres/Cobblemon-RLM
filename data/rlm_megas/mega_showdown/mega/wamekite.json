@@ -1,6 +1,6 @@
 {
   "showdown_id": "wamekite",
-  "pokemons": ["Wamek"],
+  "pokemons": ["wamek"],
   "aspect_conditions": {
     "apply": {
       "aspects": ["mega_evolution=mega"]
