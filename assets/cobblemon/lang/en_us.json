@@ -110,6 +110,12 @@
   "item.desc.flammikite": "Allows Flammiko to Mega Evolve into Mega Flammiko.",
   "item.name.wamekite": "Wamekite",
   "item.desc.wamekite": "Allows Wamek to Mega Evolve into Mega Wamek.",
+  "item.name.ampharositerlm": "Ampharosite RLM",
+  "item.desc.ampharositerlm": "Allows Ampharos (RLM) to Mega Evolve into Mega Ampharos (RLM).",
+  "item.name.mawiliterlmdragon": "Mawilite RLM (Dragon)",
+  "item.desc.mawiliterlmdragon": "Allows Mawile (Dragon) to Mega Evolve into Mega Mawile (Dragon).",
+  "item.name.mawiliterlmpoison": "Mawilite RLM (Poison)",
+  "item.desc.mawiliterlmpoison": "Allows Mawile (Poison) to Mega Evolve into Mega Mawile (Poison).",
 
   "cobblemon.move.electrosiphon": "Electro Siphon",
   "cobblemon.move.electrosiphon.desc": "If the opposing Pokémon survives, the user gains a 2-stage boost to Special Attack.",

@@ -9,6 +9,24 @@
                 "custom_model_data": 291011
             },
             "model": "rlm_megas:item/flammikite"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 291012
+            },
+            "model": "rlm_megas:item/ampharositerlm"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 291013
+            },
+            "model": "rlm_megas:item/mawiliterlmdragon"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 291014
+            },
+            "model": "rlm_megas:item/mawiliterlmpoison"
         }
     ]
 }

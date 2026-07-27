@@ -1,0 +1,15 @@
+{
+  "showdown_id": "ampharositerlm",
+  "pokemons": ["Ampharos"],
+  "aspect_conditions": {
+    "apply": {
+      "aspect": {
+        "required_aspects": [["rlm"]]
+      },
+      "aspects": ["mega_evolution=mega"]
+    },
+    "revert": {
+      "aspects": ["mega_evolution=none"]
+    }
+  }
+}
