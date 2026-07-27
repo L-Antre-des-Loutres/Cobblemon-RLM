@@ -1,0 +1,15 @@
+{
+  "showdown_id": "mawiliterlmdragon",
+  "pokemons": ["Mawile"],
+  "aspect_conditions": {
+    "apply": {
+      "aspect": {
+        "required_aspects": [["rlm", "dragon"]]
+      },
+      "aspects": ["mega_evolution=mega"]
+    },
+    "revert": {
+      "aspects": ["mega_evolution=none"]
+    }
+  }
+}

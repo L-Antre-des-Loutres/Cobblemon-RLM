@@ -1,13 +1,12 @@
 ({
-    name: "Wamekite",
+    name: "Mawilite Rlm Dragon",
     spritenum: 620,
-    megaStone: { "Wamek": "Wamek-Mega", "wamek": "wamekmega" },
-    megaEvolves: "Wamek",
-    itemUser: ["Wamek", "wamek"],
+    megaStone: { "Mawile-dragon": "Mawile-RlmDragon-Mega" },
+    itemUser: ["Mawile-dragon"],
     onTakeItem(item, source) {
         return !item.megaStone?.[source.baseSpecies.baseSpecies];
     },
-    num: -998,
+    num: -1002,
     gen: 6,
     isNonstandard: "Past"
 })

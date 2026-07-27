@@ -1,13 +1,12 @@
 ({
-    name: "Wamekite",
+    name: "Ampharosite Rlm",
     spritenum: 620,
-    megaStone: { "Wamek": "Wamek-Mega", "wamek": "wamekmega" },
-    megaEvolves: "Wamek",
-    itemUser: ["Wamek", "wamek"],
+    megaStone: { "Ampharos-rlm": "Ampharos-Rlm-Mega" },
+    itemUser: ["Ampharos-rlm"],
     onTakeItem(item, source) {
         return !item.megaStone?.[source.baseSpecies.baseSpecies];
     },
-    num: -998,
+    num: -1001,
     gen: 6,
     isNonstandard: "Past"
 })
