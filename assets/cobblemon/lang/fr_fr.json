@@ -60,6 +60,12 @@
   "item.desc.flammikite": "Permet à Flammiko de méga-évoluer en Méga-Flammiko.",
   "item.name.wamekite": "Guerriekite",
   "item.desc.wamekite": "Permet à Guerriek de méga-évoluer en Méga-Guerriek.",
+  "item.name.ampharositerlm": "Pharampite RLM",
+  "item.desc.ampharositerlm": "Permet à Pharamp (RLM) de méga-évoluer en Méga-Pharamp (RLM).",
+  "item.name.mawiliterlmdragon": "Mysdibulite RLM (Dragon)",
+  "item.desc.mawiliterlmdragon": "Permet à Mysdibule (Dragon) de méga-évoluer en Méga-Mysdibule (Dragon).",
+  "item.name.mawiliterlmpoison": "Mysdibulite RLM (Poison)",
+  "item.desc.mawiliterlmpoison": "Permet à Mysdibule (Poison) de méga-évoluer en Méga-Mysdibule (Poison).",
 
   "cobblemon.move.electrosiphon": "Électro-Siphon",
   "cobblemon.move.electrosiphon.desc": "Si le Pokémon adverse survit, l'Attaque Spéciale du lanceur augmente de deux niveaux.",
