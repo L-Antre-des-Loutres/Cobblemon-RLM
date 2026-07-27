@@ -1,0 +1,15 @@
+{
+  "showdown_id": "mawiliterlmpoison",
+  "pokemons": ["Mawile"],
+  "aspect_conditions": {
+    "apply": {
+      "aspect": {
+        "required_aspects": [["rlm", "poison"]]
+      },
+      "aspects": ["mega_evolution=mega"]
+    },
+    "revert": {
+      "aspects": ["mega_evolution=none"]
+    }
+  }
+}
