@@ -50,10 +50,11 @@ It enriches your adventure with **original regional forms**, **unique Fakemons**
 | Pokémon | Typing | Notes |
 |---------|--------|-------|
 | **Flammiko** | Fire / Electric | — |
-| **Apheos** & **Aphelis** | Fairy / Flying | — |
+| **Apheos** | Fairy / Flying | Evolves into Aphelis |
+| **Aphelis** | Fairy / Flying | — |
 | **Rineshell** | Normal | Evolves into Galama |
 | **Galama** | Steel / Normal | — |
-| **Kotora** | Electric / Fairy | — |
+| **Kotora** | Electric / Fairy | Does not spawn |
 | **Tinywone** | Bug | Evolves into Wamek |
 | **Wamek** | Bug / Fighting | — |
 | **Smowile** | Fairy | Mawile's Pre-evolution |
