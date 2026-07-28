@@ -1,6 +1,7 @@
 ({
     name: "Venom Edge",
     onBasePowerPriority: 19,
+    num: 17020,
     onBasePower(basePower, attacker, defender, move) {
         if (move.flags['slicing']) {
             return this.chainModify(1.5);
