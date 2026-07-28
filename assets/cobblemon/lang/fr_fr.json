@@ -97,5 +97,7 @@
   "cobblemon.ability.verdantbastion": "Rempart Floracier",
   "cobblemon.ability.verdantbastion.desc": "Inflige des dégâts à l'attaquant et pose une rangée de Picots s'il subit une attaque de contact.",
   "cobblemon.battle.damage.verdantbastion": "%s se blesse sur le Rempart Floracier !",
-  "cobblemon.battle.activate.verdantbastion": "Le Rempart Floracier s'active !"
+  "cobblemon.battle.activate.verdantbastion": "Le Rempart Floracier s'active !",
+  "cobblemon.ability.venomedge": "Venincisif",
+  "cobblemon.ability.venomedge.desc": "Augmente la puissance des attaques tranchantes de 50% et confère 20% de chances d'empoisonner la cible."
 }

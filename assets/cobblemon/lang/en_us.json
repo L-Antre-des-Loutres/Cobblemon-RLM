@@ -147,5 +147,7 @@
   "cobblemon.ability.verdantbastion": "Verdant Bastion",
   "cobblemon.ability.verdantbastion.desc": "Damages the attacker and sets a layer of Spikes upon making contact.",
   "cobblemon.battle.damage.verdantbastion": "%s is hurt by the Verdant Bastion!",
-  "cobblemon.battle.activate.verdantbastion": "The Verdant Bastion is activated!"
+  "cobblemon.battle.activate.verdantbastion": "The Verdant Bastion is activated!",
+  "cobblemon.ability.venomedge": "Venom Edge",
+  "cobblemon.ability.venomedge.desc": "Powers up slicing moves by 50% and has a 20% chance to poison the target."
 }
