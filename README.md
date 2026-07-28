@@ -50,10 +50,11 @@ Il enrichit votre aventure avec des **formes régionales inédites**, des **Fake
 | Pokémon | Typing | Notes |
 |---------|--------|-------|
 | **Flammiko** | Feu / Électrik | — |
-| **Apheos** & **Aphelis** | Fée / Vol | — |
+| **Apheos** | Fée / Vol | Évolue en Aphelis |
+| **Aphelis** | Fée / Vol | — |
 | **Rineshell** | Normal | Évolue en Galama |
 | **Galama** | Acier / Normal | — |
-| **Kotora** | Électrik / Fée | — |
+| **Kotora** | Électrik / Fée | Ne spawn pas naturellement |
 | **Tinywone** | Insecte | Évolue en Wamek |
 | **Wamek** | Insecte / Combat | — |
 | **Smowile** | Fée | Pré-évolution de Mysdibule |
@@ -117,6 +118,6 @@ Il enrichit votre aventure avec des **formes régionales inédites**, des **Fake
 
   <br>
 
-  <sub>Made with ❤️ by <strong>Antre des Loutres</strong></sub>
+  <sub>Fait avec ❤️ par l'<strong>Antre des Loutres</strong></sub>
 
 </div>
