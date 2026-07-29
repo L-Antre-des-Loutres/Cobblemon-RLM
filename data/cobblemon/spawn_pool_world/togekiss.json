@@ -11,12 +11,33 @@
       "spawnablePositionType": "grounded",
       "bucket": "ultra-rare",
       "level": "30-60",
-      "weight": 4.0,
+      "weight": 0.4,
       "condition": {
         "biomes": [
           "#cobblemon:is_end"
         ]
       }
-    }
+    },
+     {
+      "id": "togekiss-rlm-mountain",
+            "pokemon": "togekiss rlm",
+            "presets": [
+                "natural"
+            ],
+            "timeRange": [
+                "any"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "rare",
+            "level": "30-60",
+            "weight": 5.0,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "#cobblemon:is_mountain"
+                ]
+            }
+        }
   ]
 }

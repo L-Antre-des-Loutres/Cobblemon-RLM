@@ -1,0 +1,22 @@
+{
+    "species": "cobblemon:haxorus",
+    "order": 10,
+    "variations": [
+        {
+        "aspects": [
+            "rlm", "poison"
+        ],
+            "poser": "cobblemon:haxorus_rlm",
+            "model": "cobblemon:haxorus_rlm.geo",
+            "texture": "cobblemon:textures/pokemon/haxorus_rlm/haxorus_rlm.png"
+        },
+        {
+            "aspects": [
+                "rlm",
+                "poison",
+                "shiny"
+            ],
+            "texture": "cobblemon:textures/pokemon/haxorus_rlm/haxorus_rlm_shiny.png"
+        }
+    ]
+}

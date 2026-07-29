@@ -1,7 +1,7 @@
 {
   "target": "cobblemon:haxorus",
   "features": [
-    "rlm"
+    "rlm", "poison"
   ],
   "forms": [
     {
@@ -21,23 +21,24 @@
         "custom"
       ],
       "aspects": [
-        "rlm"
+        "rlm", "poison"
       ],
       "abilities": [
         "venomedge",
-        "h:moldbreaker"
+        "venomedge",
+        "h:venomedge"
       ],
       "eggGroups": [
         "monster",
         "dragon"
       ],
       "baseStats": {
-        "hp": 76,
-        "attack": 147,
-        "defence": 90,
-        "special_attack": 60,
-        "special_defence": 70,
-        "speed": 97
+        "hp": 86,
+        "attack": 150,
+        "defence": 104,
+        "special_attack": 40,
+        "special_defence": 90,
+        "speed": 70
       },
       "evYield": {
         "hp": 0,
@@ -109,12 +110,14 @@
         "21:scaryface",
         "24:crunch",
         "27:dragondance",
+        "29:furycutter",
         "30:breakingswipe",
         "33:focusenergy",
         "36:dragonpulse",
-        "41:swordsdance",
+        "38:crosspoison",
+        "41:nightslash",
         "46:outrage",
-        "53:guillotine",
+        "53:dragonaxe",
         "60:gigaimpact",
         "egg:aquatail",
         "egg:counter",
