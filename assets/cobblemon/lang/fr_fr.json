@@ -97,5 +97,11 @@
   "cobblemon.ability.verdantbastion": "Rempart Floracier",
   "cobblemon.ability.verdantbastion.desc": "Inflige des dégâts à l'attaquant et pose une rangée de Picots s'il subit une attaque de contact.",
   "cobblemon.battle.damage.verdantbastion": "%s se blesse sur le Rempart Floracier !",
-  "cobblemon.battle.activate.verdantbastion": "Le Rempart Floracier s'active !"
+  "cobblemon.battle.activate.verdantbastion": "Le Rempart Floracier s'active !",
+  "cobblemon.ability.venomedge": "Venincisif",
+  "cobblemon.ability.venomedge.desc": "Augmente la puissance des attaques tranchantes de 50% et confère 20% de chances d'empoisonner la cible.",
+  "cobblemon.move.dragonaxe": "Hache Draconique",
+  "cobblemon.move.dragonaxe.desc": "Le lanceur attaque avec un coup tranchant féroce. Baisse également la Défense du lanceur.",
+  "cobblemon.ui.pokedex.info.form.haxorus-rlm": "RLM",
+  "cobblemon.species.haxorus-rlm.desc": "Son corps s'est adapté à un environnement hostile, imprégnant ses redoutables lames d'un poison mortel. D'un simple coup, il tranche ses adversaires tout en inoculant une toxine fulgurante."
 }

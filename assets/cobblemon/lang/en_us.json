@@ -147,5 +147,11 @@
   "cobblemon.ability.verdantbastion": "Verdant Bastion",
   "cobblemon.ability.verdantbastion.desc": "Damages the attacker and sets a layer of Spikes upon making contact.",
   "cobblemon.battle.damage.verdantbastion": "%s is hurt by the Verdant Bastion!",
-  "cobblemon.battle.activate.verdantbastion": "The Verdant Bastion is activated!"
+  "cobblemon.battle.activate.verdantbastion": "The Verdant Bastion is activated!",
+  "cobblemon.ability.venomedge": "Venom Edge",
+  "cobblemon.ability.venomedge.desc": "Powers up slicing moves by 50% and has a 20% chance to poison the target.",
+  "cobblemon.move.dragonaxe": "Dragon Axe",
+  "cobblemon.move.dragonaxe.desc": "The user attacks with a fierce dragon-like slice. This also lowers the user's Defense stat.",
+  "cobblemon.ui.pokedex.info.form.haxorus-rlm": "RLM",
+  "cobblemon.species.haxorus-rlm.desc": "Its body has adapted to a hostile environment, imbuing its fearsome blades with a deadly poison. With a single strike, it slices through foes while injecting a fast-acting toxin."
 }

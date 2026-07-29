@@ -3,7 +3,7 @@
     basePower: 80,
     category: "Special",
     name: "Mystic Exchange",
-    pp: 10,
+    pp: 5,
     priority: 0,
     flags: { protect: 1, mirror: 1 },
     onHit(target, source, move) {

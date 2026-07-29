@@ -1,0 +1,22 @@
+{
+  "target": "cobblemon:fraxure",
+  "evolutions": [
+    {
+      "id": "fraxure_haxorus_rlm",
+      "variant": "level_up",
+      "result": "haxorus rlm=true poison=true",
+      "consumeHeldItem": false,
+      "learnableMoves": [],
+      "requirements": [
+        {
+          "variant": "level",
+          "minLevel": 48
+        },
+        {
+          "variant": "held_item",
+          "itemCondition": "cobblemon:toxic_orb"
+        }
+      ]
+    }
+  ]
+}
