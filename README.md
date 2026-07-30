@@ -10,8 +10,6 @@
 
   <br>
 
-  <a href="README_en.md"><strong>🇬🇧 Switch to English Version</strong></a>
-
 </div>
 
 ---
