@@ -55,6 +55,7 @@
   "cobblemon.species.mawile-rlm-poison-mega.desc": "La Méga-Évolution lui a conféré la puissance nécessaire pour maîtriser pleinement son poison. Libéré de ses entraves, ce Mysdibule révèle enfin son véritable potentiel, affichant une confiance et une joie nouvelles. Il reste toutefois conscient que cette puissance n’est que temporaire.",
   "cobblemon.species.mawile-rlm-dragon.desc": "Grâce à un entraînement rigoureux, ce Mysdibule ne possède plus une simple mâchoire derrière la tête, mais un véritable dragon capable de déchaîner des attaques dévastatrices. Sa force imposante lui confère un tempérament fier et inébranlable.",
   "cobblemon.species.mawile-rlm-dragon-mega.desc": "Spectaculaires en apparence, les deux dragons supplémentaires obtenus par la Méga-Évolution ne sont pas de simples ornements. Sous cette forme, ce Pokémon déploie une puissance colossale et peut lancer des assauts capables de tout balayer sur son passage.",
+  "cobblemon.species.haxorus-rlm.desc": "Son corps s'est adapté à un environnement hostile, imprégnant ses redoutables lames d'un poison mortel. D'un simple coup, il tranche ses adversaires tout en inoculant une toxine fulgurante.",
 
   "item.name.flammikite": "Flammikite",
   "item.desc.flammikite": "Permet à Flammiko de méga-évoluer en Méga-Flammiko.",
@@ -77,6 +78,10 @@
   "cobblemon.move.mysticexchange.desc": "Vole les augmentations de statistiques de la cible et lui transfère les baisses de statistiques du lanceur.",
   "cobblemon.move.florasteelcharge": "Charge Floracier",
   "cobblemon.move.florasteelcharge.desc": "Inflige des dégâts et pose une rangée de Picots du côté adverse.",
+  "cobblemon.move.exploroc": "Exploroc",
+  "cobblemon.move.exploroc.desc": "L'utilisateur explose et pose une rangée de Picots du côté adverse.",
+  "cobblemon.move.dragonaxe": "Hache Draconique",
+  "cobblemon.move.dragonaxe.desc": "Le lanceur attaque avec un coup tranchant féroce. Baisse également la Défense du lanceur.",
 
   "cobblemon.ability.dragonlate": "Dragonate",
   "cobblemon.ability.dragonlate.desc": "Sa peau draconique transforme les capacités de type Normal en type Dragon.",
@@ -100,8 +105,4 @@
   "cobblemon.battle.activate.verdantbastion": "Le Rempart Floracier s'active !",
   "cobblemon.ability.venomedge": "Venincisif",
   "cobblemon.ability.venomedge.desc": "Augmente la puissance des attaques tranchantes de 50% et confère 20% de chances d'empoisonner la cible.",
-  "cobblemon.move.dragonaxe": "Hache Draconique",
-  "cobblemon.move.dragonaxe.desc": "Le lanceur attaque avec un coup tranchant féroce. Baisse également la Défense du lanceur.",
-  "cobblemon.ui.pokedex.info.form.haxorus-rlm": "RLM",
-  "cobblemon.species.haxorus-rlm.desc": "Son corps s'est adapté à un environnement hostile, imprégnant ses redoutables lames d'un poison mortel. D'un simple coup, il tranche ses adversaires tout en inoculant une toxine fulgurante."
 }
