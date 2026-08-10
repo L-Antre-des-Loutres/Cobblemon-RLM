@@ -1,0 +1,15 @@
+{
+    "id": "cobblemon:axew-rlm",
+    "speciesId": "cobblemon:axew",
+    "displayAspects": [],
+    "conditionAspects": [],
+    "forms": [
+        {
+            "displayForm": "rlm",
+            "unlockForms": [
+                "rlm"
+            ]
+        }
+    ],
+    "variations": []
+}

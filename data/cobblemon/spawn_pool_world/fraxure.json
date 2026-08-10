@@ -1,0 +1,25 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "fraxure-rlm",
+      "pokemon": "fraxure rlm",
+      "presets": [
+        "natural",
+        "wild"
+      ],
+      "type": "pokemon",
+      "spawnablePositionType": "grounded",
+      "bucket": "ultra-rare",
+      "level": "38-41",
+      "weight": 3.6,
+      "condition": {
+        "biomes": [
+          "#cobblemon:is_mountain"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+    "species": "cobblemon:axew",
+    "order": 10,
+    "variations": [
+        {
+            "aspects": [
+                "rlm"
+            ],
+            "poser": "cobblemon:axew",
+            "model": "cobblemon:axew_rlm.geo",
+            "texture": "cobblemon:textures/pokemon/axew_rlm/axew_rlm.png"
+        },
+        {
+            "aspects": [
+                "rlm",
+                "shiny"
+            ],
+            "texture": "cobblemon:textures/pokemon/axew_rlm/axew_rlm_shiny.png"
+        },
+        {
+            "aspects": [
+                "alpha_eyes"
+            ],
+            "layers": [
+                {
+                    "name": "alpha_eyes",
+                    "texture": "cobblemon:textures/pokemon/axew_rlm/axew_rlm_alpha.png",
+                    "emissive": true
+                }
+            ]
+        }
+    ]
+}
+

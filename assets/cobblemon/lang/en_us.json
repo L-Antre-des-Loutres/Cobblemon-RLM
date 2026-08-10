@@ -57,6 +57,8 @@
   "cobblemon.ui.pokedex.info.form.flammiko": "",
   "cobblemon.ui.pokedex.info.form.flammiko-mega": "Mega",
   "cobblemon.ui.pokedex.info.form.haxorus-rlm": "RLM",
+  "cobblemon.ui.pokedex.info.form.axew-rlm": "RLM",
+  "cobblemon.ui.pokedex.info.form.fraxure-rlm": "RLM",
 
   "cobblemon.species.aphelis.name": "Aphelis",
   "cobblemon.species.apheos.name": "Apheos",
@@ -107,6 +109,8 @@
   "cobblemon.species.mawile-rlm-dragon.desc": "Through rigorous training, this Mawile no longer bears a simple jaw behind its head, but a true dragon capable of unleashing devastating attacks. Its overwhelming strength gives it a proud and unyielding temperament.",
   "cobblemon.species.mawile-rlm-dragon-mega.desc": "Though spectacular in appearance, the two additional dragons gained through Mega Evolution are far from decorative. In this form, this Pokémon wields colossal power, launching assaults capable of sweeping away anything in its path.",
   "cobblemon.species.haxorus-rlm.desc": "Its body has adapted to a hostile environment, imbuing its fearsome blades with a deadly poison. With a single strike, it slices through foes while injecting a fast-acting toxin.",
+  "cobblemon.species.axew-rlm.desc": "This Axew has adapted to a harsh environment, developing a unique ability to slash opponents. It uses this venom to defend itself and incapacitate prey, making it a formidable predator in its habitat.",
+  "cobblemon.species.fraxure-rlm.desc": "Fraxure gained a multitude of adaptations to survive in its harsh environment. Its body is covered in a thick and protective armor.",
 
   "item.name.flammikite": "Flammikite",
   "item.desc.flammikite": "Allows Flammiko to Mega Evolve into Mega Flammiko.",
@@ -155,5 +159,5 @@
   "cobblemon.battle.damage.verdantbastion": "%s is hurt by the Verdant Bastion!",
   "cobblemon.battle.activate.verdantbastion": "The Verdant Bastion is activated!",
   "cobblemon.ability.venomedge": "Venom Edge",
-  "cobblemon.ability.venomedge.desc": "Powers up slicing moves by 50% and has a 20% chance to poison the target.",
+  "cobblemon.ability.venomedge.desc": "Powers up slicing moves by 50% and has a 20% chance to poison the target."
 }
