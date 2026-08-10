@@ -8,6 +8,15 @@
       "name": "rlm",
       "primaryType": "dragon",
       "secondaryType": "normal",
+      "pokedex": [
+        "cobblemon.species.axew-rlm.desc"
+      ],
+      "labels": [
+        "custom"
+      ],
+      "aspects": [
+        "rlm"
+      ],
       "evolutions": [
         {
           "id": "axew_fraxure_rlm",

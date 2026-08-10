@@ -8,6 +8,16 @@
       "name": "rlm",
       "primaryType": "dragon",
       "secondaryType": "normal",
+      "pokedex": [
+        "cobblemon.species.fraxure-rlm.desc"
+      ],
+      "labels": [
+        "custom"
+      ],
+      "aspects": [
+        "rlm"
+      ],
+      "preEvolution": "axew",
       "evolutions": [
         {
           "id": "fraxure_haxorus_rlm",
