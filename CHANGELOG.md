@@ -1,7 +1,7 @@
 1.6.0 :
 
 - Haxorus RLM family added
- - Haxorus RLM Poison
+ - Haxorus RLM Poison ( <- Fraxure - Level 48 and held item : Toxic Orb )
  - Fraxure RLM
  - Axew RLM
  - New talents :
