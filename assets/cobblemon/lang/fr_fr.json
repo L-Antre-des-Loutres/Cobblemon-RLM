@@ -7,6 +7,8 @@
   "cobblemon.ui.pokedex.info.form.wamek-mega": "Méga-Guerriek",
   "cobblemon.ui.pokedex.info.form.flammiko-mega": "Méga-Flammiko",
   "cobblemon.ui.pokedex.info.form.axew-rlm": "RLM",
+  "cobblemon.ui.pokedex.info.form.fennekin": "",
+  "cobblemon.ui.pokedex.info.form.fennekin-rlm": "RLM",
   "cobblemon.ui.pokedex.info.form.fraxure-rlm": "RLM",
   "cobblemon.ui.pokedex.info.form.haxorus-rlm": "RLM",
 
@@ -30,6 +32,7 @@
   "cobblemon.species.bayleef-rlm.desc": "Bien plus territorial que son homologue de Johto, ce Macronium est un maître de l'embuscade. Il se cache dans les buissons denses pour lancer des attaques surprises sur quiconque ose pénétrer sur son domaine.",
   "cobblemon.species.blastoise-rlm.desc": "Adapté à la mobilité aérienne, cette variante utilise ses canons massifs comme des propulseurs à réaction. Il s'élance dans les airs avec une force explosive, devenant un projectile vivant. Une fois en vol, il fait preuve d'une grâce surprenante, naviguant au gré des vents en inclinant ses oreilles et sa queue.",
   "cobblemon.species.braixen-rlm.desc": "Vivant au plus profond des forêts sombres, cette variante de Roussil a commencé à puiser dans des énergies mystiques. Bien que sa magie soit encore limitée, il utilise de petites illusions vacillantes pour effrayer les voyageurs. On le voit souvent s'entraîner en faisant danser les ombres entre les arbres.",
+  "cobblemon.species.fennekin-rlm.desc": "Aperçu à la lisière des forêts enchantées, cette variante de Feunnec dégage une chaleur mystique subtile. Contrairement à son homologue de Kalos, il est attiré par les ruines anciennes où il s'y love pour absorber l'énergie magique latente contenue dans les pierres. Ses oreilles, inhabituellement longues et pointues, captent des vibrations arcaniques imperceptibles pour les autres.",
   "cobblemon.species.delphox-rlm.desc": "Maître de l'arcane, Goupelin est un magicien malicieux des bois. Bien qu'il aime jouer des tours à ceux qui entrent dans son domaine sombre, il possède un cœur pur ; il est connu pour guider secrètement les personnes égarées vers la sortie de la forêt à l'aide de feux follets magiques.",
   "cobblemon.species.empoleon-rlm.desc": "Habituellement calme, la colère de ce Pingoléon est insupportable. Il génère des torrents d'électricité depuis ses cornes et invoque des vagues massives pour submerger ses proies. En raison de son pouvoir destructeur, il est profondément craint par les autres Pokémon sauvages.",
   "cobblemon.species.flaaffy-rlm.desc": "En évoluant, sa peau devient d'un noir livide et sa laine commence à se dissiper en une brume spectrale. Lainergie est connu pour hanter les centrales électriques, se nourrissant d'électricité pour maintenir sa forme physique. Ceux qui touchent son pelage ressentent un frisson surnaturel engourdissant.",
