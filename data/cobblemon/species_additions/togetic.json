@@ -40,16 +40,11 @@
       "evolutions": [
         {
           "id": "togetic_togekiss_rlm",
-          "variant": "use_item",
+          "variant": "item_interact",
           "result": "togekiss rlm=true",
           "consumeHeldItem": false,
           "learnableMoves": [],
-          "requirements": [
-            {
-              "variant": "item",
-              "itemCondition": "cobblemon:shiny_stone"
-            }
-          ]
+          "requiredContext": "cobblemon:shiny_stone"
         }
       ]
     }
