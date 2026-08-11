@@ -1,18 +1,66 @@
 {
   "target": "cobblemon:fennekin",
-  "evolutions": [
+  "features": [
+    "rlm"
+  ],
+  "forms": [
     {
-      "id": "fennekin_braixen_rlm",
-      "variant": "level_up",
-      "result": "braixen rlm=true",
-      "consumeHeldItem": false,
-      "requirements": [
+      "name": "rlm",
+      "primaryType": "fire",
+      "secondaryType": "fairy",
+      "baseStats": {
+        "hp": 40,
+        "attack": 45,
+        "defence": 40,
+        "special_attack": 62,
+        "special_defence": 60,
+        "speed": 60
+      },
+      "evYield": {
+        "special_attack": 1
+      },
+      "maleRatio": 0.25,
+      "height": 0.4,
+      "weight": 9.4,
+      "pokedex": [
+        "cobblemon.species.fennekin-rlm.desc"
+      ],
+      "labels": [
+        "custom"
+      ],
+      "aspects": [
+        "rlm"
+      ],
+      "abilities": [
+        "blaze",
+        "blaze",
+        "h:magician"
+      ],
+      "drops": {
+        "amount": "1",
+        "entries": [
+          {
+            "item": "minecraft:blaze_powder",
+            "quantityRange": "1-4",
+            "percentage": 50
+          }
+        ]
+      },
+      "evolutions": [
         {
-          "variant": "level",
-          "minLevel": 16
+          "id": "fennekin_braixen_rlm",
+          "variant": "level_up",
+          "result": "braixen rlm=true",
+          "consumeHeldItem": false,
+          "learnableMoves": [],
+          "requirements": [
+            {
+              "variant": "level",
+              "minLevel": 16
+            }
+          ]
         }
       ]
     }
   ]
-
 }
