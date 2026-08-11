@@ -1,0 +1,57 @@
+{
+  "target": "cobblemon:togetic",
+  "features": [
+    "rlm"
+  ],
+  "forms": [
+    {
+      "name": "rlm",
+      "primaryType": "fairy",
+      "secondaryType": "dragon",
+      "baseStats": {
+        "hp": 55,
+        "attack": 40,
+        "defence": 85,
+        "special_attack": 80,
+        "special_defence": 105,
+        "speed": 40
+      },
+      "evYield": {
+        "special_defence": 2
+      },
+      "maleRatio": 0.875,
+      "height": 0.6,
+      "weight": 3.2,
+      "pokedex": [
+        "cobblemon.species.togetic-rlm.desc"
+      ],
+      "labels": [
+        "custom"
+      ],
+      "aspects": [
+        "rlm"
+      ],
+      "abilities": [
+        "hustle",
+        "serenegrace",
+        "h:superluck"
+      ],
+      "preEvolution": "togepi",
+      "evolutions": [
+        {
+          "id": "togetic_togekiss_rlm",
+          "variant": "use_item",
+          "result": "togekiss rlm=true",
+          "consumeHeldItem": false,
+          "learnableMoves": [],
+          "requirements": [
+            {
+              "variant": "item",
+              "itemCondition": "cobblemon:shiny_stone"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
