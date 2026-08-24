@@ -10,3 +10,4 @@
  - - Dragon Axe : Power 90 Precision 100 PP 5 - The user attacks with a fierce dragon-like slice. This also lowers the user's Defense stat.
 - Fennekin RLM Added
 - Braixen RLM : texture has reworked
+- Advancements fixed : they were all granted on the first Pokémon caught, without ever catching an RLM (#237)
