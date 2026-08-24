@@ -25,10 +25,22 @@
         "sound": "minecraft:ui.toast.challenge_complete"
     },
     "criteria": {
-        "smowile": {
+        "smowile_male": {
             "trigger": "cobblemon:aspects_collected",
             "conditions": {
-                "species": "cobblemon:smowile"
+                "species": "cobblemon:smowile",
+                "aspects": [
+                    "male"
+                ]
+            }
+        },
+        "smowile_female": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:smowile",
+                "aspects": [
+                    "female"
+                ]
             }
         },
         "poison": {
@@ -52,7 +64,8 @@
     },
     "requirements": [
         [
-            "smowile"
+            "smowile_male",
+            "smowile_female"
         ],
         [
             "poison"
