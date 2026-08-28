@@ -25,88 +25,163 @@
         "sound": "minecraft:ui.toast.challenge_complete"
     },
     "criteria": {
-        "flammiko": {
+        "flammiko_male": {
             "trigger": "cobblemon:aspects_collected",
             "conditions": {
-                "species": "cobblemon:flammiko"
+                "species": "cobblemon:flammiko",
+                "aspects": [
+                    "male"
+                ]
             }
         },
-        "kotora": {
+        "flammiko_female": {
             "trigger": "cobblemon:aspects_collected",
             "conditions": {
-                "species": "cobblemon:kotora"
+                "species": "cobblemon:flammiko",
+                "aspects": [
+                    "female"
+                ]
             }
         },
-        "rineshell": {
+        "rineshell_male": {
             "trigger": "cobblemon:aspects_collected",
             "conditions": {
-                "species": "cobblemon:rineshell"
+                "species": "cobblemon:rineshell",
+                "aspects": [
+                    "male"
+                ]
             }
         },
-        "galama": {
+        "rineshell_female": {
             "trigger": "cobblemon:aspects_collected",
             "conditions": {
-                "species": "cobblemon:galama"
+                "species": "cobblemon:rineshell",
+                "aspects": [
+                    "female"
+                ]
             }
         },
-        "apheos": {
+        "galama_male": {
             "trigger": "cobblemon:aspects_collected",
             "conditions": {
-                "species": "cobblemon:apheos"
+                "species": "cobblemon:galama",
+                "aspects": [
+                    "male"
+                ]
             }
         },
-        "aphelis": {
+        "galama_female": {
             "trigger": "cobblemon:aspects_collected",
             "conditions": {
-                "species": "cobblemon:aphelis"
+                "species": "cobblemon:galama",
+                "aspects": [
+                    "female"
+                ]
             }
         },
-        "tinywone": {
+        "apheos_male": {
             "trigger": "cobblemon:aspects_collected",
             "conditions": {
-                "species": "cobblemon:tinywone"
+                "species": "cobblemon:apheos",
+                "aspects": [
+                    "male"
+                ]
             }
         },
-        "wamek": {
+        "apheos_female": {
             "trigger": "cobblemon:aspects_collected",
             "conditions": {
-                "species": "cobblemon:wamek"
+                "species": "cobblemon:apheos",
+                "aspects": [
+                    "female"
+                ]
             }
         },
-        "smowile": {
+        "aphelis_male": {
             "trigger": "cobblemon:aspects_collected",
             "conditions": {
-                "species": "cobblemon:smowile"
+                "species": "cobblemon:aphelis",
+                "aspects": [
+                    "male"
+                ]
+            }
+        },
+        "aphelis_female": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:aphelis",
+                "aspects": [
+                    "female"
+                ]
+            }
+        },
+        "tinywone_genderless": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:tinywone",
+                "aspects": [
+                    "genderless"
+                ]
+            }
+        },
+        "wamek_genderless": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:wamek",
+                "aspects": [
+                    "genderless"
+                ]
+            }
+        },
+        "smowile_male": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:smowile",
+                "aspects": [
+                    "male"
+                ]
+            }
+        },
+        "smowile_female": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:smowile",
+                "aspects": [
+                    "female"
+                ]
             }
         }
     },
     "requirements": [
         [
-            "flammiko"
+            "flammiko_male",
+            "flammiko_female"
         ],
         [
-            "kotora"
+            "rineshell_male",
+            "rineshell_female"
         ],
         [
-            "rineshell"
+            "galama_male",
+            "galama_female"
         ],
         [
-            "galama"
+            "apheos_male",
+            "apheos_female"
         ],
         [
-            "apheos"
+            "aphelis_male",
+            "aphelis_female"
         ],
         [
-            "aphelis"
+            "tinywone_genderless"
         ],
         [
-            "tinywone"
+            "wamek_genderless"
         ],
         [
-            "wamek"
-        ],
-        [
-            "smowile"
+            "smowile_male",
+            "smowile_female"
         ]
     ]
 }

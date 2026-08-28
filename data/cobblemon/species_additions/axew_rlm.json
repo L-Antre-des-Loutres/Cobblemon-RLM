@@ -1,0 +1,37 @@
+{
+  "target": "cobblemon:axew",
+  "features": [
+    "rlm"
+  ],
+  "forms": [
+    {
+      "name": "rlm",
+      "primaryType": "dragon",
+      "secondaryType": "normal",
+      "pokedex": [
+        "cobblemon.species.axew-rlm.desc"
+      ],
+      "labels": [
+        "custom"
+      ],
+      "aspects": [
+        "rlm"
+      ],
+      "evolutions": [
+        {
+          "id": "axew_fraxure_rlm",
+          "variant": "level_up",
+          "result": "fraxure rlm=true",
+          "consumeHeldItem": false,
+          "learnableMoves": [],
+          "requirements": [
+            {
+              "variant": "level",
+              "minLevel": 38
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,18 +1,35 @@
 {
   "target": "cobblemon:chikorita",
-  "evolutions": [
+  "features": [
+    "rlm"
+  ],
+  "forms": [
     {
-      "id": "chikorita_bayleef_rlm",
-      "variant": "level_up",
-      "result": "bayleef rlm=true",
-      "consumeHeldItem": false,
-      "requirements": [
+      "name": "rlm",
+      "aspects": [
+        "rlm"
+      ],
+      "labels": [
+        "custom"
+      ],
+      "pokedex": [
+        "cobblemon.species.chikorita-rlm.desc"
+      ],
+      "evolutions": [
         {
-          "variant": "level",
-          "minLevel": 16
+          "id": "chikorita_rlm_bayleef_rlm",
+          "variant": "level_up",
+          "result": "bayleef rlm=true",
+          "consumeHeldItem": false,
+          "learnableMoves": [],
+          "requirements": [
+            {
+              "variant": "level",
+              "minLevel": 16
+            }
+          ]
         }
       ]
     }
   ]
-
 }

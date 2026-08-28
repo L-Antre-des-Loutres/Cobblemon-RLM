@@ -16,28 +16,11 @@
             "context": "grounded",
             "bucket": "uncommon",
             "level": "8-25",
-            "weight": 10.0,
+            "weight": 15.0,
             "condition": {
                 "canSeeSky": true,
                 "biomes": [
                     "#cobblemon:is_mountain"
-                ]
-            }
-        },
-        {
-            "id": "apheos-end",
-            "pokemon": "apheos",
-            "presets": [
-                "natural"
-            ],
-            "type": "pokemon",
-            "spawnablePositionType": "grounded",
-            "bucket": "common",
-            "level": "30-60",
-            "weight": 3.0,
-            "condition": {
-                "biomes": [
-                    "#cobblemon:is_end"
                 ]
             }
         }

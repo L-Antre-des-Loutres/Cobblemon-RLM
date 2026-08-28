@@ -1,18 +1,35 @@
 {
   "target": "cobblemon:piplup",
-  "evolutions": [
+  "features": [
+    "rlm"
+  ],
+  "forms": [
     {
-      "id": "piplup_prinplup_rlm",
-      "variant": "level_up",
-      "result": "prinplup rlm=true",
-      "consumeHeldItem": false,
-      "requirements": [
+      "name": "rlm",
+      "aspects": [
+        "rlm"
+      ],
+      "labels": [
+        "custom"
+      ],
+      "pokedex": [
+        "cobblemon.species.piplup-rlm.desc"
+      ],
+      "evolutions": [
         {
-          "variant": "level",
-          "minLevel": 16
+          "id": "piplup_rlm_prinplup_rlm",
+          "variant": "level_up",
+          "result": "prinplup rlm=true",
+          "consumeHeldItem": false,
+          "learnableMoves": [],
+          "requirements": [
+            {
+              "variant": "level",
+              "minLevel": 16
+            }
+          ]
         }
       ]
     }
   ]
-
 }

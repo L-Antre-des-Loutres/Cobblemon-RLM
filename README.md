@@ -10,13 +10,11 @@
 
   <br>
 
-  <a href="README_en.md"><strong>🇬🇧 Switch to English Version</strong></a>
-
 </div>
 
 ---
 
-## 🦦 Qu'est-ce que Cobblemon RLM ?
+## Qu'est-ce que Cobblemon RLM ?
 
 **Cobblemon RLM** est un datapack / mod pour **[Cobblemon](https://cobblemon.com)** créé par l'**Antre des Loutres**.
 Il enrichit votre aventure avec des **formes régionales inédites**, des **Fakemons originaux**, de **nouveaux talents exclusifs** et des **Méga-Évolutions** issues de l'univers du **Royaume de Loutre Mer** (RLM).
@@ -25,9 +23,9 @@ Il enrichit votre aventure avec des **formes régionales inédites**, des **Fake
 
 ---
 
-## 📋 Contenu du Pack
+## Contenu du Pack
 
-### 🔄 Formes Régionales RLM
+### Formes Régionales RLM
 
 | Pokémon | Typing | Pré-évolution |
 |---------|--------|---------------|
@@ -45,20 +43,21 @@ Il enrichit votre aventure avec des **formes régionales inédites**, des **Fake
 | **Mysdibule** | Poison / Fée *ou* Dragon / Fée | Smowile (Fée) |
 | **Héliatronc** | 🌤️ Ciel : Plante / Vol · 🌊 Océan : Plante / Eau · 🌋 Volcan : Plante / Feu | — |
 
-### ✨ Fakemons Originaux
+### Fakemons Originaux
 
 | Pokémon | Typing | Notes |
 |---------|--------|-------|
 | **Flammiko** | Feu / Électrik | — |
-| **Apheos** & **Aphelis** | Fée / Vol | — |
+| **Apheos** | Fée / Vol | Évolue en Aphelis |
+| **Aphelis** | Fée / Vol | — |
 | **Rineshell** | Normal | Évolue en Galama |
 | **Galama** | Acier / Normal | — |
-| **Kotora** | Électrik / Fée | — |
+| **Kotora** | Électrik / Fée | Ne spawn pas naturellement |
 | **Tinywone** | Insecte | Évolue en Wamek |
 | **Wamek** | Insecte / Combat | — |
 | **Smowile** | Fée | Pré-évolution de Mysdibule |
 
-### 🧬 Talents Exclusifs
+### Talents Exclusifs
 
 | Talent | Effet |
 |--------|-------|
@@ -69,7 +68,7 @@ Il enrichit votre aventure avec des **formes régionales inédites**, des **Fake
 | **Psycho-Prio** | Priorité sur les attaques tant que les PV dépassent 50%. |
 | **Armure Venimeuse** | Déf. Spé. +50% et 50% de chance d'empoisonner gravement au contact. |
 
-### 💎 Méga-Évolutions RLM
+### Méga-Évolutions RLM
 
 > *Nécessite [Cobblemon: Mega Showdown](https://modrinth.com/project/mega-showdown)*
 
@@ -83,7 +82,7 @@ Il enrichit votre aventure avec des **formes régionales inédites**, des **Fake
 
 ---
 
-## 📥 Installation
+## Installation
 
 ### En tant que Mod (recommandé)
 1. Téléchargez le fichier **`.jar`** depuis [Modrinth](https://modrinth.com/project/cobblemon-rlm).
@@ -117,6 +116,6 @@ Il enrichit votre aventure avec des **formes régionales inédites**, des **Fake
 
   <br>
 
-  <sub>Made with ❤️ by <strong>Antre des Loutres</strong></sub>
+  <sub>Fait avec ❤️ par l'<strong>Antre des Loutres</strong></sub>
 
 </div>

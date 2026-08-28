@@ -1,0 +1,57 @@
+{
+    "species": "cobblemon:haxorus",
+    "order": 10,
+    "variations": [
+        {
+            "aspects": [
+                "rlm",
+                "poison"
+            ],
+            "poser": "cobblemon:haxorus",
+            "model": "cobblemon:haxorus_rlm_poison.geo",
+            "texture": "cobblemon:textures/pokemon/haxorus_rlm_poison/haxorus_rlm_poison.png",
+             "layers": [
+            {
+            "name": "emissive",
+            "texture": {
+                "frames": [
+                "cobblemon:textures/pokemon/haxorus_rlm_poison/haxorus_rlm_poison_emissive.png"
+                ]
+            },
+            "emissive": true
+            }
+        ]
+        },
+        {
+            "aspects": [
+                "rlm",
+                "poison",
+                "shiny"
+            ],
+            "texture": "cobblemon:textures/pokemon/haxorus_rlm_poison/haxorus_rlm_poison_shiny.png",
+              "layers": [
+                {
+                    "name": "emissive",
+                    "texture": {
+                    "frames":
+                    ["cobblemon:textures/pokemon/haxorus_rlm_poison/haxorus_rlm_poison_shiny_emissive.png"]
+                },
+                "emissive": true
+                }
+            ]
+        },
+        {
+            "aspects": [
+                "alpha_eyes"
+            ],
+            "layers": [
+                {
+                    "name": "alpha_eyes",
+                    "texture": "cobblemon:textures/pokemon/haxorus_rlm_poison/haxorus_rlm_poison_alpha.png",
+                    "emissive": true
+                }
+            ]
+        }
+    ]
+}
+

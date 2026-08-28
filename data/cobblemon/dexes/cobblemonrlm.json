@@ -3,14 +3,13 @@
   "id": "cobblemon:cobblemonrlm",
   "sortOrder": 20,
   "entries": [
-    "cobblemon:chikorita",
+    "cobblemon:chikorita-rlm",
     "cobblemon:bayleef-rlm",
     "cobblemon:meganium-rlm",
-    "cobblemon:fennekin",
+    "cobblemon:fennekin-rlm",
     "cobblemon:braixen-rlm",
     "cobblemon:delphox-rlm",
-    "cobblemon:delfox",
-    "cobblemon:squirtle",
+    "cobblemon:squirtle-rlm",
     "cobblemon:wartortle-rlm",
     "cobblemon:blastoise-rlm",
     "cobblemon:tinywone",
@@ -34,16 +33,20 @@
     "cobblemon:smowile",
     "cobblemon:mawile-poison",
     "cobblemon:mawile-dragon",
-    "cobblemon:piplup",
+    "cobblemon:piplup-rlm",
     "cobblemon:prinplup-rlm",
     "cobblemon:empoleon-rlm",
     "cobblemon:flammiko",
     "cobblemon:mareep-rlm",
     "cobblemon:flaaffy-rlm",
     "cobblemon:ampharos-rlm",
-    "cobblemon:togepi",
-    "cobblemon:togetic",
+    "cobblemon:togepi-rlm",
+    "cobblemon:togetic-rlm",
     "cobblemon:togekiss-rlm",
-    "cobblemon:spiritomb-rlm"
+    "cobblemon:spiritomb-rlm",
+
+    "cobblemon:axew-rlm",
+    "cobblemon:fraxure-rlm",
+    "cobblemon:haxorus-rlm"
   ]
 }

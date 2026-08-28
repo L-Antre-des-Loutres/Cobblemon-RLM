@@ -25,10 +25,244 @@
         "sound": "minecraft:ui.toast.challenge_complete"
     },
     "criteria": {
-        "catch_any_rlm": {
-            "trigger": "cobblemon:catch_pokemon",
+        "meganium": {
+            "trigger": "cobblemon:aspects_collected",
             "conditions": {
-                "count": 1,
+                "species": "cobblemon:meganium",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "bayleef": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:bayleef",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "blastoise": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:blastoise",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "wartortle": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:wartortle",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "empoleon": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:empoleon",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "prinplup": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:prinplup",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "delphox": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:delphox",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "braixen": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:braixen",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "fennekin": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:fennekin",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "togekiss": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:togekiss",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "probopass": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:probopass",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "nosepass": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:nosepass",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "luxray": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:luxray",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "luxio": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:luxio",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "shinx": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:shinx",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "ampharos": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:ampharos",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "flaaffy": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:flaaffy",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "mareep": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:mareep",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "spiritomb": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:spiritomb",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "ninjask": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:ninjask",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "shedinja": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:shedinja",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "nincada": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:nincada",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "sunflora": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:sunflora",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "mawile": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:mawile",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "haxorus": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:haxorus",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "fraxure": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:fraxure",
+                "aspects": [
+                    "rlm"
+                ]
+            }
+        },
+        "axew": {
+            "trigger": "cobblemon:aspects_collected",
+            "conditions": {
+                "species": "cobblemon:axew",
                 "aspects": [
                     "rlm"
                 ]
@@ -37,7 +271,33 @@
     },
     "requirements": [
         [
-            "catch_any_rlm"
+            "meganium",
+            "bayleef",
+            "blastoise",
+            "wartortle",
+            "empoleon",
+            "prinplup",
+            "delphox",
+            "braixen",
+            "fennekin",
+            "togekiss",
+            "probopass",
+            "nosepass",
+            "luxray",
+            "luxio",
+            "shinx",
+            "ampharos",
+            "flaaffy",
+            "mareep",
+            "spiritomb",
+            "ninjask",
+            "shedinja",
+            "nincada",
+            "sunflora",
+            "mawile",
+            "haxorus",
+            "fraxure",
+            "axew"
         ]
     ]
 }

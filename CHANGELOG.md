@@ -1,0 +1,30 @@
+1.6.0 :
+
+- Haxorus RLM family added
+ - Haxorus RLM Poison ( <- Fraxure - Level 48 and held item : Toxic Orb )
+ - Fraxure RLM
+ - Axew RLM
+ - New talents :
+ - - Venomedge : Powers up slicing moves by 50% and has a 20% chance to poison the target
+ - New moves :
+ - - Dragon Axe : Power 90 Precision 100 PP 5 - The user attacks with a fierce dragon-like slice. This also lowers the user's Defense stat.
+- Fennekin RLM Added
+- Braixen RLM : texture has reworked
+- Togepi RLM and Togetic RLM added, completing the Togekiss RLM family
+ - Togetic RLM ( <- Togepi - Friendship 160 )
+ - Togekiss RLM ( <- Togetic - Shiny Stone )
+ - Togepi RLM and Togetic RLM spawn in mountain biomes (#232)
+- Chikorita RLM added, completing the Meganium RLM family
+ - Chikorita RLM ( -> Bayleef RLM - Level 16 )
+ - Spawns in jungle biomes and added to the RLM Pokédex
+ - A normal Chikorita no longer evolves into a Bayleef RLM (#233)
+- Squirtle RLM added, completing the Blastoise RLM family
+ - Squirtle RLM ( -> Wartortle RLM - Level 16 )
+ - Spawns in beach and ocean biomes and added to the RLM Pokédex
+ - A normal Squirtle no longer evolves into a Wartortle RLM
+- Piplup RLM added, completing the Empoleon RLM family
+ - Piplup RLM ( -> Prinplup RLM - Level 16 )
+ - Spawns in jungle biomes and added to the RLM Pokédex
+ - A normal Piplup no longer evolves into a Prinplup RLM
+- Braixen RLM : tail removed from the geometry, alpha eyes layer added (#236)
+- Advancements fixed : they were all granted on the first Pokémon caught, without ever catching an RLM (#237)
