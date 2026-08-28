@@ -1,0 +1,15 @@
+{
+    "id": "cobblemon:squirtle-rlm",
+    "speciesId": "cobblemon:squirtle",
+    "displayAspects": [],
+    "conditionAspects": [],
+    "forms": [
+        {
+            "displayForm": "rlm",
+            "unlockForms": [
+                "rlm"
+            ]
+        }
+    ],
+    "variations": []
+}

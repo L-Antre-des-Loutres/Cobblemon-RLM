@@ -1,18 +1,35 @@
 {
   "target": "cobblemon:squirtle",
-  "evolutions": [
+  "features": [
+    "rlm"
+  ],
+  "forms": [
     {
-      "id": "squirtle_wartortle_rlm",
-      "variant": "level_up",
-      "result": "wartortle rlm=true",
-      "consumeHeldItem": false,
-      "requirements": [
+      "name": "rlm",
+      "aspects": [
+        "rlm"
+      ],
+      "labels": [
+        "custom"
+      ],
+      "pokedex": [
+        "cobblemon.species.squirtle-rlm.desc"
+      ],
+      "evolutions": [
         {
-          "variant": "level",
-          "minLevel": 16
+          "id": "squirtle_rlm_wartortle_rlm",
+          "variant": "level_up",
+          "result": "wartortle rlm=true",
+          "consumeHeldItem": false,
+          "learnableMoves": [],
+          "requirements": [
+            {
+              "variant": "level",
+              "minLevel": 16
+            }
+          ]
         }
       ]
     }
   ]
-
 }
