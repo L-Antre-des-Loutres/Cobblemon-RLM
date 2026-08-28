@@ -190,24 +190,6 @@
                 ]
             }
         },
-        "kotora_male": {
-            "trigger": "cobblemon:aspects_collected",
-            "conditions": {
-                "species": "cobblemon:kotora",
-                "aspects": [
-                    "male"
-                ]
-            }
-        },
-        "kotora_female": {
-            "trigger": "cobblemon:aspects_collected",
-            "conditions": {
-                "species": "cobblemon:kotora",
-                "aspects": [
-                    "female"
-                ]
-            }
-        },
         "rineshell_male": {
             "trigger": "cobblemon:aspects_collected",
             "conditions": {
@@ -369,10 +351,6 @@
         [
             "flammiko_male",
             "flammiko_female"
-        ],
-        [
-            "kotora_male",
-            "kotora_female"
         ],
         [
             "rineshell_male",

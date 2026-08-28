@@ -1,0 +1,21 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "prinplup-rlm-1",
+      "pokemon": "prinplup rlm",
+      "presets": [ "natural" ],
+      "type": "pokemon",
+      "context": "grounded",
+      "bucket": "ultra-rare",
+      "level": "20-36",
+      "weight": 3.6,
+      "condition": {
+        "canSeeSky": true,
+        "biomes": [ "#cobblemon:is_jungle" ]
+      }
+    }
+  ]
+}
