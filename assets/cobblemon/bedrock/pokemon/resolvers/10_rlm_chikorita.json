@@ -1,0 +1,33 @@
+{
+    "species": "cobblemon:chikorita",
+    "order": 10,
+    "variations": [
+        {
+            "aspects": [
+                "rlm"
+            ],
+            "poser": "cobblemon:chikorita",
+            "model": "cobblemon:chikorita_rlm.geo",
+            "texture": "cobblemon:textures/pokemon/chikorita_rlm/chikorita_rlm.png"
+        },
+        {
+            "aspects": [
+                "rlm",
+                "shiny"
+            ],
+            "texture": "cobblemon:textures/pokemon/chikorita_rlm/chikorita_rlm_shiny.png"
+        },
+        {
+            "aspects": [
+                "alpha_eyes"
+            ],
+            "layers": [
+                {
+                    "name": "alpha_eyes",
+                    "texture": "cobblemon:textures/pokemon/chikorita_rlm/chikorita_rlm_alpha.png",
+                    "emissive": true
+                }
+            ]
+        }
+    ]
+}
