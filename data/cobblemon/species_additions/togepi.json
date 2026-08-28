@@ -1,0 +1,56 @@
+{
+  "target": "cobblemon:togepi",
+  "features": [
+    "rlm"
+  ],
+  "forms": [
+    {
+      "name": "rlm",
+      "primaryType": "fairy",
+      "secondaryType": "dragon",
+      "baseStats": {
+        "hp": 35,
+        "attack": 20,
+        "defence": 65,
+        "special_attack": 40,
+        "special_defence": 65,
+        "speed": 20
+      },
+      "evYield": {
+        "special_defence": 1
+      },
+      "maleRatio": 0.875,
+      "height": 0.3,
+      "weight": 1.5,
+      "pokedex": [
+        "cobblemon.species.togepi-rlm.desc"
+      ],
+      "labels": [
+        "custom"
+      ],
+      "aspects": [
+        "rlm"
+      ],
+      "abilities": [
+        "hustle",
+        "serenegrace",
+        "h:superluck"
+      ],
+      "evolutions": [
+        {
+          "id": "togepi_togetic_rlm",
+          "variant": "level_up",
+          "result": "togetic rlm=true",
+          "consumeHeldItem": false,
+          "learnableMoves": [],
+          "requirements": [
+            {
+              "variant": "friendship",
+              "minFriendship": 160
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
