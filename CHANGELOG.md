@@ -18,5 +18,13 @@
  - Chikorita RLM ( -> Bayleef RLM - Level 16 )
  - Spawns in jungle biomes and added to the RLM Pokédex
  - A normal Chikorita no longer evolves into a Bayleef RLM (#233)
+- Squirtle RLM added, completing the Blastoise RLM family
+ - Squirtle RLM ( -> Wartortle RLM - Level 16 )
+ - Spawns in beach and ocean biomes and added to the RLM Pokédex
+ - A normal Squirtle no longer evolves into a Wartortle RLM
+- Piplup RLM added, completing the Empoleon RLM family
+ - Piplup RLM ( -> Prinplup RLM - Level 16 )
+ - Spawns in jungle biomes and added to the RLM Pokédex
+ - A normal Piplup no longer evolves into a Prinplup RLM
 - Braixen RLM : tail removed from the geometry, alpha eyes layer added (#236)
 - Advancements fixed : they were all granted on the first Pokémon caught, without ever catching an RLM (#237)
