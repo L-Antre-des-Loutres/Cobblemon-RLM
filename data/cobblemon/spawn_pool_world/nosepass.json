@@ -8,7 +8,7 @@
       "pokemon": "nosepass rlm",
       "presets": [ "natural" ],
       "type": "pokemon",
-      "context": "grounded",
+      "spawnablePositionType": "grounded",
       "bucket": "uncommon",
       "level": "4-20",
       "weight": 9.2,

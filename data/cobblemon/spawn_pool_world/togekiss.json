@@ -28,7 +28,7 @@
                 "any"
             ],
             "type": "pokemon",
-            "context": "grounded",
+            "spawnablePositionType": "grounded",
             "bucket": "rare",
             "level": "30-60",
             "weight": 5.0,

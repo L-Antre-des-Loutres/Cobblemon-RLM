@@ -8,7 +8,7 @@
       "pokemon": "bayleef rlm",
       "presets": [ "natural" ],
       "type": "pokemon",
-      "context": "grounded",
+      "spawnablePositionType": "grounded",
       "bucket": "ultra-rare",
       "level": "20-36",
       "weight": 3.6,

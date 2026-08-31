@@ -8,7 +8,7 @@
       "pokemon": "braixen rlm",
       "presets": [ "natural" ],
       "type": "pokemon",
-      "context": "grounded",
+      "spawnablePositionType": "grounded",
       "bucket": "rare",
       "level": "20-36",
       "weight": 4.5,

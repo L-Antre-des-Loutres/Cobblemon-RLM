@@ -8,7 +8,7 @@
       "pokemon": "empoleon rlm",
       "presets": [ "natural" ],
       "type": "pokemon",
-      "context": "grounded",
+      "spawnablePositionType": "grounded",
       "bucket": "ultra-rare",
       "level": "36-60",
       "weight": 0.4,
