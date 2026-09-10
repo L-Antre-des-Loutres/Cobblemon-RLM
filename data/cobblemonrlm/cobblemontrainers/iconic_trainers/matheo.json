@@ -26,6 +26,7 @@
   },
   "team": [
   "Echidna (Togekiss) (F) @ Life Orb\nAspects: rlm\nAbility: Dragonlate\nEVs: 4 Atk / 252 SpA / 252 Spe\nHasty Nature\n- Draco Meteor\n- Extreme Speed\n- Moonblast\n- Roost",
-  "Elsa (Haxorus) (F) @ Air Balloon\nAspects: rlm poison\nAbility: Venomedge\n EVs: 252 HP / 252 Atk / 4 Spe  \nAdamant Nature  \nTera Type: Dragon\n- Dragon Dance\n- Fury Cutter\n- Cross Poison\n- DragonAxe"
+  "Elsa (Haxorus) (F) @ Air Balloon\nAspects: rlm poison\nAbility: Venomedge\n EVs: 252 HP / 252 Atk / 4 Spe  \nAdamant Nature  \nTera Type: Dragon\n- Dragon Dance\n- Fury Cutter\n- Cross Poison\n- DragonAxe",
+  "Rui (Sunflora) @ Focus Sash\n Shiny: Yes \nAspects: rlm volcan\nAbility: Contrary\nTera Type: Rock / Ground\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\nIVs: 0 Atk\n- Overheat\n- Leaf Storm\n- Earth Power\n- Synthesis"
   ]
 }
