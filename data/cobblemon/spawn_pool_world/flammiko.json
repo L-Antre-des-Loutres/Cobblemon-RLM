@@ -9,7 +9,7 @@
       "presets": [ "natural" ],
       "timeRange": ["day"],
       "type": "pokemon",
-      "context": "grounded",
+      "spawnablePositionType": "grounded",
       "bucket": "rare",
       "level": "18-60",
       "weight": 8.0,

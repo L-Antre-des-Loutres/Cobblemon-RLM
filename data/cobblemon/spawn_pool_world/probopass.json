@@ -8,7 +8,7 @@
       "pokemon": "probopass rlm",
       "presets": [ "natural" ],
       "type": "pokemon",
-      "context": "grounded",
+      "spawnablePositionType": "grounded",
       "bucket": "rare",
       "level": "20-40",
       "weight": 2.0,

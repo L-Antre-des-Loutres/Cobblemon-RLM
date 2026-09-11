@@ -8,7 +8,7 @@
       "pokemon": "spiritomb rlm",
       "presets": [ "natural" ],
       "type": "pokemon",
-      "context": "grounded",
+      "spawnablePositionType": "grounded",
       "bucket": "uncommon",
       "level": "20-40",
       "weight": 20.0,
