@@ -1,0 +1,11 @@
+{
+  "battle_music.final_destination": {
+    "subtitle": "cobblemonrlm.subtitles.battle_music",
+    "sounds": [
+      {
+        "name": "cobblemonrlm:battle_music/final_destination",
+        "stream": true
+      }
+    ]
+  }
+}
