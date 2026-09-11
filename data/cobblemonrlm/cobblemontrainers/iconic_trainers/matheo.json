@@ -8,11 +8,8 @@
     "format": "single",
     "level": 70,
     "difficulty": 5,
-    "music": "cobblemon-trainers:battle_music.neoflare",
-    "intro": "bw",
-    "gimmicks": [
-      "mega", "terastal"
-    ]
+    "music": "cobblemonrlm:battle_music.final_destination",
+    "intro": "bw"
   },
   "messages": {
     "greeting": "trainer.cobblemon-trainers.matheo.greeting",

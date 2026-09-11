@@ -26,5 +26,13 @@
     "advancement.rlm.catch_spiritomb_rlm.title": "A Ghost Wreathed in Flames!",
     "advancement.rlm.catch_spiritomb_rlm.desc": "Catch RLM Spiritomb, the Fire and Dark spectre of the Otter-Sea Kingdom.",
     "advancement.rlm.complete_rlm_dex.title": "Legend of the Otter-Sea Kingdom",
-    "advancement.rlm.complete_rlm_dex.desc": "Complete the entire Pokédex of the Otter-Sea Kingdom, including all regional forms and original Fakémon."
+    "advancement.rlm.complete_rlm_dex.desc": "Complete the entire Pokédex of the Otter-Sea Kingdom, including all regional forms and original Fakémon.",
+
+    "trainer.cobblemonrlm.matheo.name": "Matheo",
+    "trainer.cobblemon-trainers.matheo.greeting": "Hello, I'm Matheo. I'm a trainer from the Otter-Sea Kingdom. I'm here to help you on your journey.",
+    "trainer.cobblemon-trainers.matheo.battle_start": "Let's go!",
+    "trainer.cobblemon-trainers.matheo.decline": "I'm sorry, but I'm not interested in this battle.",
+    "trainer.cobblemon-trainers.matheo.win": "I'm glad you're with me. I'm proud of you.",
+    "trainer.cobblemon-trainers.matheo.lose": "I'm sorry, but I'm not interested in this battle.",
+    "cobblemonrlm.subtitles.battle_music": "Battle music"
 }
