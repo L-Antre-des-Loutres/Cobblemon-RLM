@@ -14,7 +14,7 @@
             ],
             "type": "pokemon",
             "spawnablePositionType": "grounded",
-            "bucket": "uncommon",
+            "bucket": "common",
             "level": "8-25",
             "weight": 15.0,
             "condition": {
