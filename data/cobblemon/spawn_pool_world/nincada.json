@@ -16,7 +16,8 @@
             "weight": 8.0,
             "condition": {
                 "biomes": [
-                    "#cobblemon:is_swamp"
+                    "#cobblemon:is_swamp",
+                    "minecraft:river"
                 ]
             }
         }
