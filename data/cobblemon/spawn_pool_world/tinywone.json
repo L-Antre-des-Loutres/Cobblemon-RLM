@@ -9,8 +9,8 @@
       "presets": [ "natural" ],
       "type": "pokemon",
       "spawnablePositionType": "grounded",
-      "bucket": "uncommon",
-      "level": "30-60",
+      "bucket": "common",
+      "level": "5-15",
       "weight": 6.0,
       "condition": {
         "biomes": [

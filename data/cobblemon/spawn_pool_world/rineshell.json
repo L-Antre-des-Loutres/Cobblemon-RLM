@@ -11,7 +11,7 @@
             ],
             "type": "pokemon",
             "spawnablePositionType": "grounded",
-            "bucket": "uncommon",
+            "bucket": "common",
             "level": "10-26",
             "weight": 6.0,
             "condition": {
@@ -29,7 +29,7 @@
             ],
             "type": "pokemon",
             "spawnablePositionType": "grounded",
-            "bucket": "common",
+            "bucket": "uncommon",
             "level": "10-26",
             "weight": 6.0,
             "condition": {

@@ -26,6 +26,22 @@
           "minecraft:soul_lantern"
         ]
       }
+    },
+    {
+      "id": "spiritomb-rlm",
+      "pokemon": "spiritomb rlm",
+      "presets": [ "natural" ],
+      "type": "pokemon",
+      "spawnablePositionType": "grounded",
+      "bucket": "ultra-rare",
+      "level": "30-60",
+      "weight": 3.0,
+      "condition": {
+        "biomes": [
+          "#cobblemon:nether/is_soul_sand",
+          "#cobblemon:is_spooky"
+        ]
+      }
     }
   ]
 }

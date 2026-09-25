@@ -9,7 +9,7 @@
       "presets": [ "natural" ],
       "type": "pokemon",
       "spawnablePositionType": "grounded",
-      "bucket": "ultra-rare",
+      "bucket": "rare",
       "level": "30-60",
       "weight": 0.4,
       "condition": {
@@ -29,7 +29,7 @@
             ],
             "type": "pokemon",
             "spawnablePositionType": "grounded",
-            "bucket": "rare",
+            "bucket": "ultra-rare",
             "level": "30-60",
             "weight": 5.0,
             "condition": {
