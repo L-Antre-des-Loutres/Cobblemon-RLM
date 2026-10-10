@@ -21,9 +21,11 @@ Le numéro de version, le titre et le changelog proviennent de la release GitHub
 
 Après la réussite des publications, `publish.yml` appelle le workflow réutilisable
 [`workflows/discord-release.yml`](workflows/discord-release.yml). Il envoie un embed avec
-le nom du projet, son icône à côté du nom, la version, le changelog et les liens de téléchargement.
+la version, le changelog, la compatibilité et les liens utiles regroupés sur une ligne.
 L'expéditeur prend le nom du dépôt comme pseudo et utilise son icône en photo de profil.
-L'icône de l'embed est jointe au message. Les notes trop longues sont abrégées avec un lien vers la release complète.
+Le nom et l'icône ne sont pas répétés dans l'embed. Les notes trop longues sont abrégées
+avec un lien vers la release complète. Les liens de pull requests et de comparaison du
+changelog généré par GitHub reçoivent des libellés courts.
 
 1. Dans Discord, ouvrir **Paramètres du serveur > Intégrations > Webhooks**, créer un webhook
    et choisir le salon de destination ([guide Discord](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)).
@@ -56,9 +58,9 @@ jobs:
 L'appel doit provenir d'un workflow déclenché par `release: types: [published]`.
 Tous les paramètres `with` sont facultatifs : sans configuration, le nom du dépôt et
 le lien GitHub sont utilisés. Le pseudo reste le nom du dépôt (limité à 80 caractères).
-`project-name` peut personnaliser le nom dans l'embed. `logo-path` pointe vers une icône
+`logo-path` pointe vers une icône
 PNG, JPEG, GIF ou WebP dans le dépôt appelant, idéalement carrée. La photo de profil
 utilise cette image au commit de la release via une URL publique GitHub. Pour un dépôt privé,
-fournir `avatar-url` avec une URL d'image accessible à Discord ; l'icône de l'embed reste jointe au message.
+fournir `avatar-url` avec une URL d'image accessible à Discord.
 `embed-color` permet de changer la couleur (entier RGB,
 `16753920` par défaut, soit `#FFA500`).

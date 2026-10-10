@@ -94,7 +94,9 @@ jobs:
     uses: ./.github/workflows/discord-release.yml
     with:
       logo-path: cobblemon_rlm_pack.png
-      release-details: Minecraft 1.21.1 · Fabric / NeoForge · JAR (mod) et ZIP (datapack)
+      release-details: |
+        Minecraft **1.21.1** · **Fabric** / **NeoForge**
+        **JAR** (mod) · **ZIP** (datapack)
       download-links: |
         [Modrinth](https://modrinth.com/project/cobblemon-rlm)
         [CurseForge](https://www.curseforge.com/minecraft/mc-addons/cobblemon-rlm)
