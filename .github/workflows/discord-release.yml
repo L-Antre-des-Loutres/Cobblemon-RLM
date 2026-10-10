@@ -1,0 +1,194 @@
+name: Announce release on Discord
+
+on:
+  workflow_call:
+    inputs:
+      project-name:
+        description: Nom du projet dans l'embed (nom du dépôt par défaut)
+        type: string
+        default: ''
+      logo-path:
+        description: Chemin de l'icône du projet dans le dépôt (facultatif)
+        type: string
+        default: ''
+      avatar-url:
+        description: URL publique de la photo de profil (icône du dépôt par défaut)
+        type: string
+        default: ''
+      download-links:
+        description: Liens de téléchargement au format Markdown (facultatif)
+        type: string
+        default: ''
+      release-details:
+        description: Informations supplémentaires, comme la compatibilité (facultatif)
+        type: string
+        default: ''
+      embed-color:
+        description: Couleur de l'embed, sous forme d'entier RGB
+        type: number
+        default: 16753920
+    secrets:
+      DISCORD_WEBHOOK_URL:
+        description: URL du webhook du salon Discord
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  announce:
+    if: github.event_name == 'release' && github.event.action == 'published'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout project icon
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Send release embed
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          PROJECT_NAME: ${{ inputs.project-name }}
+          LOGO_PATH: ${{ inputs.logo-path }}
+          AVATAR_URL: ${{ inputs.avatar-url }}
+          DOWNLOAD_LINKS: ${{ inputs.download-links }}
+          RELEASE_DETAILS: ${{ inputs.release-details }}
+          EMBED_COLOR: ${{ inputs.embed-color }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import mimetypes
+          import os
+          import re
+          import sys
+          import uuid
+          from pathlib import Path
+          from urllib.error import HTTPError, URLError
+          from urllib.parse import parse_qsl, quote, urlencode, urlsplit, urlunsplit
+          from urllib.request import Request, urlopen
+
+          def shorten(text, limit, suffix='…'):
+              return text if len(text) <= limit else text[:limit - len(suffix)] + suffix
+
+          def build_payload(event, settings):
+              release = event.get('release', {})
+              if not release.get('tag_name') or not release.get('html_url'):
+                  raise ValueError('Une release GitHub publiée est nécessaire.')
+              project = shorten(settings.get('PROJECT_NAME', '').strip()
+                                or event['repository']['name'], 80)
+              fields = [
+                  {'name': 'Version', 'value': shorten(release['tag_name'], 128), 'inline': True},
+                  {'name': 'Type', 'value': 'Préversion' if release.get('prerelease') else 'Release', 'inline': True},
+              ]
+              details = settings.get('RELEASE_DETAILS', '').strip()
+              if details:
+                  fields.append({'name': 'Informations', 'value': shorten(details, 1024)})
+              links = settings.get('DOWNLOAD_LINKS', '').strip()
+              notes_link = f"[Notes de release]({release['html_url']})"
+              fields.append({'name': 'Liens', 'value': shorten(f'{links}\n{notes_link}'.strip(), 1024)})
+              color = int(settings.get('EMBED_COLOR') or '16753920')
+              if not 0 <= color <= 0xFFFFFF:
+                  raise ValueError('EMBED_COLOR doit être un entier RGB entre 0 et 16777215.')
+              embed = {
+                  'author': {'name': project},
+                  'title': shorten(release.get('name') or release['tag_name'], 256),
+                  'url': release['html_url'],
+                  'color': color,
+                  'fields': fields,
+                  'footer': {'text': 'Nouvelle release publiée sur GitHub'},
+              }
+              # Discord limits each description to 4096 characters and all embed text to 6000.
+              used = len(project) + len(embed['title']) + len(embed['footer']['text'])
+              used += sum(len(field['name']) + len(field['value']) for field in fields)
+              limit = min(4096, 6000 - used)
+              notes = (release.get('body') or '').strip() or 'Retrouvez les détails dans les notes de release.'
+              embed['description'] = shorten(notes, limit, '\n\n… Voir les notes de release complètes via le lien ci-dessous.')
+              if release.get('published_at'):
+                  embed['timestamp'] = release['published_at']
+              payload = {
+                  'username': shorten(event['repository']['name'], 80),
+                  'allowed_mentions': {'parse': []},
+                  'embeds': [embed],
+              }
+              avatar = settings.get('AVATAR_URL', '').strip()
+              logo = settings.get('LOGO_PATH', '').strip()
+              if not avatar and logo:
+                  workspace = Path(settings.get('GITHUB_WORKSPACE') or '.').resolve()
+                  try:
+                      icon = Path(logo).resolve().relative_to(workspace).as_posix()
+                  except ValueError:
+                      raise ValueError("LOGO_PATH doit désigner une image dans le dépôt.") from None
+                  repository = quote(event['repository']['full_name'], safe='/')
+                  commit = quote(settings.get('GITHUB_SHA') or release['tag_name'], safe='')
+                  avatar = f'https://raw.githubusercontent.com/{repository}/{commit}/{quote(icon, safe="/")}'
+              if avatar:
+                  payload['avatar_url'] = avatar
+              return payload
+
+          def build_request(webhook, payload, logo_path=None):
+              url = urlsplit(webhook)
+              hosts = {'discord.com', 'discordapp.com', 'canary.discord.com', 'ptb.discord.com'}
+              if url.scheme != 'https' or url.hostname not in hosts or not re.fullmatch(
+                  r'/api(?:/v\d+)?/webhooks/\d+/[^/]+/?', url.path
+              ):
+                  raise ValueError('DISCORD_WEBHOOK_URL doit être une URL de webhook Discord valide.')
+              query = dict(parse_qsl(url.query, keep_blank_values=True))
+              query['wait'] = 'true'
+              target = urlunsplit(url._replace(query=urlencode(query)))
+              content_type = 'application/json'
+              if logo_path:
+                  logo_path = Path(logo_path)
+                  workspace = Path(os.environ.get('GITHUB_WORKSPACE', '.')).resolve()
+                  if not logo_path.resolve().is_relative_to(workspace) or not logo_path.is_file():
+                      raise ValueError("LOGO_PATH doit désigner une image existante dans le dépôt.")
+                  if logo_path.suffix.lower() not in {'.png', '.jpg', '.jpeg', '.gif', '.webp'}:
+                      raise ValueError('Le logo doit être une image PNG, JPEG, GIF ou WebP.')
+                  filename = 'project-icon' + logo_path.suffix.lower()
+                  payload['embeds'][0]['author']['icon_url'] = f'attachment://{filename}'
+                  payload['attachments'] = [{'id': 0, 'filename': filename}]
+                  boundary = uuid.uuid4().hex
+                  image_type = mimetypes.guess_type(filename)[0] or 'application/octet-stream'
+                  data = (
+                      f'--{boundary}\r\nContent-Disposition: form-data; name="payload_json"\r\n'
+                      'Content-Type: application/json\r\n\r\n'
+                  ).encode() + json.dumps(payload, ensure_ascii=False).encode('utf-8')
+                  data += (
+                      f'\r\n--{boundary}\r\nContent-Disposition: form-data; name="files[0]"; '
+                      f'filename="{filename}"\r\nContent-Type: {image_type}\r\n\r\n'
+                  ).encode() + logo_path.read_bytes() + f'\r\n--{boundary}--\r\n'.encode()
+                  content_type = f'multipart/form-data; boundary={boundary}'
+              else:
+                  data = json.dumps(payload, ensure_ascii=False).encode('utf-8')
+              return Request(target, data=data, headers={
+                  'Content-Type': content_type,
+                  'User-Agent': 'GitHubReleaseNotifier/1.0',
+              }, method='POST')
+
+          def main():
+              webhook = os.environ.get('DISCORD_WEBHOOK_URL', '').strip()
+              if not webhook:
+                  print('::notice::DISCORD_WEBHOOK_URL absent : annonce Discord ignorée.')
+                  return
+              with open(os.environ['GITHUB_EVENT_PATH'], encoding='utf-8') as event_file:
+                  event = json.load(event_file)
+              payload = build_payload(event, os.environ)
+              request = build_request(webhook, payload, os.environ.get('LOGO_PATH', '').strip() or None)
+              try:
+                  with urlopen(request, timeout=30) as response:
+                      message = json.load(response)
+                      if not message.get('id'):
+                          raise ValueError("Discord n'a pas confirmé la création du message.")
+              except HTTPError as error:
+                  raise RuntimeError(f"Discord a refusé l'annonce (HTTP {error.code}).") from None
+              except (URLError, TimeoutError):
+                  raise RuntimeError('Connexion Discord impossible ou délai de réponse dépassé.') from None
+              print('Annonce de release envoyée sur Discord.')
+
+          if __name__ == '__main__':
+              try:
+                  main()
+              except (KeyError, OSError, ValueError, RuntimeError):
+                  # Do not print exceptions or URLs: the webhook URL contains a secret token.
+                  print("::error::L'annonce Discord a échoué. Vérifier le webhook, l'icône et les paramètres de release.")
+                  sys.exit(1)
+          PY

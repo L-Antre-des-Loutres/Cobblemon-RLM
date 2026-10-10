@@ -88,3 +88,15 @@ jobs:
             MdwFAVRL(required)
           curseforge-dependencies: |
             687131(required)
+
+  notify-discord:
+    needs: publish
+    uses: ./.github/workflows/discord-release.yml
+    with:
+      logo-path: cobblemon_rlm_pack.png
+      release-details: Minecraft 1.21.1 · Fabric / NeoForge · JAR (mod) et ZIP (datapack)
+      download-links: |
+        [Modrinth](https://modrinth.com/project/cobblemon-rlm)
+        [CurseForge](https://www.curseforge.com/minecraft/mc-addons/cobblemon-rlm)
+    secrets:
+      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
