@@ -1,4 +1,4 @@
-name: Publish to Modrinth
+name: Publish to Modrinth and CurseForge
 
 on:
   release:
@@ -38,13 +38,16 @@ jobs:
           echo "VERSION=${VERSION}" >> $GITHUB_ENV
           echo "RELEASE_TITLE=${CLEAN_TITLE}" >> $GITHUB_ENV
 
-      - name: Publish JAR to Modrinth
+      - name: Publish JAR to Modrinth and CurseForge
         uses: Kir-Antipov/mc-publish@v3.3
         with:
           modrinth-id: GC58bFHM
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+          curseforge-id: 1449941
+          curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           files: "cobblemon-rlm-${{ env.VERSION }}.jar"
           name: "${{ env.RELEASE_TITLE }}"
+          curseforge-name: "${{ env.RELEASE_TITLE }} (JAR)"
           version: "${{ env.VERSION }}-mod"
           game-versions: 1.21.1
           game-version-filter: any
@@ -55,17 +58,22 @@ jobs:
             neoforge
           dependencies: |
             MdwFAVRL(required)
+          curseforge-dependencies: |
+            687131(required)
 
       - name: Wait for Modrinth Database
         run: sleep 30
 
-      - name: Publish ZIP to Modrinth
+      - name: Publish ZIP to Modrinth and CurseForge
         uses: Kir-Antipov/mc-publish@v3.3
         with:
           modrinth-id: GC58bFHM
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+          curseforge-id: 1449941
+          curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           files: "cobblemon-rlm-${{ env.VERSION }}.zip"
           name: "${{ env.RELEASE_TITLE }}"
+          curseforge-name: "${{ env.RELEASE_TITLE }} (ZIP)"
           version: "${{ env.VERSION }}-datapack"
           game-versions: 1.21.1
           game-version-filter: any
@@ -73,5 +81,22 @@ jobs:
           version-type: release
           loaders: |
             datapack
+          curseforge-loaders: |
+            fabric
+            neoforge
           dependencies: |
             MdwFAVRL(required)
+          curseforge-dependencies: |
+            687131(required)
+
+  notify-discord:
+    needs: publish
+    uses: ./.github/workflows/discord-release.yml
+    with:
+      logo-path: cobblemon_rlm_pack.png
+      release-details: Minecraft 1.21.1 · Fabric / NeoForge · JAR (mod) et ZIP (datapack)
+      download-links: |
+        [Modrinth](https://modrinth.com/project/cobblemon-rlm)
+        [CurseForge](https://www.curseforge.com/minecraft/mc-addons/cobblemon-rlm)
+    secrets:
+      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
