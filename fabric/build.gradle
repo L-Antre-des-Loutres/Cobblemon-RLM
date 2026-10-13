@@ -1,0 +1,33 @@
+plugins {
+    id 'fabric-loom'
+    // Enables Loom's Kotlin metadata remapper for Cobblemon's reflection in dev runs.
+    id 'org.jetbrains.kotlin.jvm'
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${minecraft_version}"
+    mappings loom.officialMojangMappings()
+    modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}"
+    modRuntimeOnly "maven.modrinth:cobblemon:${cobblemon_fabric_version_id}"
+    modRuntimeOnly "net.fabricmc:fabric-language-kotlin:${fabric_kotlin_version}"
+
+    // Development only; no dependency is embedded in the distributed RLM JAR.
+    if (providers.gradleProperty('withMegaShowdown').getOrElse('false').toBoolean()) {
+        modRuntimeOnly "maven.modrinth:cobblemon-mega-showdown:${mega_showdown_fabric_version_id}"
+        modRuntimeOnly "dev.architectury:architectury-fabric:${architectury_version}"
+        modRuntimeOnly "io.wispforest:accessories-fabric:${accessories_version}"
+    }
+}
+
+loom {
+    runs {
+        client { runDir 'runs/client' }
+        server {
+            runDir 'runs/server'
+            if (providers.gradleProperty('serverPort').isPresent()) {
+                programArgs '--port', providers.gradleProperty('serverPort').get()
+            }
+        }
+    }
+}

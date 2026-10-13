@@ -1,3 +1,10 @@
 /.idea
 temp_adv
 .env
+
+.gradle/
+.migration-cache/
+**/build/
+**/runs/
+**/run/
+*.iml

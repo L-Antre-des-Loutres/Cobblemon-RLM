@@ -1,0 +1,37 @@
+plugins {
+    id 'net.neoforged.moddev'
+}
+
+neoForge {
+    version = neoforge_version
+    runs {
+        client { client() }
+        server {
+            server()
+            programArgument '--nogui'
+            if (providers.gradleProperty('serverPort').isPresent()) {
+                programArguments.addAll '--port', providers.gradleProperty('serverPort').get()
+            }
+        }
+        configureEach { gameDirectory = file("runs/${name}") }
+    }
+    mods {
+        "${mod_id}" { sourceSet sourceSets.main }
+    }
+}
+
+dependencies {
+    runtimeOnly "maven.modrinth:cobblemon:${cobblemon_neoforge_version_id}"
+    runtimeOnly "thedarkcolour:kotlinforforge-neoforge:${kotlin_for_forge_version}"
+    if (providers.gradleProperty('withMegaShowdown').getOrElse('false').toBoolean()) {
+        runtimeOnly "maven.modrinth:cobblemon-mega-showdown:${mega_showdown_neoforge_version_id}"
+        runtimeOnly "dev.architectury:architectury-neoforge:${architectury_version}"
+        runtimeOnly "io.wispforest:accessories-neoforge:${accessories_version}"
+        // Accessories' runtime libraries are not nested in its development artifact.
+        additionalRuntimeClasspath 'blue.endless:jankson:1.2.2'
+        additionalRuntimeClasspath 'io.wispforest:endec:0.1.5.1'
+        additionalRuntimeClasspath 'io.wispforest.endec:gson:0.1.3.1'
+        additionalRuntimeClasspath 'io.wispforest.endec:jankson:0.1.3.1'
+        additionalRuntimeClasspath 'io.wispforest.endec:netty:0.1.2'
+    }
+}
