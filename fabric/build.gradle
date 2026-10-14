@@ -18,6 +18,9 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}"
     modRuntimeOnly "maven.modrinth:cobblemon:${cobblemon_fabric_version_id}"
     modRuntimeOnly "net.fabricmc:fabric-language-kotlin:${fabric_kotlin_version}"
+    if (providers.gradleProperty('withCobblemonTrainers').getOrElse('false').toBoolean()) {
+        modLocalRuntime "maven.modrinth:cobblemon-trainers-rerebleue:${cobblemon_trainers_fabric_version_id}"
+    }
     // JEI is available in dev runs without becoming a published dependency.
     modLocalRuntime("mezz.jei:jei-${minecraft_version}-fabric:${jei_version}") {
         // The complete mod JAR already contains its API classes.

@@ -109,3 +109,5 @@ utilise cette image au commit de la release via une URL publique GitHub. Pour un
 fournir `avatar-url` avec une URL d'image accessible à Discord.
 `embed-color` permet de changer la couleur (entier RGB,
 `16753920` par défaut, soit `#FFA500`).
+
+Cobblemon Trainers (Modrinth : khlinTrc) est aussi déclaré optionnel dans les publications Modrinth et les métadonnées Fabric/NeoForge. Les cinq dresseurs RLM utilisent les gemmes du mod via leurs identifiants complets.
