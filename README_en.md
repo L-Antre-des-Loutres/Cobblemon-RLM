@@ -121,6 +121,8 @@ Both clients use up to 4 GB of memory and automatically open `RLM-Test` when tha
 
 See the [French development documentation](README.md#développement) for resource locations and instructions for adding gems.
 
+Use `/pokegive mawile rlm dragon` for RLM Dragon Mawile and `/pokegive mawile rlm poison` for its Poison variant.
+
 ---
 
 ## 👥 Credits

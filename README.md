@@ -109,6 +109,8 @@ Les cinq gemmes sont de vrais objets dans l'onglet créatif **Cobblemon RLM**. L
 
 Exemple : `/give @s rlm_megas:flammikite`. Lorsque Mega Showdown est installé, les objets reçoivent ses composants par défaut, y compris depuis `/give` et l'onglet créatif. Sans Mega Showdown, les objets restent disponibles mais leurs recettes et leurs effets de méga-évolution sont désactivés.
 
+Pour obtenir Mysdibule RLM Dragon, utilisez `/pokegive mawile rlm dragon`. Pour la variante Poison : `/pokegive mawile rlm poison`.
+
 Les anciennes gemmes en teinture gardent leurs modèles et leurs données existantes ; les nouveaux crafts produisent les vrais objets. Il n'y a pas de conversion automatique des anciens inventaires.
 
 ## Développement
