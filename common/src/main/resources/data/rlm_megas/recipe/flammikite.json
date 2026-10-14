@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "cobblemon:fire_gem"
+  },
+  "base": {
+    "item": "mega_showdown:mega_stone"
+  },
+  "addition": {
+    "item": "cobblemon:electric_gem"
+  },
+  "result": {
+    "id": "rlm_megas:flammikite",
+    "count": 1
+  }
+}

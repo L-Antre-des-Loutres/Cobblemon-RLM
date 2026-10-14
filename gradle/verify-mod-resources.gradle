@@ -1,0 +1,75 @@
+import groovy.json.JsonSlurper
+import java.util.zip.ZipFile
+
+tasks.register('verifyModResources') {
+    group = 'verification'
+    description = 'Checks both installable JARs, item assets and optional recipe conditions.'
+    dependsOn 'collectMods'
+    inputs.dir rootProject.file('common/src/main/resources')
+    inputs.file rootProject.file('common/src/main/java/fr/antredesloutres/cobblemonrlm/item/MegaGem.java')
+
+    doLast {
+        def resources = rootProject.file('common/src/main/resources')
+        def json = new JsonSlurper()
+        def recipes = fileTree(new File(resources, 'data/rlm_megas/recipe')).matching { include '*.json' }
+        def itemIds = recipes.collect { json.parse(it, 'UTF-8').result.id }.toSet()
+        def gems = json.parse(new File(resources, 'data/rlm_megas/tags/item/mega_gems.json'), 'UTF-8').values.toSet()
+        if (itemIds != gems || itemIds.isEmpty()) {
+            throw new GradleException('Mega Gem recipes and item tag disagree.')
+        }
+        def gemSource = rootProject.file('common/src/main/java/fr/antredesloutres/cobblemonrlm/item/MegaGem.java').getText('UTF-8')
+        itemIds.each { id ->
+            def path = id.split(':', 2)[1]
+            if (!gemSource.contains("(\"${path}\")")) {
+                throw new GradleException("No shared item registration for ${id}")
+            }
+            def model = json.parse(new File(resources, "assets/rlm_megas/models/item/${path}.json"), 'UTF-8')
+            def namespaceAndPath = model.textures.layer0.split(':', 2)
+            if (!new File(resources, "assets/${namespaceAndPath[0]}/textures/${namespaceAndPath[1]}.png").isFile()) {
+                throw new GradleException("Missing texture for ${id}")
+            }
+            ['fr_fr', 'en_us'].each { locale ->
+                def lang = json.parse(new File(resources, "assets/rlm_megas/lang/${locale}.json"), 'UTF-8')
+                if (!lang["item.rlm_megas.${path}"] || !lang["item.rlm_megas.${path}.description"]) {
+                    throw new GradleException("Missing ${locale} translation for ${id}")
+                }
+            }
+        }
+
+        ['fabric', 'neoforge'].each { loader ->
+            def jarFile = layout.buildDirectory.file("libs/cobblemon-rlm-${loader}-${project.version}.jar").get().asFile
+            new ZipFile(jarFile).withCloseable { jar ->
+                def metadataPath = loader == 'fabric' ? 'fabric.mod.json' : 'META-INF/neoforge.mods.toml'
+                if (!jar.getEntry(metadataPath) || !jar.getEntry("fr/antredesloutres/cobblemonrlm/${loader}/CobblemonRlm${loader == 'fabric' ? 'Fabric' : 'NeoForge'}.class")) {
+                    throw new GradleException("Missing ${loader} metadata or entrypoint")
+                }
+                def otherMetadata = loader == 'fabric' ? 'META-INF/neoforge.mods.toml' : 'fabric.mod.json'
+                if (jar.getEntry(otherMetadata) || jar.getEntry('META-INF/mods.toml')) {
+                    throw new GradleException("Wrong loader metadata in ${jarFile.name}")
+                }
+                fileTree(resources).files.each { original ->
+                    def path = resources.toPath().relativize(original.toPath()).toString().replace('\\', '/')
+                    def entry = jar.getEntry(path)
+                    if (!entry) {
+                        throw new GradleException("Missing resource in ${jarFile.name}: ${path}")
+                    }
+                    byte[] packaged = jar.getInputStream(entry).withCloseable { it.readAllBytes() }
+                    if (path.startsWith('data/rlm_megas/recipe/')) {
+                        def recipe = json.parseText(new String(packaged, 'UTF-8'))
+                        def sourceRecipe = json.parse(original, 'UTF-8')
+                        def condition = loader == 'fabric' ? recipe.remove('fabric:load_conditions') : recipe.remove('neoforge:conditions')
+                        def expected = loader == 'fabric' ? [[condition: 'fabric:all_mods_loaded', values: ['mega_showdown']]] : [[type: 'neoforge:mod_loaded', modid: 'mega_showdown']]
+                        if (condition != expected || recipe != sourceRecipe || !itemIds.contains(recipe.result.id)) {
+                            throw new GradleException("Invalid optional item recipe: ${loader}/${path}")
+                        }
+                    } else if (!Arrays.equals(original.bytes, packaged)) {
+                        throw new GradleException("Resource changed while packaging ${jarFile.name}: ${path}")
+                    }
+                }
+            }
+            logger.lifecycle("Verified ${jarFile.name}: ${itemIds.size()} registered item recipes and all common resources.")
+        }
+    }
+}
+
+tasks.named('check') { dependsOn 'verifyModResources' }

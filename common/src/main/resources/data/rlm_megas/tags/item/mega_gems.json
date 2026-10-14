@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "rlm_megas:ampharositerlm",
+    "rlm_megas:flammikite",
+    "rlm_megas:mawiliterlmdragon",
+    "rlm_megas:mawiliterlmpoison",
+    "rlm_megas:wamekite"
+  ]
+}

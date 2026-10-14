@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/logos/CobblemonRLM-big.png" alt="Cobblemon RLM Logo" width="600">
+  <img src="common/src/main/resources/assets/logos/CobblemonRLM-big.png" alt="Cobblemon RLM Logo" width="600">
 
   <br><br>
 
@@ -18,10 +18,10 @@
 
 ## 🦦 What is Cobblemon RLM?
 
-**Cobblemon RLM** is a datapack / mod for **[Cobblemon](https://cobblemon.com)** created by the **Antre des Loutres** team.
+**Cobblemon RLM** is a mod for **[Cobblemon](https://cobblemon.com)** created by the **Antre des Loutres** team.
 It enriches your adventure with **original regional forms**, **unique Fakemons**, **new exclusive abilities** and **Mega Evolutions** from the **Royaume de Loutre Mer** (RLM) universe.
 
-> Compatible with **Fabric** and **NeoForge** — available as `.jar` (mod) and `.zip` (datapack).
+> Minecraft **1.21.1**, Java **21**, Cobblemon **1.8.2**. Separate **Fabric** and **NeoForge** `.jar` files.
 
 ---
 
@@ -72,7 +72,7 @@ It enriches your adventure with **original regional forms**, **unique Fakemons**
 
 ### 💎 RLM Mega Evolutions
 
-> *Requires [Cobblemon: Mega Showdown](https://modrinth.com/project/mega-showdown)*
+> *Requires [Cobblemon: Mega Showdown](https://modrinth.com/mod/cobblemon-mega-showdown), version 1.3.0 for Cobblemon 1.8.2 (hotfix). The rest of the mod works without it.*
 
 | Pokémon | Typing | Ability |
 |---------|--------|---------|
@@ -86,18 +86,40 @@ It enriches your adventure with **original regional forms**, **unique Fakemons**
 
 ## 📥 Installation
 
-### As a Mod (recommended)
-1. Download the **`.jar`** file from [Modrinth](https://modrinth.com/project/cobblemon-rlm).
-2. Place it in your **`mods/`** folder.
-3. Launch Minecraft with **Fabric** or **NeoForge**.
+1. Install Minecraft **1.21.1**, **Fabric** or **NeoForge**, **Cobblemon 1.8.2** and its dependencies.
+2. Download the **`.jar` for your loader** from [Modrinth](https://modrinth.com/project/cobblemon-rlm), then place it in **`mods/`** on both client and server.
+3. On Fabric, also install **Fabric API**. The build targets Fabric Loader **0.19.5** and NeoForge **21.1.251**.
+4. Install **Mega Showdown** and its dependencies to use Mega Evolutions and Mega Gem recipes.
 
-### As a Datapack
-1. Download the **`.zip`** file from [Modrinth](https://modrinth.com/project/cobblemon-rlm).
-2. Place it in your world's **`datapacks/`** folder.
+Remove the old datapack ZIP and old wrapper JAR when migrating: their resources are included in the compiled mod. A standalone datapack cannot register these new items.
 
 ### Requirements
 - [**Cobblemon**](https://modrinth.com/mod/cobblemon) (required)
-- [**Cobblemon: Mega Showdown**](https://modrinth.com/project/mega-showdown) (optional, for Mega Evolutions)
+- [**Cobblemon: Mega Showdown**](https://modrinth.com/mod/cobblemon-mega-showdown) (optional, for Mega Evolutions and gem recipes)
+
+### Registered items
+
+The **Cobblemon RLM** creative tab contains `rlm_megas:ampharositerlm`, `rlm_megas:flammikite`, `rlm_megas:mawiliterlmdragon`, `rlm_megas:mawiliterlmpoison` and `rlm_megas:wamekite`. Original textures and smithing ingredients are retained. For example: `/give @s rlm_megas:flammikite`.
+
+When Mega Showdown is installed, its components are applied by default to every new stack, including creative inventory and `/give` items. Without it, the items remain available but their recipes and Mega Evolution effects are disabled. Legacy dye-based gems retain their existing models and data; inventories are not automatically converted.
+
+## Development
+
+Set `JAVA_HOME` to a **JDK 21**, then run `./gradlew build` (Linux/macOS) or `.\gradlew.bat build` (Windows). The two installable mods are collected in `build/libs/`. Versions are configured in [`gradle.properties`](gradle.properties).
+
+`common` contains shared Java code and all datapack resources. `fabric` and `neoforge` register the items and creative tab using their respective loader APIs. Common sources are compiled into each loader's JAR; RLM does not require Architectury. Do not install the common module JAR.
+
+Run `./gradlew :fabric:runClient` or `./gradlew :neoforge:runClient` for development. Cobblemon and Mega Showdown are loaded by default; use `-PwithMegaShowdown=false` to test without Mega Showdown. Both modules also provide `runServer`. Development dependencies are not embedded in the distributed mods.
+
+**JEI 19.27.0.340** is loaded by default in both Fabric and NeoForge development environments to browse items and recipes. This version supports the project's Loom 1.11.x toolchain. Its version is configured through `jei_version` in `gradle.properties`. Restart the game after adding or updating JEI.
+
+### Launch clients in IntelliJ IDEA
+
+Open the project root as a Gradle project, select the Gradle wrapper and JDK 21, then reload the Gradle project. Select **RLM - Client Fabric** or **RLM - Client NeoForge** and click **Run ▶**. These shared configurations in [`.run/`](.run) execute the corresponding Gradle `runClient` task with output in IntelliJ's Run window. You can also launch `runClient` directly from the Gradle tool window.
+
+Both clients use up to 4 GB of memory and automatically open `RLM-Test` when that save exists. Otherwise, they open the main menu. Add `-PquickPlayWorld=` to the Gradle arguments to open the main menu explicitly.
+
+See the [French development documentation](README.md#développement) for resource locations and instructions for adding gems.
 
 ---
 

@@ -1,0 +1,13 @@
+{
+  "item.rlm_megas.ampharositerlm": "Ampharosite RLM",
+  "item.rlm_megas.ampharositerlm.description": "Allows Ampharos (RLM) to Mega Evolve into Mega Ampharos (RLM).",
+  "item.rlm_megas.flammikite": "Flammikite",
+  "item.rlm_megas.flammikite.description": "Allows Flammiko to Mega Evolve into Mega Flammiko.",
+  "item.rlm_megas.mawiliterlmdragon": "Mawilite RLM (Dragon)",
+  "item.rlm_megas.mawiliterlmdragon.description": "Allows Mawile (Dragon) to Mega Evolve into Mega Mawile (Dragon).",
+  "item.rlm_megas.mawiliterlmpoison": "Mawilite RLM (Poison)",
+  "item.rlm_megas.mawiliterlmpoison.description": "Allows Mawile (Poison) to Mega Evolve into Mega Mawile (Poison).",
+  "item.rlm_megas.wamekite": "Wamekite",
+  "item.rlm_megas.wamekite.description": "Allows Wamek to Mega Evolve into Mega Wamek.",
+  "itemGroup.adl_cobblemon_rlm.rlm": "Cobblemon RLM"
+}

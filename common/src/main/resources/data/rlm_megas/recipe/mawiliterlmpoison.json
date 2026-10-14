@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "cobblemon:poison_gem"
+  },
+  "base": {
+    "item": "mega_showdown:mega_stone"
+  },
+  "addition": {
+    "item": "cobblemon:fairy_gem"
+  },
+  "result": {
+    "id": "rlm_megas:mawiliterlmpoison",
+    "count": 1
+  }
+}
