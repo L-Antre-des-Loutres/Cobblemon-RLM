@@ -12,6 +12,17 @@ Les titres portent les suffixes `(fabric)` et `(neoforge)`. Chaque fichier est c
 avec Gradle ; aucune archive n'est simplement renommée en JAR. Le ZIP datapack n'est
 plus publié, car il ne peut pas déclarer les vrais objets de méga-gemmes.
 
+Avant chaque publication, le workflow exécute le `build` racine avec la version de la
+release. Ce contrôle compile les deux chargeurs et vérifie leurs métadonnées, toutes
+les ressources communes, les cinq recettes et leurs conditions de présence de Mega
+Showdown. Une erreur dans ces contrôles empêche l'étape de publication.
+
+Le projet CurseForge `1449941` est actuellement classé **Addons / Resource Packs**.
+Avant de publier cette migration comme mod, faire corriger sa classification auprès
+de CurseForge ou utiliser un projet de classe **Mods**, puis mettre à jour son
+identifiant dans `publish.yml`. La publication distante n'a pas été testée pendant
+la migration.
+
 Le workflow `workflows/build.yml` compile les deux mods à chaque push et pull request,
 puis conserve les JAR comme artefacts GitHub Actions.
 

@@ -45,12 +45,10 @@ jobs:
               env.write(f'VERSION={version}\nRELEASE_TITLE={title}\n')
           PY
 
-      - name: Build mod
-        env:
-          LOADER: ${{ matrix.loader }}
+      - name: Build and verify both mods before publishing
         run: |
           chmod +x gradlew
-          ./gradlew ":${LOADER}:build" "-Prelease_version=${VERSION}" --no-daemon
+          ./gradlew build "-Prelease_version=${VERSION}" --no-daemon
 
       - name: Save built mod
         uses: actions/upload-artifact@v4

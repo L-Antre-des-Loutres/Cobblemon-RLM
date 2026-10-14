@@ -109,7 +109,15 @@ Set `JAVA_HOME` to a **JDK 21**, then run `./gradlew build` (Linux/macOS) or `.\
 
 `common` contains shared Java code and all datapack resources. `fabric` and `neoforge` register the items and creative tab using their respective loader APIs. Common sources are compiled into each loader's JAR; RLM does not require Architectury. Do not install the common module JAR.
 
-Run `./gradlew :fabric:runClient` or `./gradlew :neoforge:runClient` for development. Add `-PwithMegaShowdown=true` to load Mega Showdown and its dependencies. Both modules also provide `runServer`. Development dependencies are not embedded in the distributed mods.
+Run `./gradlew :fabric:runClient` or `./gradlew :neoforge:runClient` for development. Cobblemon and Mega Showdown are loaded by default; use `-PwithMegaShowdown=false` to test without Mega Showdown. Both modules also provide `runServer`. Development dependencies are not embedded in the distributed mods.
+
+**JEI 19.27.0.340** is loaded by default in both Fabric and NeoForge development environments to browse items and recipes. This version supports the project's Loom 1.11.x toolchain. Its version is configured through `jei_version` in `gradle.properties`. Restart the game after adding or updating JEI.
+
+### Launch clients in IntelliJ IDEA
+
+Open the project root as a Gradle project, select the Gradle wrapper and JDK 21, then reload the Gradle project. Select **RLM - Client Fabric** or **RLM - Client NeoForge** and click **Run ▶**. These shared configurations in [`.run/`](.run) execute the corresponding Gradle `runClient` task with output in IntelliJ's Run window. You can also launch `runClient` directly from the Gradle tool window.
+
+Both clients use up to 4 GB of memory and automatically open `RLM-Test` when that save exists. Otherwise, they open the main menu. Add `-PquickPlayWorld=` to the Gradle arguments to open the main menu explicitly.
 
 See the [French development documentation](README.md#développement) for resource locations and instructions for adding gems.
 
