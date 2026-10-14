@@ -1,0 +1,57 @@
+plugins {
+    id 'net.neoforged.moddev'
+}
+
+configurations {
+    localRuntime {
+        canBeConsumed = false
+        canBeResolved = false
+    }
+    runtimeClasspath.extendsFrom localRuntime
+}
+
+neoForge {
+    version = neoforge_version
+    runs {
+        client {
+            client()
+            programArguments.addAll '--username', 'RLM_Test'
+            def testWorld = file('runs/client/saves/RLM-Test/level.dat').isFile() ? 'RLM-Test' : ''
+            def quickPlayWorld = providers.gradleProperty('quickPlayWorld').getOrElse(testWorld)
+            if (!quickPlayWorld.isEmpty()) {
+                programArguments.addAll '--quickPlaySingleplayer', quickPlayWorld
+            }
+        }
+        server {
+            server()
+            programArgument '--nogui'
+            if (providers.gradleProperty('serverPort').isPresent()) {
+                programArguments.addAll '--port', providers.gradleProperty('serverPort').get()
+            }
+        }
+        configureEach { gameDirectory = file("runs/${name}") }
+    }
+    mods {
+        "${mod_id}" { sourceSet sourceSets.main }
+    }
+}
+
+tasks.named('runClient') {
+    minHeapSize = '1G'
+    maxHeapSize = '4G'
+}
+
+dependencies {
+    runtimeOnly "maven.modrinth:cobblemon:${cobblemon_neoforge_version_id}"
+    runtimeOnly "thedarkcolour:kotlinforforge-neoforge:${kotlin_for_forge_version}"
+    // JEI is available in dev runs without becoming a published dependency.
+    localRuntime("mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}") {
+        // Avoid loading the bundled API a second time as a separate Java module.
+        transitive = false
+    }
+    if (providers.gradleProperty('withMegaShowdown').getOrElse('false').toBoolean()) {
+        runtimeOnly "maven.modrinth:cobblemon-mega-showdown:${mega_showdown_neoforge_version_id}"
+        runtimeOnly "dev.architectury:architectury-neoforge:${architectury_version}"
+        runtimeOnly "io.wispforest:accessories-neoforge:${accessories_version}"
+    }
+}

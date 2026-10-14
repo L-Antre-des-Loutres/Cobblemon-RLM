@@ -1,100 +1,95 @@
-name: Publish to Modrinth and CurseForge
+name: Publish Fabric and NeoForge mods
 
 on:
   release:
     types: [published]
 
+permissions:
+  contents: read
+
 jobs:
   publish:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        loader: [fabric, neoforge]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Build Datapack/Mod ZIP & JAR
+      - name: Set up Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Prepare release metadata
+        env:
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+          RELEASE_NAME: ${{ github.event.release.name }}
         run: |
-          VERSION="${{ github.event.release.tag_name }}"
-          if [ -z "$VERSION" ]; then
-            VERSION="${{ github.ref_name }}"
-          fi
-          VERSION="${VERSION#v}"
-          
-          # Extract the clean title (remove 'v1.5.5:' or similar prefix)
-          RAW_TITLE="${{ github.event.release.name || github.ref_name }}"
-          if [[ "$RAW_TITLE" == *":"* ]]; then
-            CLEAN_TITLE="${RAW_TITLE#*:}"
-            CLEAN_TITLE=$(echo "$CLEAN_TITLE" | xargs) # Trim spaces
-          else
-            CLEAN_TITLE="$RAW_TITLE"
-          fi
-          
-          # Build ZIP
-          zip -r "cobblemon-rlm-${VERSION}.zip" assets data META-INF fabric.mod.json pack.mcmeta cobblemon_rlm_pack.png README.md
-          
-          # Build JAR with a tiny difference to change the file hash
-          echo "mod_version" > .is_mod
-          zip -r "cobblemon-rlm-${VERSION}.jar" assets data META-INF fabric.mod.json pack.mcmeta cobblemon_rlm_pack.png README.md .is_mod
-          
-          echo "VERSION=${VERSION}" >> $GITHUB_ENV
-          echo "RELEASE_TITLE=${CLEAN_TITLE}" >> $GITHUB_ENV
+          python3 - <<'PY'
+          import os
+          import re
+          version = os.environ['RELEASE_TAG'].removeprefix('v')
+          title = os.environ.get('RELEASE_NAME') or os.environ['RELEASE_TAG']
+          title = re.sub(r'^v?\d[^:]*:\s*', '', title).strip()
+          if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9.+_-]*', version):
+              raise ValueError('Invalid release version')
+          title = title.replace('\r', ' ').replace('\n', ' ')
+          with open(os.environ['GITHUB_ENV'], 'a', encoding='utf-8') as env:
+              env.write(f'VERSION={version}\nRELEASE_TITLE={title}\n')
+          PY
 
-      - name: Publish JAR to Modrinth and CurseForge
+      - name: Build and verify both mods before publishing
+        run: |
+          chmod +x gradlew
+          ./gradlew build "-Prelease_version=${VERSION}" --no-daemon
+
+      - name: Save built mod
+        uses: actions/upload-artifact@v4
+        with:
+          name: cobblemon-rlm-${{ matrix.loader }}-${{ env.VERSION }}
+          path: ${{ matrix.loader }}/build/libs/cobblemon-rlm-${{ matrix.loader }}-${{ env.VERSION }}.jar
+          if-no-files-found: error
+
+      - name: Publish mod to Modrinth and CurseForge
         uses: Kir-Antipov/mc-publish@v3.3
         with:
           modrinth-id: GC58bFHM
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           curseforge-id: 1449941
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
-          files: "cobblemon-rlm-${{ env.VERSION }}.jar"
-          name: "${{ env.RELEASE_TITLE }}"
-          curseforge-name: "${{ env.RELEASE_TITLE }} (JAR)"
-          version: "${{ env.VERSION }}-mod"
+          files: '${{ matrix.loader }}/build/libs/cobblemon-rlm-${{ matrix.loader }}-${{ env.VERSION }}.jar'
+          name: '${{ env.RELEASE_TITLE }} (${{ matrix.loader }})'
+          version: '${{ env.VERSION }}-${{ matrix.loader }}'
           game-versions: 1.21.1
           game-version-filter: any
           changelog: ${{ github.event.release.body }}
-          version-type: release
-          loaders: |
-            fabric
-            neoforge
+          version-type: ${{ github.event.release.prerelease && 'beta' || 'release' }}
+          loaders: ${{ matrix.loader }}
           dependencies: |
             MdwFAVRL(required)
+            SszvX85I(optional)
+            ${{ matrix.loader == 'fabric' && 'P7dR8mSH(required)' || '' }}
           curseforge-dependencies: |
             687131(required)
-
-      - name: Wait for Modrinth Database
-        run: sleep 30
-
-      - name: Publish ZIP to Modrinth and CurseForge
-        uses: Kir-Antipov/mc-publish@v3.3
-        with:
-          modrinth-id: GC58bFHM
-          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-          curseforge-id: 1449941
-          curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
-          files: "cobblemon-rlm-${{ env.VERSION }}.zip"
-          name: "${{ env.RELEASE_TITLE }}"
-          curseforge-name: "${{ env.RELEASE_TITLE }} (ZIP)"
-          version: "${{ env.VERSION }}-datapack"
-          game-versions: 1.21.1
-          game-version-filter: any
-          changelog: ${{ github.event.release.body }}
-          version-type: release
-          loaders: |
-            datapack
-          curseforge-loaders: |
-            fabric
-            neoforge
-          dependencies: |
-            MdwFAVRL(required)
-          curseforge-dependencies: |
-            687131(required)
+            1189523(optional)
+            ${{ matrix.loader == 'fabric' && '306612(required)' || '' }}
 
   notify-discord:
     needs: publish
     uses: ./.github/workflows/discord-release.yml
     with:
       logo-path: cobblemon_rlm_pack.png
-      release-details: Minecraft 1.21.1 · Fabric / NeoForge · JAR (mod) et ZIP (datapack)
+      release-details: |
+        Minecraft **1.21.1** · Cobblemon **1.8.2**
+        **Fabric** / **NeoForge** · Un **JAR** par chargeur
+        Mega Showdown optionnel
       download-links: |
         [Modrinth](https://modrinth.com/project/cobblemon-rlm)
         [CurseForge](https://www.curseforge.com/minecraft/mc-addons/cobblemon-rlm)

@@ -1,0 +1,40 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "LicenseRef-All-Rights-Reserved"
+
+[[mods]]
+modId = "adl_cobblemon_rlm"
+version = "${version}"
+displayName = "Cobblemon RLM"
+authors = "Antre des Loutres (Azertor & RereBleue)"
+description = "Regional forms, Fakemon and craftable RLM Mega Gems for Cobblemon."
+logoFile = "cobblemon_rlm_pack.png"
+displayURL = "https://modrinth.com/project/cobblemon-rlm"
+
+[[dependencies.adl_cobblemon_rlm]]
+modId = "neoforge"
+type = "required"
+versionRange = "[${neoforge_version},)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.adl_cobblemon_rlm]]
+modId = "minecraft"
+type = "required"
+versionRange = "[${minecraft_version}]"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.adl_cobblemon_rlm]]
+modId = "cobblemon"
+type = "required"
+versionRange = "[${cobblemon_version},)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.adl_cobblemon_rlm]]
+modId = "mega_showdown"
+type = "optional"
+versionRange = "[1.3.0,)"
+ordering = "AFTER"
+side = "BOTH"

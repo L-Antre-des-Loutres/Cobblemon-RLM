@@ -1,0 +1,68 @@
+plugins {
+    id 'fabric-loom'
+    // Enables Loom's Kotlin metadata remapper for Cobblemon's reflection in dev runs.
+    id 'org.jetbrains.kotlin.jvm'
+}
+
+configurations {
+    cobblemonServerLibraries {
+        canBeResolved = true
+        canBeConsumed = false
+    }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${minecraft_version}"
+    mappings loom.officialMojangMappings()
+    modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}"
+    modRuntimeOnly "maven.modrinth:cobblemon:${cobblemon_fabric_version_id}"
+    modRuntimeOnly "net.fabricmc:fabric-language-kotlin:${fabric_kotlin_version}"
+    // JEI is available in dev runs without becoming a published dependency.
+    modLocalRuntime("mezz.jei:jei-${minecraft_version}-fabric:${jei_version}") {
+        // The complete mod JAR already contains its API classes.
+        transitive = false
+    }
+    // Loom does not expose Cobblemon's nested non-mod libraries on the dev classpath.
+    runtimeOnly 'org.graalvm.sdk:graal-sdk:22.3.0'
+    runtimeOnly 'org.graalvm.js:js:22.3.0'
+    // Minecraft marks ICU as client-only, but Cobblemon's JS engine needs it on servers.
+    cobblemonServerLibraries 'com.ibm.icu:icu4j:71.1'
+    runtimeOnly 'org.mongodb:mongodb-driver-sync:4.10.2'
+
+    // Development only; no dependency is embedded in the distributed RLM JAR.
+    if (providers.gradleProperty('withMegaShowdown').getOrElse('false').toBoolean()) {
+        modRuntimeOnly "maven.modrinth:cobblemon-mega-showdown:${mega_showdown_fabric_version_id}"
+        modRuntimeOnly "dev.architectury:architectury-fabric:${architectury_version}"
+        modRuntimeOnly "io.wispforest:accessories-fabric:${accessories_version}"
+    }
+}
+
+tasks.named('runServer') {
+    classpath configurations.cobblemonServerLibraries
+}
+
+tasks.named('runClient') {
+    minHeapSize = '1G'
+    maxHeapSize = '4G'
+}
+
+loom {
+    runs {
+        client {
+            runDir 'runs/client'
+            programArgs '--username', 'RLM_Test'
+            def testWorld = file('runs/client/saves/RLM-Test/level.dat').isFile() ? 'RLM-Test' : ''
+            def quickPlayWorld = providers.gradleProperty('quickPlayWorld').getOrElse(testWorld)
+            if (!quickPlayWorld.isEmpty()) {
+                programArgs '--quickPlaySingleplayer', quickPlayWorld
+            }
+        }
+        server {
+            runDir 'runs/server'
+            if (providers.gradleProperty('serverPort').isPresent()) {
+                programArgs '--port', providers.gradleProperty('serverPort').get()
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "cobblemon:bug_gem"
+  },
+  "base": {
+    "item": "mega_showdown:mega_stone"
+  },
+  "addition": {
+    "item": "cobblemon:dragon_gem"
+  },
+  "result": {
+    "id": "rlm_megas:wamekite",
+    "count": 1
+  }
+}

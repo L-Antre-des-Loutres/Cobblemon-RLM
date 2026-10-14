@@ -1,0 +1,13 @@
+{
+  "item.rlm_megas.ampharositerlm": "Pharampite RLM",
+  "item.rlm_megas.ampharositerlm.description": "Permet à Pharamp (RLM) de méga-évoluer en Méga-Pharamp (RLM).",
+  "item.rlm_megas.flammikite": "Flammikite",
+  "item.rlm_megas.flammikite.description": "Permet à Flammiko de méga-évoluer en Méga-Flammiko.",
+  "item.rlm_megas.mawiliterlmdragon": "Mysdibulite RLM (Dragon)",
+  "item.rlm_megas.mawiliterlmdragon.description": "Permet à Mysdibule (Dragon) de méga-évoluer en Méga-Mysdibule (Dragon).",
+  "item.rlm_megas.mawiliterlmpoison": "Mysdibulite RLM (Poison)",
+  "item.rlm_megas.mawiliterlmpoison.description": "Permet à Mysdibule (Poison) de méga-évoluer en Méga-Mysdibule (Poison).",
+  "item.rlm_megas.wamekite": "Guerriekite",
+  "item.rlm_megas.wamekite.description": "Permet à Guerriek de méga-évoluer en Méga-Guerriek.",
+  "itemGroup.adl_cobblemon_rlm.rlm": "Cobblemon RLM"
+}

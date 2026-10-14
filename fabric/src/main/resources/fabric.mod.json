@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "adl_cobblemon_rlm",
+  "version": "${version}",
+  "name": "Cobblemon RLM",
+  "description": "Regional forms, Fakemon and craftable RLM Mega Gems for Cobblemon.",
+  "authors": ["Antre des Loutres (Azertor & RereBleue)"],
+  "contact": {
+    "homepage": "https://modrinth.com/project/cobblemon-rlm",
+    "sources": "https://github.com/L-Antre-des-Loutres/Cobblemon-RLM"
+  },
+  "license": "LicenseRef-All-Rights-Reserved",
+  "icon": "cobblemon_rlm_pack.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["fr.antredesloutres.cobblemonrlm.fabric.CobblemonRlmFabric"]
+  },
+  "depends": {
+    "fabricloader": ">=${fabric_loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}",
+    "java": ">=21",
+    "cobblemon": ">=${cobblemon_version}"
+  },
+  "suggests": {
+    "mega_showdown": ">=1.3.0"
+  }
+}

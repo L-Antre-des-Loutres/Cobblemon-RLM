@@ -1,0 +1,87 @@
+import groovy.json.JsonOutput
+import groovy.json.JsonSlurper
+
+plugins {
+    id 'base'
+    id 'fabric-loom' version '1.11.8' apply false
+    id 'net.neoforged.moddev' version '2.0.147' apply false
+    id 'org.jetbrains.kotlin.jvm' version '2.4.21' apply false
+}
+
+allprojects {
+    group = rootProject.mod_group
+    version = providers.gradleProperty('release_version').getOrElse(rootProject.mod_version)
+}
+
+subprojects {
+    apply plugin: 'java-library'
+
+    base.archivesName = "cobblemon-rlm-${project.name}"
+    java {
+        toolchain.languageVersion = JavaLanguageVersion.of(21)
+        withSourcesJar()
+    }
+    tasks.withType(JavaCompile).configureEach {
+        options.encoding = 'UTF-8'
+        options.release = 21
+    }
+
+    repositories {
+        mavenCentral()
+        maven { url = 'https://maven.fabricmc.net/' }
+        maven { url = 'https://maven.neoforged.net/releases' }
+        maven {
+            url = 'https://maven.blamejared.com/'
+            content { includeGroup 'mezz.jei' }
+        }
+        maven {
+            url = 'https://api.modrinth.com/maven'
+            content { includeGroup 'maven.modrinth' }
+        }
+        maven { url = 'https://maven.architectury.dev/' }
+        maven { url = 'https://maven.wispforest.io/releases' }
+        maven {
+            url = 'https://maven.su5ed.dev/releases'
+            content { includeGroupAndSubgroups 'org.sinytra' }
+        }
+        maven { url = 'https://thedarkcolour.github.io/KotlinForForge/' }
+    }
+
+    if (project.name != 'common') {
+        // Compile the common sources with each loader's Minecraft classes/mappings.
+        sourceSets.main.java.srcDir rootProject.file('common/src/main/java')
+        sourceSets.main.resources.srcDir rootProject.file('common/src/main/resources')
+
+        tasks.named('processResources', ProcessResources) {
+            def metadata = [version: project.version, minecraft_version: minecraft_version,
+                            cobblemon_version: cobblemon_version, fabric_loader_version: fabric_loader_version,
+                            neoforge_version: neoforge_version]
+            inputs.properties metadata
+            filesMatching(['fabric.mod.json', 'META-INF/neoforge.mods.toml']) { expand metadata }
+            // A missing optional mod must skip the recipes before their ingredients are decoded.
+            doLast {
+                fileTree(destinationDir).matching { include 'data/rlm_megas/recipe/*.json' }.each { recipeFile ->
+                    def recipe = new JsonSlurper().parse(recipeFile, 'UTF-8')
+                    if (project.name == 'fabric') {
+                        recipe['fabric:load_conditions'] = [[condition: 'fabric:all_mods_loaded', values: ['mega_showdown']]]
+                    } else {
+                        recipe['neoforge:conditions'] = [[type: 'neoforge:mod_loaded', modid: 'mega_showdown']]
+                    }
+                    recipeFile.setText(JsonOutput.prettyPrint(JsonOutput.toJson(recipe)) + '\n', 'UTF-8')
+                }
+            }
+        }
+    }
+}
+
+tasks.register('collectMods', Sync) {
+    dependsOn ':fabric:remapJar', ':neoforge:jar'
+    from project(':fabric').tasks.named('remapJar').flatMap { it.archiveFile }
+    from project(':neoforge').tasks.named('jar').flatMap { it.archiveFile }
+    into layout.buildDirectory.dir('libs')
+}
+
+tasks.named('assemble') { dependsOn 'collectMods' }
+tasks.named('check') { dependsOn ':common:check', ':fabric:check', ':neoforge:check' }
+
+apply from: 'gradle/verify-mod-resources.gradle'
