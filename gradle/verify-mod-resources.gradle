@@ -11,6 +11,32 @@ tasks.register('verifyModResources') {
     doLast {
         def resources = rootProject.file('common/src/main/resources')
         def json = new JsonSlurper()
+        // Cobblemon 1.8 follows model locators; the old calculated seat offsets are unused.
+        fileTree(new File(resources, 'data/cobblemon/species')).matching { include '**/*.json' }.each { speciesFile ->
+            def species = json.parse(speciesFile, 'UTF-8')
+            if (!species.riding) return
+            def seats = species.riding.seats
+            if (!seats || seats.any { !it.locator || it.containsKey('offset') || it.containsKey('poseOffsets') }) {
+                throw new GradleException("${speciesFile.name} must use explicit Cobblemon 1.8 seat locators.")
+            }
+            def speciesId = "cobblemon:${speciesFile.name - '.json'}"
+            def models = fileTree(new File(resources, 'assets/cobblemon/bedrock/pokemon/resolvers'))
+                .matching { include '**/*.json' }.collect { json.parse(it, 'UTF-8') }
+                .findAll { it.species == speciesId }.collectMany { it.variations }
+                .findAll { it.model }.collect { it.model }.toSet()
+            if (!models) throw new GradleException("No riding models found for ${speciesId}")
+            models.each { modelId ->
+                def (namespace, modelName) = modelId.split(':', 2)
+                def files = fileTree(new File(resources, "assets/${namespace}/bedrock/pokemon/models"))
+                    .matching { include "**/${modelName}.json" }.files
+                if (files.size() != 1) throw new GradleException("Cannot resolve riding model ${modelId}")
+                def geometry = json.parse(files.first(), 'UTF-8')['minecraft:geometry']
+                def locators = geometry.collectMany { it.bones }.collectMany { (it.locators ?: [:]).keySet() }.toSet()
+                if (!locators.containsAll(seats.collect { it.locator })) {
+                    throw new GradleException("${modelId} is missing a seat locator for ${speciesId}")
+                }
+            }
+        }
         // Species additions can replace each other's feature lists, including Mega Showdown's additions.
         ['mawile', 'delphox'].each { species ->
             def forms = json.parse(new File(resources, "data/cobblemon/species_additions/${species}.json"), 'UTF-8').forms
