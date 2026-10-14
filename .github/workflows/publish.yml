@@ -91,6 +91,7 @@ jobs:
           dependencies: |
             MdwFAVRL(required)
             SszvX85I(optional)
+            khlinTrc(optional)
             ${{ matrix.loader == 'fabric' && 'P7dR8mSH(required)' || '' }}
           curseforge-dependencies: |
             687131(required)

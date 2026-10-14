@@ -44,6 +44,9 @@ tasks.named('runClient') {
 dependencies {
     runtimeOnly "maven.modrinth:cobblemon:${cobblemon_neoforge_version_id}"
     runtimeOnly "thedarkcolour:kotlinforforge-neoforge:${kotlin_for_forge_version}"
+    if (providers.gradleProperty('withCobblemonTrainers').getOrElse('false').toBoolean()) {
+        localRuntime "maven.modrinth:cobblemon-trainers-rerebleue:${cobblemon_trainers_neoforge_version_id}"
+    }
     // JEI is available in dev runs without becoming a published dependency.
     localRuntime("mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}") {
         // Avoid loading the bundled API a second time as a separate Java module.

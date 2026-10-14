@@ -38,3 +38,10 @@ type = "optional"
 versionRange = "[1.3.0,)"
 ordering = "AFTER"
 side = "BOTH"
+
+[[dependencies.adl_cobblemon_rlm]]
+modId = "cobblemon_trainers"
+type = "optional"
+versionRange = "[0,)"
+ordering = "AFTER"
+side = "BOTH"

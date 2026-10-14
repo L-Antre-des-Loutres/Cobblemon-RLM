@@ -1,0 +1,27 @@
+{
+  "name": "trainer.cobblemonrlm.mega_wamek.name",
+  "battle": {
+    "format": "singles_50",
+    "level": 50,
+    "difficulty": 5,
+    "gimmicks": [
+      "mega"
+    ]
+  },
+  "messages": {
+    "greeting": "trainer.cobblemonrlm.mega_wamek.greeting",
+    "start": "trainer.cobblemonrlm.mega_wamek.start",
+    "win": "trainer.cobblemonrlm.mega_wamek.win",
+    "lose": "trainer.cobblemonrlm.mega_wamek.lose"
+  },
+  "location": {
+    "biome": "minecraft:plains"
+  },
+  "team": [
+    "Wamek @ rlm_megas:wamekite\nAbility: Inner Focus\nEVs: 4 HP / 252 Atk / 252 Spe\nAdamant Nature\n- Close Combat\n- X-Scissor\n- Swords Dance\n- Giga Impact"
+  ],
+  "skin": {
+    "type": "model",
+    "value": "cobblemon:npc"
+  }
+}

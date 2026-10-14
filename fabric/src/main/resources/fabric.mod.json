@@ -23,6 +23,7 @@
     "cobblemon": ">=${cobblemon_version}"
   },
   "suggests": {
-    "mega_showdown": ">=1.3.0"
+    "mega_showdown": ">=1.3.0",
+    "cobblemon-trainers": "*"
   }
 }

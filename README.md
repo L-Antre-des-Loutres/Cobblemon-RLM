@@ -349,7 +349,7 @@ Pour lancer un client de développement :
 
 Sur Windows, remplacez `./gradlew` par `.\gradlew.bat`. Les tâches `:fabric:runServer` et `:neoforge:runServer` sont également disponibles.
 
-Ces environnements chargent **Cobblemon**, **Mega Showdown** et **JEI 19.27.0.340** par défaut. Utilisez `-PwithMegaShowdown=false` pour tester sans Mega Showdown. Ces dépendances de développement ne sont pas incluses dans les JAR distribués. La version de JEI est définie par `jei_version` ; redémarrez le jeu après sa modification.
+Ces environnements chargent **Cobblemon**, **Mega Showdown**, **Cobblemon Trainers 1.1.0** et **JEI 19.27.0.340** par défaut. Utilisez `-PwithCobblemonTrainers=false` pour tester sans les dresseurs. Kotlin for Forge 5.12.0 est utilisé sur NeoForge. Utilisez `-PwithMegaShowdown=false` pour tester sans Mega Showdown. Ces dépendances de développement ne sont pas incluses dans les JAR distribués. La version de JEI est définie par `jei_version` ; redémarrez le jeu après sa modification.
 
 Les clients utilisent jusqu'à **4 Go de mémoire** et ouvrent automatiquement la sauvegarde **`RLM-Test`** si elle existe dans le dossier `runs/client/saves/` du module. L'option `-PquickPlayWorld=` permet de revenir au menu principal.
 
@@ -409,3 +409,11 @@ Retrouvez également le projet et son univers sur le [site de l'Antre des Loutre
 </a>
 
 <p align="right"><a href="#readme-top">Retour en haut</a></p>
+
+## Dresseurs et Méga-Gemmes
+
+[Cobblemon Trainers](https://modrinth.com/mod/cobblemon-trainers-rerebleue) est une dépendance optionnelle. Avec ce mod installé, cinq dresseurs apparaissent dans la catégorie « Maîtres des Méga-Gemmes RLM » du Battle Phone. Ils peuvent être appelés dans les plaines ; chacun possède un Pokémon niveau 50 tenant sa gemme RLM : Pharamp RLM, Flammiko, Mysdibule RLM Dragon, Mysdibule RLM Poison ou Guerriek.
+
+Mega Showdown est également nécessaire pour leur Méga-Évolution. Les équipes utilisent les identifiants complets des objets (`@ rlm_megas:flammikite`, par exemple) et `battle.gimmicks: ["mega"]`. Les gemmes RLM existent aussi sans Mega Showdown : elles restent alors tenues, mais aucune Méga-Évolution ne se déclenche.
+
+Pour un test administrateur : `/cobblemontrainers spawn cobblemonrlm:mega_trainers/flammiko`, puis `/cobblemontrainers debugai`. Vérifier en combat la transformation au premier tour. Le support des objets externes est confirmé dans le [parseur de Cobblemon Trainers](https://github.com/matheo-1712/cobblemon-trainers/blob/master/common/src/main/kotlin/matheo1712/cobbletrainers/parser/ShowdownTeamParser.kt) et les conditions sont décrites dans son [guide des gimmicks](https://github.com/matheo-1712/cobblemon-trainers/blob/master/docs/GIMMICKS.md).

@@ -1,7 +1,7 @@
 ({
     name: "Mawilite Rlm Dragon",
     spritenum: 620,
-    megaStone: { "Mawile-dragon": "Mawile-RlmDragon-Mega" },
+    megaStone: { "Mawile-dragon": "Mawile-MegaRlmDragon" },
     itemUser: ["Mawile-dragon"],
     onTakeItem(item, source) {
         return !item.megaStone?.[source.baseSpecies.baseSpecies];

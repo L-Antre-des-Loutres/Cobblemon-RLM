@@ -27,6 +27,24 @@ tasks.register('verifyModResources') {
         def recipes = fileTree(new File(resources, 'data/rlm_megas/recipe')).matching { include '*.json' }
         def itemIds = recipes.collect { json.parse(it, 'UTF-8').result.id }.toSet()
         def gems = json.parse(new File(resources, 'data/rlm_megas/tags/item/mega_gems.json'), 'UTF-8').values.toSet()
+        // Cobblemon generates Showdown names as species + '-' + the declared form name.
+        // Mega Showdown looks up megaStone by the current species.name, then changes to its value.
+        def megaForms = [
+            ampharositerlm: ['Ampharos', 'rlm', 'ampharos_rlm_mega'],
+            flammikite: ['Flammiko', null, 'flammiko_mega'],
+            mawiliterlmdragon: ['Mawile', 'dragon', 'mawile_rlm_dragon_mega'],
+            mawiliterlmpoison: ['Mawile', 'poison', 'mawile_rlm_poison_mega'],
+            wamekite: ['Wamek', null, 'wamek_mega']
+        ]
+        megaForms.each { stone, definition ->
+            def addition = json.parse(new File(resources, "data/rlm_megas/species_additions/${definition[2]}.json"), 'UTF-8')
+            def base = definition[0] + (definition[1] ? "-${definition[1]}" : '')
+            def target = "${definition[0]}-${addition.forms[0].name}"
+            def script = new File(resources, "data/rlm_megas/mega_showdown/showdown/held_items/${stone}.js").getText('UTF-8')
+            if (!script.contains("\"${base}\": \"${target}\"")) {
+                throw new GradleException("${stone} must map ${base} to the declared Mega form ${target}")
+            }
+        }
         if (itemIds != gems || itemIds.isEmpty()) {
             throw new GradleException('Mega Gem recipes and item tag disagree.')
         }

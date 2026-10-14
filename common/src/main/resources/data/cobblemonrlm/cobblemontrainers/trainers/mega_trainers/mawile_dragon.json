@@ -1,0 +1,27 @@
+{
+  "name": "trainer.cobblemonrlm.mega_mawile_dragon.name",
+  "battle": {
+    "format": "singles_50",
+    "level": 50,
+    "difficulty": 5,
+    "gimmicks": [
+      "mega"
+    ]
+  },
+  "messages": {
+    "greeting": "trainer.cobblemonrlm.mega_mawile_dragon.greeting",
+    "start": "trainer.cobblemonrlm.mega_mawile_dragon.start",
+    "win": "trainer.cobblemonrlm.mega_mawile_dragon.win",
+    "lose": "trainer.cobblemonrlm.mega_mawile_dragon.lose"
+  },
+  "location": {
+    "biome": "minecraft:plains"
+  },
+  "team": [
+    "Mawile @ rlm_megas:mawiliterlmdragon\nAspects: rlm dragon\nAbility: Intimidate\nEVs: 4 HP / 252 SpA / 252 Spe\nModest Nature\n- Dragon Pulse\n- Moonblast\n- Flamethrower\n- Protect"
+  ],
+  "skin": {
+    "type": "model",
+    "value": "cobblemon:npc"
+  }
+}
