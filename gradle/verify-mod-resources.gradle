@@ -3,7 +3,7 @@ import java.util.zip.ZipFile
 
 tasks.register('verifyModResources') {
     group = 'verification'
-    description = 'Checks installable JARs, item assets, optional recipes and Mawile form features.'
+    description = 'Checks installable JARs, item assets, optional recipes and regional form features.'
     dependsOn 'collectMods'
     inputs.dir rootProject.file('common/src/main/resources')
     inputs.file rootProject.file('common/src/main/java/fr/antredesloutres/cobblemonrlm/item/MegaGem.java')
@@ -11,16 +11,18 @@ tasks.register('verifyModResources') {
     doLast {
         def resources = rootProject.file('common/src/main/resources')
         def json = new JsonSlurper()
-        // Species additions can replace each other's feature lists. Keep both Mawile variants assigned independently.
-        def mawileForms = json.parse(new File(resources, 'data/cobblemon/species_additions/mawile.json'), 'UTF-8').forms
-        def requiredMawileAspects = mawileForms.collectMany { it.aspects }.toSet()
-        def mawileAssignment = json.parse(new File(resources, 'data/rlm_megas/species_feature_assignments/mawile_rlm.json'), 'UTF-8')
-        def assignedMawileAspects = mawileAssignment.features.collectMany { feature ->
-            def provider = json.parse(new File(resources, "data/cobblemon/species_features/${feature}.json"), 'UTF-8')
-            provider.isAspect ? provider.keys : []
-        }.toSet()
-        if (!mawileAssignment.pokemon.contains('mawile') || !assignedMawileAspects.containsAll(requiredMawileAspects)) {
-            throw new GradleException('Mawile regional forms are missing assigned species features.')
+        // Species additions can replace each other's feature lists, including Mega Showdown's additions.
+        ['mawile', 'delphox'].each { species ->
+            def forms = json.parse(new File(resources, "data/cobblemon/species_additions/${species}.json"), 'UTF-8').forms
+            def requiredAspects = forms.collectMany { it.aspects }.toSet()
+            def assignment = json.parse(new File(resources, "data/rlm_megas/species_feature_assignments/${species}_rlm.json"), 'UTF-8')
+            def assignedAspects = assignment.features.collectMany { feature ->
+                def provider = json.parse(new File(resources, "data/cobblemon/species_features/${feature}.json"), 'UTF-8')
+                provider.isAspect ? provider.keys : []
+            }.toSet()
+            if (!assignment.pokemon.contains(species) || !assignedAspects.containsAll(requiredAspects)) {
+                throw new GradleException("${species} regional forms are missing assigned species features.")
+            }
         }
         def recipes = fileTree(new File(resources, 'data/rlm_megas/recipe')).matching { include '*.json' }
         def itemIds = recipes.collect { json.parse(it, 'UTF-8').result.id }.toSet()

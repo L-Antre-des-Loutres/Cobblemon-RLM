@@ -111,6 +111,8 @@ Exemple : `/give @s rlm_megas:flammikite`. Lorsque Mega Showdown est installé, 
 
 Pour obtenir Mysdibule RLM Dragon, utilisez `/pokegive mawile rlm dragon`. Pour la variante Poison : `/pokegive mawile rlm poison`.
 
+Pour obtenir Goupelin RLM, utilisez `/pokegive delphox rlm` (ou `/pokegive delphox rlm=true`). L'aspect RLM reste disponible avec Mega Showdown installé ; `/pokegive delphox` donne toujours la forme normale.
+
 Les anciennes gemmes en teinture gardent leurs modèles et leurs données existantes ; les nouveaux crafts produisent les vrais objets. Il n'y a pas de conversion automatique des anciens inventaires.
 
 ## Développement

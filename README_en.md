@@ -123,6 +123,8 @@ See the [French development documentation](README.md#développement) for resourc
 
 Use `/pokegive mawile rlm dragon` for RLM Dragon Mawile and `/pokegive mawile rlm poison` for its Poison variant.
 
+Use `/pokegive delphox rlm` (or `/pokegive delphox rlm=true`) for RLM Delphox. Its RLM aspect remains available with Mega Showdown installed; `/pokegive delphox` still gives the normal form.
+
 ---
 
 ## 👥 Credits
