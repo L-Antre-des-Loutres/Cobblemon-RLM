@@ -17,6 +17,8 @@ jobs:
           distribution: temurin
           java-version: '21'
       - uses: gradle/actions/setup-gradle@v4
+      - name: Verify release classification and Discord announcement
+        run: python3 -m unittest discover -s scripts/tests -v
       - name: Build Fabric and NeoForge
         run: |
           chmod +x gradlew

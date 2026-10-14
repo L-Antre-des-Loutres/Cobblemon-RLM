@@ -31,18 +31,34 @@ jobs:
         env:
           RELEASE_TAG: ${{ github.event.release.tag_name }}
           RELEASE_NAME: ${{ github.event.release.name }}
+          RELEASE_PRERELEASE: ${{ github.event.release.prerelease }}
         run: |
           python3 - <<'PY'
           import os
           import re
+
+          def release_type(tag, title, prerelease):
+              markers = set(re.findall(
+                  r'(?<![a-z0-9])(alpha|beta)(?![a-z])',
+                  f"{tag.lower().removeprefix('v')} {title.lower()}",
+              ))
+              if 'alpha' in markers:
+                  return 'alpha'
+              return 'beta' if 'beta' in markers or prerelease else 'release'
+
           version = os.environ['RELEASE_TAG'].removeprefix('v')
           title = os.environ.get('RELEASE_NAME') or os.environ['RELEASE_TAG']
+          version_type = release_type(
+              os.environ['RELEASE_TAG'], title,
+              os.environ.get('RELEASE_PRERELEASE', '').lower() == 'true',
+          )
           title = re.sub(r'^v?\d[^:]*:\s*', '', title).strip()
           if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9.+_-]*', version):
               raise ValueError('Invalid release version')
           title = title.replace('\r', ' ').replace('\n', ' ')
           with open(os.environ['GITHUB_ENV'], 'a', encoding='utf-8') as env:
               env.write(f'VERSION={version}\nRELEASE_TITLE={title}\n')
+              env.write(f'VERSION_TYPE={version_type}\n')
           PY
 
       - name: Build and verify both mods before publishing
@@ -70,7 +86,7 @@ jobs:
           game-versions: 1.21.1
           game-version-filter: any
           changelog: ${{ github.event.release.body }}
-          version-type: ${{ github.event.release.prerelease && 'beta' || 'release' }}
+          version-type: ${{ env.VERSION_TYPE }}
           loaders: ${{ matrix.loader }}
           dependencies: |
             MdwFAVRL(required)

@@ -34,6 +34,34 @@ Configurer les secrets du dépôt dans **Settings > Secrets and variables > Acti
 
 Le numéro de version, le titre et le changelog proviennent de la release GitHub.
 
+## Versions alpha, bêta et stables
+
+Le type publié sur Modrinth et CurseForge est déduit du **tag et du titre de la
+release**, avant le nettoyage du titre :
+
+- un marqueur `alpha` donne une version **alpha** ;
+- sinon, un marqueur `beta` donne une version **bêta**, même si la case GitHub
+  **Set as a pre-release** n'est pas cochée ;
+- sans marqueur, cette case donne une version **bêta** ; sinon, la version est **stable**.
+
+Les marqueurs sont reconnus sans tenir compte de la casse, en préfixe ou en suffixe :
+`beta-1.7.0`, `v1.7.0-beta.1`, `beta1.7.0` ou un titre `[BETA] Nouveaux Pokémon`.
+Les mots comme `alphabet` ou `betamax` ne changent pas le type de publication.
+Si les deux marqueurs sont présents, **alpha** est prioritaire.
+
+L'annonce Discord applique les mêmes règles et indique **Préversion alpha**,
+**Préversion bêta** ou **Release stable**. Le workflow Discord reste autonome
+lorsqu'il est copié dans un autre dépôt.
+
+Cette détection ne modifie pas la case de préversion sur GitHub et ne reclasse pas
+les fichiers déjà publiés sur Modrinth ou CurseForge.
+
+Pour vérifier ces règles localement :
+
+```sh
+python -m unittest discover -s scripts/tests -v
+```
+
 ## Annonces Discord
 
 Après la réussite des publications, `publish.yml` appelle le workflow réutilisable
