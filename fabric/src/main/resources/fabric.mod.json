@@ -24,6 +24,6 @@
   },
   "suggests": {
     "mega_showdown": ">=1.3.0",
-    "cobblemon-trainers": "*"
+    "cobblemon-trainers": ">=1.1.0"
   }
 }
