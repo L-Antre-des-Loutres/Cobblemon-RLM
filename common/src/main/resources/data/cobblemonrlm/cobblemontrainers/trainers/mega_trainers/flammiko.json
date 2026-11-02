@@ -1,0 +1,27 @@
+{
+  "name": "trainer.cobblemonrlm.mega_flammiko.name",
+  "battle": {
+    "format": "singles_50",
+    "level": 50,
+    "difficulty": 5,
+    "gimmicks": [
+      "mega"
+    ]
+  },
+  "messages": {
+    "greeting": "trainer.cobblemonrlm.mega_flammiko.greeting",
+    "start": "trainer.cobblemonrlm.mega_flammiko.start",
+    "win": "trainer.cobblemonrlm.mega_flammiko.win",
+    "lose": "trainer.cobblemonrlm.mega_flammiko.lose"
+  },
+  "location": {
+    "biome": "minecraft:plains"
+  },
+  "team": [
+    "Flammiko @ rlm_megas:flammikite\nAbility: Flash Fire\nEVs: 4 HP / 252 SpA / 252 Spe\nTimid Nature\n- Flamethrower\n- Thunderbolt\n- Nuzzle\n- Protect"
+  ],
+  "skin": {
+    "type": "model",
+    "value": "cobblemon:npc"
+  }
+}

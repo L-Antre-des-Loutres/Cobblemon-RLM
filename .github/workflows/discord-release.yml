@@ -60,6 +60,15 @@ jobs:
           from urllib.parse import parse_qsl, quote, urlencode, urlsplit, urlunsplit
           from urllib.request import Request, urlopen
 
+          def release_type(tag, title, prerelease):
+              markers = set(re.findall(
+                  r'(?<![a-z0-9])(alpha|beta)(?![a-z])',
+                  f"{tag.lower().removeprefix('v')} {title.lower()}",
+              ))
+              if 'alpha' in markers:
+                  return 'alpha'
+              return 'beta' if 'beta' in markers or prerelease else 'release'
+
           def shorten(text, limit, suffix='…'):
               return text if len(text) <= limit else text[:limit - len(suffix)] + suffix
 
@@ -92,15 +101,22 @@ jobs:
               if not 0 <= color <= 0xFFFFFF:
                   raise ValueError('EMBED_COLOR doit être un entier RGB entre 0 et 16777215.')
               title = (release.get('name') or release['tag_name']).strip()
+              version_type = release_type(
+                  release['tag_name'], title, release.get('prerelease', False),
+              )
               if title == release['tag_name']:
-                  label = 'Préversion' if release.get('prerelease') else 'Nouvelle version'
+                  label = {'alpha': 'Alpha', 'beta': 'Bêta', 'release': 'Nouvelle version'}[version_type]
                   title = f"{label} · {release['tag_name']}"
               embed = {
                   'title': shorten(title, 256),
                   'url': release['html_url'],
                   'color': color,
                   'fields': fields,
-                  'footer': {'text': 'Préversion' if release.get('prerelease') else 'Release stable'},
+                  'footer': {'text': {
+                      'alpha': 'Préversion alpha',
+                      'beta': 'Préversion bêta',
+                      'release': 'Release stable',
+                  }[version_type]},
               }
               # Discord limits each description to 4096 characters and all embed text to 6000.
               used = len(embed['title']) + len(embed['footer']['text'])

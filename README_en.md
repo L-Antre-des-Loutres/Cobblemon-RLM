@@ -349,7 +349,7 @@ To launch a development client:
 
 On Windows, replace `./gradlew` with `.\gradlew.bat`. The `:fabric:runServer` and `:neoforge:runServer` tasks are also available.
 
-These environments load **Cobblemon**, **Mega Showdown** and **JEI 19.27.0.340** by default. Use `-PwithMegaShowdown=false` to test without Mega Showdown. Development dependencies are not embedded in the distributed JARs. JEI's version is set by `jei_version`; restart the game after changing it.
+These environments load **Cobblemon**, **Mega Showdown**, **Cobblemon Trainers 1.1.0** and **JEI 19.27.0.340** by default. Use `-PwithCobblemonTrainers=false` to test without trainers. NeoForge uses Kotlin for Forge 5.12.0. Use `-PwithMegaShowdown=false` to test without Mega Showdown. Development dependencies are not embedded in the distributed JARs. JEI's version is set by `jei_version`; restart the game after changing it.
 
 Clients use up to **4 GB of memory** and automatically open **`RLM-Test`** when that save exists in the module's `runs/client/saves/` folder. Use `-PquickPlayWorld=` to open the main menu instead.
 
@@ -409,3 +409,11 @@ You can also explore the project and its universe on the [Antre des Loutres webs
 </a>
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
+
+## Trainers and Mega Stones
+
+[Cobblemon Trainers](https://modrinth.com/mod/cobblemon-trainers-rerebleue) is an optional dependency. It adds five trainers to the Battle Phone under RLM Mega Stone Masters. Call them in plains biomes; each has one level 50 Pokémon holding its matching RLM stone: regional Ampharos, Flammiko, regional Dragon Mawile, regional Poison Mawile or Wamek.
+
+Mega Showdown is also required for Mega Evolution. Teams use fully qualified held item IDs (for example `@ rlm_megas:flammikite`) and `battle.gimmicks: ["mega"]`. RLM stones still exist without Mega Showdown and remain held, but Mega Evolution is disabled.
+
+Admin test: `/cobblemontrainers spawn cobblemonrlm:mega_trainers/flammiko`, then `/cobblemontrainers debugai`. Check transformation on the first turn. External item support is implemented in the [trainer parser](https://github.com/matheo-1712/cobblemon-trainers/blob/master/common/src/main/kotlin/matheo1712/cobbletrainers/parser/ShowdownTeamParser.kt).

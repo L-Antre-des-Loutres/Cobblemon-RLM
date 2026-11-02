@@ -1,0 +1,27 @@
+{
+  "name": "trainer.cobblemonrlm.mega_mawile_poison.name",
+  "battle": {
+    "format": "singles_50",
+    "level": 50,
+    "difficulty": 5,
+    "gimmicks": [
+      "mega"
+    ]
+  },
+  "messages": {
+    "greeting": "trainer.cobblemonrlm.mega_mawile_poison.greeting",
+    "start": "trainer.cobblemonrlm.mega_mawile_poison.start",
+    "win": "trainer.cobblemonrlm.mega_mawile_poison.win",
+    "lose": "trainer.cobblemonrlm.mega_mawile_poison.lose"
+  },
+  "location": {
+    "biome": "minecraft:plains"
+  },
+  "team": [
+    "Mawile @ rlm_megas:mawiliterlmpoison\nAspects: rlm poison\nAbility: Gooey\nEVs: 4 HP / 252 SpA / 252 Spe\nModest Nature\n- Sludge Bomb\n- Moonblast\n- Calm Mind\n- Protect"
+  ],
+  "skin": {
+    "type": "model",
+    "value": "cobblemon:npc"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "trainer.cobblemonrlm.mega_ampharos.name",
+  "battle": {
+    "format": "singles_50",
+    "level": 50,
+    "difficulty": 5,
+    "gimmicks": [
+      "mega"
+    ]
+  },
+  "messages": {
+    "greeting": "trainer.cobblemonrlm.mega_ampharos.greeting",
+    "start": "trainer.cobblemonrlm.mega_ampharos.start",
+    "win": "trainer.cobblemonrlm.mega_ampharos.win",
+    "lose": "trainer.cobblemonrlm.mega_ampharos.lose"
+  },
+  "location": {
+    "biome": "minecraft:plains"
+  },
+  "team": [
+    "Ampharos @ rlm_megas:ampharositerlm\nAspects: rlm\nAbility: Static\nEVs: 4 HP / 252 SpA / 252 Spe\nModest Nature\n- Thunderbolt\n- Shadow Ball\n- Power Gem\n- Protect"
+  ],
+  "skin": {
+    "type": "model",
+    "value": "cobblemon:npc"
+  }
+}
