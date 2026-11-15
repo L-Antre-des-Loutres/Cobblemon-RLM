@@ -37,18 +37,44 @@ tasks.register('verifyModResources') {
                 }
             }
         }
-        // Species additions can replace each other's feature lists, including Mega Showdown's additions.
-        ['mawile', 'delphox', 'meganium'].each { species ->
-            def forms = json.parse(new File(resources, "data/cobblemon/species_additions/${species}.json"), 'UTF-8').forms
-            def requiredAspects = forms.collectMany { it.aspects }.toSet()
-            def assignment = json.parse(new File(resources, "data/rlm_megas/species_feature_assignments/${species}_rlm.json"), 'UTF-8')
-            def assignedAspects = assignment.features.collectMany { feature ->
-                def provider = json.parse(new File(resources, "data/cobblemon/species_features/${feature}.json"), 'UTF-8')
-                provider.isAspect ? provider.keys : []
-            }.toSet()
-            if (!assignment.pokemon.contains(species) || !assignedAspects.containsAll(requiredAspects)) {
-                throw new GradleException("${species} regional forms are missing assigned species features.")
+        // A species addition's "features" replaces the whole list: whichever addition loads last wins
+        // (Mega Showdown's Megas did it to Delphox and Meganium; the three Sunflora files to each
+        // other). Every feature an RLM form's aspects need must therefore also be assigned in
+        // species_feature_assignments, which only ever adds.
+        def data = new File(resources, 'data')
+        def aspectFeature = ['mega', 'mega_x', 'mega_y', 'mega_z'].collectEntries { [(it): 'mega_evolution'] } // Mega Showdown's
+        fileTree(data).matching { include '*/species_features/*.json' }.each { file ->
+            def provider = json.parse(file, 'UTF-8')
+            if (!provider.isAspect) return
+            (provider.type == 'choice' ? provider.choices : provider.keys).each { aspectFeature[it] = file.name - '.json' }
+        }
+        def assigned = [:].withDefault { [] as Set }
+        fileTree(data).matching { include '*/species_feature_assignments/*.json' }.each { file ->
+            def assignment = json.parse(file, 'UTF-8')
+            assignment.pokemon.each { assigned[it.toLowerCase()].addAll(assignment.features) }
+        }
+        fileTree(data).matching { include '*/species_additions/*.json' }.each { file ->
+            def addition = json.parse(file, 'UTF-8')
+            def species = addition.target.split(':', 2)[-1].toLowerCase()
+            addition.forms?.each { form ->
+                form.aspects?.each { aspect ->
+                    def feature = aspectFeature[aspect]
+                    if (!feature) {
+                        throw new GradleException("${file.name}: no species feature provides the aspect '${aspect}'.")
+                    }
+                    if (!assigned[species].contains(feature)) {
+                        throw new GradleException("${file.name}: ${species} form '${form.name}' needs '${feature}' in a species_feature_assignments file.")
+                    }
+                }
             }
+        }
+        // Cobblemon only reads <namespace>/species_feature_assignments/: anything deeper is ignored.
+        def misplaced = fileTree(data).matching {
+            include '**/species_feature_assignments/*.json'
+            exclude '*/species_feature_assignments/*.json'
+        }.files
+        if (misplaced) {
+            throw new GradleException("Species feature assignments Cobblemon never loads: ${misplaced*.name}")
         }
         def recipes = fileTree(new File(resources, 'data/rlm_megas/recipe')).matching { include '*.json' }
         def itemIds = recipes.collect { json.parse(it, 'UTF-8').result.id }.toSet()
