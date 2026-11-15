@@ -58,16 +58,23 @@ subprojects {
                             neoforge_version: neoforge_version]
             inputs.properties metadata
             filesMatching(['fabric.mod.json', 'META-INF/neoforge.mods.toml']) { expand metadata }
-            // A missing optional mod must skip the recipes before their ingredients are decoded.
+            // A missing optional mod must skip these files before their contents are decoded:
+            // the gem recipes need Mega Showdown, the trainer advancements need Cobblemon Trainers.
             doLast {
-                fileTree(destinationDir).matching { include 'data/rlm_megas/recipe/*.json' }.each { recipeFile ->
-                    def recipe = new JsonSlurper().parse(recipeFile, 'UTF-8')
-                    if (project.name == 'fabric') {
-                        recipe['fabric:load_conditions'] = [[condition: 'fabric:all_mods_loaded', values: ['mega_showdown']]]
-                    } else {
-                        recipe['neoforge:conditions'] = [[type: 'neoforge:mod_loaded', modid: 'mega_showdown']]
+                def optionalResources = [
+                        'data/rlm_megas/recipe/*.json'                 : [fabric: 'mega_showdown', neoforge: 'mega_showdown'],
+                        'data/cobblemonrlm/advancement/trainers/*.json': [fabric: 'cobblemon-trainers', neoforge: 'cobblemon_trainers'],
+                ]
+                optionalResources.each { pattern, modIds ->
+                    fileTree(destinationDir).matching { include pattern }.each { resourceFile ->
+                        def resource = new JsonSlurper().parse(resourceFile, 'UTF-8')
+                        if (project.name == 'fabric') {
+                            resource['fabric:load_conditions'] = [[condition: 'fabric:all_mods_loaded', values: [modIds.fabric]]]
+                        } else {
+                            resource['neoforge:conditions'] = [[type: 'neoforge:mod_loaded', modid: modIds.neoforge]]
+                        }
+                        resourceFile.setText(JsonOutput.prettyPrint(JsonOutput.toJson(resource)) + '\n', 'UTF-8')
                     }
-                    recipeFile.setText(JsonOutput.prettyPrint(JsonOutput.toJson(recipe)) + '\n', 'UTF-8')
                 }
             }
         }

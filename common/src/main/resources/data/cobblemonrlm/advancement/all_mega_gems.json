@@ -1,0 +1,88 @@
+{
+    "parent": "cobblemonrlm:mega_showdown",
+    "display": {
+        "icon": {
+            "id": "rlm_megas:wamekite"
+        },
+        "title": {
+            "translate": "advancement.rlm.all_mega_gems.title"
+        },
+        "description": {
+            "translate": "advancement.rlm.all_mega_gems.desc"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "sound": "minecraft:ui.toast.challenge_complete"
+    },
+    "criteria": {
+        "ampharositerlm": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "rlm_megas:ampharositerlm"
+                    }
+                ]
+            }
+        },
+        "flammikite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "rlm_megas:flammikite"
+                    }
+                ]
+            }
+        },
+        "mawiliterlmdragon": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "rlm_megas:mawiliterlmdragon"
+                    }
+                ]
+            }
+        },
+        "mawiliterlmpoison": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "rlm_megas:mawiliterlmpoison"
+                    }
+                ]
+            }
+        },
+        "wamekite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "rlm_megas:wamekite"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "ampharositerlm"
+        ],
+        [
+            "flammikite"
+        ],
+        [
+            "mawiliterlmdragon"
+        ],
+        [
+            "mawiliterlmpoison"
+        ],
+        [
+            "wamekite"
+        ]
+    ]
+}

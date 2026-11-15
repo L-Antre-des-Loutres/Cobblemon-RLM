@@ -1,0 +1,31 @@
+{
+    "parent": "cobblemonrlm:root",
+    "display": {
+        "icon": {
+            "id": "rlm_megas:flammikite"
+        },
+        "title": {
+            "translate": "advancement.rlm.mega_showdown.title"
+        },
+        "description": {
+            "translate": "advancement.rlm.mega_showdown.desc"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "sound": "minecraft:ui.toast.challenge_complete"
+    },
+    "criteria": {
+        "gem": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "#rlm_megas:mega_gems"
+                    }
+                ]
+            }
+        }
+    }
+}
