@@ -1,0 +1,35 @@
+{
+    "parent": "cobblemonrlm:flammikite",
+    "display": {
+        "icon": {
+            "id": "cobblemon:pokemon_model",
+            "components": {
+                "cobblemon:pokemon_item": {
+                    "species": "cobblemon:flammiko",
+                    "aspects": [
+                        "normal"
+                    ]
+                }
+            }
+        },
+        "title": {
+            "translate": "advancement.rlm.defeat_mega_flammiko.title"
+        },
+        "description": {
+            "translate": "advancement.rlm.defeat_mega_flammiko.desc"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "sound": "minecraft:ui.toast.challenge_complete"
+    },
+    "criteria": {
+        "defeated": {
+            "trigger": "cobblemon-trainers:trainer_defeated",
+            "conditions": {
+                "trainer": "cobblemonrlm:mega_trainers/flammiko"
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "parent": "cobblemonrlm:all_mega_gems",
+    "display": {
+        "icon": {
+            "id": "cobblemon:ultra_ball"
+        },
+        "title": {
+            "translate": "advancement.rlm.defeat_all_mega_trainers.title"
+        },
+        "description": {
+            "translate": "advancement.rlm.defeat_all_mega_trainers.desc"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "sound": "minecraft:ui.toast.challenge_complete"
+    },
+    "criteria": {
+        "defeated": {
+            "trigger": "cobblemon-trainers:trainer_defeated",
+            "conditions": {
+                "category": "cobblemonrlm:mega_trainers",
+                "count": 5
+            }
+        }
+    }
+}

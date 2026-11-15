@@ -1,0 +1,27 @@
+{
+    "parent": "cobblemonrlm:trainers/all_mega_trainers",
+    "display": {
+        "icon": {
+            "id": "cobblemon:master_ball"
+        },
+        "title": {
+            "translate": "advancement.rlm.defeat_matheo.title"
+        },
+        "description": {
+            "translate": "advancement.rlm.defeat_matheo.desc"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true,
+        "sound": "minecraft:ui.toast.challenge_complete"
+    },
+    "criteria": {
+        "defeated": {
+            "trigger": "cobblemon-trainers:trainer_defeated",
+            "conditions": {
+                "trainer": "cobblemonrlm:iconic_trainers/matheo"
+            }
+        }
+    }
+}
