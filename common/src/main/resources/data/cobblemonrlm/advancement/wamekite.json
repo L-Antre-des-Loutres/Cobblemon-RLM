@@ -1,0 +1,31 @@
+{
+    "parent": "cobblemonrlm:mega_showdown",
+    "display": {
+        "icon": {
+            "id": "rlm_megas:wamekite"
+        },
+        "title": {
+            "translate": "advancement.rlm.wamekite.title"
+        },
+        "description": {
+            "translate": "advancement.rlm.wamekite.desc"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "sound": "minecraft:ui.toast.challenge_complete"
+    },
+    "criteria": {
+        "gem": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "rlm_megas:wamekite"
+                    }
+                ]
+            }
+        }
+    }
+}

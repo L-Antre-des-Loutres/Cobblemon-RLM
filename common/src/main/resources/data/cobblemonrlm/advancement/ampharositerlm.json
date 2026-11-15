@@ -1,0 +1,31 @@
+{
+    "parent": "cobblemonrlm:mega_showdown",
+    "display": {
+        "icon": {
+            "id": "rlm_megas:ampharositerlm"
+        },
+        "title": {
+            "translate": "advancement.rlm.ampharositerlm.title"
+        },
+        "description": {
+            "translate": "advancement.rlm.ampharositerlm.desc"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "sound": "minecraft:ui.toast.challenge_complete"
+    },
+    "criteria": {
+        "gem": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "rlm_megas:ampharositerlm"
+                    }
+                ]
+            }
+        }
+    }
+}
