@@ -1,0 +1,4 @@
+{
+  "pokemon": ["ampharos", "axew", "bayleef", "blastoise", "braixen", "chikorita", "empoleon", "fennekin", "flaaffy", "fraxure", "haxorus", "luxio", "luxray", "mareep", "nincada", "ninjask", "nosepass", "piplup", "prinplup", "probopass", "shedinja", "shinx", "spiritomb", "squirtle", "sunflora", "togekiss", "togepi", "togetic", "wartortle"],
+  "features": ["rlm"]
+}

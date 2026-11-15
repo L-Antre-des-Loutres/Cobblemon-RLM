@@ -26,7 +26,7 @@
     "Beatrice (Aphelis) @ Heavy-Duty Boots\nAbility: Queenly Majesty\nEVs: 252 HP / 4 SpD / 252 Spe\nTimid Nature\nIVs: 0 Atk\n- Moonblast\n- Roost\n- Defog\n- Encore"
   ],
   "skin": {
-    "type": "model",
-    "value": "cobblemon:npc"
+    "type": "player_uuid",
+    "value": "4199c666-1193-49b6-8986-099d872d5adf"
   }
 }
