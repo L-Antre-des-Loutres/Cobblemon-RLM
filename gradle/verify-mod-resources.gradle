@@ -38,7 +38,7 @@ tasks.register('verifyModResources') {
             }
         }
         // Species additions can replace each other's feature lists, including Mega Showdown's additions.
-        ['mawile', 'delphox'].each { species ->
+        ['mawile', 'delphox', 'meganium'].each { species ->
             def forms = json.parse(new File(resources, "data/cobblemon/species_additions/${species}.json"), 'UTF-8').forms
             def requiredAspects = forms.collectMany { it.aspects }.toSet()
             def assignment = json.parse(new File(resources, "data/rlm_megas/species_feature_assignments/${species}_rlm.json"), 'UTF-8')
