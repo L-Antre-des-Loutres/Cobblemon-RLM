@@ -111,13 +111,16 @@ tasks.register('verifyModResources') {
                         throw new GradleException("Missing resource in ${jarFile.name}: ${path}")
                     }
                     byte[] packaged = jar.getInputStream(entry).withCloseable { it.readAllBytes() }
-                    if (path.startsWith('data/rlm_megas/recipe/')) {
-                        def recipe = json.parseText(new String(packaged, 'UTF-8'))
-                        def sourceRecipe = json.parse(original, 'UTF-8')
-                        def condition = loader == 'fabric' ? recipe.remove('fabric:load_conditions') : recipe.remove('neoforge:conditions')
-                        def expected = loader == 'fabric' ? [[condition: 'fabric:all_mods_loaded', values: ['mega_showdown']]] : [[type: 'neoforge:mod_loaded', modid: 'mega_showdown']]
-                        if (condition != expected || recipe != sourceRecipe || !itemIds.contains(recipe.result.id)) {
-                            throw new GradleException("Invalid optional item recipe: ${loader}/${path}")
+                    def optional = rootProject.optionalResources.find { directory, modIds -> path.startsWith(directory) }
+                    if (optional) {
+                        // Only the loader condition may be added; the rest must match the source.
+                        def resource = json.parseText(new String(packaged, 'UTF-8'))
+                        def expected = rootProject.loadCondition(loader, optional.value)
+                        def condition = expected.collectEntries { key, value -> [(key): resource.remove(key)] }
+                        def isRecipe = path.startsWith('data/rlm_megas/recipe/')
+                        if (condition != expected || resource != json.parse(original, 'UTF-8')
+                                || (isRecipe && !itemIds.contains(resource.result.id))) {
+                            throw new GradleException("Invalid optional resource: ${loader}/${path}")
                         }
                     } else if (!Arrays.equals(original.bytes, packaged)) {
                         throw new GradleException("Resource changed while packaging ${jarFile.name}: ${path}")
